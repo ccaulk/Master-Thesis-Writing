@@ -1,0 +1,14 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Motivation}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Research Questions}{3}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Background}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Biodiversity and Taxa}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Model Families}{4}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Species Distribution Models}{4}{subsubsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.3}Joint Species Distribution Models}{5}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Community Level Modeling}{5}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Methods}{6}{section.3}%
+\contentsline {section}{\numberline {4}Experiments}{7}{section.4}%
+\contentsline {section}{\numberline {5}Discussion}{8}{section.5}%
+\contentsline {section}{\numberline {6}Conclusion}{9}{section.6}%

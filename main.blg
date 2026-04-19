@@ -1,0 +1,21 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'main.blg'
+[107] biber-MSWIN64:342> INFO - === 
+[164] Biber.pm:421> INFO - Reading 'main.bcf'
+[262] Biber.pm:1002> INFO - Found 34 citekeys in bib section 0
+[271] Biber.pm:4487> INFO - Processing section 0
+[280] Biber.pm:4678> INFO - Looking for bibtex file 'references.bib' for section 0
+[365] bibtex.pm:1713> INFO - LaTeX decoding ...
+[423] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[727] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[727] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[727] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[727] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[769] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[827] bbl.pm:779> INFO - Output to main.bbl
+[827] Biber.pm:132> WARN - I didn't find a database entry for 'spatialmodellingofbiodiversityCLM' (section 0)
+[827] Biber.pm:132> WARN - I didn't find a database entry for 'SDMRarelypredictrealpopulations' (section 0)
+[827] Biber.pm:132> WARN - I didn't find a database entry for 'GobalmodelsplantdiversityMLtechniques' (section 0)
+[827] Biber.pm:132> WARN - I didn't find a database entry for 'MacroecologicalModelsVsSSDMs' (section 0)
+[827] Biber.pm:132> WARN - I didn't find a database entry for 'GDMGuide' (section 0)
+[827] Biber.pm:134> INFO - WARNINGS: 5

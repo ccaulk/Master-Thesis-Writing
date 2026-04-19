@@ -1,0 +1,2742 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{a_leeyaw_species_2022}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=9015d285aea51e1826ff48f048ae46e0}{%
+           family={A.\bibnamedelimi Lee‐Yaw},
+           familyi={A\bibinitperiod\bibinitdelim L\bibinithyphendelim Y\bibinitperiod},
+           given={Julie},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8faa5a19eebd3fba486483395c3f5fe1}{%
+           family={L.\bibnamedelimi {McCune}},
+           familyi={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Jenny},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=edb28a09e15b114ef53269abb54474fd}{%
+           family={Pironon},
+           familyi={P\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5953eeba11f55b65077f36b96d9a9916}{%
+           family={N.\bibnamedelimi Sheth},
+           familyi={N\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Seema},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{91796f093ba6f3d69969af491be11032}
+      \strng{fullhash}{dabe3f8722223f029b491881455b0618}
+      \strng{fullhashraw}{dabe3f8722223f029b491881455b0618}
+      \strng{bibnamehash}{91796f093ba6f3d69969af491be11032}
+      \strng{authorbibnamehash}{91796f093ba6f3d69969af491be11032}
+      \strng{authornamehash}{91796f093ba6f3d69969af491be11032}
+      \strng{authorfullhash}{dabe3f8722223f029b491881455b0618}
+      \strng{authorfullhashraw}{dabe3f8722223f029b491881455b0618}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Species distribution models ({SDMs}) are widely used in ecology. In theory, {SDMs} capture (at least part of ) species’ ecological niches and can be used to make inferences about the distribution of suitable habitat for species of interest. Because habitat suitability is expected to influence population demography, {SDMs} have been used to estimate a variety of population parameters, from occurrence to genetic diversity. However, a critical look at the ability of {SDMs} to predict independent data across different aspects of population biology is lacking. Here, we systematically reviewed the literature, retrieving 201 studies that tested predictions from {SDMs} against independent assessments of occurrence, abundance, population performance, and genetic diversity. Although there is some support for the ability of {SDMs} to predict occurrence ({\textasciitilde}53\% of studies depending on how support was assessed), the predictive performance of these models declines progressively from occurrence to abundance, to population mean fitness, to genetic diversity. At the same time, we observed higher success among studies that evaluated performance for single versus multiple species, pointing to a possible publication bias. Thus, the limited accuracy of {SDMs} reported here may reflect the best-case scenario. We discuss the limitations of these models and provide specific recommendations for their use for different applications going forward. However, we emphasize that predictions from {SDMs}, especially when used to inform conservation decisions, should be treated as hypotheses to be tested with independent data rather than as stand-ins for the population parameters we seek to know.}
+      \field{issn}{0906-7590, 1600-0587}
+      \field{journaltitle}{Ecography}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{6}
+      \field{shortjournal}{Ecography}
+      \field{title}{Species distribution models rarely predict the biology of real populations}
+      \field{urlday}{18}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{2022}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{e05877}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1111/ecog.05877
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\7L9RAVDV\\A. Lee‐Yaw et al. - 2022 - Species distribution models rarely predict the biology of real populations.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://nsojournals.onlinelibrary.wiley.com/doi/10.1111/ecog.05877
+      \endverb
+      \verb{url}
+      \verb https://nsojournals.onlinelibrary.wiley.com/doi/10.1111/ecog.05877
+      \endverb
+    \endentry
+    \entry{araujo2019}{article}{}{}
+      \name{author}{13}{ul=2}{%
+        {{un=0,uniquepart=base,hash=72cdc90eaae746fb2fb0c53839072424}{%
+           family={Araújo},
+           familyi={A\bibinitperiod},
+           given={Miguel\bibnamedelima B.},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f56a887a8e4dc3281cc541c22efe67f0}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={Robert\bibnamedelima P.},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b0123a32d23bb0493b21cc8242710c46}{%
+           family={Márcia\bibnamedelima Barbosa},
+           familyi={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea7febdf14d29882130ad0afd6dbb5b2}{%
+           family={Beale},
+           familyi={B\bibinitperiod},
+           given={Colin\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e58ec5a72f2b79de033f264f720ad88c}{%
+           family={Dormann},
+           familyi={D\bibinitperiod},
+           given={Carsten\bibnamedelima F.},
+           giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=36fb4fc89052b36b87b4dbd443319959}{%
+           family={Early},
+           familyi={E\bibinitperiod},
+           given={Regan},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c807d1ae9071874cd58c1ff1099bda43}{%
+           family={Garcia},
+           familyi={G\bibinitperiod},
+           given={Raquel\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd0180b461eae6ddbff6a39790e0bb5e}{%
+           family={Guisan},
+           familyi={G\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0e8cda9f2cfe18a4a8bf0b388dbc60ba}{%
+           family={Maiorano},
+           familyi={M\bibinitperiod},
+           given={Luigi},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=967cfb7e135118424be641f647fdaff1}{%
+           family={Naimi},
+           familyi={N\bibinitperiod},
+           given={Babak},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=faff0088b8c4231a37439e3033b35b6b}{%
+           family={O’Hara},
+           familyi={O\bibinitperiod},
+           given={Robert\bibnamedelima B.},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=81daf64e46b81abb6f841138d926146f}{%
+           family={Zimmermann},
+           familyi={Z\bibinitperiod},
+           given={Niklaus\bibnamedelima E.},
+           giveni={N\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fb5bc36df5dcfbc457d32d0354351b22}{%
+           family={Rahbek},
+           familyi={R\bibinitperiod},
+           given={Carsten},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Association for the Advancement of Science ({AAAS})}%
+      }
+      \strng{namehash}{37514045928031ac43b81ee9895bebc5}
+      \strng{fullhash}{96fc0c28564dc57dd339317526b2f9f6}
+      \strng{fullhashraw}{96fc0c28564dc57dd339317526b2f9f6}
+      \strng{bibnamehash}{37514045928031ac43b81ee9895bebc5}
+      \strng{authorbibnamehash}{37514045928031ac43b81ee9895bebc5}
+      \strng{authornamehash}{37514045928031ac43b81ee9895bebc5}
+      \strng{authorfullhash}{96fc0c28564dc57dd339317526b2f9f6}
+      \strng{authorfullhashraw}{96fc0c28564dc57dd339317526b2f9f6}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Biodiversity assessments use a variety of data and models. We propose best-practice standards for studies in these assessments.}
+      \field{day}{4}
+      \field{issn}{2375-2548}
+      \field{journaltitle}{Science Advances}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shortjournal}{Sci. Adv.}
+      \field{title}{Standards for distribution models in biodiversity assessments}
+      \field{urlday}{16}
+      \field{urlmonth}{7}
+      \field{urlyear}{2025}
+      \field{volume}{5}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1126/sciadv.aat4858
+      \endverb
+      \verb{file}
+      \verb Full Text:C\:\\Users\\caleb\\Zotero\\storage\\GFKYDST6\\Araújo et al. - 2019 - Standards for distribution models in biodiversity assessments.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.science.org/doi/10.1126/sciadv.aat4858
+      \endverb
+      \verb{url}
+      \verb https://www.science.org/doi/10.1126/sciadv.aat4858
+      \endverb
+    \endentry
+    \entry{araujo2006}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=72cdc90eaae746fb2fb0c53839072424}{%
+           family={Araújo},
+           familyi={A\bibinitperiod},
+           given={Miguel\bibnamedelima B.},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd0180b461eae6ddbff6a39790e0bb5e}{%
+           family={Guisan},
+           familyi={G\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{04ba6bd9c15553f53e68cbcd6c3fcb02}
+      \strng{fullhash}{04ba6bd9c15553f53e68cbcd6c3fcb02}
+      \strng{fullhashraw}{04ba6bd9c15553f53e68cbcd6c3fcb02}
+      \strng{bibnamehash}{04ba6bd9c15553f53e68cbcd6c3fcb02}
+      \strng{authorbibnamehash}{04ba6bd9c15553f53e68cbcd6c3fcb02}
+      \strng{authornamehash}{04ba6bd9c15553f53e68cbcd6c3fcb02}
+      \strng{authorfullhash}{04ba6bd9c15553f53e68cbcd6c3fcb02}
+      \strng{authorfullhashraw}{04ba6bd9c15553f53e68cbcd6c3fcb02}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Species distribution modelling is central to both fundamental and applied research in biogeography. Despite widespread use of models, there are still important conceptual ambiguities as well as biotic and algorithmic uncertainties that need to be investigated in order to increase conﬁdence in model results. We identify and discuss ﬁve areas of enquiry that are of high importance for species distribution modelling: (1) clariﬁcation of the niche concept; (2) improved designs for sampling data for building models; (3) improved parameterization; (4) improved model selection and predictor contribution; and (5) improved model evaluation. The challenges discussed in this essay do not preclude the need for developments of other areas of research in this ﬁeld. However, they are critical for allowing the science of species distribution modelling to move forward.}
+      \field{issn}{0305-0270, 1365-2699}
+      \field{journaltitle}{Journal of Biogeography}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{10}
+      \field{shortjournal}{Journal of Biogeography}
+      \field{title}{Five (or so) challenges for species distribution modelling}
+      \field{urlday}{23}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{volume}{33}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1677\bibrangedash 1688}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1111/j.1365-2699.2006.01584.x
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\4A62FS9Q\\Araújo and Guisan - 2006 - Five (or so) challenges for species distribution modelling.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2699.2006.01584.x
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2699.2006.01584.x
+      \endverb
+    \endentry
+    \entry{beery2021}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=0477a9e6ee75c1a456b10ec9f4889cb4}{%
+           family={Beery},
+           familyi={B\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e41b1068e6a30d022b8efcf3af76cfd2}{%
+           family={Cole},
+           familyi={C\bibinitperiod},
+           given={Elijah},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fc79eada784418c39da28a1b8a7863e4}{%
+           family={Parker},
+           familyi={P\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e52876f830a8a20786ff3e4d7dd6f083}{%
+           family={Perona},
+           familyi={P\bibinitperiod},
+           given={Pietro},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fb3259fd1330bf0c43be08d1af935359}{%
+           family={Winner},
+           familyi={W\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Virtual Event Australia}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{25b3008de340f380a9310628351baabe}
+      \strng{fullhash}{a041a19a92cc9b01e9f369feb9319bc8}
+      \strng{fullhashraw}{a041a19a92cc9b01e9f369feb9319bc8}
+      \strng{bibnamehash}{25b3008de340f380a9310628351baabe}
+      \strng{authorbibnamehash}{25b3008de340f380a9310628351baabe}
+      \strng{authornamehash}{25b3008de340f380a9310628351baabe}
+      \strng{authorfullhash}{a041a19a92cc9b01e9f369feb9319bc8}
+      \strng{authorfullhashraw}{a041a19a92cc9b01e9f369feb9319bc8}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{booktitle}{{ACM} {SIGCAS} Conference on Computing and Sustainable Societies ({COMPASS})}
+      \field{day}{28}
+      \field{eventtitle}{{COMPASS} '21: {ACM} {SIGCAS} Conference on Computing and Sustainable Societies}
+      \field{isbn}{978-1-4503-8453-7}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{shorttitle}{Species Distribution Modeling for Machine Learning Practitioners}
+      \field{title}{Species Distribution Modeling for Machine Learning Practitioners: A Review}
+      \field{urlday}{21}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{329\bibrangedash 348}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1145/3460112.3471966
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\3IC9AL9B\\Beery et al. - 2021 - Species Distribution Modeling for Machine Learning Practitioners A Review.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://dl.acm.org/doi/10.1145/3460112.3471966
+      \endverb
+      \verb{url}
+      \verb https://dl.acm.org/doi/10.1145/3460112.3471966
+      \endverb
+      \keyw{Read}
+    \endentry
+    \entry{brauman2020}{article}{}{}
+      \name{author}{15}{}{%
+        {{un=0,uniquepart=base,hash=cb0a138bd3a4fc0fcf62d8b23616e64d}{%
+           family={Brauman},
+           familyi={B\bibinitperiod},
+           given={Kate\bibnamedelima A.},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7e9bd5fa9ed326bc79016288e9cff6cc}{%
+           family={Garibaldi},
+           familyi={G\bibinitperiod},
+           given={Lucas\bibnamedelima A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6f0d9cac70df6a03b1b361f975fbb477}{%
+           family={Polasky},
+           familyi={P\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7fd9b424564e16ebad60bc57ba6d6a1b}{%
+           family={Aumeeruddy-Thomas},
+           familyi={A\bibinithyphendelim T\bibinitperiod},
+           given={Yildiz},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6549e0f5a22e7ee0cf6ec740d6c9b906}{%
+           family={Brancalion},
+           familyi={B\bibinitperiod},
+           given={Pedro\bibnamedelimb H.\bibnamedelimi S.},
+           giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9e10ffed22da99d1ce9a03390616b041}{%
+           family={{DeClerck}},
+           familyi={D\bibinitperiod},
+           given={Fabrice},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d3796ba881a589b3e333601914ddd282}{%
+           family={Jacob},
+           familyi={J\bibinitperiod},
+           given={Ute},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d3e9f43e050dd04a1a1b19cfc14531f5}{%
+           family={Mastrangelo},
+           familyi={M\bibinitperiod},
+           given={Matias\bibnamedelima Enrique},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=21b7416ba839bbc711012c9d5f58ecbf}{%
+           family={Nkongolo},
+           familyi={N\bibinitperiod},
+           given={Nsalambi\bibnamedelima V.},
+           giveni={N\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d6e31cedbbe56eb1a102a4c134ce60f5}{%
+           family={Palang},
+           familyi={P\bibinitperiod},
+           given={Hannes},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d3e514a5b664688795bd05e4bd50ca10}{%
+           family={Pérez-Méndez},
+           familyi={P\bibinithyphendelim M\bibinitperiod},
+           given={Néstor},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c5eb24afa1d48a374a3d15b15e6dae4}{%
+           family={Shannon},
+           familyi={S\bibinitperiod},
+           given={Lynne\bibnamedelima J.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2d25f19fc09ddf9bfbd0b16fbe51039e}{%
+           family={Shrestha},
+           familyi={S\bibinitperiod},
+           given={Uttam\bibnamedelima Babu},
+           giveni={U\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2e2653ef9384160395eb5c738e144deb}{%
+           family={Strombom},
+           familyi={S\bibinitperiod},
+           given={Evelyn},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3fff10df7f60ffd604bdbf184b03db4f}{%
+           family={Verma},
+           familyi={V\bibinitperiod},
+           given={Madhu},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a49ffeaf028c4eca3dba253f2d4105db}
+      \strng{fullhash}{8d1c58944ef151dcc37902005f6824e1}
+      \strng{fullhashraw}{8d1c58944ef151dcc37902005f6824e1}
+      \strng{bibnamehash}{a49ffeaf028c4eca3dba253f2d4105db}
+      \strng{authorbibnamehash}{a49ffeaf028c4eca3dba253f2d4105db}
+      \strng{authornamehash}{a49ffeaf028c4eca3dba253f2d4105db}
+      \strng{authorfullhash}{8d1c58944ef151dcc37902005f6824e1}
+      \strng{authorfullhashraw}{8d1c58944ef151dcc37902005f6824e1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{22}
+      \field{issn}{0027-8424, 1091-6490}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{51}
+      \field{shortjournal}{Proc. Natl. Acad. Sci. U.S.A.}
+      \field{title}{Global trends in nature’s contributions to people}
+      \field{urlday}{9}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{117}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{32799\bibrangedash 32805}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1073/pnas.2010473117
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\E8BA26EA\\Brauman et al. - 2020 - Global trends in nature’s contributions to people.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pnas.org/doi/full/10.1073/pnas.2010473117
+      \endverb
+      \verb{url}
+      \verb https://pnas.org/doi/full/10.1073/pnas.2010473117
+      \endverb
+    \endentry
+    \entry{cardinale2012}{article}{}{}
+      \name{author}{17}{}{%
+        {{un=0,uniquepart=base,hash=c5373aebbe83d6b696f396b3de3ce967}{%
+           family={Cardinale},
+           familyi={C\bibinitperiod},
+           given={Bradley\bibnamedelima J.},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a5fcdacf0c35e38c4b73a4bef1e61234}{%
+           family={Duffy},
+           familyi={D\bibinitperiod},
+           given={J.\bibnamedelimi Emmett},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=24bc6ddc5f1579fac8ba3bbb49c3dca8}{%
+           family={Gonzalez},
+           familyi={G\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c3ecd4404157c3230e85012996f9d1e1}{%
+           family={Hooper},
+           familyi={H\bibinitperiod},
+           given={David\bibnamedelima U.},
+           giveni={D\bibinitperiod\bibinitdelim U\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a3e2f49846c5ac2e8f5ac08d63d8b8e9}{%
+           family={Perrings},
+           familyi={P\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=168b3dcace4816432c12506afb6778ea}{%
+           family={Venail},
+           familyi={V\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7014f52e83ec608720798f086f7ee5cc}{%
+           family={Narwani},
+           familyi={N\bibinitperiod},
+           given={Anita},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=99f99a8fffbb3d8671430015f8b3ae91}{%
+           family={Mace},
+           familyi={M\bibinitperiod},
+           given={Georgina\bibnamedelima M.},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=56e145e8f70192e123c180987985ea9b}{%
+           family={Tilman},
+           familyi={T\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea5ec7060860b95da0dd025e42b054ea}{%
+           family={Wardle},
+           familyi={W\bibinitperiod},
+           given={David\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=81ffe0941f286e71ff153e21c8122371}{%
+           family={Kinzig},
+           familyi={K\bibinitperiod},
+           given={Ann\bibnamedelima P.},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=09fd36ed044404d947c61edc593eb9ba}{%
+           family={Daily},
+           familyi={D\bibinitperiod},
+           given={Gretchen\bibnamedelima C.},
+           giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b74f59617a602bec371b660bb9b1e4f8}{%
+           family={Loreau},
+           familyi={L\bibinitperiod},
+           given={Michel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=11ce8e10c063752f1f1cc70eba16a957}{%
+           family={Grace},
+           familyi={G\bibinitperiod},
+           given={James\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6a5d473c5d8b72176a5e4db8e5ff7ffb}{%
+           family={Larigauderie},
+           familyi={L\bibinitperiod},
+           given={Anne},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eca63ddf4c1704df5c9b3ad06068bede}{%
+           family={Srivastava},
+           familyi={S\bibinitperiod},
+           given={Diane\bibnamedelima S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4fd279b45232aa8cb483d6136274177b}{%
+           family={Naeem},
+           familyi={N\bibinitperiod},
+           given={Shahid},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3fc998d81c5eb51bad1781e2f0f334f7}
+      \strng{fullhash}{da89f948ac05fc4ff9ecd8fdab73dc22}
+      \strng{fullhashraw}{da89f948ac05fc4ff9ecd8fdab73dc22}
+      \strng{bibnamehash}{3fc998d81c5eb51bad1781e2f0f334f7}
+      \strng{authorbibnamehash}{3fc998d81c5eb51bad1781e2f0f334f7}
+      \strng{authornamehash}{3fc998d81c5eb51bad1781e2f0f334f7}
+      \strng{authorfullhash}{da89f948ac05fc4ff9ecd8fdab73dc22}
+      \strng{authorfullhashraw}{da89f948ac05fc4ff9ecd8fdab73dc22}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{7}
+      \field{issn}{0028-0836, 1476-4687}
+      \field{journaltitle}{Nature}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{7401}
+      \field{shortjournal}{Nature}
+      \field{title}{Biodiversity loss and its impact on humanity}
+      \field{urlday}{9}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{486}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{59\bibrangedash 67}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1038/nature11148
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\SXIZ2D5P\\Cardinale et al. - 2012 - Biodiversity loss and its impact on humanity.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/nature11148
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/nature11148
+      \endverb
+    \endentry
+    \entry{Deutz2020}{report}{}{}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=625c50c4f480702f13b2bbfd75618a4c}{%
+           family={Deutz},
+           familyi={D\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9a99ddeab796ef1e11d10d6d13c2f776}{%
+           family={Heal},
+           familyi={H\bibinitperiod},
+           given={Geoffrey\bibnamedelima M.},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=63d9bdd2feee353518ff0167c6ea2a4a}{%
+           family={Niu},
+           familyi={N\bibinitperiod},
+           given={Rose},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a349f64f53ab7f6d628bdb5d82bd44dc}{%
+           family={Swanson},
+           familyi={S\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c031df8e707cd1af20336e02ff94e02b}{%
+           family={Townshend},
+           familyi={T\bibinitperiod},
+           given={Terry},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b91cb5d0661220eb12d7c6c739583449}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fed94c56973069877db3d81ba3f39427}{%
+           family={Delmar},
+           familyi={D\bibinitperiod},
+           given={Alejandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aef8566bd27de6c6684bc12a431c6629}{%
+           family={Meghji},
+           familyi={M\bibinitperiod},
+           given={Alqayam},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=753ac8b9428e0c518b1bdc0d08981842}{%
+           family={Sethi},
+           familyi={S\bibinitperiod},
+           given={Suresh\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6721fb59976b7a917f0c1b500823f76d}{%
+           family={Tobin-de\bibnamedelimb la\bibnamedelima Puente},
+           familyi={T\bibinithyphendelim d\bibinitperiod\bibinitdelim l\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Paulson Institute; The Nature Conservancy; Cornell Atkinson Center for Sustainability}%
+      }
+      \strng{namehash}{6c0e3d9f852f078464bf731b8fe80619}
+      \strng{fullhash}{2d7d45e3c692f35d9691a76d01a3b48a}
+      \strng{fullhashraw}{2d7d45e3c692f35d9691a76d01a3b48a}
+      \strng{bibnamehash}{6c0e3d9f852f078464bf731b8fe80619}
+      \strng{authorbibnamehash}{6c0e3d9f852f078464bf731b8fe80619}
+      \strng{authornamehash}{6c0e3d9f852f078464bf731b8fe80619}
+      \strng{authorfullhash}{2d7d45e3c692f35d9691a76d01a3b48a}
+      \strng{authorfullhashraw}{2d7d45e3c692f35d9691a76d01a3b48a}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-10-30}
+      \field{title}{Financing Nature: Closing the Global Biodiversity Financing Gap}
+      \field{type}{Full Report}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.paulsoninstitute.org/wp-content/uploads/2020/09/FINANCING-NATURE_Full-Report_Final-Version_091520.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.paulsoninstitute.org/wp-content/uploads/2020/09/FINANCING-NATURE_Full-Report_Final-Version_091520.pdf
+      \endverb
+    \endentry
+    \entry{diaz2019}{article}{}{}
+      \name{author}{28}{}{%
+        {{un=0,uniquepart=base,hash=ed6eaa17f8dd2a43bb7cf4de6de23fed}{%
+           family={Díaz},
+           familyi={D\bibinitperiod},
+           given={Sandra},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d01fe78c4376ed65dee89ab72c5f1e3d}{%
+           family={Settele},
+           familyi={S\bibinitperiod},
+           given={Josef},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=28cf89595d5021f58746ac9979e01367}{%
+           family={Brondízio},
+           familyi={B\bibinitperiod},
+           given={Eduardo\bibnamedelima S.},
+           giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2892c0f59b2df1f1314f096e45f03601}{%
+           family={Ngo},
+           familyi={N\bibinitperiod},
+           given={Hien\bibnamedelima T.},
+           giveni={H\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=06418a8a6641940eeb2eb99831158786}{%
+           family={Agard},
+           familyi={A\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=06c552c516a461ecb2841ba6aa81521f}{%
+           family={Arneth},
+           familyi={A\bibinitperiod},
+           given={Almut},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7a749258fbee831297e2add65164fc64}{%
+           family={Balvanera},
+           familyi={B\bibinitperiod},
+           given={Patricia},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cb0a138bd3a4fc0fcf62d8b23616e64d}{%
+           family={Brauman},
+           familyi={B\bibinitperiod},
+           given={Kate\bibnamedelima A.},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a963662da3b3f609c3f42007620399ed}{%
+           family={Butchart},
+           familyi={B\bibinitperiod},
+           given={Stuart\bibnamedelimb H.\bibnamedelimi M.},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1403f4f8b3208abb396bec4b3e8f78c3}{%
+           family={Chan},
+           familyi={C\bibinitperiod},
+           given={Kai\bibnamedelimb M.\bibnamedelimi A.},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7e9bd5fa9ed326bc79016288e9cff6cc}{%
+           family={Garibaldi},
+           familyi={G\bibinitperiod},
+           given={Lucas\bibnamedelima A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b88b2dc689960f72d67c0cd33635d7e4}{%
+           family={Ichii},
+           familyi={I\bibinitperiod},
+           given={Kazuhito},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=219c6dfa15e31e1eb6f9491ffc009d56}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Jianguo},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d21a885199ffd9762c32202ef013beba}{%
+           family={Subramanian},
+           familyi={S\bibinitperiod},
+           given={Suneetha\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=57829f0aae31bfbe426002fefab87b22}{%
+           family={Midgley},
+           familyi={M\bibinitperiod},
+           given={Guy\bibnamedelima F.},
+           giveni={G\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7aa3b68b6c4841cd034775825c77f539}{%
+           family={Miloslavich},
+           familyi={M\bibinitperiod},
+           given={Patricia},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a3998e99c163a57a32724d8c37e2774d}{%
+           family={Molnár},
+           familyi={M\bibinitperiod},
+           given={Zsolt},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=963a97bbe6aeff10ec0b3a42eb5cfca1}{%
+           family={Obura},
+           familyi={O\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=437e58df2d31d3249b12eb7ab12806f9}{%
+           family={Pfaff},
+           familyi={P\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6f0d9cac70df6a03b1b361f975fbb477}{%
+           family={Polasky},
+           familyi={P\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb735b8020f240a8c2ce5678ea07a18b}{%
+           family={Purvis},
+           familyi={P\bibinitperiod},
+           given={Andy},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6a4aa6bda2a7cb9dcb1a00687e4241bc}{%
+           family={Razzaque},
+           familyi={R\bibinitperiod},
+           given={Jona},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=673c311bc8475dfceb9058bbd20509cc}{%
+           family={Reyers},
+           familyi={R\bibinitperiod},
+           given={Belinda},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a59328797fc5da54f1be03bd517aad43}{%
+           family={Chowdhury},
+           familyi={C\bibinitperiod},
+           given={Rinku\bibnamedelima Roy},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=753cb7c62c3e59d832b90d8856369108}{%
+           family={Shin},
+           familyi={S\bibinitperiod},
+           given={Yunne-Jai},
+           giveni={Y\bibinithyphendelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8e0e0ea5751290c0a4372d9b8d6c7b74}{%
+           family={Visseren-Hamakers},
+           familyi={V\bibinithyphendelim H\bibinitperiod},
+           given={Ingrid},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=51d56517e0584c7f1748cbd7669ba934}{%
+           family={Willis},
+           familyi={W\bibinitperiod},
+           given={Katherine\bibnamedelima J.},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4941f145438e8772198dc801ac66c747}{%
+           family={Zayas},
+           familyi={Z\bibinitperiod},
+           given={Cynthia\bibnamedelima N.},
+           giveni={C\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4fbc03d537a6a41ed4e64fcd65a32233}
+      \strng{fullhash}{a06342e14e347397d29fb40bc600d49f}
+      \strng{fullhashraw}{a06342e14e347397d29fb40bc600d49f}
+      \strng{bibnamehash}{4fbc03d537a6a41ed4e64fcd65a32233}
+      \strng{authorbibnamehash}{4fbc03d537a6a41ed4e64fcd65a32233}
+      \strng{authornamehash}{4fbc03d537a6a41ed4e64fcd65a32233}
+      \strng{authorfullhash}{a06342e14e347397d29fb40bc600d49f}
+      \strng{authorfullhashraw}{a06342e14e347397d29fb40bc600d49f}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{13}
+      \field{issn}{0036-8075, 1095-9203}
+      \field{journaltitle}{Science}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{6471}
+      \field{shortjournal}{Science}
+      \field{title}{Pervasive human-driven decline of life on Earth points to the need for transformative change}
+      \field{urlday}{9}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{366}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{eaax3100}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1126/science.aax3100
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\FRK42SLP\\Díaz et al. - 2019 - Pervasive human-driven decline of life on Earth points to the need for transformative change.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.science.org/doi/10.1126/science.aax3100
+      \endverb
+      \verb{url}
+      \verb https://www.science.org/doi/10.1126/science.aax3100
+      \endverb
+    \endentry
+    \entry{elith2009}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=22e158108d166fcb5d64aab03da6300f}{%
+           family={Elith},
+           familyi={E\bibinitperiod},
+           given={Jane},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dcb512484c8d130330ec0c333fb93de1}{%
+           family={Leathwick},
+           familyi={L\bibinitperiod},
+           given={John\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e9b4282de9d9562a62f8c129eac20d90}
+      \strng{fullhash}{e9b4282de9d9562a62f8c129eac20d90}
+      \strng{fullhashraw}{e9b4282de9d9562a62f8c129eac20d90}
+      \strng{bibnamehash}{e9b4282de9d9562a62f8c129eac20d90}
+      \strng{authorbibnamehash}{e9b4282de9d9562a62f8c129eac20d90}
+      \strng{authornamehash}{e9b4282de9d9562a62f8c129eac20d90}
+      \strng{authorfullhash}{e9b4282de9d9562a62f8c129eac20d90}
+      \strng{authorfullhashraw}{e9b4282de9d9562a62f8c129eac20d90}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Species distribution models ({SDMs}) are numerical tools that combine observations of species occurrence or abundance with environmental estimates. They are used to gain ecological and evolutionary insights and to predict distributions across landscapes, sometimes requiring extrapolation in space and time. {SDMs} are now widely used across terrestrial, freshwater, and marine realms. Differences in methods between disciplines reﬂect both differences in species mobility and in “established use.” Model realism and robustness is inﬂuenced by selection of relevant predictors and modeling method, consideration of scale, how the interplay between environmental and geographic factors is handled, and the extent of extrapolation. Current linkages between {SDM} practice and ecological theory are often weak, hindering progress. Remaining challenges include: improvement of methods for modeling presence-only data and for model selection and evaluation; accounting for biotic interactions; and assessing model uncertainty.}
+      \field{day}{1}
+      \field{issn}{1543-592X, 1545-2069}
+      \field{journaltitle}{Annual Review of Ecology, Evolution, and Systematics}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{1}
+      \field{shortjournal}{Annu. Rev. Ecol. Evol. Syst.}
+      \field{shorttitle}{Species Distribution Models}
+      \field{title}{Species Distribution Models: Ecological Explanation and Prediction Across Space and Time}
+      \field{urlday}{23}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{volume}{40}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{677\bibrangedash 697}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1146/annurev.ecolsys.110308.120159
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\EVCXDR2A\\Elith and Leathwick - 2009 - Species Distribution Models Ecological Explanation and Prediction Across Space and Time.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.annualreviews.org/doi/10.1146/annurev.ecolsys.110308.120159
+      \endverb
+      \verb{url}
+      \verb https://www.annualreviews.org/doi/10.1146/annurev.ecolsys.110308.120159
+      \endverb
+    \endentry
+    \entry{ferrier2006}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=39011e2380b8ee7046d21d9572c0e59f}{%
+           family={Ferrier},
+           familyi={F\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd0180b461eae6ddbff6a39790e0bb5e}{%
+           family={Guisan},
+           familyi={G\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a7bffcf7d5f6dc3914576d19c0df4b08}
+      \strng{fullhash}{a7bffcf7d5f6dc3914576d19c0df4b08}
+      \strng{fullhashraw}{a7bffcf7d5f6dc3914576d19c0df4b08}
+      \strng{bibnamehash}{a7bffcf7d5f6dc3914576d19c0df4b08}
+      \strng{authorbibnamehash}{a7bffcf7d5f6dc3914576d19c0df4b08}
+      \strng{authornamehash}{a7bffcf7d5f6dc3914576d19c0df4b08}
+      \strng{authorfullhash}{a7bffcf7d5f6dc3914576d19c0df4b08}
+      \strng{authorfullhashraw}{a7bffcf7d5f6dc3914576d19c0df4b08}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0021-8901, 1365-2664}
+      \field{journaltitle}{Journal of Applied Ecology}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{3}
+      \field{shortjournal}{Journal of Applied Ecology}
+      \field{title}{Spatial modelling of biodiversity at the community level}
+      \field{urlday}{8}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{43}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{393\bibrangedash 404}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1111/j.1365-2664.2006.01149.x
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\MSJWB82P\\Ferrier and Guisan - 2006 - Spatial modelling of biodiversity at the community level.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.1365-2664.2006.01149.x
+      \endverb
+      \verb{url}
+      \verb https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.1365-2664.2006.01149.x
+      \endverb
+      \keyw{Read}
+    \endentry
+    \entry{frieler2012}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=8abb5bc0078ade7baebd4cf8cff2c21b}{%
+           family={Frieler},
+           familyi={F\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=67ea40ae2dee30ac99ca347b866d3a67}{%
+           family={Meinshausen},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2ae097014d08a8747bf933345fa6eba1}{%
+           family={Golly},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=860b0f8fb1d3d633178388e11bf1b3cc}{%
+           family={Mengel},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=89b7d8568e50f496d91dcdb301a7df88}{%
+           family={Lebek},
+           familyi={L\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=207c5bf7ee790bed450699c89477067e}{%
+           family={Donner},
+           familyi={D\bibinitperiod},
+           given={S.\bibnamedelimi D.},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=afa3000f3d025c0ca933f82ca6d437a2}{%
+           family={Hoegh-Guldberg},
+           familyi={H\bibinithyphendelim G\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c67fab12c754114fc160205d52d1e511}
+      \strng{fullhash}{82bc5d95a67a561afbf5dfb7583b16e2}
+      \strng{fullhashraw}{82bc5d95a67a561afbf5dfb7583b16e2}
+      \strng{bibnamehash}{c67fab12c754114fc160205d52d1e511}
+      \strng{authorbibnamehash}{c67fab12c754114fc160205d52d1e511}
+      \strng{authornamehash}{c67fab12c754114fc160205d52d1e511}
+      \strng{authorfullhash}{82bc5d95a67a561afbf5dfb7583b16e2}
+      \strng{authorfullhashraw}{82bc5d95a67a561afbf5dfb7583b16e2}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1758-678X, 1758-6798}
+      \field{journaltitle}{Nature Climate Change}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{2}
+      \field{shortjournal}{Nature Clim Change}
+      \field{title}{Limiting global warming to 2 °C is unlikely to save most coral reefs}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{3}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{165\bibrangedash 170}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1038/nclimate1674
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\FTP6UMNT\\Frieler et al. - 2013 - Limiting global warming to 2 °C is unlikely to save most coral reefs.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/nclimate1674
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/nclimate1674
+      \endverb
+    \endentry
+    \entry{gascon2015}{article}{}{}
+      \name{author}{17}{}{%
+        {{un=0,uniquepart=base,hash=cce692df2c1fc02493b030f121707769}{%
+           family={Gascon},
+           familyi={G\bibinitperiod},
+           given={Claude},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b3e7a9650900834c407f53215974d4f}{%
+           family={Brooks},
+           familyi={B\bibinitperiod},
+           given={Thomas\bibnamedelima M.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=26196430652edc12ed8496b4b5fec396}{%
+           family={Contreras-{MacBeath}},
+           familyi={C\bibinithyphendelim M\bibinitperiod},
+           given={Topiltzin},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=176fdba9440ff04cdce86ff471f54c0f}{%
+           family={Heard},
+           familyi={H\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4139c70739b29589d7fef3f883fad2b5}{%
+           family={Konstant},
+           familyi={K\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b36ef432d47e3a12f1c89a29a7a072f2}{%
+           family={Lamoreux},
+           familyi={L\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=207da8e0aed82ad41d508887c6f1b8bf}{%
+           family={Launay},
+           familyi={L\bibinitperiod},
+           given={Frederic},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=99d598c377560a77ec5dc7b0595ab65a}{%
+           family={Maunder},
+           familyi={M\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1d48885974fbaa7f7b78e5f9a4a3bb99}{%
+           family={Mittermeier},
+           familyi={M\bibinitperiod},
+           given={Russell\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2e7cfd264040e715beec947a08dca6a0}{%
+           family={Molur},
+           familyi={M\bibinitperiod},
+           given={Sanjay},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9b280ebc559b076a51b86208470427d9}{%
+           family={Al\bibnamedelima Mubarak},
+           familyi={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Razan\bibnamedelima Khalifa},
+           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fa73589fd22d74ae81175217f0ebe22f}{%
+           family={Parr},
+           familyi={P\bibinitperiod},
+           given={Michael\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5d2406f04b2517d8e0f71f778974d4c4}{%
+           family={Rhodin},
+           familyi={R\bibinitperiod},
+           given={Anders\bibnamedelima G.J.},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=474a1729a008a61104e048854210f2eb}{%
+           family={Rylands},
+           familyi={R\bibinitperiod},
+           given={Anthony\bibnamedelima B.},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c768864315d18fd64a951d318c45e318}{%
+           family={Soorae},
+           familyi={S\bibinitperiod},
+           given={Pritpal},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=418e8a0a1f78bea137325015456a399d}{%
+           family={Sanderson},
+           familyi={S\bibinitperiod},
+           given={James\bibnamedelima G.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4bbdaf9712b5d1041054d4980d0087b7}{%
+           family={Vié},
+           familyi={V\bibinitperiod},
+           given={Jean-Christophe},
+           giveni={J\bibinithyphendelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f9d66fe70444c0c242da11af1652411b}
+      \strng{fullhash}{20fc55cbb189636fd680f26edc3c7a8f}
+      \strng{fullhashraw}{20fc55cbb189636fd680f26edc3c7a8f}
+      \strng{bibnamehash}{f9d66fe70444c0c242da11af1652411b}
+      \strng{authorbibnamehash}{f9d66fe70444c0c242da11af1652411b}
+      \strng{authornamehash}{f9d66fe70444c0c242da11af1652411b}
+      \strng{authorfullhash}{20fc55cbb189636fd680f26edc3c7a8f}
+      \strng{authorfullhashraw}{20fc55cbb189636fd680f26edc3c7a8f}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{09609822}
+      \field{journaltitle}{Current Biology}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{10}
+      \field{shortjournal}{Current Biology}
+      \field{title}{The Importance and Benefits of Species}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{25}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{R431\bibrangedash R438}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1016/j.cub.2015.03.041
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\PNZFJY5I\\Gascon et al. - 2015 - The Importance and Benefits of Species.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0960982215003942
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0960982215003942
+      \endverb
+    \endentry
+    \entry{grinnell_1904}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e21baf6663b52da5637a0740b4934fb4}{%
+           family={Grinnell},
+           familyi={G\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e21baf6663b52da5637a0740b4934fb4}
+      \strng{fullhash}{e21baf6663b52da5637a0740b4934fb4}
+      \strng{fullhashraw}{e21baf6663b52da5637a0740b4934fb4}
+      \strng{bibnamehash}{e21baf6663b52da5637a0740b4934fb4}
+      \strng{authorbibnamehash}{e21baf6663b52da5637a0740b4934fb4}
+      \strng{authornamehash}{e21baf6663b52da5637a0740b4934fb4}
+      \strng{authorfullhash}{e21baf6663b52da5637a0740b4934fb4}
+      \strng{authorfullhashraw}{e21baf6663b52da5637a0740b4934fb4}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1938-4254}
+      \field{journaltitle}{The Auk}
+      \field{month}{7}
+      \field{note}{\_eprint: https://academic.oup.com/auk/article-pdf/21/3/364/28099947/auk0364.pdf}
+      \field{number}{3}
+      \field{title}{The Origin and Distribution of the Chestnut-Backed Chickadee}
+      \field{volume}{21}
+      \field{year}{1904}
+      \field{dateera}{ce}
+      \field{pages}{364\bibrangedash 382}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.2307/4070199
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.2307/4070199
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.2307/4070199
+      \endverb
+    \endentry
+    \entry{guisan2002}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=fd0180b461eae6ddbff6a39790e0bb5e}{%
+           family={Guisan},
+           familyi={G\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b3802df0095c6b0cb3bcdfc325e0d812}{%
+           family={Edwards},
+           familyi={E\bibinitperiod},
+           given={Thomas\bibnamedelima C},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=0cb8fe4210baa81c4b0e67913b4d2768}{%
+           family={Hastie},
+           familyi={H\bibinitperiod},
+           given={Trevor},
+           giveni={T\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{3760899077d4334b22f5e3c65ea11527}
+      \strng{fullhash}{3760899077d4334b22f5e3c65ea11527}
+      \strng{fullhashraw}{3760899077d4334b22f5e3c65ea11527}
+      \strng{bibnamehash}{3760899077d4334b22f5e3c65ea11527}
+      \strng{authorbibnamehash}{3760899077d4334b22f5e3c65ea11527}
+      \strng{authornamehash}{3760899077d4334b22f5e3c65ea11527}
+      \strng{authorfullhash}{3760899077d4334b22f5e3c65ea11527}
+      \strng{authorfullhashraw}{3760899077d4334b22f5e3c65ea11527}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{An important statistical development of the last 30 years has been the advance in regression analysis provided by generalized linear models ({GLMs}) and generalized additive models ({GAMs}). Here we introduce a series of papers prepared within the framework of an international workshop entitled: Advances in {GLMs} /{GAMs} modeling: from species distribution to environmental management , held in Riederalp, Switzerland, 6 /11 August 2001.We first discuss some general uses of statistical models in ecology, as well as provide a short review of several key examples of the use of {GLMs} and {GAMs} in ecological modeling efforts. We next present an overview of {GLMs} and {GAMs}, and discuss some of their related statistics used for predictor selection, model diagnostics, and evaluation. Included is a discussion of several new approaches applicable to {GLMs} and {GAMs}, such as ridge regression, an alternative to stepwise selection of predictors, and methods for the identification of interactions by a combined use of regression trees and several other approaches. We close with an overview of the papers and how we feel they advance our understanding of their application to ecological modeling.}
+      \field{issn}{03043800}
+      \field{journaltitle}{Ecological Modelling}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{2}
+      \field{shortjournal}{Ecological Modelling}
+      \field{shorttitle}{Generalized linear and generalized additive models in studies of species distributions}
+      \field{title}{Generalized linear and generalized additive models in studies of species distributions: setting the scene}
+      \field{urlday}{18}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{157}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{89\bibrangedash 100}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/S0304-3800(02)00204-1
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\2XEQMJ3W\\Guisan et al. - 2002 - Generalized linear and generalized additive models in studies of species distributions setting the.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0304380002002041
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0304380002002041
+      \endverb
+    \endentry
+    \entry{hastie1986}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=1,uniquepart=given,hash=6b87f9803ff7198a1b16f2e23ff4c5e8}{%
+           family={Hastie},
+           familyi={H\bibinitperiod},
+           given={T.\bibnamedelimi J.},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=644e738f30691dfc96d4d31511c70447}{%
+           family={Tibshirani},
+           familyi={T\bibinitperiod},
+           given={R.\bibnamedelimi J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c38252f7354eb2d75d67863797a2df5b}
+      \strng{fullhash}{c38252f7354eb2d75d67863797a2df5b}
+      \strng{fullhashraw}{c38252f7354eb2d75d67863797a2df5b}
+      \strng{bibnamehash}{c38252f7354eb2d75d67863797a2df5b}
+      \strng{authorbibnamehash}{c38252f7354eb2d75d67863797a2df5b}
+      \strng{authornamehash}{c38252f7354eb2d75d67863797a2df5b}
+      \strng{authorfullhash}{c38252f7354eb2d75d67863797a2df5b}
+      \strng{authorfullhashraw}{c38252f7354eb2d75d67863797a2df5b}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Statistical Science}
+      \field{title}{Generalized additive models}
+      \field{volume}{1}
+      \field{year}{1986}
+      \field{pages}{297\bibrangedash 318}
+      \range{pages}{22}
+    \endentry
+    \entry{IPBES2019spm}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ebb4b25ab16a0668ca3ba0ed014998d2}{%
+           family={{IPBES}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \true{moreeditor}
+      \name{editor}{5}{}{%
+        {{hash=6cb94a25855f9c1c45840a3e2d5988df}{%
+           family={Díaz},
+           familyi={D\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=abaf6e04762d9e623218d0c5a61b4b90}{%
+           family={Settele},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3986d311236904eb82728a639934d292}{%
+           family={Brondízio},
+           familyi={B\bibinitperiod},
+           given={E.\bibnamedelimi S.},
+           giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=fde99f519fa9357546ef7e9e705ae186}{%
+           family={Ngo},
+           familyi={N\bibinitperiod},
+           given={H.\bibnamedelimi T.},
+           giveni={H\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=9aa9d6ff8ef43053c0b3ee9a14276993}{%
+           family={Guèze},
+           familyi={G\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {IPBES secretariat}%
+      }
+      \list{location}{1}{%
+        {Bonn, Germany}%
+      }
+      \strng{namehash}{ebb4b25ab16a0668ca3ba0ed014998d2}
+      \strng{fullhash}{ebb4b25ab16a0668ca3ba0ed014998d2}
+      \strng{fullhashraw}{ebb4b25ab16a0668ca3ba0ed014998d2}
+      \strng{bibnamehash}{ebb4b25ab16a0668ca3ba0ed014998d2}
+      \strng{authorbibnamehash}{ebb4b25ab16a0668ca3ba0ed014998d2}
+      \strng{authornamehash}{ebb4b25ab16a0668ca3ba0ed014998d2}
+      \strng{authorfullhash}{ebb4b25ab16a0668ca3ba0ed014998d2}
+      \strng{authorfullhashraw}{ebb4b25ab16a0668ca3ba0ed014998d2}
+      \strng{editorbibnamehash}{479ab1edc9a5f68732e76f7c7f8d23dc}
+      \strng{editornamehash}{479ab1edc9a5f68732e76f7c7f8d23dc}
+      \strng{editorfullhash}{114f110f64650a48db68b8afacb6fcee}
+      \strng{editorfullhashraw}{114f110f64650a48db68b8afacb6fcee}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Summary for policymakers of the global assessment report on biodiversity and ecosystem services of the Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services}
+      \field{type}{techreport}
+      \field{year}{2019}
+    \endentry
+    \entry{IPCC2023}{incollection}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=676f7b9b8e5bb30500c01e2385e59174}{%
+           family={{IPCC}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=5b7ae85b03c5b187088b01846c0a6d48}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=de78d00bb2937ab040c7e2899b33d582}{%
+           family={Romero},
+           familyi={R\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Geneva, Switzerland}%
+      }
+      \list{publisher}{1}{%
+        {IPCC}%
+      }
+      \strng{namehash}{676f7b9b8e5bb30500c01e2385e59174}
+      \strng{fullhash}{676f7b9b8e5bb30500c01e2385e59174}
+      \strng{fullhashraw}{676f7b9b8e5bb30500c01e2385e59174}
+      \strng{bibnamehash}{676f7b9b8e5bb30500c01e2385e59174}
+      \strng{authorbibnamehash}{676f7b9b8e5bb30500c01e2385e59174}
+      \strng{authornamehash}{676f7b9b8e5bb30500c01e2385e59174}
+      \strng{authorfullhash}{676f7b9b8e5bb30500c01e2385e59174}
+      \strng{authorfullhashraw}{676f7b9b8e5bb30500c01e2385e59174}
+      \strng{editorbibnamehash}{18fd5c9e265c64c97ab552ef733b2ad9}
+      \strng{editornamehash}{18fd5c9e265c64c97ab552ef733b2ad9}
+      \strng{editorfullhash}{18fd5c9e265c64c97ab552ef733b2ad9}
+      \strng{editorfullhashraw}{18fd5c9e265c64c97ab552ef733b2ad9}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Climate Change 2023: Synthesis Report. Contribution of Working Groups I, II and III to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change}
+      \field{note}{Core Writing Team}
+      \field{title}{Summary for Policymakers}
+      \field{year}{2023}
+      \field{pages}{1\bibrangedash 34}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.59327/IPCC/AR6-9789291691647.001
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ipcc.ch/report/ar6/syr/
+      \endverb
+      \verb{url}
+      \verb https://www.ipcc.ch/report/ar6/syr/
+      \endverb
+    \endentry
+    \entry{kim2024}{article}{}{}
+      \name{author}{19}{}{%
+        {{un=0,uniquepart=base,hash=3b7f7f27fe627daeacdb6f5e841d677f}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={{HyeJin}},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a4b75d8c2afd6b527b85d7e9c1756c66}{%
+           family={Lazurko},
+           familyi={L\bibinitperiod},
+           given={Anita},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ce692bad1d83390600d26e9010b476fb}{%
+           family={Linney},
+           familyi={L\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9ac28d1d5178f4dc7652a2ff4ccb2a64}{%
+           family={Maskell},
+           familyi={M\bibinitperiod},
+           given={Lindsay},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5d24bb11a74ff1f75dd331d6a1324ee8}{%
+           family={Díaz-General},
+           familyi={D\bibinithyphendelim G\bibinitperiod},
+           given={Elizabeth},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0287af3f709df49858e302228237cee8}{%
+           family={Březovská},
+           familyi={B\bibinitperiod},
+           given={Romana\bibnamedelima Jungwirth},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8f6bb7775e2db7ca204fe1017186a822}{%
+           family={Keune},
+           familyi={K\bibinitperiod},
+           given={Hans},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4fabe261c09c75c6fe5228e3ec084282}{%
+           family={Laspidou},
+           familyi={L\bibinitperiod},
+           given={Chrysi},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd481aeaad6035b5846296399eab1081}{%
+           family={Malinen},
+           familyi={M\bibinitperiod},
+           given={Henna},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6ec1daea0ca42ed13160488a3234d11d}{%
+           family={Oinonen},
+           familyi={O\bibinitperiod},
+           given={Soile},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=66e147d55e6d08e8ad0683a2de2f880c}{%
+           family={Raymond},
+           familyi={R\bibinitperiod},
+           given={Joanna},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f3607e610fcb567854c0a44a4dbe9d56}{%
+           family={Rounsevell},
+           familyi={R\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=926817a20463b78e3f86b3c0d3818523}{%
+           family={Vaňo},
+           familyi={V\bibinitperiod},
+           given={Simeon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4fe170222f9161b734d73370b5718940}{%
+           family={Venâncio},
+           familyi={V\bibinitperiod},
+           given={Marina\bibnamedelima Demaria},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e91b9925bc032155c723475e48ae4d76}{%
+           family={Viesca-Ramirez},
+           familyi={V\bibinithyphendelim R\bibinitperiod},
+           given={Alejandrina},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=909b64c392d0244903f0addbeaa6ce3b}{%
+           family={Wijesekera},
+           familyi={W\bibinitperiod},
+           given={Ayesha},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1dc64cb3f93a8024b1c272b12fe1e1e6}{%
+           family={Wilson},
+           familyi={W\bibinitperiod},
+           given={Katie},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=300cf9978de502d9934e0f4537b5c4ea}{%
+           family={Ziliaskopoulos},
+           familyi={Z\bibinitperiod},
+           given={Konstantinos},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7b118d79c838911fa79c8018435be5ca}{%
+           family={Harrison},
+           familyi={H\bibinitperiod},
+           given={Paula\bibnamedelima A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3a8288d363ee134856f5aab1beb9f157}
+      \strng{fullhash}{bff9242cb1874c7e2489fdb6cf1349a5}
+      \strng{fullhashraw}{bff9242cb1874c7e2489fdb6cf1349a5}
+      \strng{bibnamehash}{3a8288d363ee134856f5aab1beb9f157}
+      \strng{authorbibnamehash}{3a8288d363ee134856f5aab1beb9f157}
+      \strng{authornamehash}{3a8288d363ee134856f5aab1beb9f157}
+      \strng{authorfullhash}{bff9242cb1874c7e2489fdb6cf1349a5}
+      \strng{authorfullhashraw}{bff9242cb1874c7e2489fdb6cf1349a5}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00489697}
+      \field{journaltitle}{Science of The Total Environment}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{shortjournal}{Science of The Total Environment}
+      \field{title}{Understanding the role of biodiversity in the climate, food, water, energy, transport and health nexus in Europe}
+      \field{urlday}{9}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{925}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{171692}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.scitotenv.2024.171692
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\ZZS3VTWK\\Kim et al. - 2024 - Understanding the role of biodiversity in the climate, food, water, energy, transport and health nex.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0048969724018345
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0048969724018345
+      \endverb
+    \endentry
+    \entry{nelder1972}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=97a60525676f2f0735b3bace8039e9af}{%
+           family={Nelder},
+           familyi={N\bibinitperiod},
+           given={J.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8ad2a145a372d89fe43afd0935910c82}{%
+           family={Wedderburn},
+           familyi={W\bibinitperiod},
+           given={R.\bibnamedelimi W.\bibnamedelimi M.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0b6d80561d42893f2f06e66779427e0b}
+      \strng{fullhash}{0b6d80561d42893f2f06e66779427e0b}
+      \strng{fullhashraw}{0b6d80561d42893f2f06e66779427e0b}
+      \strng{bibnamehash}{0b6d80561d42893f2f06e66779427e0b}
+      \strng{authorbibnamehash}{0b6d80561d42893f2f06e66779427e0b}
+      \strng{authornamehash}{0b6d80561d42893f2f06e66779427e0b}
+      \strng{authorfullhash}{0b6d80561d42893f2f06e66779427e0b}
+      \strng{authorfullhashraw}{0b6d80561d42893f2f06e66779427e0b}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the Royal Statistical Society. Series A (General)}
+      \field{number}{3}
+      \field{title}{Generalized Linear Models}
+      \field{volume}{135}
+      \field{year}{1972}
+      \field{pages}{370\bibrangedash 384}
+      \range{pages}{15}
+    \endentry
+    \entry{norberg2019}{article}{}{}
+      \name{author}{35}{}{%
+        {{un=0,uniquepart=base,hash=29b753f5bb4dabfeeab4cfd78a720554}{%
+           family={Norberg},
+           familyi={N\bibinitperiod},
+           given={Anna},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=19b0bad7b1d4a58379847b6a202a3af7}{%
+           family={Abrego},
+           familyi={A\bibinitperiod},
+           given={Nerea},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=23fcbbbed86591a4b854fe690b5f27e0}{%
+           family={Blanchet},
+           familyi={B\bibinitperiod},
+           given={F.\bibnamedelimi Guillaume},
+           giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=35ca9b5290b160983c445ab907d92a2b}{%
+           family={Adler},
+           familyi={A\bibinitperiod},
+           given={Frederick\bibnamedelima R.},
+           giveni={F\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=da7525f343d8f2f890d8832797ed0ebc}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={Barbara\bibnamedelima J.},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9271cf7245befacdd2072409171c50ae}{%
+           family={Anttila},
+           familyi={A\bibinitperiod},
+           given={Jani},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=72cdc90eaae746fb2fb0c53839072424}{%
+           family={Araújo},
+           familyi={A\bibinitperiod},
+           given={Miguel\bibnamedelima B.},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9775508b96b0887d4938f499ae400c3b}{%
+           family={Dallas},
+           familyi={D\bibinitperiod},
+           given={Tad},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d1f0fc81dc0af9d488d71669115fff82}{%
+           family={Dunson},
+           familyi={D\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=22e158108d166fcb5d64aab03da6300f}{%
+           family={Elith},
+           familyi={E\bibinitperiod},
+           given={Jane},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3629c2cfd1f5fa47220543b3c6bac744}{%
+           family={Foster},
+           familyi={F\bibinitperiod},
+           given={Scott\bibnamedelima D.},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0b4eeee63b9321f4e06612c1eb37b2c7}{%
+           family={Fox},
+           familyi={F\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c15b291550ec5d8aa5847c1fa663a6f}{%
+           family={Franklin},
+           familyi={F\bibinitperiod},
+           given={Janet},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=35b1ad050939488e0593bb1317181ab7}{%
+           family={Godsoe},
+           familyi={G\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd0180b461eae6ddbff6a39790e0bb5e}{%
+           family={Guisan},
+           familyi={G\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be8d3436c56d25937794824512951560}{%
+           family={O'Hara},
+           familyi={O\bibinitperiod},
+           given={Bob},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0290f35964662b52c86c621a6b0d0be9}{%
+           family={Hill},
+           familyi={H\bibinitperiod},
+           given={Nicole\bibnamedelima A.},
+           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8161432e4dd02df26aeb5dc87033dedd}{%
+           family={Holt},
+           familyi={H\bibinitperiod},
+           given={Robert\bibnamedelima D.},
+           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a0b724d9facb9f4d23f352c9a254871d}{%
+           family={Hui},
+           familyi={H\bibinitperiod},
+           given={Francis\bibnamedelimb K.\bibnamedelimi C.},
+           giveni={F\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fdb22cf6cf3fc20b8559d4895f3ae971}{%
+           family={Husby},
+           familyi={H\bibinitperiod},
+           given={Magne},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=92214ed6d54e9b40a258dd45a264ca8f}{%
+           family={Kålås},
+           familyi={K\bibinitperiod},
+           given={John\bibnamedelima Atle},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=22ac7570da6474221ef94270c9f919a8}{%
+           family={Lehikoinen},
+           familyi={L\bibinitperiod},
+           given={Aleksi},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1111a28e7f91200bb696e89aa5694662}{%
+           family={Luoto},
+           familyi={L\bibinitperiod},
+           given={Miska},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ba8e88777a78febbde0ed3e49b80504c}{%
+           family={Mod},
+           familyi={M\bibinitperiod},
+           given={Heidi\bibnamedelima K.},
+           giveni={H\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c0811c8f6c73468e6b3863d33de4ae99}{%
+           family={Newell},
+           familyi={N\bibinitperiod},
+           given={Graeme},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1f51f15bf65506b6275ab72cb688a9b6}{%
+           family={Renner},
+           familyi={R\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6dc34fe2b67d5179df9ba97945318bec}{%
+           family={Roslin},
+           familyi={R\bibinitperiod},
+           given={Tomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2461f280e7c13e41e53f86573d95339b}{%
+           family={Soininen},
+           familyi={S\bibinitperiod},
+           given={Janne},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8420a71ed1be07777ddccc3254bee18}{%
+           family={Thuiller},
+           familyi={T\bibinitperiod},
+           given={Wilfried},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=293cf31b150346d2b29e950c583b8543}{%
+           family={Vanhatalo},
+           familyi={V\bibinitperiod},
+           given={Jarno},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=15af070932e77903d2cd1a96ec01d9fa}{%
+           family={Warton},
+           familyi={W\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f881e1bcfcca0fb7c54fd7a04db4d91a}{%
+           family={White},
+           familyi={W\bibinitperiod},
+           given={Matt},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=81daf64e46b81abb6f841138d926146f}{%
+           family={Zimmermann},
+           familyi={Z\bibinitperiod},
+           given={Niklaus\bibnamedelima E.},
+           giveni={N\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=63bf0d8e60941c7bd0526fb3208072b5}{%
+           family={Gravel},
+           familyi={G\bibinitperiod},
+           given={Dominique},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=78a9b7979418806f5c8b3325018feef9}{%
+           family={Ovaskainen},
+           familyi={O\bibinitperiod},
+           given={Otso},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6dbcc33e71bcfbf232a7c5ad67624752}
+      \strng{fullhash}{284a7ee806d118b96343c38dc1894244}
+      \strng{fullhashraw}{284a7ee806d118b96343c38dc1894244}
+      \strng{bibnamehash}{6dbcc33e71bcfbf232a7c5ad67624752}
+      \strng{authorbibnamehash}{6dbcc33e71bcfbf232a7c5ad67624752}
+      \strng{authornamehash}{6dbcc33e71bcfbf232a7c5ad67624752}
+      \strng{authorfullhash}{284a7ee806d118b96343c38dc1894244}
+      \strng{authorfullhashraw}{284a7ee806d118b96343c38dc1894244}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0012-9615, 1557-7015}
+      \field{journaltitle}{Ecological Monographs}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{3}
+      \field{shortjournal}{Ecological Monographs}
+      \field{title}{A comprehensive evaluation of predictive performance of 33 species distribution models at species and community levels}
+      \field{urlday}{8}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{89}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{e01370}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1002/ecm.1370
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\WWVSQRCN\\Norberg et al. - 2019 - A comprehensive evaluation of predictive performance of 33 species distribution models at species an.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecm.1370
+      \endverb
+      \verb{url}
+      \verb https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecm.1370
+      \endverb
+    \endentry
+    \entry{ozkan_tumer_two_2026}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=c9639f6c2b49ed365cd345e678028e80}{%
+           family={Özkan\bibnamedelima Tümer},
+           familyi={Ö\bibinitperiod\bibinitdelim T\bibinitperiod},
+           given={Yasemin},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40b37e3b243be3cafc799a1c1e200c49}{%
+           family={Caglayan},
+           familyi={C\bibinitperiod},
+           given={İnci},
+           giveni={İ\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ec3e7fe5119f1f51d08270f30f54a546}{%
+           family={Yeşi̇L},
+           familyi={Y\bibinitperiod},
+           given={Ahmet},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c69615ad04134325239e0582fc13041}{%
+           family={Iverson},
+           familyi={I\bibinitperiod},
+           given={Louis},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6b21e2972f4d177975da678df9637556}
+      \strng{fullhash}{422fa59e75d9452831f7564a6dc8ecbc}
+      \strng{fullhashraw}{422fa59e75d9452831f7564a6dc8ecbc}
+      \strng{bibnamehash}{6b21e2972f4d177975da678df9637556}
+      \strng{authorbibnamehash}{6b21e2972f4d177975da678df9637556}
+      \strng{authornamehash}{6b21e2972f4d177975da678df9637556}
+      \strng{authorfullhash}{422fa59e75d9452831f7564a6dc8ecbc}
+      \strng{authorfullhashraw}{422fa59e75d9452831f7564a6dc8ecbc}
+      \field{sortinit}{Ö}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This systematic review presents a comprehensive synthesis of species distribution modeling ({SDM}) applied to forest ecosystems in the context of climate change. Our analysis covered 50 papers each from four consecutive five-year periods dating from 2003 to 2022. We thus assessed 200 articles from the Web of Science database and meticulously categorized them according to 16 categories to discern patterns and developments in {SDM} research. The classification scheme included key factors such as continent of study, number of species modeled, grain size, type of species data, and the range of analytical and statistical models utilized.}
+      \field{issn}{03043800}
+      \field{journaltitle}{Ecological Modelling}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{shortjournal}{Ecological Modelling}
+      \field{shorttitle}{Two decades of species distribution modeling}
+      \field{title}{Two decades of species distribution modeling: A systematic review of methods and applications}
+      \field{urlday}{17}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{513}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{111441}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.ecolmodel.2025.111441
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\Q5I8V8HY\\Özkan Tümer et al. - 2026 - Two decades of species distribution modeling A systematic review of methods and applications.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0304380025004272
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0304380025004272
+      \endverb
+    \endentry
+    \entry{pimm2014}{article}{}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=baa366cdc9d7815252cfd51964f1be56}{%
+           family={Pimm},
+           familyi={P\bibinitperiod},
+           given={S.\bibnamedelimi L.},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b358c50018b5bab355f12c90d5492791}{%
+           family={Jenkins},
+           familyi={J\bibinitperiod},
+           given={C.\bibnamedelimi N.},
+           giveni={C\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=24e03eec65046c384f9ca41d984f8ac8}{%
+           family={Abell},
+           familyi={A\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f4a93d90512d3cfa38b6a8a3fa49eb4d}{%
+           family={Brooks},
+           familyi={B\bibinitperiod},
+           given={T.\bibnamedelimi M.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=817fa4c203425ce66a192150be580532}{%
+           family={Gittleman},
+           familyi={G\bibinitperiod},
+           given={J.\bibnamedelimi L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=93cd13b0b39d29127624209b22710bee}{%
+           family={Joppa},
+           familyi={J\bibinitperiod},
+           given={L.\bibnamedelimi N.},
+           giveni={L\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=905584229dac4c8b3893be4e4922aa1b}{%
+           family={Raven},
+           familyi={R\bibinitperiod},
+           given={P.\bibnamedelimi H.},
+           giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8fa342105c6a2f4f412650645f72591d}{%
+           family={Roberts},
+           familyi={R\bibinitperiod},
+           given={C.\bibnamedelimi M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=adcebcaafceb60d96191d1d0f0858e05}{%
+           family={Sexton},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi O.},
+           giveni={J\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{11e0a09951975107b6a7627f0dd4ca7b}
+      \strng{fullhash}{f6db90532ff0134495b704d51cb0f2e3}
+      \strng{fullhashraw}{f6db90532ff0134495b704d51cb0f2e3}
+      \strng{bibnamehash}{11e0a09951975107b6a7627f0dd4ca7b}
+      \strng{authorbibnamehash}{11e0a09951975107b6a7627f0dd4ca7b}
+      \strng{authornamehash}{11e0a09951975107b6a7627f0dd4ca7b}
+      \strng{authorfullhash}{f6db90532ff0134495b704d51cb0f2e3}
+      \strng{authorfullhashraw}{f6db90532ff0134495b704d51cb0f2e3}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{30}
+      \field{issn}{0036-8075, 1095-9203}
+      \field{journaltitle}{Science}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{6187}
+      \field{shortjournal}{Science}
+      \field{title}{The biodiversity of species and their rates of extinction, distribution, and protection}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{344}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1246752}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1126/science.1246752
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\GBG52FSJ\\Pimm et al. - 2014 - The biodiversity of species and their rates of extinction, distribution, and protection.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.science.org/doi/10.1126/science.1246752
+      \endverb
+      \verb{url}
+      \verb https://www.science.org/doi/10.1126/science.1246752
+      \endverb
+    \endentry
+    \entry{sinclair2010}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=7c355911f6eb0e251a71685241c9cdb5}{%
+           family={Sinclair},
+           familyi={S\bibinitperiod},
+           given={Steve\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=19d318615f6be26d03a893e576c281da}{%
+           family={White},
+           familyi={W\bibinitperiod},
+           given={Matthew\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2fefef26d28f8e067c6472367ba1b914}{%
+           family={Newell},
+           familyi={N\bibinitperiod},
+           given={Graeme\bibnamedelima R.},
+           giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{129ee346abc2f6ab65b03f943553ce80}
+      \strng{fullhash}{129ee346abc2f6ab65b03f943553ce80}
+      \strng{fullhashraw}{129ee346abc2f6ab65b03f943553ce80}
+      \strng{bibnamehash}{129ee346abc2f6ab65b03f943553ce80}
+      \strng{authorbibnamehash}{129ee346abc2f6ab65b03f943553ce80}
+      \strng{authornamehash}{129ee346abc2f6ab65b03f943553ce80}
+      \strng{authorfullhash}{129ee346abc2f6ab65b03f943553ce80}
+      \strng{authorfullhashraw}{129ee346abc2f6ab65b03f943553ce80}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Climate change presents unprecedented challenges for biological conservation. Agencies are increasingly looking to modeled projections of species’ distributions under future climates to inform management strategies. As government scientists with a responsibility to communicate the best available science to our policy colleagues, we question whether current modeling approaches and outputs are practically useful. Here, we synthesize conceptual problems with species distribution models ({SDMs}) associated with interspecific interactions, dispersal, ecological equilibria and time lags, evolution, and the sampling of niche space. Although projected {SDMs} have undoubtedly been critical in alerting us to the magnitude of climate change impacts, we conclude that until they offer insights that are more precise than what we can derive from basic ecological theory, we question their utility in deciding how to allocate scarce funds to large-scale conservation projects.}
+      \field{issn}{1708-3087}
+      \field{journaltitle}{Ecology and Society}
+      \field{langid}{english}
+      \field{number}{1}
+      \field{shortjournal}{E\&S}
+      \field{title}{How Useful Are Species Distribution Models for Managing Biodiversity under Future Climates?}
+      \field{urlday}{18}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{15}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{art8}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.5751/ES-03089-150108
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\EWLJP7B9\\Sinclair et al. - 2010 - How Useful Are Species Distribution Models for Managing Biodiversity under Future Climates.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.ecologyandsociety.org/vol15/iss1/art8/
+      \endverb
+      \verb{url}
+      \verb http://www.ecologyandsociety.org/vol15/iss1/art8/
+      \endverb
+    \endentry
+    \entry{Stork2009}{incollection}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d322cae06d8d9d026fd4da9b6f6ff621}{%
+           family={Stork},
+           familyi={S\bibinitperiod},
+           given={Nigel\bibnamedelima E.},
+           giveni={N\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=dcab704ba4fd2f347c6c07d1ebcbe94f}{%
+           family={Resh},
+           familyi={R\bibinitperiod},
+           given={Vincent\bibnamedelima H.},
+           giveni={V\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=755712bad14140e23e6fc89a1110fc54}{%
+           family={Cardé},
+           familyi={C\bibinitperiod},
+           given={Ring\bibnamedelima T.},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {San Diego}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{d322cae06d8d9d026fd4da9b6f6ff621}
+      \strng{fullhash}{d322cae06d8d9d026fd4da9b6f6ff621}
+      \strng{fullhashraw}{d322cae06d8d9d026fd4da9b6f6ff621}
+      \strng{bibnamehash}{d322cae06d8d9d026fd4da9b6f6ff621}
+      \strng{authorbibnamehash}{d322cae06d8d9d026fd4da9b6f6ff621}
+      \strng{authornamehash}{d322cae06d8d9d026fd4da9b6f6ff621}
+      \strng{authorfullhash}{d322cae06d8d9d026fd4da9b6f6ff621}
+      \strng{authorfullhashraw}{d322cae06d8d9d026fd4da9b6f6ff621}
+      \strng{editorbibnamehash}{e08faadaad77f840174b32122b0bebe8}
+      \strng{editornamehash}{e08faadaad77f840174b32122b0bebe8}
+      \strng{editorfullhash}{e08faadaad77f840174b32122b0bebe8}
+      \strng{editorfullhashraw}{e08faadaad77f840174b32122b0bebe8}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Encyclopedia of Insects}
+      \field{edition}{2nd}
+      \field{isbn}{978-0-12-374144-8}
+      \field{title}{Biodiversity}
+      \field{year}{2009}
+      \field{pages}{75\bibrangedash 80}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1016/B978-0-12-374144-8.00021-7
+      \endverb
+    \endentry
+    \entry{valavi2022}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=de88e7b26e4a4895400e91841c5d95f3}{%
+           family={Valavi},
+           familyi={V\bibinitperiod},
+           given={Roozbeh},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1be521637e6e94ce392c01b724a267fd}{%
+           family={Guillera‐Arroita},
+           familyi={G\bibinithyphendelim A\bibinitperiod},
+           given={Gurutzeta},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8f1b080ca585ae64eba004b2ba3d0053}{%
+           family={Lahoz‐Monfort},
+           familyi={L\bibinithyphendelim M\bibinitperiod},
+           given={José\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=22e158108d166fcb5d64aab03da6300f}{%
+           family={Elith},
+           familyi={E\bibinitperiod},
+           given={Jane},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7595620bb319f73acc42d409bc2102b4}
+      \strng{fullhash}{4ada6e7ff7f31df11069cd602f9f0613}
+      \strng{fullhashraw}{4ada6e7ff7f31df11069cd602f9f0613}
+      \strng{bibnamehash}{7595620bb319f73acc42d409bc2102b4}
+      \strng{authorbibnamehash}{7595620bb319f73acc42d409bc2102b4}
+      \strng{authornamehash}{7595620bb319f73acc42d409bc2102b4}
+      \strng{authorfullhash}{4ada6e7ff7f31df11069cd602f9f0613}
+      \strng{authorfullhashraw}{4ada6e7ff7f31df11069cd602f9f0613}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{0012-9615, 1557-7015}
+      \field{journaltitle}{Ecological Monographs}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{1}
+      \field{shortjournal}{Ecological Monographs}
+      \field{shorttitle}{Predictive performance of presence‐only species distribution models}
+      \field{title}{Predictive performance of presence‐only species distribution models: a benchmark study with reproducible code}
+      \field{urlday}{9}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{92}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{e01486}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1002/ecm.1486
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\829SLMFK\\Valavi et al. - 2022 - Predictive performance of presence‐only species distribution models a benchmark study with reproduc.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecm.1486
+      \endverb
+      \verb{url}
+      \verb https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecm.1486
+      \endverb
+    \endentry
+    \entry{waldock2022}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=5921ff692d69627f362726ea4e78f1da}{%
+           family={Waldock},
+           familyi={W\bibinitperiod},
+           given={Conor},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48a7bacae9cb5e303fe94072278c1c5d}{%
+           family={Stuart‐Smith},
+           familyi={S\bibinithyphendelim S\bibinitperiod},
+           given={Rick\bibnamedelima D.},
+           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6f228c11a68666b608635ea4f2900df5}{%
+           family={Albouy},
+           familyi={A\bibinitperiod},
+           given={Camille},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5f28e782f752606caa13299de03b1016}{%
+           family={Cheung},
+           familyi={C\bibinitperiod},
+           given={William\bibnamedelimb W.\bibnamedelimi L.},
+           giveni={W\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c0b8d7d8038010a984e920c412441879}{%
+           family={Edgar},
+           familyi={E\bibinitperiod},
+           given={Graham\bibnamedelima J.},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=96b10b375fa4bb1d3b00810e90e08f2e}{%
+           family={Mouillot},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b6c1fd492ccb038e4fbf53210e9de73c}{%
+           family={Tjiputra},
+           familyi={T\bibinitperiod},
+           given={Jerry},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=60c970b9060d198aea6732a81a1c1b2e}{%
+           family={Pellissier},
+           familyi={P\bibinitperiod},
+           given={Loïc},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{7a9bc38ad49e864a5104292955d2d62c}
+      \strng{fullhash}{27f13352d859c564b6b00eb6b0e7dfab}
+      \strng{fullhashraw}{27f13352d859c564b6b00eb6b0e7dfab}
+      \strng{bibnamehash}{7a9bc38ad49e864a5104292955d2d62c}
+      \strng{authorbibnamehash}{7a9bc38ad49e864a5104292955d2d62c}
+      \strng{authornamehash}{7a9bc38ad49e864a5104292955d2d62c}
+      \strng{authorfullhash}{27f13352d859c564b6b00eb6b0e7dfab}
+      \strng{authorfullhashraw}{27f13352d859c564b6b00eb6b0e7dfab}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The contributions of species to ecosystem functions or services depend not only on their presence but also on their local abundance. Progress in predictive spatial modelling has largely focused on species occurrence rather than abundance. As such, limited guidance exists on the most reliable methods to explain and predict spatial variation in abundance. We analysed the performance of 68 abundance‐based species distribution models fitted to 800 000 standardised abundance records for more than 800 terrestrial bird and reef fish species. We found a large amount of variation in the performance of abundance‐based models. While many models performed poorly, a subset of models consistently reconstructed range‐wide abundance patterns. The best predictions were obtained using random forests for frequently encountered and abundant species and for predictions within the same environmental domain as model calibration. Extending predictions of species abundance outside of the environmental conditions used in model training generated poor predictions. Thus, interpolation of abundances between observations can help improve understanding of spatial abundance patterns, but our results indicate extrapolated predictions of abundance under changing climate have a much greater uncertainty. Our synthesis provides a road map for modelling abundance patterns, a key property of species distributions that underpins theoretical and applied questions in ecology and conservation.}
+      \field{issn}{0906-7590, 1600-0587}
+      \field{journaltitle}{Ecography}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{A quantitative review of abundance‐based species distribution models}
+      \field{urlday}{16}
+      \field{urlmonth}{7}
+      \field{urlyear}{2025}
+      \field{volume}{2022}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1111/ecog.05694
+      \endverb
+      \verb{file}
+      \verb Full Text:C\:\\Users\\caleb\\Zotero\\storage\\JYVMNZ92\\Waldock et al. - 2022 - A quantitative review of abundance‐based species distribution models.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/ecog.05694
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/ecog.05694
+      \endverb
+    \endentry
+    \entry{waltari2014}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=6dec8c97647daac9a41f2315cb70ef94}{%
+           family={Waltari},
+           familyi={W\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=04f8bf657a78f6b038d8593bf62b1e80}{%
+           family={Schroeder},
+           familyi={S\bibinitperiod},
+           given={Ronny},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=796dcfbc757367f7f1fe6bd8af850857}{%
+           family={{McDonald}},
+           familyi={M\bibinitperiod},
+           given={Kyle},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f56a887a8e4dc3281cc541c22efe67f0}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={Robert\bibnamedelima P.},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=17997967bb0d84bab6e4374c83939bc9}{%
+           family={Carnaval},
+           familyi={C\bibinitperiod},
+           given={Ana},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=247de062554f2f4ee9832da40f7027b9}{%
+           family={Freckleton},
+           familyi={F\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{b57f2e834d18e492d6785ef211508a54}
+      \strng{fullhash}{e1cb3d6c5f084da04856ee182103ffaf}
+      \strng{fullhashraw}{e1cb3d6c5f084da04856ee182103ffaf}
+      \strng{bibnamehash}{b57f2e834d18e492d6785ef211508a54}
+      \strng{authorbibnamehash}{b57f2e834d18e492d6785ef211508a54}
+      \strng{authornamehash}{b57f2e834d18e492d6785ef211508a54}
+      \strng{authorfullhash}{e1cb3d6c5f084da04856ee182103ffaf}
+      \strng{authorfullhashraw}{e1cb3d6c5f084da04856ee182103ffaf}
+      \strng{editorbibnamehash}{247de062554f2f4ee9832da40f7027b9}
+      \strng{editornamehash}{247de062554f2f4ee9832da40f7027b9}
+      \strng{editorfullhash}{247de062554f2f4ee9832da40f7027b9}
+      \strng{editorfullhashraw}{247de062554f2f4ee9832da40f7027b9}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{2041-210X, 2041-210X}
+      \field{journaltitle}{Methods in Ecology and Evolution}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{10}
+      \field{shortjournal}{Methods Ecol Evol}
+      \field{shorttitle}{Bioclimatic variables derived from remote sensing}
+      \field{title}{Bioclimatic variables derived from remote sensing: assessment and application for species distribution modelling}
+      \field{urlday}{19}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{5}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1033\bibrangedash 1042}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1111/2041-210X.12264
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\PJIN2QF7\\Waltari et al. - 2014 - Bioclimatic variables derived from remote sensing assessment and application for species distributi.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.12264
+      \endverb
+      \verb{url}
+      \verb https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.12264
+      \endverb
+    \endentry
+    \entry{watson2016}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=8530b68cdac8fb368310f60d286f2a89}{%
+           family={Watson},
+           familyi={W\bibinitperiod},
+           given={James\bibnamedelima E.M.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=00962bcb82678f6ae1fd79bf8ddb6293}{%
+           family={Shanahan},
+           familyi={S\bibinitperiod},
+           given={Danielle\bibnamedelima F.},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=57ccb9cb2602e2ef379723b41cd3cf33}{%
+           family={Di\bibnamedelima Marco},
+           familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Moreno},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2c6b824b86026680c8aa76f03c0b4056}{%
+           family={Allan},
+           familyi={A\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=00f39eac2b0bd8e4b1c66ba94eaa5930}{%
+           family={Laurance},
+           familyi={L\bibinitperiod},
+           given={William\bibnamedelima F.},
+           giveni={W\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=52bd37850722f15b4ae7422c5e9b4df3}{%
+           family={Sanderson},
+           familyi={S\bibinitperiod},
+           given={Eric\bibnamedelima W.},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b7a76adea372e95eb9011547ac6d58c2}{%
+           family={Mackey},
+           familyi={M\bibinitperiod},
+           given={Brendan},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6bcd49fecc29d279a8d71287da771bfc}{%
+           family={Venter},
+           familyi={V\bibinitperiod},
+           given={Oscar},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cc402019cd9db26e4552fcbd385191b1}
+      \strng{fullhash}{8d738c9113397a21b40e8a533a402e05}
+      \strng{fullhashraw}{8d738c9113397a21b40e8a533a402e05}
+      \strng{bibnamehash}{cc402019cd9db26e4552fcbd385191b1}
+      \strng{authorbibnamehash}{cc402019cd9db26e4552fcbd385191b1}
+      \strng{authornamehash}{cc402019cd9db26e4552fcbd385191b1}
+      \strng{authorfullhash}{8d738c9113397a21b40e8a533a402e05}
+      \strng{authorfullhashraw}{8d738c9113397a21b40e8a533a402e05}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Humans have altered terrestrial ecosystems for millennia [1], yet wilderness areas still remain as vital refugia where natural ecological and evolutionary processes operate with minimal human disturbance [2–4], underpinning key regional- and planetary-scale functions [5, 6]. Despite the myriad values of wilderness areas—as critical strongholds for endangered biodiversity [7], for carbon storage and sequestration [8], for buffering and regulating local climates [9], and for supporting many of the world’s most politically and economically marginalized communities [10]—they are almost entirely ignored in multilateral environmental agreements. This is because they are assumed to be relatively free from threatening processes and therefore are not a priority for conservation efforts [11, 12]. Here we challenge this assertion using new comparable maps of global wilderness following methods established in the original ‘‘last of the wild’’ analysis [13] to examine the change in extent since the early 1990s. We demonstrate alarming losses comprising one-tenth (3.3 million km2) of global wilderness areas over the last two decades, particularly in the Amazon (30\%) and central Africa (14\%). We assess increases in the protection of wilderness over the same time frame and show that these efforts are failing to keep pace with the rate of wilderness loss, which is nearly double the rate of protection. Our ﬁndings underscore an immediate need for international policies to recognize the vital values of wilderness and the unprecedented threats they face and to underscore urgent large-scale, multifaceted actions needed to maintain them.}
+      \field{issn}{09609822}
+      \field{journaltitle}{Current Biology}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{21}
+      \field{shortjournal}{Current Biology}
+      \field{title}{Catastrophic Declines in Wilderness Areas Undermine Global Environment Targets}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{26}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2929\bibrangedash 2934}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1016/j.cub.2016.08.049
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\4NRVHTGW\\Watson et al. - 2016 - Catastrophic Declines in Wilderness Areas Undermine Global Environment Targets.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0960982216309939
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0960982216309939
+      \endverb
+    \endentry
+    \entry{zeng2022}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=569ba66fd238298937271c38a88133d0}{%
+           family={Zeng},
+           familyi={Z\bibinitperiod},
+           given={Yiwen},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fa2ef6713b364f0e6c1e371f51174388}{%
+           family={Koh},
+           familyi={K\bibinitperiod},
+           given={Lian\bibnamedelima Pin},
+           giveni={L\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9096cc92466164c245a1c9c60b689478}{%
+           family={Wilcove},
+           familyi={W\bibinitperiod},
+           given={David\bibnamedelima S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b0e92d0e44cf7c9fcbcb5cbf61eaa4bd}
+      \strng{fullhash}{b0e92d0e44cf7c9fcbcb5cbf61eaa4bd}
+      \strng{fullhashraw}{b0e92d0e44cf7c9fcbcb5cbf61eaa4bd}
+      \strng{bibnamehash}{b0e92d0e44cf7c9fcbcb5cbf61eaa4bd}
+      \strng{authorbibnamehash}{b0e92d0e44cf7c9fcbcb5cbf61eaa4bd}
+      \strng{authornamehash}{b0e92d0e44cf7c9fcbcb5cbf61eaa4bd}
+      \strng{authorfullhash}{b0e92d0e44cf7c9fcbcb5cbf61eaa4bd}
+      \strng{authorfullhashraw}{b0e92d0e44cf7c9fcbcb5cbf61eaa4bd}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{3}
+      \field{issn}{2375-2548}
+      \field{journaltitle}{Science Advances}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{22}
+      \field{shortjournal}{Sci. Adv.}
+      \field{title}{Gains in biodiversity conservation and ecosystem services from the expansion of the planet’s protected areas}
+      \field{urlday}{17}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{8}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{eabl9885}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1126/sciadv.abl9885
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\G8C9I5XL\\Zeng et al. - 2022 - Gains in biodiversity conservation and ecosystem services from the expansion of the planet’s protect.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.science.org/doi/10.1126/sciadv.abl9885
+      \endverb
+      \verb{url}
+      \verb https://www.science.org/doi/10.1126/sciadv.abl9885
+      \endverb
+    \endentry
+  \enddatalist
+  \missing{GDMGuide}
+  \missing{GobalmodelsplantdiversityMLtechniques}
+  \missing{MacroecologicalModelsVsSSDMs}
+  \missing{SDMRarelypredictrealpopulations}
+  \missing{spatialmodellingofbiodiversityCLM}
+\endrefsection
+\endinput
+
