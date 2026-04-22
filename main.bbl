@@ -2197,6 +2197,89 @@
       \verb https://www.science.org/doi/10.1126/science.1246752
       \endverb
     \endentry
+    \entry{pollock2020}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=ca0c4f8b854d8e65b93eb506a5399056}{%
+           family={Pollock},
+           familyi={P\bibinitperiod},
+           given={Laura\bibnamedelima J.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cf0ec78c823a759fc1cf4ca5f09a0715}{%
+           family={O’Connor},
+           familyi={O\bibinitperiod},
+           given={Louise\bibnamedelima M.J.},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=37fc8915dcd7e38cf41f811b87cdf9aa}{%
+           family={Mokany},
+           familyi={M\bibinitperiod},
+           given={Karel},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4f86a295a4b7954f4afc22c04a2dacd0}{%
+           family={Rosauer},
+           familyi={R\bibinitperiod},
+           given={Dan\bibnamedelima F.},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5cec010ddb97a2effcd25d69bd8fd9d3}{%
+           family={Talluto},
+           familyi={T\bibinitperiod},
+           given={Lauren},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8420a71ed1be07777ddccc3254bee18}{%
+           family={Thuiller},
+           familyi={T\bibinitperiod},
+           given={Wilfried},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a8ab94a5887d8ba8300f172d69b4f564}
+      \strng{fullhash}{83188e0fa7c3ec655b43aa8e183c0f56}
+      \strng{fullhashraw}{83188e0fa7c3ec655b43aa8e183c0f56}
+      \strng{bibnamehash}{a8ab94a5887d8ba8300f172d69b4f564}
+      \strng{authorbibnamehash}{a8ab94a5887d8ba8300f172d69b4f564}
+      \strng{authornamehash}{a8ab94a5887d8ba8300f172d69b4f564}
+      \strng{authorfullhash}{83188e0fa7c3ec655b43aa8e183c0f56}
+      \strng{authorfullhashraw}{83188e0fa7c3ec655b43aa8e183c0f56}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{01695347}
+      \field{journaltitle}{Trends in Ecology \& Evolution}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{12}
+      \field{shortjournal}{Trends in Ecology \& Evolution}
+      \field{shorttitle}{Protecting Biodiversity (in All Its Complexity)}
+      \field{title}{Protecting Biodiversity (in All Its Complexity): New Models and Methods}
+      \field{urlday}{8}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{35}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1119\bibrangedash 1128}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.tree.2020.08.015
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\FUEYYYNU\\Pollock et al. - 2020 - Protecting Biodiversity (in All Its Complexity) New Models and Methods.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0169534720302305
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0169534720302305
+      \endverb
+    \endentry
     \entry{sinclair2010}{article}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=7c355911f6eb0e251a71685241c9cdb5}{%
@@ -2571,6 +2654,95 @@
       \verb https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.12264
       \endverb
     \endentry
+    \entry{warton2015}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=1ba59c28f90db059d902fa5b3248b41c}{%
+           family={Warton},
+           familyi={W\bibinitperiod},
+           given={David\bibnamedelima I.},
+           giveni={D\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=23fcbbbed86591a4b854fe690b5f27e0}{%
+           family={Blanchet},
+           familyi={B\bibinitperiod},
+           given={F.\bibnamedelimi Guillaume},
+           giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=faff0088b8c4231a37439e3033b35b6b}{%
+           family={O’Hara},
+           familyi={O\bibinitperiod},
+           given={Robert\bibnamedelima B.},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=78a9b7979418806f5c8b3325018feef9}{%
+           family={Ovaskainen},
+           familyi={O\bibinitperiod},
+           given={Otso},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8e4c75e69e02d0c7c78277a52e295e8}{%
+           family={Taskinen},
+           familyi={T\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aa87d5ce19f55535d885ea50f6a3ec04}{%
+           family={Walker},
+           familyi={W\bibinitperiod},
+           given={Steven\bibnamedelima C.},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a0b724d9facb9f4d23f352c9a254871d}{%
+           family={Hui},
+           familyi={H\bibinitperiod},
+           given={Francis\bibnamedelima K.C.},
+           giveni={F\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9594bad99a1e4dbb2695f005689a8bfa}
+      \strng{fullhash}{55012a0e298720ebbe164a337ea1a912}
+      \strng{fullhashraw}{55012a0e298720ebbe164a337ea1a912}
+      \strng{bibnamehash}{9594bad99a1e4dbb2695f005689a8bfa}
+      \strng{authorbibnamehash}{9594bad99a1e4dbb2695f005689a8bfa}
+      \strng{authornamehash}{9594bad99a1e4dbb2695f005689a8bfa}
+      \strng{authorfullhash}{55012a0e298720ebbe164a337ea1a912}
+      \strng{authorfullhashraw}{55012a0e298720ebbe164a337ea1a912}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{01695347}
+      \field{journaltitle}{Trends in Ecology \& Evolution}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{12}
+      \field{shortjournal}{Trends in Ecology \& Evolution}
+      \field{shorttitle}{So Many Variables}
+      \field{title}{So Many Variables: Joint Modeling in Community Ecology}
+      \field{urlday}{22}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{30}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{766\bibrangedash 779}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1016/j.tree.2015.09.007
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\22GZ9I8C\\Warton et al. - 2015 - So Many Variables Joint Modeling in Community Ecology.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0169534715002402
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0169534715002402
+      \endverb
+    \endentry
     \entry{watson2016}{article}{}{}
       \name{author}{8}{}{%
         {{un=0,uniquepart=base,hash=8530b68cdac8fb368310f60d286f2a89}{%
@@ -2731,12 +2903,95 @@
       \verb https://www.science.org/doi/10.1126/sciadv.abl9885
       \endverb
     \endentry
+    \entry{zhang2019}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=d7f8252ce99f43a543795a4c83614fa5}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Chongliang},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7608dbf6c54dadf166f77046db3c64a6}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=962d899a4670f534865903a60ea1cb16}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Binduo},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=68da067b66af9e3dbf1b6fd6696eec9a}{%
+           family={Xue},
+           familyi={X\bibinitperiod},
+           given={Ying},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=96e367241bacc8749e47f1d6b93b9c9e}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Yiping},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=43bbaeca8a9d92bea9c2d972596b9397}{%
+           family={Treml},
+           familyi={T\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{5aa52f748378baa82f722d1f2bb5c70a}
+      \strng{fullhash}{f04eedb471bf0e85e1b8fe4ee3f13545}
+      \strng{fullhashraw}{f04eedb471bf0e85e1b8fe4ee3f13545}
+      \strng{bibnamehash}{5aa52f748378baa82f722d1f2bb5c70a}
+      \strng{authorbibnamehash}{5aa52f748378baa82f722d1f2bb5c70a}
+      \strng{authornamehash}{5aa52f748378baa82f722d1f2bb5c70a}
+      \strng{authorfullhash}{f04eedb471bf0e85e1b8fe4ee3f13545}
+      \strng{authorfullhashraw}{f04eedb471bf0e85e1b8fe4ee3f13545}
+      \strng{editorbibnamehash}{43bbaeca8a9d92bea9c2d972596b9397}
+      \strng{editornamehash}{43bbaeca8a9d92bea9c2d972596b9397}
+      \strng{editorfullhash}{43bbaeca8a9d92bea9c2d972596b9397}
+      \strng{editorfullhashraw}{43bbaeca8a9d92bea9c2d972596b9397}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1366-9516, 1472-4642}
+      \field{journaltitle}{Diversity and Distributions}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{11}
+      \field{shortjournal}{Diversity and Distributions}
+      \field{shorttitle}{How to predict biodiversity in space?}
+      \field{title}{How to predict biodiversity in space? An evaluation of modelling approaches in marine ecosystems}
+      \field{urlday}{12}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{25}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1697\bibrangedash 1708}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1111/ddi.12970
+      \endverb
+      \verb{file}
+      \verb Full Text:C\:\\Users\\caleb\\Zotero\\storage\\YZSFNT4S\\Zhang et al. - 2019 - How to predict biodiversity in space An evaluation of modelling approaches in marine ecosystems.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/ddi.12970
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/ddi.12970
+      \endverb
+    \endentry
   \enddatalist
-  \missing{GDMGuide}
-  \missing{GobalmodelsplantdiversityMLtechniques}
-  \missing{MacroecologicalModelsVsSSDMs}
-  \missing{SDMRarelypredictrealpopulations}
-  \missing{spatialmodellingofbiodiversityCLM}
 \endrefsection
 \endinput
 
