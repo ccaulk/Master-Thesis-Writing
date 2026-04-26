@@ -1,22 +1,19 @@
 \babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Motivation}{2}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Research Questions}{3}{subsection.1.2}%
-\contentsline {section}{\numberline {2}Background}{4}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Biodiversity}{4}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Approaches to estimating community level biodiversity}{4}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Species Distribution Models}{4}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}Joint Species Distribution Models}{6}{subsubsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.3}Community Level Models}{6}{subsubsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.3}}{6}{subsection.2.3}%
+\contentsline {subsection}{\numberline {1.2}Research Objectives and Scope}{3}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Background}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Biodiversity and how to measure it}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Spatial Biodiversity Modeling}{5}{subsection.2.2}%
 \contentsline {section}{\numberline {3}Methods/setup}{7}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Pipeline for Community Level Modeling}{7}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Models/ Case Study}{7}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Results}{8}{section.4}%
+\contentsline {subsection}{\numberline {3.2}Data}{7}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Models}{7}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Results/ Case Study}{8}{section.4}%
 \contentsline {section}{\numberline {5}Discussion}{9}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Applications}{9}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.1}Findings}{9}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Ethical Discussion}{9}{subsection.5.2}%
-\contentsline {section}{\numberline {6}Future Work}{10}{section.6}%
+\contentsline {section}{\numberline {6}Future Work/ Applications}{10}{section.6}%
 \contentsline {section}{\numberline {7}Conclusion}{10}{section.7}%
 \contentsline {section}{\numberline {A}Appendix A: Github Repository}{10}{appendix.A}%
 \contentsline {section}{\numberline {B}Appendix C: Additional Results}{10}{appendix.B}%

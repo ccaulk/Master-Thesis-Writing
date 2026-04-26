@@ -1,4 +1,7 @@
 {
+  "[plaintext]": {
+    "editor.wordWrap": "on"
+  },
   "[latex]": {
     "editor.wordWrap": "on",
     "editor.wrappingIndent": "same",
