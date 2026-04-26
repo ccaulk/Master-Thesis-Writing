@@ -90,6 +90,77 @@
       \verb https://nsojournals.onlinelibrary.wiley.com/doi/10.1111/ecog.05877
       \endverb
     \endentry
+    \entry{andermann2022}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=a6efb2b874eb8e21ad741cd7d5666670}{%
+           family={Andermann},
+           familyi={A\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a847f127d53a89d0751c75899be8a497}{%
+           family={Antonelli},
+           familyi={A\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=241bdfab4c46d75a35f2a496fbfb9736}{%
+           family={Barrett},
+           familyi={B\bibinitperiod},
+           given={Russell\bibnamedelima L.},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=549615f98e4b662d1e3717cd074fc851}{%
+           family={Silvestro},
+           familyi={S\bibinitperiod},
+           given={Daniele},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Frontiers Media {SA}}%
+      }
+      \strng{namehash}{88e21d7b648e1cb8ecf55882cc411198}
+      \strng{fullhash}{c16ebfa6d9e83748345a5e552b2de479}
+      \strng{fullhashraw}{c16ebfa6d9e83748345a5e552b2de479}
+      \strng{bibnamehash}{88e21d7b648e1cb8ecf55882cc411198}
+      \strng{authorbibnamehash}{88e21d7b648e1cb8ecf55882cc411198}
+      \strng{authornamehash}{88e21d7b648e1cb8ecf55882cc411198}
+      \strng{authorfullhash}{c16ebfa6d9e83748345a5e552b2de479}
+      \strng{authorfullhashraw}{c16ebfa6d9e83748345a5e552b2de479}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{19}
+      \field{issn}{1664-462X}
+      \field{journaltitle}{Frontiers in Plant Science}
+      \field{month}{4}
+      \field{shortjournal}{Front. Plant Sci.}
+      \field{title}{Estimating Alpha, Beta, and Gamma Diversity Through Deep Learning}
+      \field{urlday}{16}
+      \field{urlmonth}{7}
+      \field{urlyear}{2025}
+      \field{volume}{13}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.3389/fpls.2022.839407
+      \endverb
+      \verb{file}
+      \verb Full Text:C\:\\Users\\caleb\\Zotero\\storage\\8PAPK8V9\\Andermann et al. - 2022 - Estimating Alpha, Beta, and Gamma Diversity Through Deep Learning.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.frontiersin.org/articles/10.3389/fpls.2022.839407/full
+      \endverb
+      \verb{url}
+      \verb https://www.frontiersin.org/articles/10.3389/fpls.2022.839407/full
+      \endverb
+      \keyw{Read}
+    \endentry
     \entry{araujo2019}{article}{}{}
       \name{author}{13}{ul=2}{%
         {{un=0,uniquepart=base,hash=72cdc90eaae746fb2fb0c53839072424}{%
@@ -621,6 +692,248 @@
       \verb 10.1023/A:1010933404324
       \endverb
     \endentry
+    \entry{brun2024}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=0b5fceaef84d8d05dc524b8f6a474e99}{%
+           family={Brun},
+           familyi={B\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8ee0d7c8b50e6600d82b72e120a27b34}{%
+           family={Karger},
+           familyi={K\bibinitperiod},
+           given={Dirk\bibnamedelima N.},
+           giveni={D\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=22d5edb62524bcc7808f73af5666144a}{%
+           family={Zurell},
+           familyi={Z\bibinitperiod},
+           given={Damaris},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48f59c91b27414a6506a856833ca17b7}{%
+           family={Descombes},
+           familyi={D\bibinitperiod},
+           given={Patrice},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a10dc375b527a1ea947b63969917506c}{%
+           family={De\bibnamedelima Witte},
+           familyi={D\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Lucienne\bibnamedelima C.},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=392c4f15bd0bdc43bf6e823858cc6da3}{%
+           family={De\bibnamedelima Lutio},
+           familyi={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Riccardo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=deee5d40c06294b976a527d423f702d5}{%
+           family={Wegner},
+           familyi={W\bibinitperiod},
+           given={Jan\bibnamedelima Dirk},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=81daf64e46b81abb6f841138d926146f}{%
+           family={Zimmermann},
+           familyi={Z\bibinitperiod},
+           given={Niklaus\bibnamedelima E.},
+           giveni={N\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{15978ba6b476f03ad2f38e7091d5874d}
+      \strng{fullhash}{ab9b4aab0ec1bc0f7b0d29c24d3199fd}
+      \strng{fullhashraw}{ab9b4aab0ec1bc0f7b0d29c24d3199fd}
+      \strng{bibnamehash}{15978ba6b476f03ad2f38e7091d5874d}
+      \strng{authorbibnamehash}{15978ba6b476f03ad2f38e7091d5874d}
+      \strng{authornamehash}{15978ba6b476f03ad2f38e7091d5874d}
+      \strng{authorfullhash}{ab9b4aab0ec1bc0f7b0d29c24d3199fd}
+      \strng{authorfullhashraw}{ab9b4aab0ec1bc0f7b0d29c24d3199fd}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{24}
+      \field{issn}{2041-1723}
+      \field{journaltitle}{Nature Communications}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{1}
+      \field{shortjournal}{Nat Commun}
+      \field{title}{Multispecies deep learning using citizen science data produces more informative plant community models}
+      \field{urlday}{11}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{15}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{4421}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41467-024-48559-9
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\7XENFHFT\\Brun et al. - 2024 - Multispecies deep learning using citizen science data produces more informative plant community mode.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41467-024-48559-9
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41467-024-48559-9
+      \endverb
+    \endentry
+    \entry{buckland_monitoring_2005}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=1,uniquepart=given,hash=43d64636acaac9ee5b8705042c963258}{%
+           family={Buckland},
+           familyi={B\bibinitperiod},
+           given={S.T},
+           giveni={S\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=bb1d708df2e1c99162422baef86dfca6}{%
+           family={Magurran},
+           familyi={M\bibinitperiod},
+           given={A.E},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1f0ce04bf0c183c8bf6fcb985b04ae7a}{%
+           family={Green},
+           familyi={G\bibinitperiod},
+           given={R.E},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=af465ab6bcfca3dda919d23ff36336bd}{%
+           family={Fewster},
+           familyi={F\bibinitperiod},
+           given={R.M},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{12072470778ab8dbafb1d235148b0af2}
+      \strng{fullhash}{e58e94a016e27c3232fe3f3c5584dc64}
+      \strng{fullhashraw}{e58e94a016e27c3232fe3f3c5584dc64}
+      \strng{bibnamehash}{12072470778ab8dbafb1d235148b0af2}
+      \strng{authorbibnamehash}{12072470778ab8dbafb1d235148b0af2}
+      \strng{authornamehash}{12072470778ab8dbafb1d235148b0af2}
+      \strng{authorfullhash}{e58e94a016e27c3232fe3f3c5584dc64}
+      \strng{authorfullhashraw}{e58e94a016e27c3232fe3f3c5584dc64}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{28}
+      \field{issn}{0962-8436, 1471-2970}
+      \field{journaltitle}{Philosophical Transactions of the Royal Society B: Biological Sciences}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{1454}
+      \field{title}{Monitoring change in biodiversity through composite indices}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{360}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{243\bibrangedash 254}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1098/rstb.2004.1589
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\CNZXFG3D\\Buckland et al. - 2005 - Monitoring change in biodiversity through composite indices.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://royalsocietypublishing.org/rstb/article/360/1454/243/20538/Monitoring-change-in-biodiversity-through
+      \endverb
+      \verb{url}
+      \verb https://royalsocietypublishing.org/rstb/article/360/1454/243/20538/Monitoring-change-in-biodiversity-through
+      \endverb
+    \endentry
+    \entry{buckland_geometric_2011}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=1,uniquepart=given,hash=cbe0e81e737d1ab22955bac6f09de8e5}{%
+           family={Buckland},
+           familyi={B\bibinitperiod},
+           given={Stephen\bibnamedelima T.},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=833e59901bb935efe15de0bafb72feec}{%
+           family={Studeny},
+           familyi={S\bibinitperiod},
+           given={Angelika\bibnamedelima C.},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2397bed6029c1406d81a8e197ac6dfa3}{%
+           family={Magurran},
+           familyi={M\bibinitperiod},
+           given={Anne\bibnamedelima E.},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d4e7fe74fd300ef735f9881e8a004c56}{%
+           family={Illian},
+           familyi={I\bibinitperiod},
+           given={Janine\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1eb2a1637e699af07d45f4979d771ad1}{%
+           family={Newson},
+           familyi={N\bibinitperiod},
+           given={Stuart\bibnamedelima E.},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2d029773b121bbbaa2c74750e046c036}
+      \strng{fullhash}{d233966ffcb9b652e3f3d3c11fc2f7a9}
+      \strng{fullhashraw}{d233966ffcb9b652e3f3d3c11fc2f7a9}
+      \strng{bibnamehash}{2d029773b121bbbaa2c74750e046c036}
+      \strng{authorbibnamehash}{2d029773b121bbbaa2c74750e046c036}
+      \strng{authornamehash}{2d029773b121bbbaa2c74750e046c036}
+      \strng{authorfullhash}{d233966ffcb9b652e3f3d3c11fc2f7a9}
+      \strng{authorfullhashraw}{d233966ffcb9b652e3f3d3c11fc2f7a9}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{2150-8925}
+      \field{journaltitle}{Ecosphere}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{9}
+      \field{shortjournal}{Ecosphere}
+      \field{shorttitle}{The geometric mean of relative abundance indices}
+      \field{title}{The geometric mean of relative abundance indices: a biodiversity measure with a difference}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{2}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{art100}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1890/ES11-00186.1
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\WWAKHD4Y\\Buckland et al. - 2011 - The geometric mean of relative abundance indices a biodiversity measure with a difference.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://doi.wiley.com/10.1890/ES11-00186.1
+      \endverb
+      \verb{url}
+      \verb http://doi.wiley.com/10.1890/ES11-00186.1
+      \endverb
+    \endentry
     \entry{cai2023}{article}{}{}
       \name{author}{25}{}{%
         {{un=0,uniquepart=base,hash=1011c36fa1d4b45a082fa5d001b41363}{%
@@ -962,6 +1275,71 @@
       \endverb
       \verb{url}
       \verb https://www.nature.com/articles/nature11148
+      \endverb
+    \endentry
+    \entry{cowie2022}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=90d915c8e545fc1890641a7c9e96816e}{%
+           family={Cowie},
+           familyi={C\bibinitperiod},
+           given={Robert\bibnamedelima H.},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8e32a06c3be99709ce0aae9c204d6303}{%
+           family={Bouchet},
+           familyi={B\bibinitperiod},
+           given={Philippe},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=87f6e516da05cee7ab4ee716fe5b10c4}{%
+           family={Fontaine},
+           familyi={F\bibinitperiod},
+           given={Benoît},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0c36a0e21d866ed042ac5d9db21f86d1}
+      \strng{fullhash}{0c36a0e21d866ed042ac5d9db21f86d1}
+      \strng{fullhashraw}{0c36a0e21d866ed042ac5d9db21f86d1}
+      \strng{bibnamehash}{0c36a0e21d866ed042ac5d9db21f86d1}
+      \strng{authorbibnamehash}{0c36a0e21d866ed042ac5d9db21f86d1}
+      \strng{authornamehash}{0c36a0e21d866ed042ac5d9db21f86d1}
+      \strng{authorfullhash}{0c36a0e21d866ed042ac5d9db21f86d1}
+      \strng{authorfullhashraw}{0c36a0e21d866ed042ac5d9db21f86d1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1464-7931, 1469-185X}
+      \field{journaltitle}{Biological Reviews}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{2}
+      \field{shortjournal}{Biological Reviews}
+      \field{shorttitle}{The Sixth Mass Extinction}
+      \field{title}{The Sixth Mass Extinction: fact, fiction or speculation?}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{97}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{640\bibrangedash 663}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1111/brv.12816
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\T7J3PFC4\\Cowie et al. - 2022 - The Sixth Mass Extinction fact, fiction or speculation.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/brv.12816
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/brv.12816
       \endverb
     \endentry
     \entry{Deutz2020}{report}{}{}
@@ -2312,6 +2690,84 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S1470160X21005872
       \endverb
     \endentry
+    \entry{naeem2016}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=4fd279b45232aa8cb483d6136274177b}{%
+           family={Naeem},
+           familyi={N\bibinitperiod},
+           given={Shahid},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b67109a23a9be5a8f11686161bebb796}{%
+           family={Chazdon},
+           familyi={C\bibinitperiod},
+           given={Robin},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a5fcdacf0c35e38c4b73a4bef1e61234}{%
+           family={Duffy},
+           familyi={D\bibinitperiod},
+           given={J.\bibnamedelimi Emmett},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a12228ab41223823afff610e53e32b3b}{%
+           family={Prager},
+           familyi={P\bibinitperiod},
+           given={Case},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d20926afa43feca8de94d916be6425fd}{%
+           family={Worm},
+           familyi={W\bibinitperiod},
+           given={Boris},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8991f77040dab488551a94c2ed4b0133}
+      \strng{fullhash}{fc696088729a141b7d28d7fb1d98863a}
+      \strng{fullhashraw}{fc696088729a141b7d28d7fb1d98863a}
+      \strng{bibnamehash}{8991f77040dab488551a94c2ed4b0133}
+      \strng{authorbibnamehash}{8991f77040dab488551a94c2ed4b0133}
+      \strng{authornamehash}{8991f77040dab488551a94c2ed4b0133}
+      \strng{authorfullhash}{fc696088729a141b7d28d7fb1d98863a}
+      \strng{authorfullhashraw}{fc696088729a141b7d28d7fb1d98863a}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{14}
+      \field{issn}{0962-8452, 1471-2954}
+      \field{journaltitle}{Proceedings of the Royal Society B: Biological Sciences}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{1844}
+      \field{shortjournal}{Proc. R. Soc. B.}
+      \field{shorttitle}{Biodiversity and human well-being}
+      \field{title}{Biodiversity and human well-being: an essential link for sustainable development}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{283}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{20162091}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1098/rspb.2016.2091
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\NWFB9YWS\\Naeem et al. - 2016 - Biodiversity and human well-being an essential link for sustainable development.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://royalsocietypublishing.org/doi/10.1098/rspb.2016.2091
+      \endverb
+      \verb{url}
+      \verb https://royalsocietypublishing.org/doi/10.1098/rspb.2016.2091
+      \endverb
+    \endentry
     \entry{nelder1972}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=97a60525676f2f0735b3bace8039e9af}{%
@@ -3059,6 +3515,191 @@
       \endverb
       \verb{url}
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0169534720302305
+      \endverb
+    \endentry
+    \entry{proenca2017}{article}{}{}
+      \name{author}{16}{}{%
+        {{un=0,uniquepart=base,hash=4669ee42e0d5ea195ccf5d2dd2002ead}{%
+           family={Proença},
+           familyi={P\bibinitperiod},
+           given={Vânia},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1f596e1f9c7850e2a47ec38aa02501e8}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Laura\bibnamedelima Jane},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=531cf2957b00ff0afe9e4a6fbdb30c15}{%
+           family={Pereira},
+           familyi={P\bibinitperiod},
+           given={Henrique\bibnamedelima Miguel},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8f4a920ecca54d86bc88d4e3829ea044}{%
+           family={Fernandez},
+           familyi={F\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d9f9deb4b0f57a0316e2515c4361edfd}{%
+           family={{McRae}},
+           familyi={M\bibinitperiod},
+           given={Louise},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ddd72c23333c53568c22461f2e9f7616}{%
+           family={Belnap},
+           familyi={B\bibinitperiod},
+           given={Jayne},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ab1d673804f36792c500a85290b755c1}{%
+           family={Böhm},
+           familyi={B\bibinitperiod},
+           given={Monika},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6110778a8db6f2b01de652ddda769aef}{%
+           family={Brummitt},
+           familyi={B\bibinitperiod},
+           given={Neil},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7c20e818ea1c42ce619e4f41ec6f7689}{%
+           family={García-Moreno},
+           familyi={G\bibinithyphendelim M\bibinitperiod},
+           given={Jaime},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=51ef88987c5f136df984d2cc59adb1e2}{%
+           family={Gregory},
+           familyi={G\bibinitperiod},
+           given={Richard\bibnamedelima D.},
+           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d8512c62636a54b5665712f9691b9752}{%
+           family={Honrado},
+           familyi={H\bibinitperiod},
+           given={João\bibnamedelima Pradinho},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ef49a6888572e41042b3c311fe23d862}{%
+           family={Jürgens},
+           familyi={J\bibinitperiod},
+           given={Norbert},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d1441da0246975c006c87b1198cf20f2}{%
+           family={Opige},
+           familyi={O\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=406b5b8a37c68e6435e6c95ef85ec2ae}{%
+           family={Schmeller},
+           familyi={S\bibinitperiod},
+           given={Dirk\bibnamedelima S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=db4b3996baa7de2e8b99acfca8eeebb7}{%
+           family={Tiago},
+           familyi={T\bibinitperiod},
+           given={Patrícia},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8bde60ec078d6330e88779e506cc10f2}{%
+           family={Van\bibnamedelima Swaay},
+           familyi={V\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Chris\bibnamedelima A.M.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4c34e508a38cda5ec71cb7fe38f67c00}
+      \strng{fullhash}{89c2683ae1b9b3c3577ae302163c6e20}
+      \strng{fullhashraw}{89c2683ae1b9b3c3577ae302163c6e20}
+      \strng{bibnamehash}{4c34e508a38cda5ec71cb7fe38f67c00}
+      \strng{authorbibnamehash}{4c34e508a38cda5ec71cb7fe38f67c00}
+      \strng{authornamehash}{4c34e508a38cda5ec71cb7fe38f67c00}
+      \strng{authorfullhash}{89c2683ae1b9b3c3577ae302163c6e20}
+      \strng{authorfullhashraw}{89c2683ae1b9b3c3577ae302163c6e20}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{00063207}
+      \field{journaltitle}{Biological Conservation}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{shortjournal}{Biological Conservation}
+      \field{shorttitle}{Global biodiversity monitoring}
+      \field{title}{Global biodiversity monitoring: From data sources to Essential Biodiversity Variables}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{213}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{256\bibrangedash 263}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.biocon.2016.07.014
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\C9JL74Z6\\Proença et al. - 2017 - Global biodiversity monitoring From data sources to Essential Biodiversity Variables.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0006320716302786
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0006320716302786
+      \endverb
+    \endentry
+    \entry{roe2018}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ab1fae6f5e26f2e5ec96e3de432188ee}{%
+           family={Roe},
+           familyi={R\bibinitperiod},
+           given={Dilys},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e9a1677927cd9b7ee72c4fd0a22aca9d}{%
+           family={Seddon},
+           familyi={S\bibinitperiod},
+           given={Nathalie},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2188229ad1e707966876004ef3c3c841}{%
+           family={Elliott},
+           familyi={E\bibinitperiod},
+           given={Joanna},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{159dd2e2cf059bdb861c90c1e942fccc}
+      \strng{fullhash}{159dd2e2cf059bdb861c90c1e942fccc}
+      \strng{fullhashraw}{159dd2e2cf059bdb861c90c1e942fccc}
+      \strng{bibnamehash}{159dd2e2cf059bdb861c90c1e942fccc}
+      \strng{authorbibnamehash}{159dd2e2cf059bdb861c90c1e942fccc}
+      \strng{authornamehash}{159dd2e2cf059bdb861c90c1e942fccc}
+      \strng{authorfullhash}{159dd2e2cf059bdb861c90c1e942fccc}
+      \strng{authorfullhashraw}{159dd2e2cf059bdb861c90c1e942fccc}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Biodiversity loss is a development issue}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\QP7GZXBN\\Roe et al. - 2018 - Biodiversity loss is a development issue.pdf:application/pdf
       \endverb
     \endentry
     \entry{sinclair2010}{article}{}{}

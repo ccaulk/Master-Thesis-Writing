@@ -4,16 +4,16 @@
 \contentsline {subsection}{\numberline {1.2}Research Objectives and Scope}{3}{subsection.1.2}%
 \contentsline {section}{\numberline {2}Background}{5}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Biodiversity and how to measure it}{5}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Spatial Biodiversity Modeling}{5}{subsection.2.2}%
-\contentsline {section}{\numberline {3}Methods/setup}{7}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Pipeline for Community Level Modeling}{7}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Data}{7}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Models}{7}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Results/ Case Study}{8}{section.4}%
-\contentsline {section}{\numberline {5}Discussion}{9}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Findings}{9}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Ethical Discussion}{9}{subsection.5.2}%
-\contentsline {section}{\numberline {6}Future Work/ Applications}{10}{section.6}%
-\contentsline {section}{\numberline {7}Conclusion}{10}{section.7}%
-\contentsline {section}{\numberline {A}Appendix A: Github Repository}{10}{appendix.A}%
-\contentsline {section}{\numberline {B}Appendix C: Additional Results}{10}{appendix.B}%
+\contentsline {subsection}{\numberline {2.2}Spatial Biodiversity Modeling}{6}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Methods/setup}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Pipeline for Community Level Modeling}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Data}{8}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Models}{8}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Results/ Case Study}{9}{section.4}%
+\contentsline {section}{\numberline {5}Discussion}{10}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Findings}{10}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Ethical Discussion}{10}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Future Work/ Applications}{11}{section.6}%
+\contentsline {section}{\numberline {7}Conclusion}{11}{section.7}%
+\contentsline {section}{\numberline {A}Appendix A: Github Repository}{11}{appendix.A}%
+\contentsline {section}{\numberline {B}Appendix C: Additional Results}{11}{appendix.B}%
