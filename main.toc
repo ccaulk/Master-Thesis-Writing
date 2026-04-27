@@ -4,7 +4,7 @@
 \contentsline {subsection}{\numberline {1.2}Research Objectives and Scope}{3}{subsection.1.2}%
 \contentsline {section}{\numberline {2}Background}{5}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Biodiversity and how to measure it}{5}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Spatial Biodiversity Modeling}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.2}Spatial Biodiversity Modeling}{7}{subsection.2.2}%
 \contentsline {section}{\numberline {3}Methods/setup}{8}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Pipeline for Community Level Modeling}{8}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Data}{8}{subsection.3.2}%

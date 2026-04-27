@@ -19,77 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global/global}
-    \entry{a_leeyaw_species_2022}{article}{}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=9015d285aea51e1826ff48f048ae46e0}{%
-           family={A.\bibnamedelimi Lee‐Yaw},
-           familyi={A\bibinitperiod\bibinitdelim L\bibinithyphendelim Y\bibinitperiod},
-           given={Julie},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8faa5a19eebd3fba486483395c3f5fe1}{%
-           family={L.\bibnamedelimi {McCune}},
-           familyi={L\bibinitperiod\bibinitdelim M\bibinitperiod},
-           given={Jenny},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=edb28a09e15b114ef53269abb54474fd}{%
-           family={Pironon},
-           familyi={P\bibinitperiod},
-           given={Samuel},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=5953eeba11f55b65077f36b96d9a9916}{%
-           family={N.\bibnamedelimi Sheth},
-           familyi={N\bibinitperiod\bibinitdelim S\bibinitperiod},
-           given={Seema},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{91796f093ba6f3d69969af491be11032}
-      \strng{fullhash}{dabe3f8722223f029b491881455b0618}
-      \strng{fullhashraw}{dabe3f8722223f029b491881455b0618}
-      \strng{bibnamehash}{91796f093ba6f3d69969af491be11032}
-      \strng{authorbibnamehash}{91796f093ba6f3d69969af491be11032}
-      \strng{authornamehash}{91796f093ba6f3d69969af491be11032}
-      \strng{authorfullhash}{dabe3f8722223f029b491881455b0618}
-      \strng{authorfullhashraw}{dabe3f8722223f029b491881455b0618}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Species distribution models ({SDMs}) are widely used in ecology. In theory, {SDMs} capture (at least part of ) species’ ecological niches and can be used to make inferences about the distribution of suitable habitat for species of interest. Because habitat suitability is expected to influence population demography, {SDMs} have been used to estimate a variety of population parameters, from occurrence to genetic diversity. However, a critical look at the ability of {SDMs} to predict independent data across different aspects of population biology is lacking. Here, we systematically reviewed the literature, retrieving 201 studies that tested predictions from {SDMs} against independent assessments of occurrence, abundance, population performance, and genetic diversity. Although there is some support for the ability of {SDMs} to predict occurrence ({\textasciitilde}53\% of studies depending on how support was assessed), the predictive performance of these models declines progressively from occurrence to abundance, to population mean fitness, to genetic diversity. At the same time, we observed higher success among studies that evaluated performance for single versus multiple species, pointing to a possible publication bias. Thus, the limited accuracy of {SDMs} reported here may reflect the best-case scenario. We discuss the limitations of these models and provide specific recommendations for their use for different applications going forward. However, we emphasize that predictions from {SDMs}, especially when used to inform conservation decisions, should be treated as hypotheses to be tested with independent data rather than as stand-ins for the population parameters we seek to know.}
-      \field{issn}{0906-7590, 1600-0587}
-      \field{journaltitle}{Ecography}
-      \field{langid}{english}
-      \field{month}{6}
-      \field{number}{6}
-      \field{shortjournal}{Ecography}
-      \field{title}{Species distribution models rarely predict the biology of real populations}
-      \field{urlday}{18}
-      \field{urlmonth}{4}
-      \field{urlyear}{2026}
-      \field{volume}{2022}
-      \field{year}{2022}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{e05877}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.1111/ecog.05877
-      \endverb
-      \verb{file}
-      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\7L9RAVDV\\A. Lee‐Yaw et al. - 2022 - Species distribution models rarely predict the biology of real populations.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://nsojournals.onlinelibrary.wiley.com/doi/10.1111/ecog.05877
-      \endverb
-      \verb{url}
-      \verb https://nsojournals.onlinelibrary.wiley.com/doi/10.1111/ecog.05877
-      \endverb
-    \endentry
     \entry{andermann2022}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=a6efb2b874eb8e21ad741cd7d5666670}{%
@@ -162,7 +91,7 @@
       \keyw{Read}
     \endentry
     \entry{araujo2019}{article}{}{}
-      \name{author}{13}{ul=2}{%
+      \name{author}{13}{}{%
         {{un=0,uniquepart=base,hash=72cdc90eaae746fb2fb0c53839072424}{%
            family={Araújo},
            familyi={A\bibinitperiod},
@@ -245,12 +174,12 @@
       \list{publisher}{1}{%
         {American Association for the Advancement of Science ({AAAS})}%
       }
-      \strng{namehash}{37514045928031ac43b81ee9895bebc5}
+      \strng{namehash}{cdd3976109ef650fa1510b7635187ce2}
       \strng{fullhash}{96fc0c28564dc57dd339317526b2f9f6}
       \strng{fullhashraw}{96fc0c28564dc57dd339317526b2f9f6}
-      \strng{bibnamehash}{37514045928031ac43b81ee9895bebc5}
-      \strng{authorbibnamehash}{37514045928031ac43b81ee9895bebc5}
-      \strng{authornamehash}{37514045928031ac43b81ee9895bebc5}
+      \strng{bibnamehash}{cdd3976109ef650fa1510b7635187ce2}
+      \strng{authorbibnamehash}{cdd3976109ef650fa1510b7635187ce2}
+      \strng{authornamehash}{cdd3976109ef650fa1510b7635187ce2}
       \strng{authorfullhash}{96fc0c28564dc57dd339317526b2f9f6}
       \strng{authorfullhashraw}{96fc0c28564dc57dd339317526b2f9f6}
       \field{sortinit}{A}
@@ -286,65 +215,6 @@
       \endverb
       \verb{url}
       \verb https://www.science.org/doi/10.1126/sciadv.aat4858
-      \endverb
-    \endentry
-    \entry{araujo2006}{article}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=72cdc90eaae746fb2fb0c53839072424}{%
-           family={Araújo},
-           familyi={A\bibinitperiod},
-           given={Miguel\bibnamedelima B.},
-           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=fd0180b461eae6ddbff6a39790e0bb5e}{%
-           family={Guisan},
-           familyi={G\bibinitperiod},
-           given={Antoine},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{04ba6bd9c15553f53e68cbcd6c3fcb02}
-      \strng{fullhash}{04ba6bd9c15553f53e68cbcd6c3fcb02}
-      \strng{fullhashraw}{04ba6bd9c15553f53e68cbcd6c3fcb02}
-      \strng{bibnamehash}{04ba6bd9c15553f53e68cbcd6c3fcb02}
-      \strng{authorbibnamehash}{04ba6bd9c15553f53e68cbcd6c3fcb02}
-      \strng{authornamehash}{04ba6bd9c15553f53e68cbcd6c3fcb02}
-      \strng{authorfullhash}{04ba6bd9c15553f53e68cbcd6c3fcb02}
-      \strng{authorfullhashraw}{04ba6bd9c15553f53e68cbcd6c3fcb02}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Species distribution modelling is central to both fundamental and applied research in biogeography. Despite widespread use of models, there are still important conceptual ambiguities as well as biotic and algorithmic uncertainties that need to be investigated in order to increase conﬁdence in model results. We identify and discuss ﬁve areas of enquiry that are of high importance for species distribution modelling: (1) clariﬁcation of the niche concept; (2) improved designs for sampling data for building models; (3) improved parameterization; (4) improved model selection and predictor contribution; and (5) improved model evaluation. The challenges discussed in this essay do not preclude the need for developments of other areas of research in this ﬁeld. However, they are critical for allowing the science of species distribution modelling to move forward.}
-      \field{issn}{0305-0270, 1365-2699}
-      \field{journaltitle}{Journal of Biogeography}
-      \field{langid}{english}
-      \field{month}{10}
-      \field{number}{10}
-      \field{shortjournal}{Journal of Biogeography}
-      \field{title}{Five (or so) challenges for species distribution modelling}
-      \field{urlday}{23}
-      \field{urlmonth}{2}
-      \field{urlyear}{2026}
-      \field{volume}{33}
-      \field{year}{2006}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{1677\bibrangedash 1688}
-      \range{pages}{12}
-      \verb{doi}
-      \verb 10.1111/j.1365-2699.2006.01584.x
-      \endverb
-      \verb{file}
-      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\4A62FS9Q\\Araújo and Guisan - 2006 - Five (or so) challenges for species distribution modelling.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2699.2006.01584.x
-      \endverb
-      \verb{url}
-      \verb https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2699.2006.01584.x
       \endverb
     \endentry
     \entry{baggstrom2025}{article}{}{}
@@ -1648,65 +1518,62 @@
       \verb https://www.science.org/doi/10.1126/science.aax3100
       \endverb
     \endentry
-    \entry{elith2009}{article}{}{}
+    \entry{dusek2017}{article}{}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=22e158108d166fcb5d64aab03da6300f}{%
-           family={Elith},
-           familyi={E\bibinitperiod},
-           given={Jane},
-           giveni={J\bibinitperiod},
+        {{un=0,uniquepart=base,hash=52b353570ae173628d22e081a56d15b5}{%
+           family={Dušek},
+           familyi={D\bibinitperiod},
+           given={Radek},
+           giveni={R\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=dcb512484c8d130330ec0c333fb93de1}{%
-           family={Leathwick},
-           familyi={L\bibinitperiod},
-           given={John\bibnamedelima R.},
-           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+        {{un=0,uniquepart=base,hash=35640e0bc80ff40ca5634d0014de6fb1}{%
+           family={Popelková},
+           familyi={P\bibinitperiod},
+           given={Renata},
+           giveni={R\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{e9b4282de9d9562a62f8c129eac20d90}
-      \strng{fullhash}{e9b4282de9d9562a62f8c129eac20d90}
-      \strng{fullhashraw}{e9b4282de9d9562a62f8c129eac20d90}
-      \strng{bibnamehash}{e9b4282de9d9562a62f8c129eac20d90}
-      \strng{authorbibnamehash}{e9b4282de9d9562a62f8c129eac20d90}
-      \strng{authornamehash}{e9b4282de9d9562a62f8c129eac20d90}
-      \strng{authorfullhash}{e9b4282de9d9562a62f8c129eac20d90}
-      \strng{authorfullhashraw}{e9b4282de9d9562a62f8c129eac20d90}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \strng{namehash}{c26d0b81e9f9fd6b04dcc2a0e188a5c6}
+      \strng{fullhash}{c26d0b81e9f9fd6b04dcc2a0e188a5c6}
+      \strng{fullhashraw}{c26d0b81e9f9fd6b04dcc2a0e188a5c6}
+      \strng{bibnamehash}{c26d0b81e9f9fd6b04dcc2a0e188a5c6}
+      \strng{authorbibnamehash}{c26d0b81e9f9fd6b04dcc2a0e188a5c6}
+      \strng{authornamehash}{c26d0b81e9f9fd6b04dcc2a0e188a5c6}
+      \strng{authorfullhash}{c26d0b81e9f9fd6b04dcc2a0e188a5c6}
+      \strng{authorfullhashraw}{c26d0b81e9f9fd6b04dcc2a0e188a5c6}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Species distribution models ({SDMs}) are numerical tools that combine observations of species occurrence or abundance with environmental estimates. They are used to gain ecological and evolutionary insights and to predict distributions across landscapes, sometimes requiring extrapolation in space and time. {SDMs} are now widely used across terrestrial, freshwater, and marine realms. Differences in methods between disciplines reﬂect both differences in species mobility and in “established use.” Model realism and robustness is inﬂuenced by selection of relevant predictors and modeling method, consideration of scale, how the interplay between environmental and geographic factors is handled, and the extent of extrapolation. Current linkages between {SDM} practice and ecological theory are often weak, hindering progress. Remaining challenges include: improvement of methods for modeling presence-only data and for model selection and evaluation; accounting for biotic interactions; and assessing model uncertainty.}
-      \field{day}{1}
-      \field{issn}{1543-592X, 1545-2069}
-      \field{journaltitle}{Annual Review of Ecology, Evolution, and Systematics}
+      \field{labeltitlesource}{title}
+      \field{day}{26}
+      \field{issn}{2336-1980}
+      \field{journaltitle}{{AUC} {GEOGRAPHICA}}
       \field{langid}{english}
-      \field{month}{12}
-      \field{number}{1}
-      \field{shortjournal}{Annu. Rev. Ecol. Evol. Syst.}
-      \field{shorttitle}{Species Distribution Models}
-      \field{title}{Species Distribution Models: Ecological Explanation and Prediction Across Space and Time}
-      \field{urlday}{23}
-      \field{urlmonth}{2}
+      \field{month}{9}
+      \field{number}{2}
+      \field{title}{Theoretical view of the Shannon index in the evaluation of landscape diversity}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
       \field{urlyear}{2026}
-      \field{volume}{40}
-      \field{year}{2009}
+      \field{volume}{47}
+      \field{year}{2017}
       \field{dateera}{ce}
       \field{urldateera}{ce}
-      \field{pages}{677\bibrangedash 697}
-      \range{pages}{21}
+      \field{pages}{5\bibrangedash 13}
+      \range{pages}{9}
       \verb{doi}
-      \verb 10.1146/annurev.ecolsys.110308.120159
+      \verb 10.14712/23361980.2015.12
       \endverb
       \verb{file}
-      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\EVCXDR2A\\Elith and Leathwick - 2009 - Species Distribution Models Ecological Explanation and Prediction Across Space and Time.pdf:application/pdf
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\H6UBGCLH\\Dušek and Popelková - 2017 - Theoretical view of the Shannon index in the evaluation of landscape diversity.pdf:application/pdf
       \endverb
       \verb{urlraw}
-      \verb https://www.annualreviews.org/doi/10.1146/annurev.ecolsys.110308.120159
+      \verb http://www.karolinum.cz/doi/10.14712/23361980.2015.12
       \endverb
       \verb{url}
-      \verb https://www.annualreviews.org/doi/10.1146/annurev.ecolsys.110308.120159
+      \verb http://www.karolinum.cz/doi/10.14712/23361980.2015.12
       \endverb
     \endentry
     \entry{escamilla2022}{article}{}{}
@@ -2126,124 +1993,14 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0960982215003942
       \endverb
     \endentry
-    \entry{grinnell_1904}{article}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=e21baf6663b52da5637a0740b4934fb4}{%
-           family={Grinnell},
-           familyi={G\bibinitperiod},
-           given={Joseph},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{e21baf6663b52da5637a0740b4934fb4}
-      \strng{fullhash}{e21baf6663b52da5637a0740b4934fb4}
-      \strng{fullhashraw}{e21baf6663b52da5637a0740b4934fb4}
-      \strng{bibnamehash}{e21baf6663b52da5637a0740b4934fb4}
-      \strng{authorbibnamehash}{e21baf6663b52da5637a0740b4934fb4}
-      \strng{authornamehash}{e21baf6663b52da5637a0740b4934fb4}
-      \strng{authorfullhash}{e21baf6663b52da5637a0740b4934fb4}
-      \strng{authorfullhashraw}{e21baf6663b52da5637a0740b4934fb4}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1938-4254}
-      \field{journaltitle}{The Auk}
-      \field{month}{7}
-      \field{note}{\_eprint: https://academic.oup.com/auk/article-pdf/21/3/364/28099947/auk0364.pdf}
-      \field{number}{3}
-      \field{title}{The Origin and Distribution of the Chestnut-Backed Chickadee}
-      \field{volume}{21}
-      \field{year}{1904}
-      \field{dateera}{ce}
-      \field{pages}{364\bibrangedash 382}
-      \range{pages}{19}
-      \verb{doi}
-      \verb 10.2307/4070199
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.2307/4070199
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.2307/4070199
-      \endverb
-    \endentry
-    \entry{guisan2002}{article}{}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=fd0180b461eae6ddbff6a39790e0bb5e}{%
-           family={Guisan},
-           familyi={G\bibinitperiod},
-           given={Antoine},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b3802df0095c6b0cb3bcdfc325e0d812}{%
-           family={Edwards},
-           familyi={E\bibinitperiod},
-           given={Thomas\bibnamedelima C},
-           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod},
-           givenun=0}}%
-        {{un=1,uniquepart=given,hash=0cb8fe4210baa81c4b0e67913b4d2768}{%
-           family={Hastie},
-           familyi={H\bibinitperiod},
-           given={Trevor},
-           giveni={T\bibinitperiod},
-           givenun=1}}%
-      }
-      \strng{namehash}{3760899077d4334b22f5e3c65ea11527}
-      \strng{fullhash}{3760899077d4334b22f5e3c65ea11527}
-      \strng{fullhashraw}{3760899077d4334b22f5e3c65ea11527}
-      \strng{bibnamehash}{3760899077d4334b22f5e3c65ea11527}
-      \strng{authorbibnamehash}{3760899077d4334b22f5e3c65ea11527}
-      \strng{authornamehash}{3760899077d4334b22f5e3c65ea11527}
-      \strng{authorfullhash}{3760899077d4334b22f5e3c65ea11527}
-      \strng{authorfullhashraw}{3760899077d4334b22f5e3c65ea11527}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{An important statistical development of the last 30 years has been the advance in regression analysis provided by generalized linear models ({GLMs}) and generalized additive models ({GAMs}). Here we introduce a series of papers prepared within the framework of an international workshop entitled: Advances in {GLMs} /{GAMs} modeling: from species distribution to environmental management , held in Riederalp, Switzerland, 6 /11 August 2001.We first discuss some general uses of statistical models in ecology, as well as provide a short review of several key examples of the use of {GLMs} and {GAMs} in ecological modeling efforts. We next present an overview of {GLMs} and {GAMs}, and discuss some of their related statistics used for predictor selection, model diagnostics, and evaluation. Included is a discussion of several new approaches applicable to {GLMs} and {GAMs}, such as ridge regression, an alternative to stepwise selection of predictors, and methods for the identification of interactions by a combined use of regression trees and several other approaches. We close with an overview of the papers and how we feel they advance our understanding of their application to ecological modeling.}
-      \field{issn}{03043800}
-      \field{journaltitle}{Ecological Modelling}
-      \field{langid}{english}
-      \field{month}{11}
-      \field{number}{2}
-      \field{shortjournal}{Ecological Modelling}
-      \field{shorttitle}{Generalized linear and generalized additive models in studies of species distributions}
-      \field{title}{Generalized linear and generalized additive models in studies of species distributions: setting the scene}
-      \field{urlday}{18}
-      \field{urlmonth}{4}
-      \field{urlyear}{2026}
-      \field{volume}{157}
-      \field{year}{2002}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{89\bibrangedash 100}
-      \range{pages}{12}
-      \verb{doi}
-      \verb 10.1016/S0304-3800(02)00204-1
-      \endverb
-      \verb{file}
-      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\2XEQMJ3W\\Guisan et al. - 2002 - Generalized linear and generalized additive models in studies of species distributions setting the.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://linkinghub.elsevier.com/retrieve/pii/S0304380002002041
-      \endverb
-      \verb{url}
-      \verb https://linkinghub.elsevier.com/retrieve/pii/S0304380002002041
-      \endverb
-    \endentry
     \entry{hastie1986}{article}{}{}
       \name{author}{2}{}{%
-        {{un=1,uniquepart=given,hash=6b87f9803ff7198a1b16f2e23ff4c5e8}{%
+        {{un=0,uniquepart=base,hash=6b87f9803ff7198a1b16f2e23ff4c5e8}{%
            family={Hastie},
            familyi={H\bibinitperiod},
            given={T.\bibnamedelimi J.},
            giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=1}}%
+           givenun=0}}%
         {{un=0,uniquepart=base,hash=644e738f30691dfc96d4d31511c70447}{%
            family={Tibshirani},
            familyi={T\bibinitperiod},
@@ -2549,6 +2306,95 @@
       \endverb
       \verb{url}
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0048969724018345
+      \endverb
+    \endentry
+    \entry{lamb2009}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=9175ffa05aeb4844bbac322e6c61ae82}{%
+           family={Lamb},
+           familyi={L\bibinitperiod},
+           given={Eric\bibnamedelima G.},
+           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ef44c3ffaabce70ebb9a93eda0454ceb}{%
+           family={Bayne},
+           familyi={B\bibinitperiod},
+           given={Erin},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=001bc369f6d08fdd347f4c4ca128ef90}{%
+           family={Holloway},
+           familyi={H\bibinitperiod},
+           given={Gillian},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=78b85fb6392e8f6e1c281c8b46e66fa5}{%
+           family={Schieck},
+           familyi={S\bibinitperiod},
+           given={Jim},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5613ea8be8ffb2b1008d9eed9e8f0f24}{%
+           family={Boutin},
+           familyi={B\bibinitperiod},
+           given={Stan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b5cab07c43d5effc0b5d0858104e639}{%
+           family={Herbers},
+           familyi={H\bibinitperiod},
+           given={Jim},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b5b35e80e6f5e7ff4a1f43052dd42a1a}{%
+           family={Haughland},
+           familyi={H\bibinitperiod},
+           given={Diane\bibnamedelima L.},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1ba35ad8f81b4401390db0523b30f597}
+      \strng{fullhash}{7e70b2ea3e7b4fd6e502dd2ef3530e64}
+      \strng{fullhashraw}{7e70b2ea3e7b4fd6e502dd2ef3530e64}
+      \strng{bibnamehash}{1ba35ad8f81b4401390db0523b30f597}
+      \strng{authorbibnamehash}{1ba35ad8f81b4401390db0523b30f597}
+      \strng{authornamehash}{1ba35ad8f81b4401390db0523b30f597}
+      \strng{authorfullhash}{7e70b2ea3e7b4fd6e502dd2ef3530e64}
+      \strng{authorfullhashraw}{7e70b2ea3e7b4fd6e502dd2ef3530e64}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1470160X}
+      \field{journaltitle}{Ecological Indicators}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{3}
+      \field{shortjournal}{Ecological Indicators}
+      \field{shorttitle}{Indices for monitoring biodiversity change}
+      \field{title}{Indices for monitoring biodiversity change: Are some more effective than others?}
+      \field{urlday}{19}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{9}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{432\bibrangedash 444}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.ecolind.2008.06.001
+      \endverb
+      \verb{file}
+      \verb Indices for monitoring biodiversity change:C\:\\Users\\caleb\\Zotero\\storage\\BL5A9SAX\\Indices for monitoring biodiversity change.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S1470160X08000733
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S1470160X08000733
       \endverb
     \endentry
     \entry{lek1996}{article}{}{}
@@ -4026,94 +3872,6 @@
       \endverb
       \verb{url}
       \verb https://onlinelibrary.wiley.com/doi/10.1111/ecog.05694
-      \endverb
-    \endentry
-    \entry{waltari2014}{article}{}{}
-      \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=6dec8c97647daac9a41f2315cb70ef94}{%
-           family={Waltari},
-           familyi={W\bibinitperiod},
-           given={Eric},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=04f8bf657a78f6b038d8593bf62b1e80}{%
-           family={Schroeder},
-           familyi={S\bibinitperiod},
-           given={Ronny},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=796dcfbc757367f7f1fe6bd8af850857}{%
-           family={{McDonald}},
-           familyi={M\bibinitperiod},
-           given={Kyle},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f56a887a8e4dc3281cc541c22efe67f0}{%
-           family={Anderson},
-           familyi={A\bibinitperiod},
-           given={Robert\bibnamedelima P.},
-           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=17997967bb0d84bab6e4374c83939bc9}{%
-           family={Carnaval},
-           familyi={C\bibinitperiod},
-           given={Ana},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \name{editor}{1}{}{%
-        {{hash=247de062554f2f4ee9832da40f7027b9}{%
-           family={Freckleton},
-           familyi={F\bibinitperiod},
-           given={Robert},
-           giveni={R\bibinitperiod}}}%
-      }
-      \strng{namehash}{b57f2e834d18e492d6785ef211508a54}
-      \strng{fullhash}{e1cb3d6c5f084da04856ee182103ffaf}
-      \strng{fullhashraw}{e1cb3d6c5f084da04856ee182103ffaf}
-      \strng{bibnamehash}{b57f2e834d18e492d6785ef211508a54}
-      \strng{authorbibnamehash}{b57f2e834d18e492d6785ef211508a54}
-      \strng{authornamehash}{b57f2e834d18e492d6785ef211508a54}
-      \strng{authorfullhash}{e1cb3d6c5f084da04856ee182103ffaf}
-      \strng{authorfullhashraw}{e1cb3d6c5f084da04856ee182103ffaf}
-      \strng{editorbibnamehash}{247de062554f2f4ee9832da40f7027b9}
-      \strng{editornamehash}{247de062554f2f4ee9832da40f7027b9}
-      \strng{editorfullhash}{247de062554f2f4ee9832da40f7027b9}
-      \strng{editorfullhashraw}{247de062554f2f4ee9832da40f7027b9}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{issn}{2041-210X, 2041-210X}
-      \field{journaltitle}{Methods in Ecology and Evolution}
-      \field{langid}{english}
-      \field{month}{10}
-      \field{number}{10}
-      \field{shortjournal}{Methods Ecol Evol}
-      \field{shorttitle}{Bioclimatic variables derived from remote sensing}
-      \field{title}{Bioclimatic variables derived from remote sensing: assessment and application for species distribution modelling}
-      \field{urlday}{19}
-      \field{urlmonth}{4}
-      \field{urlyear}{2026}
-      \field{volume}{5}
-      \field{year}{2014}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{1033\bibrangedash 1042}
-      \range{pages}{10}
-      \verb{doi}
-      \verb 10.1111/2041-210X.12264
-      \endverb
-      \verb{file}
-      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\PJIN2QF7\\Waltari et al. - 2014 - Bioclimatic variables derived from remote sensing assessment and application for species distributi.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.12264
-      \endverb
-      \verb{url}
-      \verb https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.12264
       \endverb
     \endentry
     \entry{warton2015}{article}{}{}
