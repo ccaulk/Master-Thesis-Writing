@@ -14,6 +14,6 @@
 \contentsline {subsection}{\numberline {5.1}Findings}{10}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Ethical Discussion}{10}{subsection.5.2}%
 \contentsline {section}{\numberline {6}Future Work/ Applications}{11}{section.6}%
-\contentsline {section}{\numberline {7}Conclusion}{11}{section.7}%
-\contentsline {section}{\numberline {A}Appendix A: Github Repository}{11}{appendix.A}%
-\contentsline {section}{\numberline {B}Appendix C: Additional Results}{11}{appendix.B}%
+\contentsline {section}{\numberline {7}Conclusion}{12}{section.7}%
+\contentsline {section}{\numberline {A}Appendix A: Github Repository}{12}{appendix.A}%
+\contentsline {section}{\numberline {B}Appendix B: Additional Results}{13}{appendix.B}%

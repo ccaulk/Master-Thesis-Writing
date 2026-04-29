@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1777280454.09102 "main.bcf" "main.bbl" "main" 1777284023.70114 0
-  "main.bcf" 1777284023 114619 4695a09a68b1c8c5e360d374c075451c "pdflatex"
-  "references.bib" 1777276958 52553 529b3814e46eb1e47eca5a862ec2fef0 ""
+["biber main"] 1777478490.58669 "main.bcf" "main.bbl" "main" 1777479435.7041 0
+  "main.bcf" 1777479435 114749 e4874d444e16bd943f30e0c22b92d264 "pdflatex"
+  "references.bib" 1777466078 55176 f0bd9d3cbd7afb92bad44a1c118492e7 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1777284021.67779 "c:/Users/caleb/Master's thesis/Latex/main.tex" "main.pdf" "main" 1777284023.70219 0
+["pdflatex"] 1777479433.71734 "c:/Users/caleb/Master's thesis/Latex/main.tex" "main.pdf" "main" 1777479435.70512 0
   "C:/Users/caleb/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1776346216 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/caleb/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1776350811 11548 45f5e15928fe63a2e0789ba1938fd05c ""
   "C:/Users/caleb/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1776345548 13350272 4aa9265487fc02b9cd30f6bd57e90b17 ""
@@ -35,7 +35,6 @@
   "C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1247596667 36281 c355509802a035cadc5f15869451dcee ""
   "C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
-  "C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1247596667 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1247596667 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247596667 32762 7fee39e011c23b3589931effd97b9702 ""
   "C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
@@ -113,13 +112,22 @@
   "C:/Users/caleb/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/caleb/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "Images/UU_logo.png" 1776342762 74529 56cd197ccba228242c65496cd3be66e0 ""
-  "c:/Users/caleb/Master's thesis/Latex/main.tex" 1777284020 34485 20d67aa10f6308a195117ced21103d41 ""
-  "main.aux" 1777284023 16354 23ac04598012ecf234cb7c251c85ec25 "pdflatex"
-  "main.bbl" 1777280457 185487 2edb4538bc60c8de5ea4f5d09551d3ca "biber main"
-  "main.out" 1777284023 2651 28ce50250a4ee16d2d65ab24cf4f7e05 "pdflatex"
-  "main.run.xml" 1777284023 2311 e66a0e3ff336a5af941c7fe634558519 "pdflatex"
-  "main.tex" 1777284020 34485 20d67aa10f6308a195117ced21103d41 ""
-  "main.toc" 1777284023 1470 e51b7dc57926ada7131e715197fa2f78 "pdflatex"
+  "appendix/appendix_a.tex" 1777450687 72 91b1b803d53fcecc88f692eee0623ffa ""
+  "appendix/appendix_b.tex" 1777450717 79 53ab3e12120da7c0eeb129fb436a8f4d ""
+  "c:/Users/caleb/Master's thesis/Latex/main.tex" 1777450780 2553 d128b2e6967ef85e680debb8003736ee ""
+  "main.aux" 1777479435 16452 98339edca2b6a30ede3de476092b35ec "pdflatex"
+  "main.bbl" 1777478493 188505 9f8bc3603c1b4fb5f544caf4b7c65f3e "biber main"
+  "main.out" 1777479435 2651 80029ce1621732d60b3a0931e082afd8 "pdflatex"
+  "main.run.xml" 1777479435 2311 e66a0e3ff336a5af941c7fe634558519 "pdflatex"
+  "main.tex" 1777450780 2553 d128b2e6967ef85e680debb8003736ee ""
+  "main.toc" 1777479435 1470 066d30979bbf5531b1b4e8202a6d3cf7 "pdflatex"
+  "sections/Results.tex" 1777450531 50 94fb73c55e788dcc75a59fae71dbcd74 ""
+  "sections/background.tex" 1777479432 19620 b5e20702285fdf58135c5f7620e9bde3 ""
+  "sections/conclusion.tex" 1777450629 42 b61b97d59a413fb7ec31ccc841f27752 ""
+  "sections/discussion.tex" 1777450564 131 4a1ce6a4a0c6e247f474a7a383d5e6eb ""
+  "sections/future_work.tex" 1777478463 1358 b1db67f303a7351792b4816925af7174 ""
+  "sections/introduction.tex" 1777477216 12185 670fd01fa9ea188ff140e21f0c11c5ea ""
+  "sections/methods.tex" 1777450470 448 f0fa2040723821ed8bc908900b2b8b97 ""
   (generated)
   "main.aux"
   "main.bcf"
