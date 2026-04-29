@@ -1510,6 +1510,67 @@
       \verb http://www.karolinum.cz/doi/10.14712/23361980.2015.12
       \endverb
     \endentry
+    \entry{elith2009}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=22e158108d166fcb5d64aab03da6300f}{%
+           family={Elith},
+           familyi={E\bibinitperiod},
+           given={Jane},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dcb512484c8d130330ec0c333fb93de1}{%
+           family={Leathwick},
+           familyi={L\bibinitperiod},
+           given={John\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e9b4282de9d9562a62f8c129eac20d90}
+      \strng{fullhash}{e9b4282de9d9562a62f8c129eac20d90}
+      \strng{fullhashraw}{e9b4282de9d9562a62f8c129eac20d90}
+      \strng{bibnamehash}{e9b4282de9d9562a62f8c129eac20d90}
+      \strng{authorbibnamehash}{e9b4282de9d9562a62f8c129eac20d90}
+      \strng{authornamehash}{e9b4282de9d9562a62f8c129eac20d90}
+      \strng{authorfullhash}{e9b4282de9d9562a62f8c129eac20d90}
+      \strng{authorfullhashraw}{e9b4282de9d9562a62f8c129eac20d90}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Species distribution models ({SDMs}) are numerical tools that combine observations of species occurrence or abundance with environmental estimates. They are used to gain ecological and evolutionary insights and to predict distributions across landscapes, sometimes requiring extrapolation in space and time. {SDMs} are now widely used across terrestrial, freshwater, and marine realms. Differences in methods between disciplines reﬂect both differences in species mobility and in “established use.” Model realism and robustness is inﬂuenced by selection of relevant predictors and modeling method, consideration of scale, how the interplay between environmental and geographic factors is handled, and the extent of extrapolation. Current linkages between {SDM} practice and ecological theory are often weak, hindering progress. Remaining challenges include: improvement of methods for modeling presence-only data and for model selection and evaluation; accounting for biotic interactions; and assessing model uncertainty.}
+      \field{day}{1}
+      \field{issn}{1543-592X, 1545-2069}
+      \field{journaltitle}{Annual Review of Ecology, Evolution, and Systematics}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{1}
+      \field{shortjournal}{Annu. Rev. Ecol. Evol. Syst.}
+      \field{shorttitle}{Species Distribution Models}
+      \field{title}{Species Distribution Models: Ecological Explanation and Prediction Across Space and Time}
+      \field{urlday}{23}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{volume}{40}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{677\bibrangedash 697}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1146/annurev.ecolsys.110308.120159
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\EVCXDR2A\\Elith and Leathwick - 2009 - Species Distribution Models Ecological Explanation and Prediction Across Space and Time.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.annualreviews.org/doi/10.1146/annurev.ecolsys.110308.120159
+      \endverb
+      \verb{url}
+      \verb https://www.annualreviews.org/doi/10.1146/annurev.ecolsys.110308.120159
+      \endverb
+    \endentry
     \entry{escamilla2022}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=2c6a8553bd5d51b34252c1d17dc80d39}{%
@@ -1927,14 +1988,124 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0960982215003942
       \endverb
     \endentry
+    \entry{grinnell_1904}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e21baf6663b52da5637a0740b4934fb4}{%
+           family={Grinnell},
+           familyi={G\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e21baf6663b52da5637a0740b4934fb4}
+      \strng{fullhash}{e21baf6663b52da5637a0740b4934fb4}
+      \strng{fullhashraw}{e21baf6663b52da5637a0740b4934fb4}
+      \strng{bibnamehash}{e21baf6663b52da5637a0740b4934fb4}
+      \strng{authorbibnamehash}{e21baf6663b52da5637a0740b4934fb4}
+      \strng{authornamehash}{e21baf6663b52da5637a0740b4934fb4}
+      \strng{authorfullhash}{e21baf6663b52da5637a0740b4934fb4}
+      \strng{authorfullhashraw}{e21baf6663b52da5637a0740b4934fb4}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1938-4254}
+      \field{journaltitle}{The Auk}
+      \field{month}{7}
+      \field{note}{\_eprint: https://academic.oup.com/auk/article-pdf/21/3/364/28099947/auk0364.pdf}
+      \field{number}{3}
+      \field{title}{The Origin and Distribution of the Chestnut-Backed Chickadee}
+      \field{volume}{21}
+      \field{year}{1904}
+      \field{dateera}{ce}
+      \field{pages}{364\bibrangedash 382}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.2307/4070199
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.2307/4070199
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.2307/4070199
+      \endverb
+    \endentry
+    \entry{guisan2002}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=fd0180b461eae6ddbff6a39790e0bb5e}{%
+           family={Guisan},
+           familyi={G\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b3802df0095c6b0cb3bcdfc325e0d812}{%
+           family={Edwards},
+           familyi={E\bibinitperiod},
+           given={Thomas\bibnamedelima C},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=0cb8fe4210baa81c4b0e67913b4d2768}{%
+           family={Hastie},
+           familyi={H\bibinitperiod},
+           given={Trevor},
+           giveni={T\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{3760899077d4334b22f5e3c65ea11527}
+      \strng{fullhash}{3760899077d4334b22f5e3c65ea11527}
+      \strng{fullhashraw}{3760899077d4334b22f5e3c65ea11527}
+      \strng{bibnamehash}{3760899077d4334b22f5e3c65ea11527}
+      \strng{authorbibnamehash}{3760899077d4334b22f5e3c65ea11527}
+      \strng{authornamehash}{3760899077d4334b22f5e3c65ea11527}
+      \strng{authorfullhash}{3760899077d4334b22f5e3c65ea11527}
+      \strng{authorfullhashraw}{3760899077d4334b22f5e3c65ea11527}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{An important statistical development of the last 30 years has been the advance in regression analysis provided by generalized linear models ({GLMs}) and generalized additive models ({GAMs}). Here we introduce a series of papers prepared within the framework of an international workshop entitled: Advances in {GLMs} /{GAMs} modeling: from species distribution to environmental management , held in Riederalp, Switzerland, 6 /11 August 2001.We first discuss some general uses of statistical models in ecology, as well as provide a short review of several key examples of the use of {GLMs} and {GAMs} in ecological modeling efforts. We next present an overview of {GLMs} and {GAMs}, and discuss some of their related statistics used for predictor selection, model diagnostics, and evaluation. Included is a discussion of several new approaches applicable to {GLMs} and {GAMs}, such as ridge regression, an alternative to stepwise selection of predictors, and methods for the identification of interactions by a combined use of regression trees and several other approaches. We close with an overview of the papers and how we feel they advance our understanding of their application to ecological modeling.}
+      \field{issn}{03043800}
+      \field{journaltitle}{Ecological Modelling}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{2}
+      \field{shortjournal}{Ecological Modelling}
+      \field{shorttitle}{Generalized linear and generalized additive models in studies of species distributions}
+      \field{title}{Generalized linear and generalized additive models in studies of species distributions: setting the scene}
+      \field{urlday}{18}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{157}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{89\bibrangedash 100}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/S0304-3800(02)00204-1
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\2XEQMJ3W\\Guisan et al. - 2002 - Generalized linear and generalized additive models in studies of species distributions setting the.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0304380002002041
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0304380002002041
+      \endverb
+    \endentry
     \entry{hastie1986}{article}{}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=6b87f9803ff7198a1b16f2e23ff4c5e8}{%
+        {{un=1,uniquepart=given,hash=6b87f9803ff7198a1b16f2e23ff4c5e8}{%
            family={Hastie},
            familyi={H\bibinitperiod},
            given={T.\bibnamedelimi J.},
            giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=644e738f30691dfc96d4d31511c70447}{%
            family={Tibshirani},
            familyi={T\bibinitperiod},
@@ -1962,6 +2133,70 @@
       \field{year}{1986}
       \field{pages}{297\bibrangedash 318}
       \range{pages}{22}
+    \endentry
+    \entry{hu2025}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ae0e4f9c483c06a74dd7a7ab080209ee}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Yuqing},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b21f6792c72d7c99cdb1340c4c430557}{%
+           family={Si‐Moussi},
+           familyi={S\bibinithyphendelim M\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8420a71ed1be07777ddccc3254bee18}{%
+           family={Thuiller},
+           familyi={T\bibinitperiod},
+           given={Wilfried},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9919fddd29d19b51d16a35f1ba3d8fde}
+      \strng{fullhash}{9919fddd29d19b51d16a35f1ba3d8fde}
+      \strng{fullhashraw}{9919fddd29d19b51d16a35f1ba3d8fde}
+      \strng{bibnamehash}{9919fddd29d19b51d16a35f1ba3d8fde}
+      \strng{authorbibnamehash}{9919fddd29d19b51d16a35f1ba3d8fde}
+      \strng{authornamehash}{9919fddd29d19b51d16a35f1ba3d8fde}
+      \strng{authorfullhash}{9919fddd29d19b51d16a35f1ba3d8fde}
+      \strng{authorfullhashraw}{9919fddd29d19b51d16a35f1ba3d8fde}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2041-210X, 2041-210X}
+      \field{journaltitle}{Methods in Ecology and Evolution}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shortjournal}{Methods Ecol Evol}
+      \field{title}{Introduction to deep learning methods for multi‐species predictions}
+      \field{urlday}{11}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{16}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{228\bibrangedash 246}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1111/2041-210X.14466
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\25YVEETS\\Hu et al. - 2025 - Introduction to deep learning methods for multi‐species predictions.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14466
+      \endverb
+      \verb{url}
+      \verb https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14466
+      \endverb
     \endentry
     \entry{IPBES2019spm}{report}{}{}
       \name{author}{1}{}{%
