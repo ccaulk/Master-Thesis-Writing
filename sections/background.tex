@@ -6,66 +6,124 @@ This section introduces biodiversity and how it is measured in Section~\ref{subs
 
 Biodiversity is a complex and multifaceted concept that encompasses the variety of life on Earth, including the diversity of species, genetic diversity within species, and the diversity of ecosystems \parencite{Stork2009}. Humanity has relied on biodiversity for survival for thousands of years as it provides us with food, materials, medicine, water security, and has a substantial impact on human health and well-being \parencite{gascon2015,naeem2016, brauman2020, kim2024}. Large losses of biodiversity would be catastrophic for humanity and ecosystems as it would lead to the loss of ecosystem functions, the collapse of food webs, adversely affect human health, degrade medicine production and discovery, and more \parencite{roe2018}. The rate of biodiversity loss is unprecedented, and we are quickly moving towards a sixth mass extinction \parencite{cowie2022}. To combat biodiversity loss effectively, conservation and ecological rehabilitation efforts require accurate, robust models that can predict biodiversity patterns, identify priority areas, and assess potential conservation outcomes \parencite{sinclair2010, pollock2020}.
 
-To effectively predict biodiversity, it is crucial to have a clear understanding of how biodiversity data is collected and measured. Generally, biodiversity data is collected through field surveys, remote sensing, and citizen science initiatives and other monitoring schemes depending on what is being measured \parencite{proenca2017, beery2021,brun2024}. These approaches or protocols can provide data on species occurrences, abundances, and distributions across different spatial and temporal scales \parencite{proenca2017}. Once this raw data is collected, there are three broad categories of biodiversity metrics that are commonly computed: alpha diversity, beta diversity, and gamma diversity. Alpha diversity refers to diversity within a site, such as the diversity within a specific community or ecosystem. Beta diversity refers to the diversity between different communities or ecosystems. Gamma diversity refers to the species diversity across communities or ecosystems within a larger region \parencite{andermann2022}. For the purposes of this thesis, we will focus on alpha diversity, which is the most commonly measured type of biodiversity.
+To effectively predict biodiversity, it is crucial to have a clear understanding of how biodiversity data is collected and measured. Generally, biodiversity data is collected through field surveys, remote sensing, and citizen science initiatives and other monitoring schemes depending on what is being measured \parencite{proenca2017, beery2021,brun2024}. These approaches or protocols can provide data on species occurrences, abundances, and distributions across different spatial and temporal scales \parencite{proenca2017}. Common biodiversity datasets can be categorized by the type of species information they contain. Presence-only data record locations where a species has been observed, but do not provide information on confirmed absences. Presence-absence data record whether each species is present or absent at a site. Abundance data provide counts or estimates of the number of individuals of each species at a site. Once these raw data is collected, there are three broad categories of biodiversity metrics that are computed: alpha diversity, beta diversity, and gamma diversity \parencite{andermann2022}. Alpha diversity refers to diversity within a site, such as the diversity within a specific community or ecosystem. Beta diversity refers to the diversity between different communities or ecosystems. Gamma diversity refers to the species diversity across communities or ecosystems within a larger region. For the purposes of this thesis, we will focus on alpha diversity, which is the most commonly measured type of biodiversity.
 
 Common alpha diversity metrics include species richness, absolute abundance, relative abundance, Shannon index, arithmetic mean abundance, and geometric mean abundance \parencite{santini2017, beery2021}. Species richness is the most commonly used metric and simply counts the number of species in a given area \parencite{ferrier2006}. Species richness is a very popular metric because presence-absence data is the most common type of biodiversity data \parencite{ozkan_tumer_two_2026}. Absolute abundance measures the total number of individuals of each species at a site, and relative abundance measures the proportion of individuals of each species relative to the total number of individuals in a site \parencite{beery2021}. The Shannon index is another commonly used metric and combines species richness and evenness into a single metric and quantifies the uncertainty in predicting the species of an individual randomly selected from a community \parencite{beery2021}. Arithmetic mean abundance is the average abundance of species in a given area, and geometric mean abundance is the exponential of the average of the log abundances of species in a given area \parencite{santini2017}.
 
-For the purposes of this thesis, it is beneficial to express these terms mathematically. Biodiversity metrics are usually calculated at the site level. A site is a spatial sampling unit that is defined according to a sampling protocol. We define a site as \(r\) and within a biodiversity dataset there are \(n\) sites which make up the region of interest \(R = \{r_1, r_2, \ldots , r_n\}\). Across the entire region of interest \(R\) there is a set \(S\) of unique species. Each site \(r\) has a set of species \(S_r\) which is a subset of the regional species set \(S\).
+For the purposes of this thesis, it is beneficial to express these terms mathematically. Biodiversity metrics are usually calculated at the site level. A site is a spatial sampling unit that is defined according to a sampling protocol. We define a site as \(r\), which is a spatiotemporal location, and within a biodiversity dataset there are \(n\) sites which make up the region of interest \(R = \{r_1, r_2, \ldots , r_n\}\). Across the entire region of interest \(R\) there is a set \(S\) of unique species that were observed, and \(s\) is a specific species, where \(s \in S\). Furthermore, let \(a_{s,r_i}\) be the abundance or count of individuals of species \(s\) at site \(r_i\).
 
 The alpha diversity metrics used in this thesis are therefore defined at the site level as follows.
 
-\noindent\textbf{Species richness.} Following Beery et al. \parencite{beery2021}, species richness is the number of unique species in a given site \(r\) and can be expressed as:
+\noindent\textbf{Species richness.} Following Beery et al. \parencite{beery2021}, species richness is the number of unique species \(s\) at a given site \(r_i\) and can be expressed as:
 \begin{equation}
-SR_r = \left|S_r\right|.
+SR_{r_i} = \sum_{s \in S} \mathbf{1}(a_{s,r_i} > 0),
 \label{eq:species-richness-site}
 \end{equation}
+where \(\mathbf{1}(\cdot)\) is the indicator function that equals 1 if the condition is true and 0 otherwise.
 For reference, regional species richness across \(R\) can be expressed as:
 \begin{equation}
-SR_R = \left|\bigcup_{r \in R} S_r\right|.
+SR_R = \left|S\right|.
 \label{eq:species-richness-regional}
 \end{equation}
 
-
-\noindent\textbf{Absolute abundance.} Absolute abundance is the total number of individuals of each species at a given site \(r\) and can be expressed as:
+\noindent\textbf{Absolute abundance.} Absolute abundance is the total number of individuals across species \(s\) at a given site \(r_i\) and can be expressed as:
 \begin{equation}
-A_r = \sum_{i \in S_r} a_{i,r}
+A_{r_i} = \sum_{s \in S} a_{s,r_i},
 \label{eq:absolute-abundance}
 \end{equation}
-where \(a_{i,r}\) is the abundance or count of individuals of species \(i\) in site \(r\) \parencite{beery2021}. Where \(a_{i,r} = 0\) if species \(i\) is not present in site \(r\).
+where \(a_{s,r_i}\) is the abundance or count of individuals of species \(s\) at site \(r_i\) \parencite{beery2021}, and \(a_{s,r_i} = 0\) if species \(s\) is not present at site \(r_i\).
 
-\noindent\textbf{Relative abundance.} Relative abundance is the proportion of individuals of each species relative to the total number of individuals in a given site \(r\) and can be expressed as:
+\noindent\textbf{Relative abundance.} Relative abundance is the proportion of individuals of each species \(s\) relative to the total number of individuals at a given site \(r_i\) and can be expressed as:
 \begin{equation}
-p_{i,r} = \frac{a_{i,r}}{A_r}
+p_{s,r_i} = \frac{a_{s,r_i}}{A_{r_i}},
 \label{eq:relative-abundance}
 \end{equation}
-where \(a_{i,r}\) is the abundance or count of individuals of species \(i\) in site \(r\) and \(A_r\) is the total abundance of all species in site \(r\) \parencite{beery2021}. Where \(a_{i,r} = 0\) if species \(i\) is not present in site \(r\).
+where \(a_{s,r_i}\) is the abundance or count of individuals of species \(s\) at site \(r_i\) and \(A_{r_i}\) is the total abundance of all species at site \(r_i\) \parencite{beery2021}. If \(a_{s,r_i} = 0\) then species \(s\) is not present at site \(r_i\), and \(p_{s,r_i} = 0\).
 
 \noindent\textbf{Shannon index.} The Shannon index combines species richness and evenness into a single metric and quantifies the uncertainty in predicting the species of an individual randomly selected from a community. It can be expressed as:
 \begin{equation}
-H_r = -\sum_{i \in S_r} p_{i,r} \ln(p_{i,r})
+H_{r_i} = -\sum_{s \in S} p_{s,r_i} \ln(p_{s,r_i}),
 \label{eq:shannon-index}
 \end{equation}
-where \(p_{i,r}\) is the proportion of individuals of species \(i\) relative to the total number of individuals in a given site \(r\) which is the relative abundance \(p_{i,r}\). The interpretation of the Shannon index is that higher values of \(H_r\) indicate higher diversity \parencite{dusek2017}.
+where \(p_{s,r_i}\)is the relative abundance of species \(s\) at site \(r_i\). If \(p_{s,r_i} = 0\), then that term is not include in the calculation. The interpretation of the Shannon index is that higher values of \(H_{r_i}\) indicate higher diversity \parencite{dusek2017}. 
 
-\noindent\textbf{Arithmetic mean abundance.} Arithmetic mean relative abundance is the average abundance of species at a given site \(r\). It can be expressed as:
+\noindent\textbf{Arithmetic mean abundance.} Arithmetic mean abundance is the average abundance of species present at site \(r_i\). It can be expressed as:
 \begin{equation}
-M_r = \frac{1}{SR_r} \sum_{i \in S_r} a_{i,r}
+M_{r_i} = \frac{1}{SR_{r_i}} \sum_{s \in S} a_{s,r_i},
 \label{eq:arithmetic-mean-abundance}
 \end{equation}
-where \(a_{i,r}\) is the abundance or count of individuals of species \(i\) in site \(r\) \parencite{santini2017}.
+where \(a_{s,r_i}\) is the abundance or count of individuals of species \(s\) at site \(r_i\) \parencite{santini2017}. If \(a_{s,r_i} = 0\) for any species \(s\) in site \(r_i\), then that species is not included in the calculation of the arithmetic mean abundance for site \(r_i\).
 
-\noindent\textbf{Geometric mean abundance.} Geometric mean abundance is the exponential of the average of the log abundances of species in a given area and can be expressed as:
+\noindent\textbf{Geometric mean abundance.} Geometric mean abundance is the exponential of the average of the log abundances of species at a given site \(r_i\) and can be expressed as:
 \begin{equation}
-G_r = \exp\left(\frac{1}{SR_r} \sum_{i \in S_r} \ln\left(a_{i,r}\right)\right)
+G_{r_i} = \exp\left(\frac{1}{SR_{r_i}} \sum_{s \in S} \ln\left(a_{s,r_i}\right)\right),
 \label{eq:geometric-mean-abundance}
 \end{equation}
-where \(a_{i,r}\) is the abundance or count of individuals of species \(i\) in site \(r\) \parencite{santini2017}. If \(a_{i,r} = 0\) for any species \(i\) in site \(r\), then that species is not included in the calculation of the geometric mean abundance for site \(r\).
+where \(a_{s,r_i}\) is the abundance or count of individuals of species \(s\) at site \(r_i\) \parencite{santini2017}. If \(a_{s,r_i} = 0\) for any species \(s\) at site \(r_i\), then that species is not included in the calculation of the geometric mean abundance for site \(r_i\).
 
 These metrics each have their own benefits and limitations. Species richness is the most commonly used metric because presence-absence data is the most common type of biodiversity data and it is easy to calculate \parencite{lamb2009, ozkan_tumer_two_2026}. However, species richness does not account for the abundance of species and can be biased towards rare species \parencite{ferrier2006}. Absolute abundance and relative abundance capture more information about the abundance of species in a given area, but they can be dominated by common species \parencite{beery2021}. The Shannon index combines species richness and evenness into a single metric and can provide a more comprehensive measure of biodiversity, but it can be difficult to interpret \parencite{dusek2017}. Arithmetic mean abundance and geometric mean abundance are useful for measuring changes in overall populations but can be inflated by very high population density species \parencite{santini2017}. It is important to look at a wide range of metrics when measuring biodiversity as each metric measures different aspects of biodiversity and responds differently to changes in biodiversity \parencite{lamb2009, santini2017}.
 
 \subsection{Spatial Biodiversity Modeling}\label{subsec:Biomodeling}
 
-Modeling biodiversity has roots in SDMs all the way back to the early 20th century \parencite{grinnell_1904}. Since then models have evolved from ecological models based on expert knowledge \parencite{beery2021}, to parametric statistical models \parencite{guisan2002}, to machine learning models \parencite{ozkan_tumer_two_2026}. The three model families: SDMs, JSDMs, and community-level models can be treated differently. SDMs and JSDMs are focused on predicting the distribution of individual species through presence or absence data \parencite{elith2009, ozkan_tumer_two_2026}. While these models are also capable of predicting abundance data, this area is underdeveloped \parencite{waldock2022}. Even with the ability to predict abundance data, SDMs and JSDMs are still focused on predicting the distribution of individual species through presence/absence or abundance at a specific site. This would inherently imply that SDMs and JSDMs are classification problems \parencite{beery2021,valavi2022, hu2025}. This is done in SDMs by stacking several independent SDMs together and then use the aggregation to predict biodiversity metrics \parencite{ferrier2006}. JSDMs, on the other hand, model multiple species at once using environmental variables and species interactions \parencite{warton2015}. This would imply JSDMs are a multi-label classification problem. 
+\subsubsection{Biodiversity Modeling as a Whole}
+Modeling biodiversity has roots in the early 20th century and began with modeling individual species distributions \parencite{grinnell_1904}. Since then models have evolved from ecological models based on expert knowledge \parencite{beery2021}, to parametric statistical models \parencite{guisan2002}, to machine learning models \parencite{ozkan_tumer_two_2026}. The three modeling strategies---bottom-up or ``predict first, assemble later'', joint or ``assemble and predict together'', and top-down or ``assemble first, predict later''---produce predictions of community-level biodiversity metrics differently \parencite{ferrier2006}; however, the starting point of the problem formulation is the same. Following from the notation in Section~\ref{subsec:biodiversity} and Beery et al. \parencite{beery2021} a site is denoted as \(r\), which is a spatiotemporal location. A general biodiversity dataset is defined as 
+\[\mathcal{D} = \{(r_i,y_i)\}_{i=1}^n,\] 
+where \(r_i \in R\) is a site and \(y_i \in Y\) is the response variable at site \(r_i\). We then extract a representation of the environment in the region \(R\) as 
+\[h: R \rightarrow X \subseteq \mathbb{R}^p.\] 
+Thus, 
+\[h(r_i) = x_i\] 
+where \(x_i\) is the vector of predictor variables for site \(r_i\) and \(x_i \in X \subseteq \mathbb{R}^p\), and \(p\) is the number of predictor variables. The predictor variables are usually gathered from various sources such as remote sensing data, climate datasets, and topographic maps \parencite{waltari2014, beery2021}. Therefore, the dataset can be represented as 
+\[\mathcal{D} = \{(x_i,y_i)\}_{i=1}^n.\] 
+We then define a model 
+\[
+\begin{aligned}
+f_\Theta &: X \rightarrow Y, \\
+\hat{y}_i &= f_\Theta(x_i) = f_\Theta(h(r_i)),
+\end{aligned}
+\]
+with parameters \(\Theta\) and \(\hat{y}_i\) is the predicted value for site \(r_i\). The definition of \(y_i\) and \(Y\) changes depending on the community-level biodiversity modeling strategy. 
+
+\subsubsection{Bottom-up Strategy}
+The bottom-up strategy is predominately focused on predicting the distribution of an individual species through presence-only, presence-absence data, or abundance data and most often predicted with a SDM \parencite{elith2009, elith2011,waldock2022, ozkan_tumer_two_2026}. For presence-only and presence-absence data the response variable or output is a prediction for the precense or absence of a species at a given site \parencite{beery2021}. In our problem formulation, \(y_i \in \{0,1\}\) where 0 represents an absence and 1 represents a presence of the species at site \(r_i\). Importantly, a SDM predicts the presence or absence of a single species, but for community-level biodiversity metrics we need more than just one species. Therefore, our problem formulation expands to include multiple species \(S = \{s_1, s_2, \ldots, s_m\}\), where \(m\) is the number of unique species observed across the region \(R\). For each site \(r_i \in R\) and each species \(s_j \in S\) let the response variable or output be \(y_{ij}\) and it is defined as
+\[y_{ij} = \begin{cases} 
+    1 & \text{if species } s_j \text{ is present at site } r_i, \\ 
+    0 & \text{otherwise}. \end{cases}\]
+We represent all \(y_{ij}\) for site \(r_i\) as a vector \(\mathbf{y}_i = (y_{i1}, y_{i2}, \ldots, y_{im})\).
+The dataset can be represented as 
+\[\mathcal{D} = \{(r_i,\mathbf{y}_i)\}_{i=1}^n.\] 
+The transformation of \(h(r_i)\) stays the same as before, and the predictor variables are still represented as \(x_i\), so our dataset after the transformation \(h(\cdot)\) is
+\[\mathcal{D} = \{(x_i,\mathbf{y}_i)\}_{i=1}^n.\] 
+However, we will now have \(m\) models, one for each species. Therefore, the model for species \(s_j\) is
+\[f_{\Theta_j} : X \rightarrow \{0,1\}.\]
+The predicted value for species \(s_j\) at site \(r_i\) the becomes
+\[\hat{y}_{ij} = f_{\Theta_j}(x_i) = f_{\Theta_j}(h(r_i)).\]
+Species richness prediction at site \(r_i\) can then be calculated by aggregating the predicted presence of each species at site \(r_i\). A common way to do this is to sum the predicted presence of each species at site \(r_i\) \parencite{grenie2020}. This results in the following formula for species richness prediction at site \(r_i\):
+\begin{equation}
+\widehat{SR}_{r_i} = \sum_{j=1}^m \hat{y}_{ij}
+\label{eq:bottom-up-species-richness-prediction}
+\end{equation}
+
+Likewise, if we have abundance data, then the response variable or output is a prediction for the abundance of a species at a given site \(r_i\) \parencite{beery2021}. In our problem formulation, \(y_{ij} \in \mathbb{N}\) where \(y_{ij}\) represents the abundance of species \(s_j\) at site \(r_i\). The model for species \(s_j\) is then
+\[f_{\Theta_j} : X \rightarrow \mathbb{N}.\]
+Absolute abundance prediction at site \(r_i\) can then be calculated by aggregated the predicted abundance of each species at site \(r_i\) 
+\begin{equation}
+\widehat{A}_{r_i} = \sum_{j=1}^m \hat{y}_{ij}.
+\label{eq:bottom-up-absolute-abundance-prediction}
+\end{equation}
+
+While individual species predictions can be quite accurate \parencite{valavi2022} there are several challenges to bottom-up approachs. Rare species are hard to account for due to a lack of data\parencite{ferrier2006, norberg2019, zhang2020}, even though they are important to the functionailty of an ecosystem \parencite{gascon2015} excluding rare species from the analysis would therefore be problematic. Additionally, several problems arise when deciding a threshold value to determine a species presence or absence \parencite{liu_selecting_2005, distler2015}, and the method of how you stack the individual SDMs also poses challenges \parencite{biber2020}. The discussion of these challenges is beyond the scope of this, but they highlight the limitations of the bottom-up approach and the additional methodological decisions that are required for community-level biodiversity assessment.
+
+\subsubsection{Joint Strategy}
+
+Assemble and predict together approaches, on the other hand, model multiple species at once using environmental variables while accounting for biotic interactions \parencite{wilkinson2019}. The response variable or output of these approaches is a community matrix, dissimilarity matrix, correlation matrix \parencite{warton2015, nieto2018}. If the model 
+
+which can then be aggregated to estimate biodiversity metrics. This is most similar to a classification problem; whereas, The top-down strategy, on the other hand, is focused on predicting biodiversity metrics directly without predicting specific species which is more similar to a regression problem \parencite{pollock2020}.
+The bottom-up and predict and assemble together strategies are focused on predicting the distribution of individual or multiple species mainly through presence-only or presence-absence data \parencite{elith2009, elith2011, wilkinson2019, ozkan_tumer_two_2026}. The output of these strategies is a prediction for each species at a given site or a community matrix \parencite{nieto2018, beery2021}. which can then be aggregated to estimate biodiversity metrics. This is most similar to a classification problem; whereas, The top-down strategy, on the other hand, is focused on predicting biodiversity metrics directly without predicting specific species which is more similar to a regression problem \parencite{pollock2020}.
+
+
+
+
+The SDMs and JSDMs are focused on predicting the distribution of individual species through presence or absence data \parencite{elith2009, ozkan_tumer_two_2026}. While these models are also capable of predicting abundance data, this area is underdeveloped \parencite{waldock2022}. Even with the ability to predict abundance data, SDMs and JSDMs are still focused on predicting the distribution of individual species through presence/absence or abundance at a specific site. This would inherently imply that SDMs and JSDMs are classification problems \parencite{beery2021,valavi2022, hu2025}. This is done in SDMs by stacking several independent SDMs together and then use the aggregation to predict biodiversity metrics \parencite{ferrier2006}. JSDMs, on the other hand, model multiple species at once using environmental variables and species interactions \parencite{warton2015}. This would imply JSDMs are a multi-label classification problem. 
 %add math notation here?
 
 %should I say something about how regression models are also common in SDMs but the main point is they are classifying if a species is present or absent at a specific site. They can model a distribution at a site but the interpretation of what that actually means is unsure. When it comes down to it you are classifying if a species is present or absent at a specific site.
