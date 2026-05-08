@@ -217,6 +217,59 @@
       \verb https://www.science.org/doi/10.1126/sciadv.aat4858
       \endverb
     \endentry
+    \entry{austin_species_2007}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=69cbefd3dc44620155f1366cc7fa1268}{%
+           family={Austin},
+           familyi={A\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{69cbefd3dc44620155f1366cc7fa1268}
+      \strng{fullhash}{69cbefd3dc44620155f1366cc7fa1268}
+      \strng{fullhashraw}{69cbefd3dc44620155f1366cc7fa1268}
+      \strng{bibnamehash}{69cbefd3dc44620155f1366cc7fa1268}
+      \strng{authorbibnamehash}{69cbefd3dc44620155f1366cc7fa1268}
+      \strng{authornamehash}{69cbefd3dc44620155f1366cc7fa1268}
+      \strng{authorfullhash}{69cbefd3dc44620155f1366cc7fa1268}
+      \strng{authorfullhashraw}{69cbefd3dc44620155f1366cc7fa1268}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{03043800}
+      \field{journaltitle}{Ecological Modelling}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shortjournal}{Ecological Modelling}
+      \field{shorttitle}{Species distribution models and ecological theory}
+      \field{title}{Species distribution models and ecological theory: A critical assessment and some possible new approaches}
+      \field{urlday}{8}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{200}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 19}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1016/j.ecolmodel.2006.07.005
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\FTN9SCTB\\Austin - 2007 - Species distribution models and ecological theory A critical assessment and some possible new appro.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0304380006003140
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0304380006003140
+      \endverb
+    \endentry
     \entry{baggstrom2025}{article}{}{}
       \name{author}{7}{}{%
         {{un=0,uniquepart=base,hash=1d38884ce1c4b9b1d0a5425ad15f239f}{%
@@ -391,80 +444,43 @@
       \endverb
       \keyw{Read}
     \endentry
-    \entry{biber2020}{article}{}{}
-      \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=c1e909c218fbe5ecd7923475d9d87850}{%
-           family={Biber},
+    \entry{bishop_pattern_2006}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9dfd0135a5e80aa6d81cea2c10fb7f73}{%
+           family={Bishop},
            familyi={B\bibinitperiod},
-           given={Matthias\bibnamedelima F.},
-           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=3cc09f054243e10599c3e146d67a3b91}{%
-           family={Voskamp},
-           familyi={V\bibinitperiod},
-           given={Alke},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=943637f134280989a3a037ab3b234803}{%
-           family={Niamir},
-           familyi={N\bibinitperiod},
-           given={Aidin},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=4def1ad32e17cda5c8fc3bc35d2146f4}{%
-           family={Hickler},
-           familyi={H\bibinitperiod},
-           given={Thomas},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=a118632c81a46ee9cee171f801dbca2b}{%
-           family={Hof},
-           familyi={H\bibinitperiod},
-           given={Christian},
-           giveni={C\bibinitperiod},
+           given={Christopher\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{017ddfe2ca67445d62655355c9eb8568}
-      \strng{fullhash}{78acc8ea2fac649df471d5926da352a1}
-      \strng{fullhashraw}{78acc8ea2fac649df471d5926da352a1}
-      \strng{bibnamehash}{017ddfe2ca67445d62655355c9eb8568}
-      \strng{authorbibnamehash}{017ddfe2ca67445d62655355c9eb8568}
-      \strng{authornamehash}{017ddfe2ca67445d62655355c9eb8568}
-      \strng{authorfullhash}{78acc8ea2fac649df471d5926da352a1}
-      \strng{authorfullhashraw}{78acc8ea2fac649df471d5926da352a1}
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{9dfd0135a5e80aa6d81cea2c10fb7f73}
+      \strng{fullhash}{9dfd0135a5e80aa6d81cea2c10fb7f73}
+      \strng{fullhashraw}{9dfd0135a5e80aa6d81cea2c10fb7f73}
+      \strng{bibnamehash}{9dfd0135a5e80aa6d81cea2c10fb7f73}
+      \strng{authorbibnamehash}{9dfd0135a5e80aa6d81cea2c10fb7f73}
+      \strng{authornamehash}{9dfd0135a5e80aa6d81cea2c10fb7f73}
+      \strng{authorfullhash}{9dfd0135a5e80aa6d81cea2c10fb7f73}
+      \strng{authorfullhashraw}{9dfd0135a5e80aa6d81cea2c10fb7f73}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{0305-0270, 1365-2699}
-      \field{journaltitle}{Journal of Biogeography}
+      \field{isbn}{978-0-387-31073-2}
       \field{langid}{english}
-      \field{month}{1}
-      \field{number}{1}
-      \field{shortjournal}{Journal of Biogeography}
-      \field{title}{A comparison of macroecological and stacked species distribution models to predict future global terrestrial vertebrate richness}
-      \field{urlday}{8}
-      \field{urlmonth}{8}
-      \field{urlyear}{2025}
-      \field{volume}{47}
-      \field{year}{2020}
+      \field{series}{Information science and statistics}
+      \field{title}{Pattern recognition and machine learning}
+      \field{year}{2006}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{114\bibrangedash 129}
-      \range{pages}{16}
-      \verb{doi}
-      \verb 10.1111/jbi.13696
-      \endverb
       \verb{file}
-      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\HSVWSQVD\\Biber et al. - 2020 - A comparison of macroecological and stacked species distribution models to predict future global ter.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://onlinelibrary.wiley.com/doi/10.1111/jbi.13696
-      \endverb
-      \verb{url}
-      \verb https://onlinelibrary.wiley.com/doi/10.1111/jbi.13696
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\PL7XX9WJ\\Bishop - 2006 - Pattern recognition and machine learning.pdf:application/pdf
       \endverb
     \endentry
     \entry{brauman2020}{article}{}{}
@@ -621,8 +637,10 @@
       \strng{authornamehash}{132b7100417675d55d5d4d8b244f7a34}
       \strng{authorfullhash}{132b7100417675d55d5d4d8b244f7a34}
       \strng{authorfullhashraw}{132b7100417675d55d5d4d8b244f7a34}
+      \field{extraname}{1}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
@@ -636,6 +654,46 @@
       \range{pages}{28}
       \verb{doi}
       \verb 10.1023/A:1010933404324
+      \endverb
+    \endentry
+    \entry{breiman2001}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=132b7100417675d55d5d4d8b244f7a34}{%
+           family={Breiman},
+           familyi={B\bibinitperiod},
+           given={Leo},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{132b7100417675d55d5d4d8b244f7a34}
+      \strng{fullhash}{132b7100417675d55d5d4d8b244f7a34}
+      \strng{fullhashraw}{132b7100417675d55d5d4d8b244f7a34}
+      \strng{bibnamehash}{132b7100417675d55d5d4d8b244f7a34}
+      \strng{authorbibnamehash}{132b7100417675d55d5d4d8b244f7a34}
+      \strng{authornamehash}{132b7100417675d55d5d4d8b244f7a34}
+      \strng{authorfullhash}{132b7100417675d55d5d4d8b244f7a34}
+      \strng{authorfullhashraw}{132b7100417675d55d5d4d8b244f7a34}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Machine Learning}
+      \field{number}{1}
+      \field{title}{Random Forests}
+      \field{volume}{45}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{pages}{5\bibrangedash 32}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1023/A:1010933404324
+      \endverb
+      \verb{file}
+      \verb randomforest2001:C\:\\Users\\caleb\\Zotero\\storage\\ZKZIMK8D\\randomforest2001.pdf:application/pdf
       \endverb
     \endentry
     \entry{brun2024}{article}{}{}
@@ -1586,149 +1644,6 @@
       \verb http://www.karolinum.cz/doi/10.14712/23361980.2015.12
       \endverb
     \endentry
-    \entry{elith2009}{article}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=22e158108d166fcb5d64aab03da6300f}{%
-           family={Elith},
-           familyi={E\bibinitperiod},
-           given={Jane},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=dcb512484c8d130330ec0c333fb93de1}{%
-           family={Leathwick},
-           familyi={L\bibinitperiod},
-           given={John\bibnamedelima R.},
-           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{e9b4282de9d9562a62f8c129eac20d90}
-      \strng{fullhash}{e9b4282de9d9562a62f8c129eac20d90}
-      \strng{fullhashraw}{e9b4282de9d9562a62f8c129eac20d90}
-      \strng{bibnamehash}{e9b4282de9d9562a62f8c129eac20d90}
-      \strng{authorbibnamehash}{e9b4282de9d9562a62f8c129eac20d90}
-      \strng{authornamehash}{e9b4282de9d9562a62f8c129eac20d90}
-      \strng{authorfullhash}{e9b4282de9d9562a62f8c129eac20d90}
-      \strng{authorfullhashraw}{e9b4282de9d9562a62f8c129eac20d90}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Species distribution models ({SDMs}) are numerical tools that combine observations of species occurrence or abundance with environmental estimates. They are used to gain ecological and evolutionary insights and to predict distributions across landscapes, sometimes requiring extrapolation in space and time. {SDMs} are now widely used across terrestrial, freshwater, and marine realms. Differences in methods between disciplines reﬂect both differences in species mobility and in “established use.” Model realism and robustness is inﬂuenced by selection of relevant predictors and modeling method, consideration of scale, how the interplay between environmental and geographic factors is handled, and the extent of extrapolation. Current linkages between {SDM} practice and ecological theory are often weak, hindering progress. Remaining challenges include: improvement of methods for modeling presence-only data and for model selection and evaluation; accounting for biotic interactions; and assessing model uncertainty.}
-      \field{day}{1}
-      \field{issn}{1543-592X, 1545-2069}
-      \field{journaltitle}{Annual Review of Ecology, Evolution, and Systematics}
-      \field{langid}{english}
-      \field{month}{12}
-      \field{number}{1}
-      \field{shortjournal}{Annu. Rev. Ecol. Evol. Syst.}
-      \field{shorttitle}{Species Distribution Models}
-      \field{title}{Species Distribution Models: Ecological Explanation and Prediction Across Space and Time}
-      \field{urlday}{23}
-      \field{urlmonth}{2}
-      \field{urlyear}{2026}
-      \field{volume}{40}
-      \field{year}{2009}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{677\bibrangedash 697}
-      \range{pages}{21}
-      \verb{doi}
-      \verb 10.1146/annurev.ecolsys.110308.120159
-      \endverb
-      \verb{file}
-      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\EVCXDR2A\\Elith and Leathwick - 2009 - Species Distribution Models Ecological Explanation and Prediction Across Space and Time.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://www.annualreviews.org/doi/10.1146/annurev.ecolsys.110308.120159
-      \endverb
-      \verb{url}
-      \verb https://www.annualreviews.org/doi/10.1146/annurev.ecolsys.110308.120159
-      \endverb
-    \endentry
-    \entry{elith2011}{article}{}{}
-      \name{author}{6}{ul=2}{%
-        {{un=0,uniquepart=base,hash=22e158108d166fcb5d64aab03da6300f}{%
-           family={Elith},
-           familyi={E\bibinitperiod},
-           given={Jane},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ac11f126d43dcffd58b0c793014e3063}{%
-           family={Phillips},
-           familyi={P\bibinitperiod},
-           given={Steven\bibnamedelima J.},
-           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=0cb8fe4210baa81c4b0e67913b4d2768}{%
-           family={Hastie},
-           familyi={H\bibinitperiod},
-           given={Trevor},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f22170ade97bd945149242679a0c806c}{%
-           family={Dudík},
-           familyi={D\bibinitperiod},
-           given={Miroslav},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d038c7a1123a5692849237e670f48fc2}{%
-           family={Chee},
-           familyi={C\bibinitperiod},
-           given={Yung\bibnamedelima En},
-           giveni={Y\bibinitperiod\bibinitdelim E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b35872bac03d0f81bb8a54fd325bad1e}{%
-           family={Yates},
-           familyi={Y\bibinitperiod},
-           given={Colin\bibnamedelima J.},
-           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{ce7ad492dd05fdf0bf95e39b2f62f2e9}
-      \strng{fullhash}{7f87088eeac7a54a7c8ee87c8a569cb0}
-      \strng{fullhashraw}{7f87088eeac7a54a7c8ee87c8a569cb0}
-      \strng{bibnamehash}{ce7ad492dd05fdf0bf95e39b2f62f2e9}
-      \strng{authorbibnamehash}{ce7ad492dd05fdf0bf95e39b2f62f2e9}
-      \strng{authornamehash}{ce7ad492dd05fdf0bf95e39b2f62f2e9}
-      \strng{authorfullhash}{7f87088eeac7a54a7c8ee87c8a569cb0}
-      \strng{authorfullhashraw}{7f87088eeac7a54a7c8ee87c8a569cb0}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{issn}{13669516}
-      \field{journaltitle}{Diversity and Distributions}
-      \field{langid}{english}
-      \field{month}{1}
-      \field{number}{1}
-      \field{shorttitle}{A statistical explanation of {MaxEnt} for ecologists}
-      \field{title}{A statistical explanation of {MaxEnt} for ecologists: Statistical explanation of {MaxEnt}}
-      \field{urlday}{23}
-      \field{urlmonth}{2}
-      \field{urlyear}{2026}
-      \field{volume}{17}
-      \field{year}{2011}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{43\bibrangedash 57}
-      \range{pages}{15}
-      \verb{doi}
-      \verb 10.1111/j.1472-4642.2010.00725.x
-      \endverb
-      \verb{file}
-      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\WENT8E82\\Elith et al. - 2011 - A statistical explanation of MaxEnt for ecologists Statistical explanation of MaxEnt.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://onlinelibrary.wiley.com/doi/10.1111/j.1472-4642.2010.00725.x
-      \endverb
-      \verb{url}
-      \verb https://onlinelibrary.wiley.com/doi/10.1111/j.1472-4642.2010.00725.x
-      \endverb
-    \endentry
     \entry{escamilla2022}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=2c6a8553bd5d51b34252c1d17dc80d39}{%
@@ -1857,6 +1772,76 @@
       \verb https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.1365-2664.2006.01149.x
       \endverb
       \keyw{Read}
+    \endentry
+    \entry{ferrier2007}{article}{}{}
+      \name{author}{4}{ul=2}{%
+        {{un=0,uniquepart=base,hash=39011e2380b8ee7046d21d9572c0e59f}{%
+           family={Ferrier},
+           familyi={F\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9b4450db3c8d19a01708919396ecdb10}{%
+           family={Manion},
+           familyi={M\bibinitperiod},
+           given={Glenn},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=22e158108d166fcb5d64aab03da6300f}{%
+           family={Elith},
+           familyi={E\bibinitperiod},
+           given={Jane},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c029908e58ad204dab6f581b8d60170e}{%
+           family={Richardson},
+           familyi={R\bibinitperiod},
+           given={Karen},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{03c3f51c7320df86000525b0ae3ade50}
+      \strng{fullhash}{705f9a3ed57fbf8fd17abd399ee8b48e}
+      \strng{fullhashraw}{705f9a3ed57fbf8fd17abd399ee8b48e}
+      \strng{bibnamehash}{03c3f51c7320df86000525b0ae3ade50}
+      \strng{authorbibnamehash}{03c3f51c7320df86000525b0ae3ade50}
+      \strng{authornamehash}{03c3f51c7320df86000525b0ae3ade50}
+      \strng{authorfullhash}{705f9a3ed57fbf8fd17abd399ee8b48e}
+      \strng{authorfullhashraw}{705f9a3ed57fbf8fd17abd399ee8b48e}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1366-9516, 1472-4642}
+      \field{journaltitle}{Diversity and Distributions}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{3}
+      \field{shortjournal}{Diversity and Distributions}
+      \field{title}{Using generalized dissimilarity modelling to analyse and predict patterns of beta diversity in regional biodiversity assessment}
+      \field{urlday}{8}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{13}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{252\bibrangedash 264}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1111/j.1472-4642.2007.00341.x
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\DVRYGDSP\\Ferrier et al. - 2007 - Using generalized dissimilarity modelling to analyse and predict patterns of beta diversity in regio.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/j.1472-4642.2007.00341.x
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/j.1472-4642.2007.00341.x
+      \endverb
     \endentry
     \entry{friedman2001}{article}{}{}
       \name{author}{1}{}{%
@@ -2146,69 +2131,6 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0960982215003942
       \endverb
     \endentry
-    \entry{grenie2020}{article}{}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=587d2b2d13374600d1f85c7ceaaf33c0}{%
-           family={Grenié},
-           familyi={G\bibinitperiod},
-           given={Matthias},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8f524674b7870bae7bfbc772ee46b984}{%
-           family={Violle},
-           familyi={V\bibinitperiod},
-           given={Cyrille},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=46c290d66a4d870a6606ed4715b911bf}{%
-           family={Munoz},
-           familyi={M\bibinitperiod},
-           given={François},
-           giveni={F\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{9b878de50b49ff5278b8185f8fb219c0}
-      \strng{fullhash}{9b878de50b49ff5278b8185f8fb219c0}
-      \strng{fullhashraw}{9b878de50b49ff5278b8185f8fb219c0}
-      \strng{bibnamehash}{9b878de50b49ff5278b8185f8fb219c0}
-      \strng{authorbibnamehash}{9b878de50b49ff5278b8185f8fb219c0}
-      \strng{authornamehash}{9b878de50b49ff5278b8185f8fb219c0}
-      \strng{authorfullhash}{9b878de50b49ff5278b8185f8fb219c0}
-      \strng{authorfullhashraw}{9b878de50b49ff5278b8185f8fb219c0}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1470160X}
-      \field{journaltitle}{Ecological Indicators}
-      \field{langid}{english}
-      \field{month}{4}
-      \field{shortjournal}{Ecological Indicators}
-      \field{title}{Is prediction of species richness from stacked species distribution models biased by habitat saturation?}
-      \field{urlday}{6}
-      \field{urlmonth}{5}
-      \field{urlyear}{2026}
-      \field{volume}{111}
-      \field{year}{2020}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{105970}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1016/j.ecolind.2019.105970
-      \endverb
-      \verb{file}
-      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\2JNRLRFT\\Grenié et al. - 2020 - Is prediction of species richness from stacked species distribution models biased by habitat saturat.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://linkinghub.elsevier.com/retrieve/pii/S1470160X19309653
-      \endverb
-      \verb{url}
-      \verb https://linkinghub.elsevier.com/retrieve/pii/S1470160X19309653
-      \endverb
-    \endentry
     \entry{grinnell_1904}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=e21baf6663b52da5637a0740b4934fb4}{%
@@ -2355,68 +2277,128 @@
       \field{pages}{297\bibrangedash 318}
       \range{pages}{22}
     \endentry
-    \entry{hu2025}{article}{}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=ae0e4f9c483c06a74dd7a7ab080209ee}{%
-           family={Hu},
+    \entry{hoskins2020}{article}{}{}
+      \name{author}{13}{}{%
+        {{un=0,uniquepart=base,hash=a39cd4f1b5b2e372509722783cba6abd}{%
+           family={Hoskins},
            familyi={H\bibinitperiod},
-           given={Yuqing},
-           giveni={Y\bibinitperiod},
+           given={Andrew\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=b21f6792c72d7c99cdb1340c4c430557}{%
-           family={Si‐Moussi},
-           familyi={S\bibinithyphendelim M\bibinitperiod},
-           given={Sara},
-           giveni={S\bibinitperiod},
+        {{un=0,uniquepart=base,hash=3f84c3d62628e4edbba543372a6f01a1}{%
+           family={Harwood},
+           familyi={H\bibinitperiod},
+           given={Thomas\bibnamedelima D.},
+           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=c8420a71ed1be07777ddccc3254bee18}{%
-           family={Thuiller},
-           familyi={T\bibinitperiod},
-           given={Wilfried},
+        {{un=0,uniquepart=base,hash=329361bca1c0f67892f5b00d68c66cde}{%
+           family={Ware},
+           familyi={W\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e0f6f22647dbfb123673f0667bbdaa1d}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Kristen\bibnamedelima J.},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b76756682a7427f70ebee4a6513efeff}{%
+           family={Perry},
+           familyi={P\bibinitperiod},
+           given={Justin\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=59962f996b9e525cabd605151900f0d2}{%
+           family={Ota},
+           familyi={O\bibinitperiod},
+           given={Noboru},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=51ae54a3da0433d7a67f63951dbbff7c}{%
+           family={Croft},
+           familyi={C\bibinitperiod},
+           given={Jim\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e3f1256a55af91db7b5ff3bc7b635ef1}{%
+           family={Yeates},
+           familyi={Y\bibinitperiod},
+           given={David\bibnamedelima K.},
+           giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=20ac2735e7001c0b59816963e36a40ef}{%
+           family={Jetz},
+           familyi={J\bibinitperiod},
+           given={Walter},
            giveni={W\bibinitperiod},
            givenun=0}}%
+        {{un=0,uniquepart=base,hash=17b3ac93662a40f077dff502da39d003}{%
+           family={Golebiewski},
+           familyi={G\bibinitperiod},
+           given={Maciej},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb735b8020f240a8c2ce5678ea07a18b}{%
+           family={Purvis},
+           familyi={P\bibinitperiod},
+           given={Andy},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8398b96e5c59c7ef45318737c091dc77}{%
+           family={Robertson},
+           familyi={R\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=39011e2380b8ee7046d21d9572c0e59f}{%
+           family={Ferrier},
+           familyi={F\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
       }
-      \strng{namehash}{9919fddd29d19b51d16a35f1ba3d8fde}
-      \strng{fullhash}{9919fddd29d19b51d16a35f1ba3d8fde}
-      \strng{fullhashraw}{9919fddd29d19b51d16a35f1ba3d8fde}
-      \strng{bibnamehash}{9919fddd29d19b51d16a35f1ba3d8fde}
-      \strng{authorbibnamehash}{9919fddd29d19b51d16a35f1ba3d8fde}
-      \strng{authornamehash}{9919fddd29d19b51d16a35f1ba3d8fde}
-      \strng{authorfullhash}{9919fddd29d19b51d16a35f1ba3d8fde}
-      \strng{authorfullhashraw}{9919fddd29d19b51d16a35f1ba3d8fde}
+      \strng{namehash}{9a00eb45440f698c7309456df2f601aa}
+      \strng{fullhash}{98f7fee6b84ef785a85c2d3d6c0fa0d2}
+      \strng{fullhashraw}{98f7fee6b84ef785a85c2d3d6c0fa0d2}
+      \strng{bibnamehash}{9a00eb45440f698c7309456df2f601aa}
+      \strng{authorbibnamehash}{9a00eb45440f698c7309456df2f601aa}
+      \strng{authornamehash}{9a00eb45440f698c7309456df2f601aa}
+      \strng{authorfullhash}{98f7fee6b84ef785a85c2d3d6c0fa0d2}
+      \strng{authorfullhashraw}{98f7fee6b84ef785a85c2d3d6c0fa0d2}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{2041-210X, 2041-210X}
-      \field{journaltitle}{Methods in Ecology and Evolution}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{13648152}
+      \field{journaltitle}{Environmental Modelling \& Software}
       \field{langid}{english}
-      \field{month}{1}
-      \field{number}{1}
-      \field{shortjournal}{Methods Ecol Evol}
-      \field{title}{Introduction to deep learning methods for multi‐species predictions}
-      \field{urlday}{11}
+      \field{month}{10}
+      \field{shortjournal}{Environmental Modelling \& Software}
+      \field{shorttitle}{{BILBI}}
+      \field{title}{{BILBI}: Supporting global biodiversity assessment through high-resolution macroecological modelling}
+      \field{urlday}{8}
       \field{urlmonth}{8}
       \field{urlyear}{2025}
-      \field{volume}{16}
-      \field{year}{2025}
+      \field{volume}{132}
+      \field{year}{2020}
       \field{dateera}{ce}
       \field{urldateera}{ce}
-      \field{pages}{228\bibrangedash 246}
-      \range{pages}{19}
+      \field{pages}{104806}
+      \range{pages}{1}
       \verb{doi}
-      \verb 10.1111/2041-210X.14466
+      \verb 10.1016/j.envsoft.2020.104806
       \endverb
       \verb{file}
-      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\25YVEETS\\Hu et al. - 2025 - Introduction to deep learning methods for multi‐species predictions.pdf:application/pdf
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\QUZPVEDR\\Hoskins et al. - 2020 - BILBI Supporting global biodiversity assessment through high-resolution macroecological modelling.pdf:application/pdf
       \endverb
       \verb{urlraw}
-      \verb https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14466
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S1364815220301225
       \endverb
       \verb{url}
-      \verb https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14466
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S1364815220301225
       \endverb
     \endentry
     \entry{IPBES2019spm}{report}{}{}
@@ -2869,74 +2851,137 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/0304380095001425
       \endverb
     \endentry
-    \entry{liu_selecting_2005}{article}{}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=add86bccbc92b788c1c3ad8ab7599172}{%
-           family={Liu},
+    \entry{loh_classification_2011}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=61c48cba9ec80a3ec3dafe0caa0413cc}{%
+           family={Loh},
            familyi={L\bibinitperiod},
-           given={Canran},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=cdc51ae901c78151f6a00e6f7e2dfa1e}{%
-           family={Berry},
-           familyi={B\bibinitperiod},
-           given={Pam\bibnamedelima M.},
-           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=a673415650d3d378b749c026449536d0}{%
-           family={Dawson},
-           familyi={D\bibinitperiod},
-           given={Terence\bibnamedelima P.},
-           giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=6b7972d75af26e92c062b88ef9e013e4}{%
-           family={Pearson},
-           familyi={P\bibinitperiod},
-           given={Richard\bibnamedelima G.},
-           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Wei-Yin},
+           giveni={W\bibinithyphendelim Y\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{efb0c67c14a7a4b3e799fdc3bc138d61}
-      \strng{fullhash}{fd0dd41441d3d7f47f61ffb9f2985825}
-      \strng{fullhashraw}{fd0dd41441d3d7f47f61ffb9f2985825}
-      \strng{bibnamehash}{efb0c67c14a7a4b3e799fdc3bc138d61}
-      \strng{authorbibnamehash}{efb0c67c14a7a4b3e799fdc3bc138d61}
-      \strng{authornamehash}{efb0c67c14a7a4b3e799fdc3bc138d61}
-      \strng{authorfullhash}{fd0dd41441d3d7f47f61ffb9f2985825}
-      \strng{authorfullhashraw}{fd0dd41441d3d7f47f61ffb9f2985825}
+      \strng{namehash}{61c48cba9ec80a3ec3dafe0caa0413cc}
+      \strng{fullhash}{61c48cba9ec80a3ec3dafe0caa0413cc}
+      \strng{fullhashraw}{61c48cba9ec80a3ec3dafe0caa0413cc}
+      \strng{bibnamehash}{61c48cba9ec80a3ec3dafe0caa0413cc}
+      \strng{authorbibnamehash}{61c48cba9ec80a3ec3dafe0caa0413cc}
+      \strng{authornamehash}{61c48cba9ec80a3ec3dafe0caa0413cc}
+      \strng{authorfullhash}{61c48cba9ec80a3ec3dafe0caa0413cc}
+      \strng{authorfullhashraw}{61c48cba9ec80a3ec3dafe0caa0413cc}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{0906-7590, 1600-0587}
-      \field{journaltitle}{Ecography}
-      \field{langid}{english}
-      \field{month}{6}
-      \field{number}{3}
-      \field{shortjournal}{Ecography}
-      \field{title}{Selecting thresholds of occurrence in the prediction of species distributions}
-      \field{urlday}{6}
-      \field{urlmonth}{5}
-      \field{urlyear}{2026}
-      \field{volume}{28}
-      \field{year}{2005}
+      \field{journaltitle}{{WIREs} Data Mining and Knowledge Discovery}
+      \field{note}{\_eprint: https://wires.onlinelibrary.wiley.com/doi/pdf/10.1002/widm.8}
+      \field{number}{1}
+      \field{title}{Classification and regression trees}
+      \field{volume}{1}
+      \field{year}{2011}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{385\bibrangedash 393}
-      \range{pages}{9}
+      \field{pages}{14\bibrangedash 23}
+      \range{pages}{10}
       \verb{doi}
-      \verb 10.1111/j.0906-7590.2005.03957.x
+      \verb https://doi.org/10.1002/widm.8
       \endverb
       \verb{file}
-      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\7DYDY4FI\\Liu et al. - 2005 - Selecting thresholds of occurrence in the prediction of species distributions.pdf:application/pdf
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\66KQ86C9\\Loh - Classiﬁcation and Regression Trees.pdf:application/pdf
       \endverb
       \verb{urlraw}
-      \verb https://nsojournals.onlinelibrary.wiley.com/doi/10.1111/j.0906-7590.2005.03957.x
+      \verb https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/widm.8
       \endverb
       \verb{url}
-      \verb https://nsojournals.onlinelibrary.wiley.com/doi/10.1111/j.0906-7590.2005.03957.x
+      \verb https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/widm.8
+      \endverb
+    \endentry
+    \entry{mienye_survey_2024}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=4d37bfd99fc41542a709007a534d2a4b}{%
+           family={Mienye},
+           familyi={M\bibinitperiod},
+           given={Ibomoiye\bibnamedelima Domor},
+           giveni={I\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=18983b2fc6189e7af81ec868250553a5}{%
+           family={Jere},
+           familyi={J\bibinitperiod},
+           given={Nobert},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bc19585e0d826deedcc6a396aa6f1fce}
+      \strng{fullhash}{bc19585e0d826deedcc6a396aa6f1fce}
+      \strng{fullhashraw}{bc19585e0d826deedcc6a396aa6f1fce}
+      \strng{bibnamehash}{bc19585e0d826deedcc6a396aa6f1fce}
+      \strng{authorbibnamehash}{bc19585e0d826deedcc6a396aa6f1fce}
+      \strng{authornamehash}{bc19585e0d826deedcc6a396aa6f1fce}
+      \strng{authorfullhash}{bc19585e0d826deedcc6a396aa6f1fce}
+      \strng{authorfullhashraw}{bc19585e0d826deedcc6a396aa6f1fce}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{2169-3536}
+      \field{journaltitle}{{IEEE} Access}
+      \field{langid}{english}
+      \field{shortjournal}{{IEEE} Access}
+      \field{shorttitle}{A Survey of Decision Trees}
+      \field{title}{A Survey of Decision Trees: Concepts, Algorithms, and Applications}
+      \field{urlday}{8}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{12}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{86716\bibrangedash 86727}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2024.3416838
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\BJPJFFHI\\Mienye and Jere - 2024 - A Survey of Decision Trees Concepts, Algorithms, and Applications.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/10562290/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/10562290/
+      \endverb
+    \endentry
+    \entry{moisen_classification_2008}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=99f78acbb8813757788d17f29b2c3a69}{%
+           family={Moisen},
+           familyi={M\bibinitperiod},
+           given={G\bibnamedelima G},
+           giveni={G\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{99f78acbb8813757788d17f29b2c3a69}
+      \strng{fullhash}{99f78acbb8813757788d17f29b2c3a69}
+      \strng{fullhashraw}{99f78acbb8813757788d17f29b2c3a69}
+      \strng{bibnamehash}{99f78acbb8813757788d17f29b2c3a69}
+      \strng{authorbibnamehash}{99f78acbb8813757788d17f29b2c3a69}
+      \strng{authornamehash}{99f78acbb8813757788d17f29b2c3a69}
+      \strng{authorfullhash}{99f78acbb8813757788d17f29b2c3a69}
+      \strng{authorfullhashraw}{99f78acbb8813757788d17f29b2c3a69}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Classification and regression trees}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\7I6Q7IIP\\Moisen - Classification and regression trees.pdf:application/pdf
       \endverb
     \endentry
     \entry{mondal2021}{article}{}{}
@@ -3965,6 +4010,68 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0006320716302786
       \endverb
     \endentry
+    \entry{robin2021}{misc}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5ac473fe5f321f85aa5a5805168ebffd}{%
+           family={Robin},
+           familyi={R\bibinitperiod},
+           given={Geneviève},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6be040096e109922ee9dfd911b3128f1}{%
+           family={Hasif},
+           familyi={H\bibinitperiod},
+           given={Cathia\bibnamedelima Le},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{57c6980d96efc53edbb95472aecde3f8}
+      \strng{fullhash}{57c6980d96efc53edbb95472aecde3f8}
+      \strng{fullhashraw}{57c6980d96efc53edbb95472aecde3f8}
+      \strng{bibnamehash}{57c6980d96efc53edbb95472aecde3f8}
+      \strng{authorbibnamehash}{57c6980d96efc53edbb95472aecde3f8}
+      \strng{authornamehash}{57c6980d96efc53edbb95472aecde3f8}
+      \strng{authorfullhash}{57c6980d96efc53edbb95472aecde3f8}
+      \strng{authorfullhashraw}{57c6980d96efc53edbb95472aecde3f8}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{17}
+      \field{eprinttype}{arxiv}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{{arXiv}:2108.07480}
+      \field{shorttitle}{Technical report}
+      \field{title}{Technical report: Impact of evaluation metrics and sampling on the comparison of machine learning methods for biodiversity indicators prediction}
+      \field{urlday}{11}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2108.07480
+      \endverb
+      \verb{eprint}
+      \verb 2108.07480 [stat]
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\Y9I3FBD8\\Robin and Hasif - 2021 - Technical report Impact of evaluation metrics and sampling on the comparison of machine learning me.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2108.07480
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2108.07480
+      \endverb
+      \keyw{Statistics - Applications}
+    \endentry
     \entry{roe2018}{article}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=ab1fae6f5e26f2e5ec96e3de432188ee}{%
@@ -4828,6 +4935,64 @@
       \verb https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.13106
       \endverb
     \endentry
+    \entry{yee_generalized_1991}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7467dc5e783b7611642bfcd1c127db99}{%
+           family={Yee},
+           familyi={Y\bibinitperiod},
+           given={Thomas\bibnamedelima W.},
+           giveni={T\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=321a4e0b1cc388d4e6881784289416fc}{%
+           family={Mitchell},
+           familyi={M\bibinitperiod},
+           given={Neil\bibnamedelima D.},
+           giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cc5c4fa94c77110d040defa893280a1a}
+      \strng{fullhash}{cc5c4fa94c77110d040defa893280a1a}
+      \strng{fullhashraw}{cc5c4fa94c77110d040defa893280a1a}
+      \strng{bibnamehash}{cc5c4fa94c77110d040defa893280a1a}
+      \strng{authorbibnamehash}{cc5c4fa94c77110d040defa893280a1a}
+      \strng{authornamehash}{cc5c4fa94c77110d040defa893280a1a}
+      \strng{authorfullhash}{cc5c4fa94c77110d040defa893280a1a}
+      \strng{authorfullhashraw}{cc5c4fa94c77110d040defa893280a1a}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1100-9233, 1654-1103}
+      \field{journaltitle}{Journal of Vegetation Science}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{5}
+      \field{shortjournal}{J Vegetation Science}
+      \field{title}{Generalized additive models in plant ecology}
+      \field{urlday}{8}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{2}
+      \field{year}{1991}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{587\bibrangedash 602}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.2307/3236170
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\XKQ8CHEI\\Yee and Mitchell - 1991 - Generalized additive models in plant ecology.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.2307/3236170
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.2307/3236170
+      \endverb
+    \endentry
     \entry{zeng2022}{article}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=569ba66fd238298937271c38a88133d0}{%
@@ -4945,7 +5110,6 @@
       \strng{editornamehash}{43bbaeca8a9d92bea9c2d972596b9397}
       \strng{editorfullhash}{43bbaeca8a9d92bea9c2d972596b9397}
       \strng{editorfullhashraw}{43bbaeca8a9d92bea9c2d972596b9397}
-      \field{extraname}{1}
       \field{sortinit}{Z}
       \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
       \field{extradatescope}{labelyear}
@@ -4980,79 +5144,6 @@
       \endverb
       \verb{url}
       \verb https://onlinelibrary.wiley.com/doi/10.1111/ddi.12970
-      \endverb
-    \endentry
-    \entry{zhang2020}{article}{}{}
-      \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=d7f8252ce99f43a543795a4c83614fa5}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Chongliang},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=7608dbf6c54dadf166f77046db3c64a6}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Yong},
-           giveni={Y\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=962d899a4670f534865903a60ea1cb16}{%
-           family={Xu},
-           familyi={X\bibinitperiod},
-           given={Binduo},
-           giveni={B\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=68da067b66af9e3dbf1b6fd6696eec9a}{%
-           family={Xue},
-           familyi={X\bibinitperiod},
-           given={Ying},
-           giveni={Y\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=96e367241bacc8749e47f1d6b93b9c9e}{%
-           family={Ren},
-           familyi={R\bibinitperiod},
-           given={Yiping},
-           giveni={Y\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{5aa52f748378baa82f722d1f2bb5c70a}
-      \strng{fullhash}{f04eedb471bf0e85e1b8fe4ee3f13545}
-      \strng{fullhashraw}{f04eedb471bf0e85e1b8fe4ee3f13545}
-      \strng{bibnamehash}{5aa52f748378baa82f722d1f2bb5c70a}
-      \strng{authorbibnamehash}{5aa52f748378baa82f722d1f2bb5c70a}
-      \strng{authornamehash}{5aa52f748378baa82f722d1f2bb5c70a}
-      \strng{authorfullhash}{f04eedb471bf0e85e1b8fe4ee3f13545}
-      \strng{authorfullhashraw}{f04eedb471bf0e85e1b8fe4ee3f13545}
-      \field{extraname}{2}
-      \field{sortinit}{Z}
-      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{22}
-      \field{issn}{2045-2322}
-      \field{journaltitle}{Scientific Reports}
-      \field{month}{7}
-      \field{number}{1}
-      \field{shortjournal}{Scientific Reports}
-      \field{title}{Improving prediction of rare species’ distribution from community data}
-      \field{volume}{10}
-      \field{year}{2020}
-      \field{dateera}{ce}
-      \field{pages}{12230}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1038/s41598-020-69157-x
-      \endverb
-      \verb{file}
-      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\IRGUYW2U\\Zhang et al. - 2020 - Improving prediction of rare species’ distribution from community data.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1038/s41598-020-69157-x
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1038/s41598-020-69157-x
       \endverb
     \endentry
   \enddatalist

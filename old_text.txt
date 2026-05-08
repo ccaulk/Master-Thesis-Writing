@@ -1,3 +1,45 @@
+\subsubsection{Bottom-up Strategy}
+The bottom-up strategy is predominately focused on predicting the distribution of an individual species through presence-only, presence-absence data, or abundance data and most often predicted with a SDM \parencite{elith2009, elith2011,waldock2022, ozkan_tumer_two_2026}. For presence-only and presence-absence data the response variable or output is a prediction for the precense or absence of a species at a given site \parencite{beery2021}. In our problem formulation, \(y_i \in \{0,1\}\) where 0 represents an absence and 1 represents a presence of the species at site \(r_i\). Importantly, a SDM predicts the presence or absence of a single species, but for community-level biodiversity metrics we need more than just one species. Therefore, our problem formulation expands to include multiple species \(S = \{s_1, s_2, \ldots, s_m\}\), where \(m\) is the number of unique species observed across the region \(R\). For each site \(r_i \in R\) and each species \(s_j \in S\) let the response variable or output be \(y_{ij}\) and it is defined as
+\[y_{ij} = \begin{cases} 
+    1 & \text{if species } s_j \text{ is present at site } r_i, \\ 
+    0 & \text{otherwise}. \end{cases}\]
+We represent all \(y_{ij}\) for site \(r_i\) as a vector \(\mathbf{y}_i = (y_{i1}, y_{i2}, \ldots, y_{im})\).
+The dataset can be represented as 
+\[\mathcal{D} = \{(r_i,\mathbf{y}_i)\}_{i=1}^n.\] 
+The transformation of \(h(r_i)\) stays the same as before, and the predictor variables are still represented as \(x_i\), so our dataset after the transformation \(h(\cdot)\) is
+\[\mathcal{D} = \{(x_i,\mathbf{y}_i)\}_{i=1}^n.\] 
+However, we will now have \(m\) models, one for each species. Therefore, the model for species \(s_j\) is
+\[f_{\Theta_j} : X \rightarrow \{0,1\}.\]
+The predicted value for species \(s_j\) at site \(r_i\) the becomes
+\[\hat{y}_{ij} = f_{\Theta_j}(x_i) = f_{\Theta_j}(h(r_i)).\]
+Species richness prediction at site \(r_i\) can then be calculated by aggregating the predicted presence of each species at site \(r_i\). A common way to do this is to sum the predicted presence of each species at site \(r_i\) \parencite{grenie2020}. This results in the following formula for species richness prediction at site \(r_i\):
+\begin{equation}
+\widehat{SR}_{r_i} = \sum_{j=1}^m \hat{y}_{ij}
+\label{eq:bottom-up-species-richness-prediction}
+\end{equation}
+
+Likewise, if we have abundance data, then the response variable or output is a prediction for the abundance of a species at a given site \(r_i\) \parencite{beery2021}. In our problem formulation, \(y_{ij} \in \mathbb{N}\) where \(y_{ij}\) represents the abundance of species \(s_j\) at site \(r_i\). The model for species \(s_j\) is then
+\[f_{\Theta_j} : X \rightarrow \mathbb{N}.\]
+Absolute abundance prediction at site \(r_i\) can then be calculated by aggregated the predicted abundance of each species at site \(r_i\) 
+\begin{equation}
+\widehat{A}_{r_i} = \sum_{j=1}^m \hat{y}_{ij}.
+\label{eq:bottom-up-absolute-abundance-prediction}
+\end{equation}
+
+While individual species predictions can be quite accurate \parencite{valavi2022} there are several challenges to bottom-up approachs. Rare species are hard to account for due to a lack of data\parencite{ferrier2006, norberg2019, zhang2020}, even though they are important to the functionailty of an ecosystem \parencite{gascon2015} excluding rare species from the analysis would therefore be problematic. Additionally, several problems arise when deciding a threshold value to determine a species presence or absence \parencite{liu_selecting_2005, distler2015}, and the method of how you stack the individual SDMs also poses challenges \parencite{biber2020}. The discussion of these challenges is beyond the scope of this, but they highlight the limitations of the bottom-up approach and the additional methodological decisions that are required for community-level biodiversity assessment.
+
+\subsubsection{Joint Strategy}
+
+Assemble and predict together approaches, on the other hand, model multiple species at once using environmental variables while accounting for biotic interactions \parencite{wilkinson2019}. The response variable or output of these approaches is a community matrix, dissimilarity matrix, correlation matrix \parencite{warton2015, nieto2018}. If the model 
+
+which can then be aggregated to estimate biodiversity metrics. This is most similar to a classification problem; whereas, The top-down strategy, on the other hand, is focused on predicting biodiversity metrics directly without predicting specific species which is more similar to a regression problem \parencite{pollock2020}.
+The bottom-up and predict and assemble together strategies are focused on predicting the distribution of individual or multiple species mainly through presence-only or presence-absence data \parencite{elith2009, elith2011, wilkinson2019, ozkan_tumer_two_2026}. The output of these strategies is a prediction for each species at a given site or a community matrix \parencite{nieto2018, beery2021}. which can then be aggregated to estimate biodiversity metrics. This is most similar to a classification problem; whereas, The top-down strategy, on the other hand, is focused on predicting biodiversity metrics directly without predicting specific species which is more similar to a regression problem \parencite{pollock2020}.
+
+
+
+
+The SDMs and JSDMs are focused on predicting the distribution of individual species through presence or absence data \parencite{elith2009, ozkan_tumer_two_2026}. While these models are also capable of predicting abundance data, this area is underdeveloped \parencite{waldock2022}. Even with the ability to predict abundance data, SDMs and JSDMs are still focused on predicting the distribution of individual species through presence/absence or abundance at a specific site. This would inherently imply that SDMs and JSDMs are classification problems \parencite{beery2021,valavi2022, hu2025}. This is done in SDMs by stacking several independent SDMs together and then use the aggregation to predict biodiversity metrics \parencite{ferrier2006}. JSDMs, on the other hand, model multiple species at once using environmental variables and species interactions \parencite{warton2015}. This would imply JSDMs are a multi-label classification problem. 
+
 Species distribution models (SDMs) are some of the most common models for biodiversity prediction. SDMs are a class of models that predict the occurrence (presence or absence) or abundance of individual species based on a wide range of environmental, climate, anthropogenic, and spatial variables \parencite{beery2021}. SDMs have been used extensively for over the past few decades as advances in computational power and data availability have further enhanced their utility and the diversity in modeling approaches \parencite{ozkan_tumer_two_2026, norberg2019}. These models are powerful for understanding individual species' distributions and ranges, revealing biological patterns, and helping with discovery of sites for the reintroduction of threatened species \parencite{sinclair2010}. Beyond species-level predictions, community-level or biodiversity metric predictions can be constructed from several SDMs and then aggregating all model results together. This is commonly referred to as the "predict first, assemble later" or bottom-up approach \parencite{ferrier2006}. This bottom-up approach, while intuitive, possesses several critical shortcomings: it exhibits high sensitivity to data quality, model selection, and parameter fitting \parencite{araujo2006}; it frequently neglects biotic species interactions and lacks the computational efficiency to scale for large communities \parencite{ferrier2006}; it struggles with transferability to unsampled sites \parencite{a_leeyaw_species_2022}; and it often produces biased estimates at the 'tails' of abundance distributions, over-predicting rare sites and under-predicting high-density areas \parencite{waldock2022}.
 
 

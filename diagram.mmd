@@ -1,0 +1,89 @@
+%%{init: {"flowchart": {"nodeSpacing": 30, "rankSpacing": 35}, "themeVariables": {"primaryColor": "#FFFF99", "primaryTextColor": "#000000", "primaryBorderColor": "#FFD700", "lineColor": "#87CEEB", "secondBkgColor": "#99FFFF", "secondBorderColor": "#00CCFF", "secondTextColor": "#000000", "tertiaryColor": "#99FF99", "tertiaryTextColor": "#000000", "tertiaryBorderColor": "#00DD00", "clusterBkg": "#FFFFCC", "clusterBorder": "#FFCC00", "clusterTextColor": "#000000", "tertiaryTextBackground": "#FFFFFF", "fontSize": "12px", "fontFamily": "Arial", "background": "#FFFFFF", "mainBkg": "#FFFFFF", "textColor": "#000000", "labelTextColor": "#000000", "nodeTextColor": "#000000", "edgeLabelBackground": "#FFFFFF", "titleColor": "#000000"}} }%%
+flowchart LR
+    biodiversity_input[Biodiversity input]
+
+    subgraph data["Data processing"]
+        direction TB
+        data_main[Data processing]
+        ingest[Ingest + clean]
+        polygons[Site polygons<br/>temporary]
+        env_extract[Environmental extraction]
+        data_out[Output data]
+
+        data_main --> ingest
+        ingest --> polygons
+        ingest --> env_extract
+        polygons -.-> env_extract
+        env_extract --> data_out
+    end
+
+    subgraph features["Feature engineering"]
+        direction TB
+        features_main[Feature engineering]
+        diversity[Alpha / beta diversity]
+        feature_gen[Feature generation]
+        feature_sel[Feature selection]
+        feature_out[Output data]
+
+        features_main --> diversity
+        diversity --> feature_gen
+        feature_gen --> feature_sel
+        feature_sel --> feature_out
+    end
+
+    subgraph models["Model training"]
+        direction TB
+        models_main[Model training]
+        model_data[Model data prep]
+        training[Train + validate]
+        model_out[Output data]
+
+        models_main --> model_data
+        model_data --> training
+        training --> model_out
+    end
+
+    subgraph application["Model application"]
+        direction TB
+        app_main[Model application]
+        application_input[New covariates]
+        apply_model[Apply model]
+        application_out[Output maps]
+
+        app_main --> application_input
+        application_input --> apply_model
+        apply_model --> application_out
+    end
+
+    exploration[Exploration notebook]
+    diagnostics[Diagnostics notebooks]
+
+    biodiversity_input --> data_main
+    data_main --> features_main --> models_main --> app_main
+
+    data_out -.-> exploration
+    feature_out -.-> exploration
+    model_out -.-> diagnostics
+    application_out -.-> diagnostics
+
+    style data_main fill:#E6CCFF,stroke:#9966FF,color:#000000
+    style ingest fill:#E6CCFF,stroke:#9966FF,color:#000000
+    style polygons fill:#E6CCFF,stroke:#9966FF,color:#000000
+    style env_extract fill:#E6CCFF,stroke:#9966FF,color:#000000
+    style data_out fill:#E6CCFF,stroke:#9966FF,color:#000000
+    style features_main fill:#E6CCFF,stroke:#9966FF,color:#000000
+    style diversity fill:#E6CCFF,stroke:#9966FF,color:#000000
+    style feature_gen fill:#E6CCFF,stroke:#9966FF,color:#000000
+    style feature_sel fill:#E6CCFF,stroke:#9966FF,color:#000000
+    style feature_out fill:#E6CCFF,stroke:#9966FF,color:#000000
+    style models_main fill:#E6CCFF,stroke:#9966FF,color:#000000
+    style model_data fill:#E6CCFF,stroke:#9966FF,color:#000000
+    style training fill:#E6CCFF,stroke:#9966FF,color:#000000
+    style model_out fill:#E6CCFF,stroke:#9966FF,color:#000000
+    style app_main fill:#E6CCFF,stroke:#9966FF,color:#000000
+    style application_input fill:#E6CCFF,stroke:#9966FF,color:#000000
+    style apply_model fill:#E6CCFF,stroke:#9966FF,color:#000000
+    style application_out fill:#E6CCFF,stroke:#9966FF,color:#000000
+    style exploration fill:#E6CCFF,stroke:#9966FF,color:#000000
+    style diagnostics fill:#E6CCFF,stroke:#9966FF,color:#000000
+    style biodiversity_input fill:#E6CCFF,stroke:#9966FF,color:#000000
