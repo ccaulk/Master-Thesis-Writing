@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1778251425.16259 "main.bcf" "main.bbl" "main" 1778251434.80279 0
-  "main.bcf" 1778251434 118584 78bee5b1105298f9628e2d72e79ec55f "pdflatex"
-  "references.bib" 1778251265 65651 4f43cbda786c195b89a156b1a7cb028c ""
+["biber main"] 1778345423.76447 "main.bcf" "main.bbl" "main" 1778347790.45005 0
+  "main.bcf" 1778347790 119735 aed4372d7caca97c0146ad99f07690d2 "pdflatex"
+  "references.bib" 1778340253 69838 3fd67c72bd69dcf7d20bc2239d9011f7 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1778251432.45308 "c:/Users/caleb/Master's thesis/Latex/main.tex" "main.pdf" "main" 1778251434.80462 0
+["pdflatex"] 1778347788.21922 "c:/Users/caleb/Master's thesis/Latex/main.tex" "main.pdf" "main" 1778347790.45069 0
   "C:/Users/caleb/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1778054324 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/caleb/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1776350811 11548 45f5e15928fe63a2e0789ba1938fd05c ""
   "C:/Users/caleb/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1776345548 13350272 4aa9265487fc02b9cd30f6bd57e90b17 ""
@@ -133,17 +133,18 @@
   "C:/Users/caleb/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/caleb/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "Images/UU_logo.png" 1776342762 74529 56cd197ccba228242c65496cd3be66e0 ""
+  "Images/decision_tree.png" 1778336930 2005005 d18e5ab38bfb74ebdf2fd03c405c0d7e ""
   "appendix/appendix_a.tex" 1777450687 72 91b1b803d53fcecc88f692eee0623ffa ""
   "appendix/appendix_b.tex" 1777450717 79 53ab3e12120da7c0eeb129fb436a8f4d ""
   "c:/Users/caleb/Master's thesis/Latex/main.tex" 1778075798 2720 8084b73f80f9898184ffaf1b28adc03b ""
-  "main.aux" 1778251434 23337 79975e8c8ebf0190e40bdf323b88fa3c "pdflatex"
-  "main.bbl" 1778251427 222593 4c1c2e9ceb6cfb842fd7858ea0f1f562 "biber main"
-  "main.out" 1778251434 3336 9086fb476d3c6df1a7fa986eb49de749 "pdflatex"
-  "main.run.xml" 1778251434 2311 e66a0e3ff336a5af941c7fe634558519 "pdflatex"
+  "main.aux" 1778347790 26391 75fbe06ba7e120d65c5d9b3ad27f8bf3 "pdflatex"
+  "main.bbl" 1778345426 242311 9200f80de27ca283599c3269bb4a68bc "biber main"
+  "main.out" 1778347790 3638 8e51340b062fdc549b0524f9f0c873c3 "pdflatex"
+  "main.run.xml" 1778347790 2311 e66a0e3ff336a5af941c7fe634558519 "pdflatex"
   "main.tex" 1778075798 2720 8084b73f80f9898184ffaf1b28adc03b ""
-  "main.toc" 1778251434 1850 4ead7fceb39458276d8723f6f411471c "pdflatex"
+  "main.toc" 1778347790 2036 4044c315c9cc637a00c23def4b8f020f "pdflatex"
   "sections/Results.tex" 1777450531 50 94fb73c55e788dcc75a59fae71dbcd74 ""
-  "sections/background.tex" 1778251422 37203 d4612482e3d094e5f8651faf346d00f5 ""
+  "sections/background.tex" 1778347783 41237 67a47244e6236ae636fe21e7c219e128 ""
   "sections/conclusion.tex" 1777450629 42 b61b97d59a413fb7ec31ccc841f27752 ""
   "sections/discussion.tex" 1777450564 131 4a1ce6a4a0c6e247f474a7a383d5e6eb ""
   "sections/future_work.tex" 1777479674 1348 b5541f65d9fd2a7ca82c8e94a4272e2a ""

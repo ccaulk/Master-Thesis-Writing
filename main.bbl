@@ -217,6 +217,69 @@
       \verb https://www.science.org/doi/10.1126/sciadv.aat4858
       \endverb
     \endentry
+    \entry{aria_comparison_2021}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4599cb424b680cbdfa6e49c2871fe4db}{%
+           family={Aria},
+           familyi={A\bibinitperiod},
+           given={Massimo},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f3a1a421ea97da0529627848dc9fb581}{%
+           family={Cuccurullo},
+           familyi={C\bibinitperiod},
+           given={Corrado},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=804bf0f3c90ab92988a8c63090c632a9}{%
+           family={Gnasso},
+           familyi={G\bibinitperiod},
+           given={Agostino},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d856949ef4cbf2634fcc17cb4ec1eb25}
+      \strng{fullhash}{d856949ef4cbf2634fcc17cb4ec1eb25}
+      \strng{fullhashraw}{d856949ef4cbf2634fcc17cb4ec1eb25}
+      \strng{bibnamehash}{d856949ef4cbf2634fcc17cb4ec1eb25}
+      \strng{authorbibnamehash}{d856949ef4cbf2634fcc17cb4ec1eb25}
+      \strng{authornamehash}{d856949ef4cbf2634fcc17cb4ec1eb25}
+      \strng{authorfullhash}{d856949ef4cbf2634fcc17cb4ec1eb25}
+      \strng{authorfullhashraw}{d856949ef4cbf2634fcc17cb4ec1eb25}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{26668270}
+      \field{journaltitle}{Machine Learning with Applications}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{shortjournal}{Machine Learning with Applications}
+      \field{title}{A comparison among interpretative proposals for Random Forests}
+      \field{urlday}{9}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{6}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{100094}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.mlwa.2021.100094
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\M7T7TCHY\\Aria et al. - 2021 - A comparison among interpretative proposals for Random Forests.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S2666827021000475
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S2666827021000475
+      \endverb
+    \endentry
     \entry{austin_species_2007}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=69cbefd3dc44620155f1366cc7fa1268}{%
@@ -694,6 +757,75 @@
       \endverb
       \verb{file}
       \verb randomforest2001:C\:\\Users\\caleb\\Zotero\\storage\\ZKZIMK8D\\randomforest2001.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{brugere2023}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=a21e973bcc21e1420e6f755c7bbb63de}{%
+           family={Brugere},
+           familyi={B\bibinitperiod},
+           given={Lian},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dd7e2c7837f2543fa6ace5141d289352}{%
+           family={Kwon},
+           familyi={K\bibinitperiod},
+           given={Youngsang},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=655ffc08b31252c52806f3d2b1283416}{%
+           family={Frazier},
+           familyi={F\bibinitperiod},
+           given={Amy\bibnamedelima E.},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=38c7de4083d1c245225de107ec14087b}{%
+           family={Kedron},
+           familyi={K\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{35e964924ed08878c44f1ff0a4753cf3}
+      \strng{fullhash}{35f2e1c3c11f465500d0044c26350d4a}
+      \strng{fullhashraw}{35f2e1c3c11f465500d0044c26350d4a}
+      \strng{bibnamehash}{35e964924ed08878c44f1ff0a4753cf3}
+      \strng{authorbibnamehash}{35e964924ed08878c44f1ff0a4753cf3}
+      \strng{authornamehash}{35e964924ed08878c44f1ff0a4753cf3}
+      \strng{authorfullhash}{35f2e1c3c11f465500d0044c26350d4a}
+      \strng{authorfullhashraw}{35f2e1c3c11f465500d0044c26350d4a}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{03781127}
+      \field{journaltitle}{Forest Ecology and Management}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{shortjournal}{Forest Ecology and Management}
+      \field{title}{Improved prediction of tree species richness and interpretability of environmental drivers using a machine learning approach}
+      \field{urlday}{8}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{539}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{120972}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.foreco.2023.120972
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\8BW9AW8F\\Brugere et al. - 2023 - Improved prediction of tree species richness and interpretability of environmental drivers using a m.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0378112723002062
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0378112723002062
       \endverb
     \endentry
     \entry{brun2024}{article}{}{}
@@ -2680,6 +2812,61 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0048969724018345
       \endverb
     \endentry
+    \entry{klusowski_analyzing_2020}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f8d8cf8adb40893e66fb69e5b5a249e2}{%
+           family={Klusowski},
+           familyi={K\bibinitperiod},
+           given={Jason\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{f8d8cf8adb40893e66fb69e5b5a249e2}
+      \strng{fullhash}{f8d8cf8adb40893e66fb69e5b5a249e2}
+      \strng{fullhashraw}{f8d8cf8adb40893e66fb69e5b5a249e2}
+      \strng{bibnamehash}{f8d8cf8adb40893e66fb69e5b5a249e2}
+      \strng{authorbibnamehash}{f8d8cf8adb40893e66fb69e5b5a249e2}
+      \strng{authornamehash}{f8d8cf8adb40893e66fb69e5b5a249e2}
+      \strng{authorfullhash}{f8d8cf8adb40893e66fb69e5b5a249e2}
+      \strng{authorfullhashraw}{f8d8cf8adb40893e66fb69e5b5a249e2}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{13}
+      \field{eprinttype}{arxiv}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{{arXiv}:1906.10086}
+      \field{title}{Analyzing {CART}}
+      \field{urlday}{9}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1906.10086
+      \endverb
+      \verb{eprint}
+      \verb 1906.10086 [stat]
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\3I5BVJXD\\Klusowski - 2020 - Analyzing CART.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1906.10086
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1906.10086
+      \endverb
+      \keyw{Computer Science - Machine Learning,Statistics - Machine Learning}
+    \endentry
     \entry{lamb2009}{article}{}{}
       \name{author}{7}{}{%
         {{un=0,uniquepart=base,hash=9175ffa05aeb4844bbac322e6c61ae82}{%
@@ -3613,6 +3800,68 @@
       \verb https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecm.1370
       \endverb
     \endentry
+    \entry{olaya-marin_comparison_2013}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=247d183c268bede856af50d7b81d2bed}{%
+           family={Olaya-Marín},
+           familyi={O\bibinithyphendelim M\bibinitperiod},
+           given={E.J.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=151151b4b8b49662bf57db83b8559766}{%
+           family={Martínez-Capel},
+           familyi={M\bibinithyphendelim C\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0cc2afe9f3f874277763b0a603052528}{%
+           family={Vezza},
+           familyi={V\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b093921d227e3d5ded59566eed18a636}
+      \strng{fullhash}{b093921d227e3d5ded59566eed18a636}
+      \strng{fullhashraw}{b093921d227e3d5ded59566eed18a636}
+      \strng{bibnamehash}{b093921d227e3d5ded59566eed18a636}
+      \strng{authorbibnamehash}{b093921d227e3d5ded59566eed18a636}
+      \strng{authornamehash}{b093921d227e3d5ded59566eed18a636}
+      \strng{authorfullhash}{b093921d227e3d5ded59566eed18a636}
+      \strng{authorfullhashraw}{b093921d227e3d5ded59566eed18a636}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1961-9502}
+      \field{journaltitle}{Knowledge and Management of Aquatic Ecosystems}
+      \field{langid}{english}
+      \field{number}{409}
+      \field{shortjournal}{Knowl. Managt. Aquatic Ecosyst.}
+      \field{title}{A comparison of artificial neural networks and random forests to predict native fish species richness in Mediterranean rivers}
+      \field{urlday}{9}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{07}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1051/kmae/2013052
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\IB9PQ59C\\Olaya-Marín et al. - 2013 - A comparison of artificial neural networks and random forests to predict native fish species richnes.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.kmae-journal.org/10.1051/kmae/2013052
+      \endverb
+      \verb{url}
+      \verb http://www.kmae-journal.org/10.1051/kmae/2013052
+      \endverb
+    \endentry
     \entry{ozkan_tumer_two_2026}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=c9639f6c2b49ed365cd345e678028e80}{%
@@ -4479,6 +4728,238 @@
       \endverb
       \verb{url}
       \verb https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecm.1486
+      \endverb
+    \endentry
+    \entry{vecera_alpha_2019}{article}{}{}
+      \name{author}{31}{}{%
+        {{un=0,uniquepart=base,hash=114433e295b5c910748aa9ed3359afc2}{%
+           family={Večeřa},
+           familyi={V\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2e3056f6fe1d6ce72eb8b1205325712e}{%
+           family={Divíšek},
+           familyi={D\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d677cecee478abcc8907a45e956fc786}{%
+           family={Lenoir},
+           familyi={L\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e74a84109709d679f9727904b16a78b9}{%
+           family={Jiménez‐Alfaro},
+           familyi={J\bibinithyphendelim A\bibinitperiod},
+           given={Borja},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f7655bf1f872531bc813861f7ccf84e4}{%
+           family={Biurrun},
+           familyi={B\bibinitperiod},
+           given={Idoia},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8e43a315254dd38d34922a12bde80449}{%
+           family={Knollová},
+           familyi={K\bibinitperiod},
+           given={Ilona},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f145f51b3df6b6bceb38c9685dc07bbd}{%
+           family={Agrillo},
+           familyi={A\bibinitperiod},
+           given={Emiliano},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=15c43f7e2e2ddea3135d9bd96d093f46}{%
+           family={Campos},
+           familyi={C\bibinitperiod},
+           given={Juan\bibnamedelima Antonio},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=00460f40066dcc1a835a584c39481cc5}{%
+           family={Čarni},
+           familyi={Č\bibinitperiod},
+           given={Andraž},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6d2a11f398bb6e6f556e645fbdd25f01}{%
+           family={Crespo\bibnamedelima Jiménez},
+           familyi={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Guillermo},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f61e490943e9476794d6f86784a7df09}{%
+           family={Ćuk},
+           familyi={Ć\bibinitperiod},
+           given={Mirjana},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=35fbbe4222a4e66d1f0cb604db30ccad}{%
+           family={Dimopoulos},
+           familyi={D\bibinitperiod},
+           given={Panayotis},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=34a9c9458239817a2faba00f262edf76}{%
+           family={Ewald},
+           familyi={E\bibinitperiod},
+           given={Jörg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7b95d1992a2006b010a92996ff4d2b28}{%
+           family={Fernández‐González},
+           familyi={F\bibinithyphendelim G\bibinitperiod},
+           given={Federico},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=10c66793a92e9bb5548b56b3fc5309d3}{%
+           family={Gégout},
+           familyi={G\bibinitperiod},
+           given={Jean‐Claude},
+           giveni={J\bibinithyphendelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=29ce83e4ce1601c5bc2a24a99090723f}{%
+           family={Indreica},
+           familyi={I\bibinitperiod},
+           given={Adrian},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ff525abe4168557937e0f2157a765b45}{%
+           family={Jandt},
+           familyi={J\bibinitperiod},
+           given={Ute},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2eebc1a948124b479b5d83bcb0733ee5}{%
+           family={Jansen},
+           familyi={J\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fee4a54114d3f09d07221222d9a411e8}{%
+           family={Kącki},
+           familyi={K\bibinitperiod},
+           given={Zygmunt},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cec8fc943a80c27a7cf3cc83f01c0862}{%
+           family={Rašomavičius},
+           familyi={R\bibinitperiod},
+           given={Valerijus},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=197e1c67d234e747d61f917d83c9cde6}{%
+           family={Řezníčková},
+           familyi={Ř\bibinitperiod},
+           given={Marcela},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b2be57fb97a108bdb63f6b4c94b1a52}{%
+           family={Rodwell},
+           familyi={R\bibinitperiod},
+           given={John\bibnamedelima S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7319603339d7f21561df5fa88b37f175}{%
+           family={Schaminée},
+           familyi={S\bibinitperiod},
+           given={Joop\bibnamedelima H.J.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=856e49f5f2811121dcb8f19dd86ea28d}{%
+           family={Šilc},
+           familyi={Š\bibinitperiod},
+           given={Urban},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0061062b598478882d3615effd239572}{%
+           family={Svenning},
+           familyi={S\bibinitperiod},
+           given={Jens‐Christian},
+           giveni={J\bibinithyphendelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d67cd308aee4063bc287629125d079b6}{%
+           family={Swacha},
+           familyi={S\bibinitperiod},
+           given={Grzegorz},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=774c71dfb2294e380a62378bf34c4b9d}{%
+           family={Vassilev},
+           familyi={V\bibinitperiod},
+           given={Kiril},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1534b59bd06e51a2e407f370227c695b}{%
+           family={Venanzoni},
+           familyi={V\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=93325a77e6cca0c8ede29934f828d779}{%
+           family={Willner},
+           familyi={W\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1426ea866b73ed9e0d5f343e07dc024b}{%
+           family={Wohlgemuth},
+           familyi={W\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=874eb36b7c155f63a4589da8cd8df7e4}{%
+           family={Chytrý},
+           familyi={C\bibinitperiod},
+           given={Milan},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{59ca8d4550150ee590004a351b25d43f}
+      \strng{fullhash}{2f950815fa3b2d95e0ddbeb4a911dd05}
+      \strng{fullhashraw}{2f950815fa3b2d95e0ddbeb4a911dd05}
+      \strng{bibnamehash}{59ca8d4550150ee590004a351b25d43f}
+      \strng{authorbibnamehash}{59ca8d4550150ee590004a351b25d43f}
+      \strng{authornamehash}{59ca8d4550150ee590004a351b25d43f}
+      \strng{authorfullhash}{2f950815fa3b2d95e0ddbeb4a911dd05}
+      \strng{authorfullhashraw}{2f950815fa3b2d95e0ddbeb4a911dd05}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0305-0270, 1365-2699}
+      \field{journaltitle}{Journal of Biogeography}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{9}
+      \field{shortjournal}{Journal of Biogeography}
+      \field{title}{Alpha diversity of vascular plants in European forests}
+      \field{urlday}{9}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{46}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1919\bibrangedash 1935}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1111/jbi.13624
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\XKRI29J5\\Večeřa et al. - 2019 - Alpha diversity of vascular plants in European forests.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/jbi.13624
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/jbi.13624
       \endverb
     \endentry
     \entry{waldock2022}{article}{}{}
