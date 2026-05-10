@@ -2533,6 +2533,70 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S1364815220301225
       \endverb
     \endentry
+    \entry{hu2025}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ae0e4f9c483c06a74dd7a7ab080209ee}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Yuqing},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b21f6792c72d7c99cdb1340c4c430557}{%
+           family={Si‐Moussi},
+           familyi={S\bibinithyphendelim M\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8420a71ed1be07777ddccc3254bee18}{%
+           family={Thuiller},
+           familyi={T\bibinitperiod},
+           given={Wilfried},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9919fddd29d19b51d16a35f1ba3d8fde}
+      \strng{fullhash}{9919fddd29d19b51d16a35f1ba3d8fde}
+      \strng{fullhashraw}{9919fddd29d19b51d16a35f1ba3d8fde}
+      \strng{bibnamehash}{9919fddd29d19b51d16a35f1ba3d8fde}
+      \strng{authorbibnamehash}{9919fddd29d19b51d16a35f1ba3d8fde}
+      \strng{authornamehash}{9919fddd29d19b51d16a35f1ba3d8fde}
+      \strng{authorfullhash}{9919fddd29d19b51d16a35f1ba3d8fde}
+      \strng{authorfullhashraw}{9919fddd29d19b51d16a35f1ba3d8fde}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2041-210X, 2041-210X}
+      \field{journaltitle}{Methods in Ecology and Evolution}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shortjournal}{Methods Ecol Evol}
+      \field{title}{Introduction to deep learning methods for multi‐species predictions}
+      \field{urlday}{11}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{16}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{228\bibrangedash 246}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1111/2041-210X.14466
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\25YVEETS\\Hu et al. - 2025 - Introduction to deep learning methods for multi‐species predictions.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14466
+      \endverb
+      \verb{url}
+      \verb https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14466
+      \endverb
+    \endentry
     \entry{IPBES2019spm}{report}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=ebb4b25ab16a0668ca3ba0ed014998d2}{%
@@ -3036,6 +3100,137 @@
       \endverb
       \verb{url}
       \verb https://linkinghub.elsevier.com/retrieve/pii/0304380095001425
+      \endverb
+    \endentry
+    \entry{smlbook}{book}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=79288fad523859c2237770d864f5fe88}{%
+           family={Lindholm},
+           familyi={L\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f21f2855787c39337ef57063882d1a29}{%
+           family={Wahlström},
+           familyi={W\bibinitperiod},
+           given={Niklas},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0274b443331930dc611dd367a7c198a5}{%
+           family={Lindsten},
+           familyi={L\bibinitperiod},
+           given={Fredrik},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a7d921004899fc1272afda1ee990486b}{%
+           family={Schön},
+           familyi={S\bibinitperiod},
+           given={Thomas\bibnamedelima B.},
+           giveni={T\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{b1b59e5376b27194d2e689f246cf6cc9}
+      \strng{fullhash}{5ce27f781b194821dcd36c5db5ca51f9}
+      \strng{fullhashraw}{5ce27f781b194821dcd36c5db5ca51f9}
+      \strng{bibnamehash}{b1b59e5376b27194d2e689f246cf6cc9}
+      \strng{authorbibnamehash}{b1b59e5376b27194d2e689f246cf6cc9}
+      \strng{authornamehash}{b1b59e5376b27194d2e689f246cf6cc9}
+      \strng{authorfullhash}{5ce27f781b194821dcd36c5db5ca51f9}
+      \strng{authorfullhashraw}{5ce27f781b194821dcd36c5db5ca51f9}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Machine Learning: A First Course for Engineers and Scientists}
+      \field{year}{2022}
+    \endentry
+    \entry{liu_ada-xg-catboost_2024}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=621013bf54d3546375ad71f17f020b5b}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40eee91efcfd0a06a4c66ffb6a492f18}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Tianxing},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=27984f70a2b4bb7207c54b786f115fe1}{%
+           family={Tian},
+           familyi={T\bibinitperiod},
+           given={Liwei},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=232d829e240a9b01858549e509a5da33}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Bincheng},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=98bd98179b021380d44455c9a83b33fe}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Jiaming},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4b14b70c15444978efebf4dc73e20c9b}{%
+           family={Zeng},
+           familyi={Z\bibinitperiod},
+           given={Zihan},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{df83681b9acfd53a0c867d0eb509f8f3}
+      \strng{fullhash}{4ee99d15ca78f204ee21eb038c7546af}
+      \strng{fullhashraw}{4ee99d15ca78f204ee21eb038c7546af}
+      \strng{bibnamehash}{df83681b9acfd53a0c867d0eb509f8f3}
+      \strng{authorbibnamehash}{df83681b9acfd53a0c867d0eb509f8f3}
+      \strng{authornamehash}{df83681b9acfd53a0c867d0eb509f8f3}
+      \strng{authorfullhash}{4ee99d15ca78f204ee21eb038c7546af}
+      \strng{authorfullhashraw}{4ee99d15ca78f204ee21eb038c7546af}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{22}
+      \field{issn}{2071-1050}
+      \field{journaltitle}{Sustainability}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{16}
+      \field{shortjournal}{Sustainability}
+      \field{shorttitle}{Ada-{XG}-{CatBoost}}
+      \field{title}{Ada-{XG}-{CatBoost}: A Combined Forecasting Model for Gross Ecosystem Product ({GEP}) Prediction}
+      \field{urlday}{10}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{16}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{7203}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/su16167203
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\37ZRM8JX\\Liu et al. - 2024 - Ada-XG-CatBoost A Combined Forecasting Model for Gross Ecosystem Product (GEP) Prediction.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2071-1050/16/16/7203
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2071-1050/16/16/7203
       \endverb
     \endentry
     \entry{loh_classification_2011}{article}{}{}
@@ -3933,6 +4128,64 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0304380025004272
       \endverb
     \endentry
+    \entry{pichler2023}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=585f7900ea322464b951b9934267d0de}{%
+           family={Pichler},
+           familyi={P\bibinitperiod},
+           given={Maximilian},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f2023df7507c5721104bd31350623c8c}{%
+           family={Hartig},
+           familyi={H\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{02b3d25cac1f402ae3cab2aedd53c24a}
+      \strng{fullhash}{02b3d25cac1f402ae3cab2aedd53c24a}
+      \strng{fullhashraw}{02b3d25cac1f402ae3cab2aedd53c24a}
+      \strng{bibnamehash}{02b3d25cac1f402ae3cab2aedd53c24a}
+      \strng{authorbibnamehash}{02b3d25cac1f402ae3cab2aedd53c24a}
+      \strng{authornamehash}{02b3d25cac1f402ae3cab2aedd53c24a}
+      \strng{authorfullhash}{02b3d25cac1f402ae3cab2aedd53c24a}
+      \strng{authorfullhashraw}{02b3d25cac1f402ae3cab2aedd53c24a}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2041-210X, 2041-210X}
+      \field{journaltitle}{Methods in Ecology and Evolution}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{4}
+      \field{shortjournal}{Methods Ecol Evol}
+      \field{title}{Machine learning and deep learning—A review for ecologists}
+      \field{urlday}{11}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{14}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{994\bibrangedash 1016}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1111/2041-210X.14061
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\CZDRK3V7\\Pichler and Hartig - 2023 - Machine learning and deep learning—A review for ecologists.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14061
+      \endverb
+      \verb{url}
+      \verb https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14061
+      \endverb
+    \endentry
     \entry{pimm2014}{article}{}{}
       \name{author}{9}{}{%
         {{un=0,uniquepart=base,hash=baa366cdc9d7815252cfd51964f1be56}{%
@@ -4117,6 +4370,41 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0169534720302305
       \endverb
     \endentry
+    \entry{prince2023understanding}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=28ec62e6a6756d1310f22aa92ac3f433}{%
+           family={Prince},
+           familyi={P\bibinitperiod},
+           given={Simon\bibnamedelima J.D.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The MIT Press}%
+      }
+      \strng{namehash}{28ec62e6a6756d1310f22aa92ac3f433}
+      \strng{fullhash}{28ec62e6a6756d1310f22aa92ac3f433}
+      \strng{fullhashraw}{28ec62e6a6756d1310f22aa92ac3f433}
+      \strng{bibnamehash}{28ec62e6a6756d1310f22aa92ac3f433}
+      \strng{authorbibnamehash}{28ec62e6a6756d1310f22aa92ac3f433}
+      \strng{authornamehash}{28ec62e6a6756d1310f22aa92ac3f433}
+      \strng{authorfullhash}{28ec62e6a6756d1310f22aa92ac3f433}
+      \strng{authorfullhashraw}{28ec62e6a6756d1310f22aa92ac3f433}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Understanding Deep Learning}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb http://udlbook.com
+      \endverb
+      \verb{url}
+      \verb http://udlbook.com
+      \endverb
+    \endentry
     \entry{proenca2017}{article}{}{}
       \name{author}{16}{}{%
         {{un=0,uniquepart=base,hash=4669ee42e0d5ea195ccf5d2dd2002ead}{%
@@ -4258,6 +4546,66 @@
       \verb{url}
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0006320716302786
       \endverb
+    \endentry
+    \entry{Prokhorenkova2018}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=75d85fbaf5e44febf90b390cb205c49e}{%
+           family={Prokhorenkova},
+           familyi={P\bibinitperiod},
+           given={Liudmila},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d99ea4ed468e2d3f8bc4082b7d308161}{%
+           family={Gusev},
+           familyi={G\bibinitperiod},
+           given={Gleb},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4eea157d768ad9f7d675c1cb1624b822}{%
+           family={Vorobev},
+           familyi={V\bibinitperiod},
+           given={Aleksandr},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a2bbc57c5fa93135342ee3c846b63db3}{%
+           family={Dorogush},
+           familyi={D\bibinitperiod},
+           given={Anna\bibnamedelima Veronika},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b0bbfa15913cf76eff37e68538d3927e}{%
+           family={Gulin},
+           familyi={G\bibinitperiod},
+           given={Andrey},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Montréal, Canada}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates Inc.}%
+      }
+      \strng{namehash}{bf2200e049515471bef98bbe4ddd078a}
+      \strng{fullhash}{be3384044cde3b920a17c00545fb90a0}
+      \strng{fullhashraw}{be3384044cde3b920a17c00545fb90a0}
+      \strng{bibnamehash}{bf2200e049515471bef98bbe4ddd078a}
+      \strng{authorbibnamehash}{bf2200e049515471bef98bbe4ddd078a}
+      \strng{authornamehash}{bf2200e049515471bef98bbe4ddd078a}
+      \strng{authorfullhash}{be3384044cde3b920a17c00545fb90a0}
+      \strng{authorfullhashraw}{be3384044cde3b920a17c00545fb90a0}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 32nd International Conference on Neural Information Processing Systems}
+      \field{series}{NIPS'18}
+      \field{title}{CatBoost: unbiased boosting with categorical features}
+      \field{year}{2018}
+      \field{pages}{6639\bibrangedash 6649}
+      \range{pages}{11}
     \endentry
     \entry{robin2021}{misc}{}{}
       \name{author}{2}{}{%
@@ -5299,7 +5647,7 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Humans have altered terrestrial ecosystems for millennia [1], yet wilderness areas still remain as vital refugia where natural ecological and evolutionary processes operate with minimal human disturbance [2–4], underpinning key regional- and planetary-scale functions [5, 6]. Despite the myriad values of wilderness areas—as critical strongholds for endangered biodiversity [7], for carbon storage and sequestration [8], for buffering and regulating local climates [9], and for supporting many of the world’s most politically and economically marginalized communities [10]—they are almost entirely ignored in multilateral environmental agreements. This is because they are assumed to be relatively free from threatening processes and therefore are not a priority for conservation efforts [11, 12]. Here we challenge this assertion using new comparable maps of global wilderness following methods established in the original ‘‘last of the wild’’ analysis [13] to examine the change in extent since the early 1990s. We demonstrate alarming losses comprising one-tenth (3.3 million km2) of global wilderness areas over the last two decades, particularly in the Amazon (30\%) and central Africa (14\%). We assess increases in the protection of wilderness over the same time frame and show that these efforts are failing to keep pace with the rate of wilderness loss, which is nearly double the rate of protection. Our ﬁndings underscore an immediate need for international policies to recognize the vital values of wilderness and the unprecedented threats they face and to underscore urgent large-scale, multifaceted actions needed to maintain them.}
+      \field{abstract}{Humans have altered terrestrial ecosystems for millennia [1], yet wilderness areas still remain as vital refugia where natural ecological and evolutionary processes operate with minimal human disturbance [2–4], underpinning key regional- and planetary-scale functions [5, 6]. Despite the myriad values of wilderness areas—as critical strongholds for endangered biodiversity [7], for carbon storage and sequestration [8], for buffering and regulating local climates [9], and for supporting many of the world’s most politically and economically marginalized communities [10]—they are almost entirely ignored in multilateral environmental agreements. This is because they are assumed to be relatively iede from threatening processes and therefore are not a priority for conservation efforts [11, 12]. Here we challenge this assertion using new comparable maps of global wilderness following methods established in the original ‘‘last of the wild’’ analysis [13] to examine the change in extent since the early 1990s. We demonstrate alarming losses comprising one-tenth (3.3 million km2) of global wilderness areas over the last two decades, particularly in the Amazon (30\%) and central Africa (14\%). We assess increases in the protection of wilderness over the same time frame and show that these efforts are failing to keep pace with the rate of wilderness loss, which is nearly double the rate of protection. Our ﬁndings underscore an immediate need for international policies to recognize the vital values of wilderness and the unprecedented threats they face and to underscore urgent large-scale, multifaceted actions needed to maintain them.}
       \field{issn}{09609822}
       \field{journaltitle}{Current Biology}
       \field{langid}{english}
@@ -5541,12 +5889,12 @@
     \endentry
     \entry{zhang2019}{article}{}{}
       \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=d7f8252ce99f43a543795a4c83614fa5}{%
+        {{un=1,uniquepart=given,hash=d7f8252ce99f43a543795a4c83614fa5}{%
            family={Zhang},
            familyi={Z\bibinitperiod},
            given={Chongliang},
            giveni={C\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=7608dbf6c54dadf166f77046db3c64a6}{%
            family={Chen},
            familyi={C\bibinitperiod},
@@ -5625,6 +5973,52 @@
       \endverb
       \verb{url}
       \verb https://onlinelibrary.wiley.com/doi/10.1111/ddi.12970
+      \endverb
+    \endentry
+    \entry{zhang_domain_nodate}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=1,uniquepart=given,hash=62735e1af0391d63c09ff9fbcd3d4d54}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Kun},
+           giveni={K\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=ca31cc11ec9370460148c3a9c48fce45}{%
+           family={Schölkopf},
+           familyi={S\bibinitperiod},
+           given={Bernhard},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dcf6b49e94085101ab325f2ba89c8678}{%
+           family={Muandet},
+           familyi={M\bibinitperiod},
+           given={Krikamol},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7a73f9c8fed796c7c86d7b01fcce163c}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Zhikun},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bf37fb57c973a97fd2061284c89d99df}
+      \strng{fullhash}{161b842b30a0cb3001a04dbe4d615040}
+      \strng{fullhashraw}{161b842b30a0cb3001a04dbe4d615040}
+      \strng{bibnamehash}{bf37fb57c973a97fd2061284c89d99df}
+      \strng{authorbibnamehash}{bf37fb57c973a97fd2061284c89d99df}
+      \strng{authornamehash}{bf37fb57c973a97fd2061284c89d99df}
+      \strng{authorfullhash}{161b842b30a0cb3001a04dbe4d615040}
+      \strng{authorfullhashraw}{161b842b30a0cb3001a04dbe4d615040}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Domain Adaptation under Target and Conditional Shift}
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\XYIPWR28\\Zhang et al. - Domain Adaptation under Target and Conditional Shift.pdf:application/pdf
       \endverb
     \endentry
   \enddatalist
