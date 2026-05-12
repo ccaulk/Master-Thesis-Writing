@@ -4,23 +4,27 @@
 \contentsline {subsection}{\numberline {1.2}Research Objectives and Scope}{3}{subsection.1.2}%
 \contentsline {section}{\numberline {2}Background}{5}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Biodiversity and how to measure it}{5}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Spatial Biodiversity Modeling}{7}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Models}{8}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.2}Top-Down Modeling Problem Formulation}{7}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Top-Down Models}{8}{subsection.2.3}%
 \contentsline {subsubsection}{\numberline {2.3.1}Generalized Linear Models}{8}{subsubsection.2.3.1}%
 \contentsline {subsubsection}{\numberline {2.3.2}Generalized Additive Models}{9}{subsubsection.2.3.2}%
 \contentsline {subsubsection}{\numberline {2.3.3}Random Forests}{10}{subsubsection.2.3.3}%
 \contentsline {subsubsection}{\numberline {2.3.4}Gradient Boosting}{11}{subsubsection.2.3.4}%
 \contentsline {subsubsection}{\numberline {2.3.5}Neural Networks}{12}{subsubsection.2.3.5}%
-\contentsline {section}{\numberline {3}Methods/setup}{14}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Pipeline for Community Level Modeling}{14}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Data}{14}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Model Selection}{14}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Model Evaluation Metrics}{14}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Results/ Case Study}{15}{section.4}%
-\contentsline {section}{\numberline {5}Discussion}{16}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Findings}{16}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Ethical Discussion}{16}{subsection.5.2}%
-\contentsline {section}{\numberline {6}Future Work/ Applications}{17}{section.6}%
-\contentsline {section}{\numberline {7}Conclusion}{18}{section.7}%
-\contentsline {section}{\numberline {A}Appendix A: Github Repository}{18}{appendix.A}%
-\contentsline {section}{\numberline {B}Appendix B: Additional Results}{19}{appendix.B}%
+\contentsline {subsection}{\numberline {2.4}The current top-down modeling landscape}{14}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Methods}{15}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Spatial Biodiversity Modeling Pipeline}{15}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Biodiversity data input}{15}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Data Processing}{16}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Feature Engineering}{16}{subsubsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.2}Data}{17}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Model Selection}{17}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Model Evaluation Metrics}{17}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Results/ Case Study}{18}{section.4}%
+\contentsline {section}{\numberline {5}Discussion}{19}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Findings}{19}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Ethical Discussion}{19}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Future Work/ Applications}{20}{section.6}%
+\contentsline {section}{\numberline {7}Conclusion}{21}{section.7}%
+\contentsline {section}{\numberline {A}Appendix A: Github Repository}{21}{appendix.A}%
+\contentsline {section}{\numberline {B}Appendix B: Additional Results}{22}{appendix.B}%

@@ -250,6 +250,7 @@ INPUT C:\Users\caleb\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\caleb\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\caleb\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti8.tfm
 INPUT C:\Users\caleb\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt8.tfm
+INPUT C:\Users\caleb\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
 INPUT .\sections\background.tex
 INPUT .\sections\background.tex
 INPUT sections\background.tex
@@ -265,6 +266,15 @@ INPUT .\Images\decision_tree.png
 INPUT .\sections\methods.tex
 INPUT .\sections\methods.tex
 INPUT sections\methods.tex
+INPUT .\Images\pipeline_graph.png
+INPUT .\Images\pipeline_graph.png
+INPUT .\Images\pipeline_graph.png
+INPUT .\Images\pipeline_graph.png
+INPUT .\Images\pipeline_graph.png
+INPUT .\Images\pipeline_graph.png
+INPUT .\Images\pipeline_graph.png
+INPUT C:\Users\caleb\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx8.tfm
+INPUT C:\Users\caleb\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx6.tfm
 INPUT .\sections\Results.tex
 INPUT .\sections\Results.tex
 INPUT sections\Results.tex
@@ -283,7 +293,6 @@ INPUT appendix\appendix_a.tex
 INPUT .\appendix\appendix_b.tex
 INPUT .\appendix\appendix_b.tex
 INPUT appendix\appendix_b.tex
-INPUT C:\Users\caleb\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
 INPUT C:\Users\caleb\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
 INPUT C:\Users\caleb\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
 INPUT C:\Users\caleb\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm

@@ -1,5 +1,5 @@
 %%{init: {"flowchart": {"nodeSpacing": 30, "rankSpacing": 35}, "themeVariables": {"primaryColor": "#FFFF99", "primaryTextColor": "#000000", "primaryBorderColor": "#FFD700", "lineColor": "#87CEEB", "secondBkgColor": "#99FFFF", "secondBorderColor": "#00CCFF", "secondTextColor": "#000000", "tertiaryColor": "#99FF99", "tertiaryTextColor": "#000000", "tertiaryBorderColor": "#00DD00", "clusterBkg": "#FFFFCC", "clusterBorder": "#FFCC00", "clusterTextColor": "#000000", "tertiaryTextBackground": "#FFFFFF", "fontSize": "12px", "fontFamily": "Arial", "background": "#FFFFFF", "mainBkg": "#FFFFFF", "textColor": "#000000", "labelTextColor": "#000000", "nodeTextColor": "#000000", "edgeLabelBackground": "#FFFFFF", "titleColor": "#000000"}} }%%
-flowchart LR
+flowchart TB
     biodiversity_input[Biodiversity input]
 
     subgraph data["Data processing"]
@@ -18,7 +18,7 @@ flowchart LR
     end
 
     subgraph features["Feature engineering"]
-        direction TB
+        direction LR
         features_main[Feature engineering]
         diversity[Alpha / beta diversity]
         feature_gen[Feature generation]
@@ -32,7 +32,7 @@ flowchart LR
     end
 
     subgraph models["Model training"]
-        direction TB
+        direction LR
         models_main[Model training]
         model_data[Model data prep]
         training[Train + validate]
@@ -44,27 +44,20 @@ flowchart LR
     end
 
     subgraph application["Model application"]
-        direction TB
-        app_main[Model application]
-        application_input[New covariates]
-        apply_model[Apply model]
-        application_out[Output maps]
-
-        app_main --> application_input
-        application_input --> apply_model
-        apply_model --> application_out
+        direction LR
+         application_main[Model application]
     end
 
     exploration[Exploration notebook]
     diagnostics[Diagnostics notebooks]
 
-    biodiversity_input --> data_main
-    data_main --> features_main --> models_main --> app_main
+    biodiversity_input --> data
+    data --> features --> models --> application
+
 
     data_out -.-> exploration
     feature_out -.-> exploration
     model_out -.-> diagnostics
-    application_out -.-> diagnostics
 
     style data_main fill:#E6CCFF,stroke:#9966FF,color:#000000
     style ingest fill:#E6CCFF,stroke:#9966FF,color:#000000
@@ -80,10 +73,7 @@ flowchart LR
     style model_data fill:#E6CCFF,stroke:#9966FF,color:#000000
     style training fill:#E6CCFF,stroke:#9966FF,color:#000000
     style model_out fill:#E6CCFF,stroke:#9966FF,color:#000000
-    style app_main fill:#E6CCFF,stroke:#9966FF,color:#000000
-    style application_input fill:#E6CCFF,stroke:#9966FF,color:#000000
-    style apply_model fill:#E6CCFF,stroke:#9966FF,color:#000000
-    style application_out fill:#E6CCFF,stroke:#9966FF,color:#000000
+    
     style exploration fill:#E6CCFF,stroke:#9966FF,color:#000000
     style diagnostics fill:#E6CCFF,stroke:#9966FF,color:#000000
     style biodiversity_input fill:#E6CCFF,stroke:#9966FF,color:#000000
