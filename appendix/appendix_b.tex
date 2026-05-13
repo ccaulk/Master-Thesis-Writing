@@ -1,2 +1,379 @@
-\section{Appendix B: Additional Results}
-Includes the additional results there
+\section{Appendix B: Additional Results}\label{appendix:appendix_b}
+
+\clearpage
+\begin{sidewaystable}[ht]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.8}
+\caption{Summary of studies using community-level biodiversity modeling approaches in the literature with a focus on top-down models. The table includes information on the type of diversity modeled (alpha, beta, gamma), the number of predictors used, and the types of models employed in each study. The model types include generalized linear models (GLM), generalized additive models (GAM), random forests (RF), gradient boosting (GB), neural networks (NN), generalized dissimilarity modeling (GDM), stacked species distribution model (SSDM), and other specialized methods. This summary provides an overview of the current state of community-level biodiversity modeling in the literature and highlights the diversity of approaches used to model biodiversity patterns and trends.}
+\label{tab:literature-summary}
+\begin{tabular}{p{0.18\textwidth} ccc c p{0.06\textwidth} p{0.06\textwidth} p{0.07\textwidth} p{0.07\textwidth} p{0.07\textwidth} p{0.06\textwidth} p{0.06\textwidth} p{0.06\textwidth}}
+\toprule
+\multirow{2}{*}{\textbf{Study}} 
+& \multicolumn{3}{c}{\textbf{Diversity type}} 
+& \multirow{2}{*}{\textbf{No. predictors}} 
+& \multicolumn{8}{c}{\textbf{Model type}} \\
+\cmidrule(lr){2-4} \cmidrule(lr){6-13}
+& \textbf{Alpha} 
+& \textbf{Beta} 
+& \textbf{Gamma} 
+& 
+& \textbf{GLM} 
+& \textbf{GAM} 
+& \textbf{RF} 
+& \textbf{GB} 
+& \textbf{NN} 
+& \textbf{GDM}
+&\textbf{SSDM} 
+& \textbf{Other} \\
+\midrule
+
+\cite{andermann2022}
+& \checkmark 
+& \checkmark 
+& \checkmark 
+& 27 
+& 
+& 
+& 
+& 
+& \checkmark 
+& 
+& 
+& \\
+
+\cite{baggstrom2025}
+& \checkmark 
+& 
+& 
+& 25 
+& 
+& 
+& \checkmark
+& \checkmark
+& \checkmark 
+& 
+& 
+& Regression\\
+
+\cite{cai2023}
+& \checkmark 
+& 
+& 
+& 25
+& \checkmark
+& \checkmark 
+& \checkmark
+& \checkmark
+& \checkmark 
+& 
+& 
+& \\
+
+\cite{brun2024}
+& \checkmark 
+& 
+& 
+& 18 
+&  
+& 
+& 
+& 
+& \checkmark
+& 
+& \checkmark
+& \\
+
+\cite{brugere2023}
+& \checkmark 
+& 
+& 
+& 20 
+& \checkmark
+& 
+& \checkmark
+& 
+& \checkmark
+& 
+& 
+& GRNN \\
+
+\cite{hoskins2020}
+& 
+& \checkmark 
+& 
+& 15 
+&  
+& 
+& 
+& 
+& 
+& \checkmark 
+& 
+& \\
+
+\cite{mondal2021}
+& \checkmark 
+& 
+& 
+& 8 
+&  
+& \checkmark 
+& 
+& 
+& \checkmark 
+& 
+& 
+& (LMM, MARS)\\
+
+\cite{ngor2023}
+& \checkmark 
+& 
+& 
+& 14 
+& \checkmark
+& 
+& \checkmark
+& 
+& \checkmark
+& 
+& 
+& (MARS, kNN, SVM, CART, Ensemble)\\
+
+\cite{olaya-marin_comparison_2013}
+& \checkmark 
+& 
+& 
+& 7,5 
+&  
+& 
+& \checkmark 
+& 
+& \checkmark 
+& 
+& 
+& \\
+
+\cite{vecera_alpha_2019}
+& \checkmark 
+& 
+& 
+& 19 
+&  
+& 
+& \checkmark 
+& 
+& 
+& 
+& 
+& JSDM\\
+
+\cite{distler2015}
+& \checkmark 
+& 
+& 
+& 17 
+&  
+& 
+& 
+& 
+& 
+&  
+& \checkmark 
+& Boosted Regression Tree\\
+
+\cite{biber2020}
+& \checkmark 
+& 
+& 
+& 8 
+& 
+& \checkmark
+& 
+& 
+& 
+& 
+& \checkmark 
+& GCM\\
+
+
+\bottomrule
+\end{tabular}
+\end{sidewaystable}
+
+\FloatBarrier
+
+
+\small
+\begin{longtable}{p{0.15\textwidth} p{0.12\textwidth} p{0.65\textwidth}}
+\caption{Hyperparameter grid searches conducted for each model family. Each numbered search represents a separate grid search. For the FFN the \texttt{optim.Adam} optimizer was used with default settings and 150 epochs were used for all training sessions \parencite{pytorchdocs2026}.}
+\label{tab:hyperparameter-grid-searches}\\
+
+\toprule
+\textbf{Model family} & \textbf{Grid search} & \textbf{Hyperparameter search space} \\
+\midrule
+\endfirsthead
+
+\caption[]{Hyperparameter grid searches conducted for each model family. Continued.}\\
+\toprule
+\textbf{Model family} & \textbf{Grid search} & \textbf{Hyperparameter search space} \\
+\midrule
+\endhead
+
+\midrule
+\multicolumn{3}{r}{\textit{Continued on next page}}\\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+Generalized linear model 
+& 1 
+& \makecell[l]{
+\textbf{Intercept term}: included, excluded \\
+\textbf{Family}: negative binomial \\
+\textbf{Dispersion parameter \(\alpha\)}: 0.01, 0.02, 0.03, 0.04, 0.05, \\
+\hspace{1em} 0.06, 0.07, 0.08, 0.09, 0.1, 0.25, 0.5, 0.75, \\
+\hspace{1em} 1.0, 1.25, 1.5, 1.75
+} \\
+
+\hdashline
+
+Generalized linear model 
+& 2 
+& \makecell[l]{
+\textbf{Intercept term}: included, excluded \\
+\textbf{Family}: Poisson \\
+\textbf{Note}: The model without an intercept was infeasible and was not used \\
+\hspace{1em} in the final comparison.
+} \\
+
+\midrule
+
+Generalized additive model 
+& 1 
+& \makecell[l]{
+\textbf{Intercept term}: included \\
+\textbf{Spline specification}: \((df=5, degree=3)\), \((df=5, degree=2)\), \\
+\hspace{1em} \((df=4, degree=3)\), \((df=4, degree=2)\) \\
+\textbf{Family}: negative binomial \\
+\textbf{Dispersion parameter \(\alpha\)}: 0.01, 0.05, 0.1, 0.25, 0.5, \\
+\hspace{1em} 0.75, 1.0, 1.25, 1.5, 1.75 \\
+\textbf{Smoother penalty \(\alpha_{\text{smoother}}\)}: 0.5, 1.0, 2.0
+} \\
+
+\hdashline
+
+Generalized additive model 
+& 2 
+& \makecell[l]{
+\textbf{Intercept term}: included \\
+\textbf{Spline specification}: \((df=5, degree=3)\), \((df=5, degree=2)\), \\
+\hspace{1em} \((df=4, degree=3)\), \((df=4, degree=2)\) \\
+\textbf{Family}: Poisson \\
+\textbf{Smoother penalty \(\alpha_{\text{smoother}}\)}: 0.5, 1.0, 2.0
+} \\
+
+\midrule
+
+Random forest 
+& 1 
+& \makecell[l]{
+\textbf{Criterion}: squared error, absolute error, Poisson \\
+\textbf{Maximum depth}: 3, 4, 5, 10, unrestricted \\
+\textbf{Minimum samples per leaf}: 1, 2, 5 \\
+\textbf{Maximum feature fraction}: 1.0 \\
+\textbf{Number of estimators}: 10
+} \\
+
+\hdashline
+
+Random forest 
+& 2 
+& \makecell[l]{
+\textbf{Criterion}: squared error, absolute error, Poisson \\
+\textbf{Maximum depth}: 3, 4, 5 \\
+\textbf{Minimum samples per leaf}: 10, 15, 20 \\
+\textbf{Maximum feature fraction}: 1.0 \\
+\textbf{Number of estimators}: 100
+} \\
+
+\hdashline
+
+Random forest 
+& 3 
+& \makecell[l]{
+\textbf{Criterion}: squared error \\
+\textbf{Maximum depth}: 3, 4, 5 \\
+\textbf{Minimum samples per leaf}: 1, 3, 5, 7 \\
+\textbf{Maximum feature fraction}: 0.1, 0.3, 0.5, 0.7, 0.9 \\
+\textbf{Number of estimators}: 100, 200, 300
+} \\
+
+\midrule
+
+CatBoost 
+& 1 
+& \makecell[l]{
+\textbf{Loss function}: RMSE, MAPE, MAE \\
+\textbf{Depth}: 3, 4, 5, 10, unrestricted \\
+\textbf{Minimum data in leaf}: 1, 2, 5 \\
+\textbf{Feature subsampling ratio (\texttt{rsm})}: 1.0 \\
+\textbf{Iterations}: 1000
+} \\
+
+\hdashline
+
+CatBoost 
+& 2 
+& \makecell[l]{
+\textbf{Loss function}: RMSE, MAPE, MAE \\
+\textbf{Depth}: 3, 4, 5 \\
+\textbf{Minimum data in leaf}: 10, 15, 20 \\
+\textbf{Feature subsampling ratio (\texttt{rsm})}: 1.0 \\
+\textbf{Iterations}: 1000
+} \\
+
+\hdashline
+
+CatBoost 
+& 3 
+& \makecell[l]{
+\textbf{Loss function}: RMSE \\
+\textbf{Depth}: 3, 4, 5 \\
+\textbf{Minimum data in leaf}: 1, 3, 5, 7 \\
+\textbf{Feature subsampling ratio (\texttt{rsm})}: 0.1, 0.3, 0.5, 0.7, 0.9 \\
+\textbf{Iterations}: 1000, 2000, 3000
+} \\
+
+\midrule
+
+Feed-forward neural network 
+& 1 
+& \makecell[l]{
+\textbf{Hidden sizes}: [32, 32], [64, 64], [128, 128], [256, 256], \\
+\hspace{1em} [64, 32], [32, 32, 32], [32], [64] \\
+\textbf{Dropout rate}: 0.0, 0.1, 0.2 \\
+\textbf{Loss function}: MSELoss, L1Loss \\
+\textbf{Early stopping}: true, false \\
+\textbf{Activation function}: ReLU \\
+\textbf{Batch normalization}: false
+} \\
+
+\hdashline
+
+Feed-forward neural network 
+& 2 
+& \makecell[l]{
+\textbf{Hidden sizes}: [32, 32], [64, 32], [32], [64] \\
+\textbf{Dropout rate}: 0.1 \\
+\textbf{Loss function}: MSELoss \\
+\textbf{Early stopping}: true \\
+\textbf{Batch normalization}: true, false \\
+\textbf{Batch size}: 32, 64, 128 \\
+\textbf{Activation function}: ReLU, GELU, LeakyReLU
+} \\
+
+\end{longtable}
+\normalsize

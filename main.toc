@@ -17,14 +17,15 @@
 \contentsline {subsubsection}{\numberline {3.1.1}Biodiversity data input}{15}{subsubsection.3.1.1}%
 \contentsline {subsubsection}{\numberline {3.1.2}Data Processing}{16}{subsubsection.3.1.2}%
 \contentsline {subsubsection}{\numberline {3.1.3}Feature Engineering}{16}{subsubsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.2}Data}{17}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Model Selection}{17}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Model Evaluation Metrics}{17}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Results/ Case Study}{18}{section.4}%
-\contentsline {section}{\numberline {5}Discussion}{19}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Findings}{19}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Ethical Discussion}{19}{subsection.5.2}%
-\contentsline {section}{\numberline {6}Future Work/ Applications}{20}{section.6}%
-\contentsline {section}{\numberline {7}Conclusion}{21}{section.7}%
-\contentsline {section}{\numberline {A}Appendix A: Github Repository}{21}{appendix.A}%
-\contentsline {section}{\numberline {B}Appendix B: Additional Results}{22}{appendix.B}%
+\contentsline {subsubsection}{\numberline {3.1.4}Model Training and Application}{17}{subsubsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.2}Application of the SBM Pipeline}{18}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Data}{19}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Model Specification}{21}{subsubsection.3.2.2}%
+\contentsline {section}{\numberline {4}Results/ Case Study}{23}{section.4}%
+\contentsline {section}{\numberline {5}Discussion}{24}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Findings}{24}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Ethical Discussion}{24}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Future Work/ Applications}{25}{section.6}%
+\contentsline {section}{\numberline {7}Conclusion}{26}{section.7}%
+\contentsline {section}{\numberline {A}Appendix A: Github Repository}{32}{appendix.A}%
+\contentsline {section}{\numberline {B}Appendix B: Additional Results}{33}{appendix.B}%

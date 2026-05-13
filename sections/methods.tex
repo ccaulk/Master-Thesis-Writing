@@ -12,28 +12,169 @@ The spatial biodiversity modeling pipeline, hereafter referred to as the SBM pip
 \end{figure}
 
 \subsubsection{Biodiversity data input}
-The first step in the SBM pipeline is to select appropriate biodiversity data. Researchers can draw on a wide range of biodiversity data sources, including citizen-science initiatives, government-funded monitoring programmes, and researcher-collected datasets \parencite{zipkin2023}; however, to standardize the data input we chose to use the Darwin Core (DwC) format \parencite{wieczorek_darwin_2012}. This format was chosen because it is a flexible and straightforward format for biodiversity data. One of the largest biodiversity data repositories, GBIF, standardizes its data according to this format and the data used specifically to test the SBM pipeline is in Section~\ref{subsec:data}. While this format is widely used, it is important to note that there are many other formats for biodiversity data, and the SBM pipeline is designed to account for this by allowing other formats as long as the user provides a mapping to DwC format. 
+The first step in the SBM pipeline is to select appropriate biodiversity data. Researchers can draw on a wide range of biodiversity data sources, including citizen-science initiatives, government-funded monitoring programmes, and researcher-collected datasets \parencite{zipkin2023}; however, to standardize the data input we chose to use the Darwin Core (DwC) format \parencite{wieczorek_darwin_2012}. This format was chosen because it is a flexible and straightforward format for biodiversity data. One of the largest biodiversity data repositories, GBIF, standardizes its data according to this format and the data used specifically to test the SBM pipeline is described in detail in Section~\ref{subsubsec:data}. While the DwC format is widely used and has good standardization, it is important to note that there are many other formats for biodiversity data, and the SBM pipeline is designed to account for this by allowing other formats as long as the user provides a mapping to DwC format. 
 
 \subsubsection{Data Processing}
 Once the biodiversity dataset is chosen by the user, the next step in the SBM pipeline is to process the data. This involves several steps, including ingesting and cleaning the data, site polygon creation, and environmental feature extraction. In the ingestion and cleaning step the data is read into the pipeline and any necessary cleaning steps are performed. This includes removing any records with missing or invalid data, removing rows that don't have precise location information, removing records that are outside the dataset's date range, removing exact duplicates, validating location identification integrity, and inferring organism quantity \footnote{GBIF data quality guidance: \url{https://docs.gbif.org/course-data-mobilization/en/data-quality.html} (accessed 2026-05-12).}. Important steps here involve removing rows that are not precise enough for spatial modeling, this includes records whose latitude and longitude values are not precise enough, usually less than four decimal places, and the precision of these values can be specified by the user. Another important step is validating location identification integrity, if a biodiversity dataset is conduct over many decades, it is possible that the same unique location identifier (location ID) may change. This results in many location IDs mapping to the same latitude and longitude values, which can cause issues for spatial modeling. To address this, the pipeline checks for duplicate location IDs on latitude and longitude values and will rename location IDs to ensure that each unique location ID corresponds to a unique latitude and longitude pair. Finally, the pipeline infers organism quantity by checking for the presence of the "individualCount", "organismQuantity", and "organismQuantityType" fields in the dataset which are apart of DwC format \parencite{wieczorek_darwin_2012}. If these fields are not present then the pipeline will infer organism quantity by counting the number of records for each unique location ID, each unique species, and each unique date as sometimes abundance data is not always provided in the default fields. If that data is truly occurrence data (presence/absence) this will have no effect on the dataset. All of these steps can be specified by the user in the configuration file, allowing for flexibility in the data processing step.
 
-After the data is ingested and cleaned, the next step is to create site polygons. This involves creating polygons around each unique latitude and longitude pair in the dataset at different scales. This is done because biodiversity datasets usually vary in spatial scale \parencite{sicacha-parada2022}. The polygons are also created so we can later extract environmental features from these polygons. The user can define the radius for the site polygons as well as the shape of these polygons. If the dataset contains coordinate uncertainty information, then the pipeline will also create polygons with a radius equal to the coordinate uncertainty value. These polygons are projected both in a global coordinate reference system (CRS) and a local CRS, which is determined by the latitude and longitude values of each site. The global CRS, EPSG:4326, is used for extracting environmental features, while the local CRS is used for visualization.
+After the data is ingested and cleaned, the next step is to create site polygons. This involves creating polygons around each unique latitude and longitude pair in the dataset at different scales. This is done because biodiversity datasets usually vary in spatial scale \parencite{sicacha-parada2022} and we want to capture the surrounding environment. The polygons are also created so we can later extract environmental features from these polygons. The user can define the radius for the site polygons as well as the shape of these polygons. If the dataset contains coordinate uncertainty information, then the pipeline will also create polygons with a radius equal to the coordinate uncertainty value. These polygons are projected both in a global coordinate reference system (CRS) and a local CRS, which is determined by the latitude and longitude values of each site. The global CRS, EPSG:4326, is used for extracting environmental features, while the local CRS is used for visualization.
 
 Once every site polygon is created, the next step is to extract environmental features from these polygons. The environmental features are extracted from datasets provided by the user as the choice of environmental features can vary and is not the same for every problem \parencite{williams2012}. The environmental feature datasets should be provided in a raster format, this will allow the SBM pipeline to extract features from the site polygons. The user can also specify the type of summary statistic to use when extracting features from the site polygons, this includes mean, median, min, max, and standard deviation. 
 
-\subsubsection{Feature Engineering}
+\subsubsection{Feature Engineering}\label{subsubsec:feature_engineering}
 
 Once the data has been processed, site polygons created, and environmental features extracted, the next step in the SBM pipeline is to perform feature engineering. The first step in feature engineering is to combine the biodiversity data with the extracted environmental features. This involves joining the biodiversity data with the environmental features based on the unique location ID for each site and time dimension which is usually the year. This results in a dataset that contains both the biodiversity data and the environmental features for each site and time dimension.
 
 Once we have our combined biodiversity and environmental feature dataset, the next step is feature engineering. Feature engineering involves creating new features from the existing data that may be more informative for modeling. This can include creating interaction terms between environmental features, creating polynomial features, or other advanced feature engineering techniques \parencite{Katya2023}. Currently, the feature engineering in the SBM pipeline will log, square, and square root transform the continuous environmental features. 
 
-An important step of the feature engineering process is to calculate the community-level biodiversity metrics that will be used as the target variable for modeling. This includes calculating alpha diversity, which is a measure of the diversity within a single site. Currently the SBM pipeline calculates all the alpha diversity metrics described in Section~\ref{subsec:biodiversity}. This includes species richness, absolute abundance, relative abundance, Shannon index, arithmetic mean abundance, and geometric mean abundance. Furthermore, when calculating these alpha diversity metrics, the user can define the taxonomic resolutions to group at before calculating these metrics. By default no taxonomic grouping done is always included. This type of taxonomic grouping is sometimes used when species-level identification is difficult, costly, or inconsistent \parencite{de_oliveira_higher_2020}. 
+An important step of the feature engineering process is to calculate the community-level biodiversity metrics that will be used as the target variable for modeling. This includes calculating alpha diversity, which is a measure of the diversity within a single site. Currently the SBM pipeline calculates all the alpha diversity metrics described in Section~\ref{subsec:biodiversity} except for relative abundance and calculates a modified Shannon index value which is \(H_{modified} = \ln(A_{r_{i}} + 1)\). Other community-level biodiversity metrics include species richness, absolute abundance, Shannon index, arithmetic mean abundance, and geometric mean abundance. Furthermore, when calculating these alpha diversity metrics, the user can define the taxonomic resolutions to group at before calculating these metrics. By default no taxonomic grouping done is always included. This type of taxonomic grouping is sometimes used when species-level identification is difficult, costly, or inconsistent \parencite{de_oliveira_higher_2020}. 
 
 At the end of the feature engineering step, we have a datasets that contains community-level biodiversity metrics as well as the environmental features for each site and time dimension and at varying taxonomic resolutions. These datasets can then be used for modeling in the next step of the SBM pipeline.
 
-\subsection{Data}\label{subsec:data}
-%Probably go in depth here a
-\subsection{Model Selection}\label{subsec:models_selection}
+\subsubsection{Model Training and Application}
+
+After we have performed feature engineering and computed our community-level biodiversity metrics, the next step in the SBM pipeline is to train models to predict community-level biodiversity metrics. This step begins with determining the type of training one wants to perform and any final filtering. This final filtering can be done based on criteria such as removing outliers, filtering based on biogeographic factors, or taxonomic scope. This can be done to further customize the model training process. Since the process before calculates several community-level biodiversity metrics the user also specifies which one to use. The SBM pipeline is designed with three different training types: training on the entire dataset, training on a subset of the data and having a hold-out set (train-test), or cross-validation. When dividing up biodiversity data one must be careful when splitting as usually the data is spatially autocorrelated; meaning that nearby sites are not independent of each other \parencite{elith2009}. In normal machine learning problems one would randomly split the data into training and testing sets or cross-validation folds, but in spatial modeling this can lead to an overestimation of the model's performance and poor generalization performance, as the test set is not indicative of the model's performance on new, unseen data since the train and test sets are spatially correlated \parencite{wang2023}. Therefore, other methods for splitting the data have been developed to account for spatial autocorrelation, such as spatial or environmental blocking, which involves dividing the data into spatial or environmental blocks and then randomly assigning these blocks to training and testing sets \parencite{roberts2017, valavi2019}. Therefore, when the training and hold-out or cross-validation option is chosen in the SBM pipeline, the user can specify the method for splitting the data, including random splitting, spatial cross validation, and environmental cross-validation. These specific splitting methods are implemented using the K-nearest neighbors algorithm \parencite{scikit-learn} to generate the spatial or environmental blocks based on a chosen criteria in the dataset. This allows the user to test the model's performance on a variety of different data splits and evaluate the model's generalization performance in a robust way. The difference between random cross-validation and spatial cross-validation can be seen in Figure \ref{fig:cv_diagram}.
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\textwidth]{Images/cv_diagram.png}
+    \caption{Comparison of random cross-validation and spatial cross-validation. Image generated by ChatGPT using prompt: "generate a graphic that shows the difference between random and spatial cross validation strategies. Where the "blocks" in the spatial cross validation strategy are determined with the kNN algorithm " and used \cite{wang2023} as inspiration.}
+    \label{fig:cv_diagram}
+\end{figure}
+
+Once the type of training is determined along with a splitting strategy if needed a top-down model is chosen. Top-down modeling approaches are broad class from regression techniques, statistical techniques, and machine learning techniques \parencite{ferrier2002, olaya-marin_comparison_2013, mondal2021, andermann2022, brugere2023}. We have designed the SBM pipeline to accommodate this wide range of modeling techniques, allowing researchers to explore different approaches and compare their performance. This integration is done through a super class called \texttt{Model}. This class defines the behavior for every model that is trained in the SBM pipeline, and allows for easy integration of new models. A new model only needs to inherit from the \texttt{Model} class and implement the \texttt{train\_model} and \texttt{get\_predictions} methods. Currently, the SBM pipeline has generalized linear models (GLMs), generalized additive models (GAMs), random forests, CatBoost, and FFNNs implemented, but the pipeline is designed to allow for easy integration of custom models in the future.
+
+After the type of training and model has been determined, the model is trained. The model is trained to predict the community-level biodiversity metric specified by the user and several metrics will be outputted. For all training types the output will include predictions on both the training and testing datasets, if applicable, for the community-level biodiversity metric. The \(r^2\) values, mean absolute percentage error (MAPE), symmetric mean absolute percentage error (SMAPE), root mean squared error (RMSE), pearson correlation coefficient, and Spearman correlation coefficient are also outputted for both the training and testing data, if applicable. Additional the bias ratios for the train and test datasets are included, along with the bias ratios for the top and bottom quartiles of the train and test datasets. These metrics are used to evaluate the performance of the model and provide insights into how well the model is able to predict community-level biodiversity patterns and trends. . These metrics are used to evaluate the performance of the model and provide insights into how well the model is able to predict community-level biodiversity patterns and trends. The finalized model can then be used in applications that promote the conservation of biodiversity by helping identify spatial patterns in community-level biodiversity metrics \parencite{IPBES2019spm}.
+
+\subsection{Application of the SBM Pipeline}\label{subsec:application}
+In this subsection we go over the application of the SBM pipeline to a case study using data from GBIF. We use this case study to demonstrate the flexibility and utility of the SBM pipeline in modeling biodiversity at the community level. The details of the data used in this case study are described in Section~\ref{subsubsec:data} and the model selection process is described in Section~\ref{subsubsec:models_spefication}. The top models from each model class are then used to answer the research questions in Section~\ref{sec:Results}.
+\subsubsection{Data}\label{subsubsec:data}
+%Probably go in depth here a little
+For the demonstartion of the SBM pipeline we use the United Kingdom Butterfly Monitoring Scheme (UKBMS) dataset, which is a long-term monitoring program that collects data on butterflies across the United Kingdom and Ireland \parencite{UKBMS2026}. The temporal scale of this dataset is from May 1, 1973 - October 27, 2020, however; when loading the data the date range extends to October 27, 2024. The data is collected from defined transect walks every week from the beginning of April to the end of September, weather permitting to ideally give 26 sample events per site per year. A transect walk is conducted by individuals walking along a defined transect, or route, and counting the number of butterflies they see and recording the species and abundance of butterflies observed \parencite{pollard1993}. At the time of writing this dataset has \(10,209,486\) occurrence records across a few thousand sites. 
+
+We then processed this dataset through the SBM for ingestion and cleaning. An important note here is that we inferred organism quantity as abundance records were separated into individual observations, so we group on latitude and longitude as well as event date. We also checked for coordinate precision down to four decimal places, which is roughly a 10-meter precision. Standard filters of invalid data and invalid dates were also automatically applied. This resulted in \(3,673,775\) abundance records across \(3,038\) unique sites. The spatial distribution of all the sites can be seen in Figure \ref{fig:all_sites_distribution}.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{Images/all_sites_distribution.png}
+    \caption{Distribution of all the sites in the UKBMS dataset after processing through the SBM pipeline. The dataset contains \(3,038\) unique sites.}
+    \label{fig:all_sites_distribution}
+\end{figure}
+
+After data ingestion and cleaning, environmental predictor variables were extracted for each site from three sources: climatic variables from WorldClim \parencite{fick2017worldclim}, population density from the Gridded Population of the World version 4 (GPWv4) dataset \parencite{ciesin2017gpwv4}, and topographic variables from EarthEnv \parencite{amatulli2018topographic}. The extracted variables and spatial scales are summarized in Table~\ref{tab:environmental-features}.. The climatic features we extracted included: annual mean temperature, temperature seasonality, maximum temperature of the warmest month, minimum temperature of the coldest month, annual precipitation, precipitation of the wettest month, precipitation of the driest month, and precipitation seasonality. The topographic features we extracted included: elevation, slope, terrain roughness, terrain ruggedness index, aspect eastness, and aspect northness. The population density feature we extracted was the population density across the years 2000,2005, 2010, 2015, and 2020. All datasets here were avaliable in a \(0.5^\circ\) degree or \(1\)km spatial resolution and values were aggregated using the mean. These features were extracted at differing spatial scales, with site polygons created around the latitude and longitude values of the sites, at a radius of 1km, and 5km for climatic and topographic features and 1km and 10km for population density features. A table of all values used are shown in Table~\ref{tab:environmental-features}. Differing sizes were used to capture the surrounding environment context at differing neighborhood sizes, as biodiversity and species patterns can be influenced by environmental factors at varying spatial scales \parencite{amatulli2018topographic, mertes2018scale}.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Environmental predictor variables extracted for each site.}
+\label{tab:environmental-features}
+\begin{tabular}{p{0.25\textwidth} p{0.17\textwidth} p{0.30\textwidth} p{0.12\textwidth}}
+\toprule
+\textbf{Feature} & \textbf{Feature group} & \textbf{Dataset} & \textbf{Spatial scales} \\
+\midrule
+Annual mean temperature & Climatic & WorldClim & 1 km, 5 km \\
+Temperature seasonality & Climatic & WorldClim & 1 km, 5 km \\
+Maximum temperature of the warmest month & Climatic & WorldClim & 1 km, 5 km \\
+Minimum temperature of the coldest month & Climatic & WorldClim & 1 km, 5 km \\
+Annual precipitation & Climatic & WorldClim & 1 km, 5 km \\
+Precipitation of the wettest month & Climatic & WorldClim & 1 km, 5 km \\
+Precipitation of the driest month & Climatic & WorldClim & 1 km, 5 km \\
+Precipitation seasonality & Climatic & WorldClim & 1 km, 5 km \\
+\midrule
+Elevation & Topographic & EarthEnv & 1 km, 5 km \\
+Slope & Topographic & EarthEnv & 1 km, 5 km \\
+Terrain roughness & Topographic & EarthEnv & 1 km, 5 km \\
+Terrain ruggedness index & Topographic & EarthEnv & 1 km, 5 km \\
+Aspect eastness & Topographic & EarthEnv & 1 km, 5 km \\
+Aspect northness & Topographic & EarthEnv & 1 km, 5 km \\
+\midrule
+Population density in 2000 & Population density & GPWv4 & 1 km, 10 km \\
+Population density in 2005 & Population density & GPWv4 & 1 km, 10 km \\
+Population density in 2010 & Population density & GPWv4 & 1 km, 10 km \\
+Population density in 2015 & Population density & GPWv4 & 1 km, 10 km \\
+Population density in 2020 & Population density & GPWv4 & 1 km, 10 km \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+We then performed feature engineering on the combined biodiversity and environmental feature dataset as described in Section~\ref{subsubsec:feature_engineering}. This resulted in a dataset that contains the biodiversity data as well as the environmental features for each site and year. Any data that had environmental features with missing values were removed from the dataset. This resulted in \(3,673,571\) abundance observations across \(3,037\) unique sites, one site couldn't load some environmental features so it was removed, \(71\) species and \(51\) years. We decided to further filter this to only include data from the year 2020 as this removes the temporal dimension and allows us to focus on the spatial modeling aspect of the SBM pipeline. We then ran our community-level biodiversity metric calculation specifying the year 2020. This resulted in \(1,363\) sites with the community-level biodiversity metrics from Section~\ref{subsec:biodiversity}, expect for relative abundance, calculated at a yearly scale along with environmental features per site, a total of \(61\) unique butterfly species. The spatial distribution of these sites can be seen in Figure \ref{fig:2020_sites_distribution}. This fully filtered and cleaned dataset included 120 different environmental features, each environmental feature at two spatial scales and three transformations, and six different community-level biodiversity metrics. Although the processed dataset allows for many combinations of environmental predictors, spatial scales, transformations, and response variables, this case study uses a simplified modeling setup to demonstrate the SBM pipeline. Specifically, we use the original environmental features at both spatial scales, those in Table \ref{tab:environmental-features}, to predict species richness as the response variable.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Images/2020_sites_distribution.png}
+    \caption{Spatial distribution of sites in the UKBMS for the year 2020. The dataset contains \(1,363\) unique sites.}
+    \label{fig:2020_sites_distribution}
+\end{figure}
+
+\subsubsection{Model Specification}\label{subsubsec:models_spefication}
 %with evaluation of how a model was chosen and the different models that were considered.
 % Go more into the details of the statistical methods?? Focus more on top down methods and the ML methods
-\subsection{Model Evaluation Metrics}
+For the demonstration of the SBM pipeline we chose to train a GLM, GAM, Random Forest, CatBoost, and a FFNN. These models were chosen to represent a range of different modeling approaches, including traditional statistical models (GLM and GAM) and machine learning models (Random Forest, CatBoost, and FFNN) that are commonly used in biodiversity modeling \parencite{ olaya-marin_comparison_2013, mondal2021, andermann2022, brugere2023, cai2023, ngor2023, baggstrom2025}. The GLM and GAM were implemented with \texttt{glm} and \texttt{glmgam} modules respectively from the statsmodels library \parencite{seabold2010statsmodels}. Random Forest was implemented with the \texttt{RandomForestRegressor} class from the scikit-learn library \parencite{scikit-learn}. CatBoost was implemented with the \texttt{CatBoostRegressor} class from the CatBoost library \parencite{catboostdocs2026}. The FFNN was implemented with the \texttt{nn.Module} from pytorch \parencite{pytorchdocs2026}. 
+
+We ran random cross-validation with 10 folds across several different hyper-parameter combinations for each model to evaluate their performance and to choose one model per class to use for our research questions. The best model was chosen based on a combination ranking of the average \(r^2\) score across test folds, the median \(r^2\) across test folds, and the interquartile range of the \(r^2\) across test folds. Every model was ranked according to these metrics, where higher is better for the mean and median \(r^2\) and lower is better for the interquartile range of \(r^2\). The model with the best cumulative rank across these three metrics was chosen as the best model for each class, that is the one with the lowest cumulative rank. The hyper-parameter search space for each model class is shown in Table~\ref{tab:hyperparameter-grid-searches} in Appendix~\ref{appendix:appendix_b} and reasonable values for the hyper-parameter grid search were selected. The best-performing model from each model class, selected using random 10-fold cross-validation, is shown in Table \ref{tab:best-hyperparameters} below. 
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Selected best-performing hyperparameter configuration for each model class.}
+\label{tab:best-hyperparameters}
+\begin{tabular}{p{0.25\textwidth} p{0.65\textwidth}}
+\toprule
+\textbf{Model class} & \textbf{Selected hyperparameters} \\
+\midrule
+
+Generalized linear model 
+& \makecell[l]{
+\textbf{Intercept term}: included \\
+\textbf{Family}: Poisson \\
+} \\
+
+\midrule
+
+Generalized additive model 
+& \makecell[l]{
+\textbf{Intercept term}: included \\
+\textbf{Spline specification}: \((df=5, degree=3)\) \\
+\textbf{Family}: negative binomial \\
+\textbf{Dispersion parameter \(\alpha\)}: 1.75 \\
+\textbf{Smoother penalty \(\alpha_{\text{smoother}}\)}: 2.0
+} \\
+
+\midrule
+
+Random forest 
+& \makecell[l]{
+\textbf{Criterion}: absoulte error \\
+\textbf{Maximum depth}: null \\
+\textbf{Minimum samples per leaf}: 5 \\
+\textbf{Maximum feature fraction}: 1.0 \\
+\textbf{Number of estimators}: 100
+} \\
+
+\midrule
+
+CatBoost 
+& \makecell[l]{
+\textbf{Loss function}: RMSE \\
+\textbf{Depth}: null \\
+\textbf{Minimum data in leaf}: 1 \\
+\textbf{Feature subsampling ratio (\texttt{rsm})}: 1.0 \\
+\textbf{Iterations}: 1000
+} \\
+
+\midrule
+
+Feed-forward neural network 
+& \makecell[l]{
+\textbf{Hidden sizes}: [64] \\
+\textbf{Dropout rate}: 0.0 \\
+\textbf{Loss function}: MSELoss \\
+\textbf{Early stopping}: true \\
+\textbf{Batch normalization}: false \\
+\textbf{Batch size}: 32 \\
+\textbf{Activation function}: ReLU
+} \\
+
+\bottomrule
+\end{tabular}
+\end{table}
+
+We chose to use random cross-validation for model selection as it is a good indicator of model performance and is commonly used \parencite{efron_estimating_1983}. We acknowledge that random cross-validation can overestimate model performance when spatial autocorrelation is present in the data \parencite{wang2023}. However, random cross-validation is still a useful tool for model evaluation and is suitable for fairly spread observations \parencite{de_bruin_dealing_2022}. The best-performing model from each model class, selected using random 10-fold cross-validation and shown in Table \ref{tab:best-hyperparameters}, was then used throughout the rest of the analysis in Section~\ref{sec:Results}.

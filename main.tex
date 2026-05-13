@@ -9,6 +9,17 @@
 \usepackage{xcolor}
 \usepackage{amssymb} % Provides \mathbb for blackboard bold
 \usepackage{amsmath} % Provides aligned and other math environments
+\usepackage{booktabs}
+\usepackage{makecell}
+\usepackage{multirow} % Provides \multirow for multi-row cells
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{rotating} % Provides sidewaystable for rotating tables 90 degrees
+\usepackage{placeins} % Provides \FloatBarrier to keep floats in order
+\usepackage{dashrule} % Provides \dashrule for dashed lines
+
+% Custom command for dashed lines in tables
+\newcommand{\hdashline}{\noalign{\vskip 0.5ex}\cline{1-3}\noalign{\vskip 0.5ex}}
 \definecolor{mycitepurple}{RGB}{128,0,128}
 \usepackage[colorlinks=true, citecolor=purple, urlcolor=blue]{hyperref}
 
@@ -94,10 +105,10 @@
 \input{sections/future_work.tex}
 \newpage
 \input{sections/conclusion.tex}
+\newpage
+\printbibliography[title={References}] % This prints the actual list
 \appendix
 \input{appendix/appendix_a.tex}
 \newpage
 \input{appendix/appendix_b.tex}
-\newpage
-\printbibliography[title={References}] % This prints the actual list
 \end{document}
