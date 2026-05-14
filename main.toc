@@ -1,31 +1,37 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Motivation}{2}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Research Objectives and Scope}{3}{subsection.1.2}%
-\contentsline {section}{\numberline {2}Background}{5}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Biodiversity and how to measure it}{5}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Top-Down Modeling Problem Formulation}{7}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Top-Down Models}{8}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Generalized Linear Models}{8}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}Generalized Additive Models}{9}{subsubsection.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3}Random Forests}{10}{subsubsection.2.3.3}%
-\contentsline {subsubsection}{\numberline {2.3.4}Gradient Boosting}{11}{subsubsection.2.3.4}%
-\contentsline {subsubsection}{\numberline {2.3.5}Neural Networks}{12}{subsubsection.2.3.5}%
-\contentsline {subsection}{\numberline {2.4}The current top-down modeling landscape}{14}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Methods}{15}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Spatial Biodiversity Modeling Pipeline}{15}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Biodiversity data input}{15}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Data Processing}{16}{subsubsection.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.3}Feature Engineering}{16}{subsubsection.3.1.3}%
-\contentsline {subsubsection}{\numberline {3.1.4}Model Training and Application}{17}{subsubsection.3.1.4}%
-\contentsline {subsection}{\numberline {3.2}Application of the SBM Pipeline}{18}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Data}{19}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Model Specification}{21}{subsubsection.3.2.2}%
-\contentsline {section}{\numberline {4}Results/ Case Study}{23}{section.4}%
-\contentsline {section}{\numberline {5}Discussion}{24}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Findings}{24}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Ethical Discussion}{24}{subsection.5.2}%
-\contentsline {section}{\numberline {6}Future Work/ Applications}{25}{section.6}%
-\contentsline {section}{\numberline {7}Conclusion}{26}{section.7}%
-\contentsline {section}{\numberline {A}Appendix A: Github Repository}{32}{appendix.A}%
-\contentsline {section}{\numberline {B}Appendix B: Additional Results}{33}{appendix.B}%
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Motivation}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Research Objectives and Scope}{4}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Background}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Biodiversity and how to measure it}{6}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Top-Down Modeling Problem Formulation}{8}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Top-Down Models}{9}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Generalized Linear Models}{9}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Generalized Additive Models}{10}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Random Forests}{11}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.4}Gradient Boosting}{12}{subsubsection.2.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.5}Neural Networks}{13}{subsubsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.4}The current top-down modeling landscape}{15}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Methods}{16}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Spatial Biodiversity Modeling Pipeline}{16}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Biodiversity data input}{16}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Data Processing}{17}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Feature Engineering}{17}{subsubsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.4}Model Training and Application}{18}{subsubsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.2}Application of the SBM Pipeline}{19}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Data}{20}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Model Specification}{22}{subsubsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.3}Model Evaluation}{23}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Experiments}{24}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Model class comparison}{24}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Cross-validation strategy}{26}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}GLM}{26}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}CatBoost}{27}{subsubsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.3}Limited data scenarios}{29}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Discussion}{30}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Findings}{30}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Ethical Discussion}{30}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Future Work/ Applications}{31}{section.6}%
+\contentsline {section}{\numberline {7}Conclusion}{32}{section.7}%
+\contentsline {section}{\numberline {A}Appendix A: Github Repository}{38}{appendix.A}%
+\contentsline {section}{\numberline {B}Appendix B: Additional Results}{39}{appendix.B}%

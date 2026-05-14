@@ -4167,6 +4167,75 @@
       \verb https://royalsocietypublishing.org/doi/10.1098/rspb.2016.2091
       \endverb
     \endentry
+    \entry{nakagawa2013}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=737589ed49865a9515f816d50029418d}{%
+           family={Nakagawa},
+           familyi={N\bibinitperiod},
+           given={Shinichi},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3508362487e4ff051257a51373009804}{%
+           family={Schielzeth},
+           familyi={S\bibinitperiod},
+           given={Holger},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=4f04488b04a7fae60095f02a995ca3d0}{%
+           family={O'Hara},
+           familyi={O\bibinitperiod},
+           given={Robert\bibnamedelima B.},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{b202715341934364a4ba1920b3503f37}
+      \strng{fullhash}{b202715341934364a4ba1920b3503f37}
+      \strng{fullhashraw}{b202715341934364a4ba1920b3503f37}
+      \strng{bibnamehash}{b202715341934364a4ba1920b3503f37}
+      \strng{authorbibnamehash}{b202715341934364a4ba1920b3503f37}
+      \strng{authornamehash}{b202715341934364a4ba1920b3503f37}
+      \strng{authorfullhash}{b202715341934364a4ba1920b3503f37}
+      \strng{authorfullhashraw}{b202715341934364a4ba1920b3503f37}
+      \strng{editorbibnamehash}{4f04488b04a7fae60095f02a995ca3d0}
+      \strng{editornamehash}{4f04488b04a7fae60095f02a995ca3d0}
+      \strng{editorfullhash}{4f04488b04a7fae60095f02a995ca3d0}
+      \strng{editorfullhashraw}{4f04488b04a7fae60095f02a995ca3d0}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2041-210X, 2041-210X}
+      \field{journaltitle}{Methods in Ecology and Evolution}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{2}
+      \field{shortjournal}{Methods Ecol Evol}
+      \field{title}{A general and simple method for obtaining \textit{R}$^{\textrm{2}}$ from generalized linear mixed‐effects models}
+      \field{urlday}{14}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{4}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{133\bibrangedash 142}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1111/j.2041-210x.2012.00261.x
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\Q7BDNVKN\\Nakagawa and Schielzeth - 2013 - A general and simple method for obtaining R2 from generalized linear mixed‐effects.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.2041-210x.2012.00261.x
+      \endverb
+      \verb{url}
+      \verb https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.2041-210x.2012.00261.x
+      \endverb
+    \endentry
     \entry{nelder1972}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=97a60525676f2f0735b3bace8039e9af}{%

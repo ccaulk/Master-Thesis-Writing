@@ -2632,20 +2632,33 @@
     <bcf:citekey order="174" intorder="1">efron_estimating_1983</bcf:citekey>
     <bcf:citekey order="175" intorder="1">wang2023</bcf:citekey>
     <bcf:citekey order="176" intorder="1">de_bruin_dealing_2022</bcf:citekey>
-    <bcf:citekey order="177" intorder="1">andermann2022</bcf:citekey>
-    <bcf:citekey order="178" intorder="1">baggstrom2025</bcf:citekey>
-    <bcf:citekey order="179" intorder="1">cai2023</bcf:citekey>
-    <bcf:citekey order="180" intorder="1">brun2024</bcf:citekey>
-    <bcf:citekey order="181" intorder="1">brugere2023</bcf:citekey>
-    <bcf:citekey order="182" intorder="1">hoskins2020</bcf:citekey>
-    <bcf:citekey order="183" intorder="1">mondal2021</bcf:citekey>
-    <bcf:citekey order="184" intorder="1">ngor2023</bcf:citekey>
-    <bcf:citekey order="185" intorder="1">olaya-marin_comparison_2013</bcf:citekey>
-    <bcf:citekey order="186" intorder="1">vecera_alpha_2019</bcf:citekey>
-    <bcf:citekey order="187" intorder="1">distler2015</bcf:citekey>
-    <bcf:citekey order="188" intorder="1">biber2020</bcf:citekey>
-    <bcf:citekey order="189" intorder="1">pytorchdocs2026</bcf:citekey>
-    <bcf:citekey order="190" intorder="1">pytorchdocs2026</bcf:citekey>
+    <bcf:citekey order="177" intorder="1">ngor2023</bcf:citekey>
+    <bcf:citekey order="177" intorder="2">cai2023</bcf:citekey>
+    <bcf:citekey order="177" intorder="3">baggstrom2025</bcf:citekey>
+    <bcf:citekey order="178" intorder="1">nakagawa2013</bcf:citekey>
+    <bcf:citekey order="179" intorder="1">mondal2021</bcf:citekey>
+    <bcf:citekey order="179" intorder="2">cai2023</bcf:citekey>
+    <bcf:citekey order="179" intorder="3">baggstrom2025</bcf:citekey>
+    <bcf:citekey order="180" intorder="1">elith2009</bcf:citekey>
+    <bcf:citekey order="180" intorder="2">wang2023</bcf:citekey>
+    <bcf:citekey order="181" intorder="1">elith2009</bcf:citekey>
+    <bcf:citekey order="181" intorder="2">wang2023</bcf:citekey>
+    <bcf:citekey order="182" intorder="1">elith2009</bcf:citekey>
+    <bcf:citekey order="182" intorder="2">wang2023</bcf:citekey>
+    <bcf:citekey order="183" intorder="1">andermann2022</bcf:citekey>
+    <bcf:citekey order="184" intorder="1">baggstrom2025</bcf:citekey>
+    <bcf:citekey order="185" intorder="1">cai2023</bcf:citekey>
+    <bcf:citekey order="186" intorder="1">brun2024</bcf:citekey>
+    <bcf:citekey order="187" intorder="1">brugere2023</bcf:citekey>
+    <bcf:citekey order="188" intorder="1">hoskins2020</bcf:citekey>
+    <bcf:citekey order="189" intorder="1">mondal2021</bcf:citekey>
+    <bcf:citekey order="190" intorder="1">ngor2023</bcf:citekey>
+    <bcf:citekey order="191" intorder="1">olaya-marin_comparison_2013</bcf:citekey>
+    <bcf:citekey order="192" intorder="1">vecera_alpha_2019</bcf:citekey>
+    <bcf:citekey order="193" intorder="1">distler2015</bcf:citekey>
+    <bcf:citekey order="194" intorder="1">biber2020</bcf:citekey>
+    <bcf:citekey order="195" intorder="1">pytorchdocs2026</bcf:citekey>
+    <bcf:citekey order="196" intorder="1">pytorchdocs2026</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
