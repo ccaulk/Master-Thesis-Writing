@@ -289,6 +289,12 @@ INPUT .\Images\decision_tree.png
 INPUT .\Images\decision_tree.png
 INPUT .\Images\decision_tree.png
 INPUT .\Images\decision_tree.png
+INPUT C:\Users\caleb\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
+INPUT C:\Users\caleb\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib7.tfm
+INPUT C:\Users\caleb\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib5.tfm
+INPUT C:\Users\caleb\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
+INPUT C:\Users\caleb\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy7.tfm
+INPUT C:\Users\caleb\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy5.tfm
 INPUT .\sections\methods.tex
 INPUT .\sections\methods.tex
 INPUT sections\methods.tex

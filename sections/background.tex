@@ -98,11 +98,11 @@ and then the model's performance is evaluated on the test set. Here, the loss fu
 
 For this thesis, the pipeline that we develop encompasses this entire problem formulation. The pipeline allows for flexibility in the choice of dataset \(\mathcal{D}_r\), the choice of predictor variables \(x_i\), and the choice of model \(f_\Theta\). The pipeline also includes steps for data preprocessing, model training, and model evaluation. The next section reviews the different types of models that were used for top-down community-level biodiversity modeling in this thesis.
 
-\subsection{Top-Down Models}\label{subsec:Models}
+\subsection{Top-Down models}\label{subsec:Models}
 This subsection reviews the different types of models that were used to test the pipeline for top-down community-level biodiversity modeling. The models discussed here are a subset of the model classes that can be used for top-down community-level biodiversity modeling. We define the assumptions and limitations of these models. The models discussed include generalized linear models \parencite{nelder1972}, generalized additive models \parencite{hastie1986}, random forests \parencite{breiman2001}, gradient boosting \parencite{friedman2001}, and neural networks \parencite{bishop_pattern_2006}. These models are used to demonstrate the effectiveness of the pipeline.
 
-\subsubsection{Generalized Linear Models}
-Generalized Linear Models (GLMs) are an extension of linear regression models that allow the response variable to follow a distribution from the exponential family \parencite{nelder1972}. Under standard linear regression, the response variable \(Y\) is modeled as 
+\subsubsection{Generalized linear models}
+Generalized linear models (GLMs) are an extension of linear regression models that allow the response variable to follow a distribution from the exponential family \parencite{nelder1972}. Under standard linear regression, the response variable \(Y\) is modeled as 
 \[ Y = \beta_0 + \beta_1 x_1 + \cdots + \beta_p x_p + \epsilon, \]
 where \(\epsilon\) is the error term. Linear regression assumes that the conditional mean of the response variable \(Y\) is linear in the predictors \(x_1, x_2, \cdots, x_p\), the error term \(\epsilon\) is normally distributed with mean 0 and variance \(\sigma^2\) or \(\epsilon \sim \mathcal{N}(0, \sigma^2)\), the error term \(\epsilon\) is independent and identically distributed, and the variance of \(Y\) is constant across observations \parencite{guisan2002}.
 
@@ -121,7 +121,7 @@ The main advantage of a GLM is that the response variable does not need to be no
 
 GLMs have been used as a top-down modeling strategy for predicting community-level biodiversity metrics \parencite{brugere2023, cai2023, ngor2023}. While GLMs are more flexible than linear regression models and have been shown to be effective for single species distribution modeling \parencite{norberg2019}, they can have limited performance when predicting community-level biodiversity metrics such as species richness \parencite{robin2021, ngor2023, cai2023}. First, GLM performance can be strongly influenced by the choice of predictor variables \parencite{guisan2002}. Second, GLMs may be insufficiently flexible when the true relationship between predictors and the response is highly nonlinear or complex \parencite{yee_generalized_1991}. Third, GLMs require the analyst to specify an appropriate response distribution, link function, and model structure, which should be chosen carefully to match the ecological context \parencite{austin_species_2007}. Although the latter limitations are often discussed in the context of species distribution modeling, they are also relevant to top-down models of community-level biodiversity metrics.
 
-\subsubsection{Generalized Additive Models}
+\subsubsection{Generalized additive models}
 Generalized Additive Models (GAMs) are an extension of GLMs that allow for non-linear relationships between the predictors and the response variable \parencite{hastie1986}. In a GAM, the linear predictor is generalized to an additive predictor composed of smooth functions of the covariates. The model can be specified as
 \[
 g(\mu_i) = \eta_i = \beta_0 + f_1(x_{i1}) + f_2(x_{i2}) + \cdots + f_p(x_{ip}),
@@ -130,8 +130,8 @@ where \(\mu_i = \mathbb{E}(Y_i \mid \mathbf{x}_i)\), \(g(\cdot)\) is the link fu
 
 The increased flexibility of GAMs has also contributed to their success in modeling individual species distributions \parencite{valavi2022}, and they have been utilized to predict community-level biodiversity metrics such as species richness and have shown better predictive performance than GLMs \parencite{mondal2021, cai2023}. GAMs are also interpretable, as each smooth function \(f_j\) can be plotted as a function of its corresponding predictor variable \(x_{ij}\), showing how the expected response changes across values of the predictor. However, some of the limitations of GAMs are similar to those of GLMs. First, GAM performance can also be strongly influenced by the choice of predictor variables \parencite{guisan2002}. While GAMs are more flexible than GLMs, this also increases model complexity and can increase computational cost \parencite{mondal2021}.
 
-\subsubsection{Random Forests}
-Random Forests are a supervised machine learning model that is based on the idea of combining several decision trees in an ensemble method to improve predictive performance \parencite{breiman2001}. To understand what a Random Forest is more concretely, we will first describe a decision tree. Given a set of predictor variables \(X_1, X_2, \cdots, X_p\) and a response variable \(Y\), a decision tree will recursively partition the predictor space into \(k\) regions such that the response variable is as homogeneous as possible within each region \parencite{loh_classification_2011}. For a classification task with \(k\) classes, training a decision tree involves splitting the predictor space into regions \(R_1, R_2, \cdots, R_m\) such that in each region \(R_j\) the predicted class is the majority class of the training observations that fall into that region \parencite{moisen_classification_2008, loh_classification_2011}. For a regression task, the predicted value for each region \(R_j\) is the average of the response variable for the training observations that fall into that region \parencite{moisen_classification_2008, loh_classification_2011}. The process of splitting the predictor space is done by searching over all predictor variables and candidate threshold values for each predictor. The best split is based on a criterion or loss function such as minimizing the variance or the mean squared error (MSE) \parencite{klusowski_analyzing_2020}. For a regression tree, first, we would look at the sample variance or MSE of the node \(t\), before the split, which is calculated as
+\subsubsection{Random forests}
+Random forests are a supervised machine learning model that is based on the idea of combining several decision trees in an ensemble method to improve predictive performance \parencite{breiman2001}. To understand what a random forest is more concretely, we will first describe a decision tree. Given a set of predictor variables \(X_1, X_2, \cdots, X_p\) and a response variable \(Y\), a decision tree will recursively partition the predictor space into \(k\) regions such that the response variable is as homogeneous as possible within each region \parencite{loh_classification_2011}. For a classification task with \(k\) classes, training a decision tree involves splitting the predictor space into regions \(R_1, R_2, \cdots, R_m\) such that in each region \(R_j\) the predicted class is the majority class of the training observations that fall into that region \parencite{moisen_classification_2008, loh_classification_2011}. For a regression task, the predicted value for each region \(R_j\) is the average of the response variable for the training observations that fall into that region \parencite{moisen_classification_2008, loh_classification_2011}. The process of splitting the predictor space is done by searching over all predictor variables and candidate threshold values for each predictor. The best split is based on a criterion or loss function such as minimizing the variance or the mean squared error (MSE) \parencite{klusowski_analyzing_2020}. For a regression tree, first, we would look at the sample variance or MSE of the node \(t\), before the split, which is calculated as
 \[MSE_t = \frac{1}{n_t}\sum_{i=1}^{n_t}(y_i - \bar{y}_t)^2,\]
 where \(n_t\) is the number of observations, \(y_i\) is the response variable for the \(i\)-th observation in node \(t\), and \(\bar{y}_t\) is the mean among the observations in node \(t\). Then, for a given split that divides the node \(t\) into two child nodes \(t_L\) and \(t_R\) with \(n_L\) and \(n_R\) observations, respectively, we would calculate the change in MSE. This can be expressed as
 \[ \Delta (MSE) = MSE_t - (\frac{n_L}{n_t} MSE_{t_L} + \frac{n_R}{n_t} MSE_{t_R}).\]
@@ -144,12 +144,12 @@ The MSE for the left and right children is calculated in the same manner as \(MS
     \label{fig:decision-tree}
 \end{figure}
 
-A Random Forest is an ensemble method that combines hundreds or thousands of decision trees to produce a prediction. Each tree is trained on a bootstrapped sample of the data, while each split considers only a random subset of the predictor variables. For regression tasks, the final prediction is obtained by averaging the predictions across all trees; for classification tasks, it is typically determined by majority vote \parencite{breiman2001, mienye_survey_2024}. This bootstrapping and aggregation, commonly referred to as bagging, also helps reduce the variance of the final model \parencite{aria_comparison_2021}.
+A random forest is an ensemble method that combines hundreds or thousands of decision trees to produce a prediction. Each tree is trained on a bootstrapped sample of the data, while each split considers only a random subset of the predictor variables. For regression tasks, the final prediction is obtained by averaging the predictions across all trees; for classification tasks, it is typically determined by majority vote \parencite{breiman2001, mienye_survey_2024}. This bootstrapping and aggregation, commonly referred to as bagging, also helps reduce the variance of the final model \parencite{aria_comparison_2021}.
 
-Random Forests are a popular machine learning model for top-down community-level biodiversity modeling \parencite{olaya-marin_comparison_2013, zhang2019, vecera_alpha_2019, ngor2023, cai2023, brugere2023, baggstrom2025} due to their ability to capture complex, non-linear relationships between predictors and the response variable, and their robustness to overfitting due to their ensemble nature \parencite{breiman2001}. However, some of their shortcomings include being less interpretable than GLMs and GAMs because they are an ensemble of many, possibly deep, trees \parencite{aria_comparison_2021}. Also, random forests can still show a gap between training and test performance \parencite{olaya-marin_comparison_2013, baggstrom2025}. Furthermore, they can become computationally expensive when the number of trees is large or when the depth of the trees is large.
+Random forests are a popular machine learning model for top-down community-level biodiversity modeling \parencite{olaya-marin_comparison_2013, zhang2019, vecera_alpha_2019, ngor2023, cai2023, brugere2023, baggstrom2025} due to their ability to capture complex, non-linear relationships between predictors and the response variable, and their robustness to overfitting due to their ensemble nature \parencite{breiman2001}. However, some of their shortcomings include being less interpretable than GLMs and GAMs because they are an ensemble of many, possibly deep, trees \parencite{aria_comparison_2021}. Also, random forests can still show a gap between training and test performance \parencite{olaya-marin_comparison_2013, baggstrom2025}. Furthermore, they can become computationally expensive when the number of trees is large or when the depth of the trees is large.
 
-\subsubsection{Gradient Boosting}
-Gradient boosting is another ensemble method but is built in a sequential manner instead of in parallel like Random Forests. The idea is to fit a sequence of weak learners, typically small decision trees, where each subsequent tree is trained to correct for the errors of the previous tree ensemble \parencite{friedman2001, smlbook}. The final model is an additive model of the form
+\subsubsection{Gradient boosting}
+Gradient boosting is another ensemble method but is built in a sequential manner instead of in parallel like random forests. The idea is to fit a sequence of weak learners, typically small decision trees, where each subsequent tree is trained to correct for the errors of the previous tree ensemble \parencite{friedman2001, smlbook}. The final model is an additive model of the form
 \[ f_M(x) = f_0(x) + \sum_{m=1}^M \nu_m\beta_m h_m(x), \]
 where \(f_0(x)\) is an initial guess, \(h_m\) is the \(m\)-th weak learner, \(\nu_m\) is the learning rate for the \(m\)-th learner, and \(\beta_m\) is the weight for that learner \parencite{friedman2001}. The model is trained in an iterative manner, where each iteration fits a new weak learner to the negative gradient of the loss function with respect to the current model's predictions \parencite{friedman2001}. Mathematically, this is expressed as 
 \[r_{im} = -\left[\frac{\partial\mathcal{L}({y_i}, f(x_i))}{\partial f(x_i)}\right]_{f = f_{m-1}},\]
@@ -174,63 +174,115 @@ An important implementation of gradient boosting is CatBoost, which was develope
 
 Gradient boosting methods are also popular for modeling large-scale plant diversity and national-scale biodiversity modeling \parencite{cai2023, baggstrom2025}. However, gradient boosting models can be sensitive to hyper-parameters, including the learning rate, tree depth, and number of boosting iterations. If these parameters are not tuned carefully, the model may overfit the training data \parencite{friedman2001}. In addition, boosting methods can be computationally expensive when the number of weak learners \(M\) is large or when the weak learners are complex.
 
-\subsubsection{Neural Networks}
-Neural Networks are a flexible class of machine learning models that are used widely for many applications. Here we will discuss artificial neural networks (ANNs) and specifically Feed Forward Neural Networks (FFNNs), which are commonly used in community-level biodiversity modeling \parencite{andermann2022, brugere2023, cai2023}. Neural networks are composed of nodes that take in input data, apply a linear transformation, and then apply a non-linear activation function to produce an output. The nodes are organized into layers, and the output of one layer serves as the input to the next layer \parencite{bishop_pattern_2006, smlbook}. Mathematically, this can be expressed as
-\[
+\subsubsection{Neural networks}
+Neural networks are a flexible class of machine learning models that are widely used for many applications. Here we will discuss artificial neural networks (ANNs) and specifically feed forward neural networks (FFNNs), which are used in community-level biodiversity modeling especially more recently \parencite{andermann2022, brugere2023, cai2023}. Neural networks are composed of nodes that take in input data, apply a linear transformation, and then apply a non-linear activation function to produce an output. The nodes are organized into layers, and the output of one layer serves as the input to the next layer \parencite{bishop_pattern_2006, smlbook}. Mathematically, this can be expressed as:
+\begin{equation}\label{eq:neural-network}
 \begin{aligned}
-\mathbf{h}_0 &= \mathbf{x}, \\
-\mathbf{h}_l &= \sigma_l(\mathbf{W}_l\mathbf{h}_{l-1} + \mathbf{b}_l),
+\mathbf{h}_0 &= \mathbf{x}_i, \\
+\mathbf{z}_l &= \mathbf{W}_l\mathbf{h}_{l-1} + \mathbf{b}_l, \\
+\mathbf{h}_{l} &= \sigma_l(\mathbf{z}_l),
 \quad l = 1,2,\ldots,L, \\
-f_\Theta(\mathbf{x}) &= \mathbf{W}_{L+1}\mathbf{h}_L + \mathbf{b}_{L+1}.
+f_\Theta(\mathbf{x}_i) &= \mathbf{W}_{L+1}\mathbf{h}_L + \mathbf{b}_{L+1}.
 \end{aligned}
-\]
-where \(\mathbf{x}\) is the input vector, \(\mathbf{W}\) is the weight matrix, \(\mathbf{b}\) is the bias vector, \(\sigma\) is the activation function, and \(\mathbf{h}\) is the output of the layer. The dimensions are as follows:
-\[\mathbf{x} \in \mathbb{R}^{p},
+\end{equation}
+where \(\mathbf{x}_i\) is the input vector for the \(i\)-th observation, \(\mathbf{W}_l\) is the weight matrix, \(\mathbf{b}_l\) is the bias vector, \(\mathbf{z}_l\) is the pre-activation vector, \(\sigma_l\) is the element-wise activation function for layer \(l\), and \(\mathbf{h}_l\) is the output of layer \(l\). The dimensions of each layer are:
+\[\mathbf{x}_i \in \mathbb{R}^{p},
 \qquad 
 \mathbf{W}_l \in \mathbb{R}^{q_l \times q_{l-1}},
 \qquad 
 \mathbf{b}_l \in \mathbb{R}^{q_l},
 \qquad
 \mathbf{h}_l \in \mathbb{R}^{q_l},
+\quad l = 1,2,\ldots,L, 
 \]
-where \(p\) is the number of input features, \(q_0 = p\), and \(q_l\) is the hidden size of layer \(l\). The activation function \(\sigma\) is a non-linear function, and common choices include the rectified linear unit (ReLU), \(\sigma(x) = \max(0, x)\), and the sigmoid function, \(\sigma(x) = \frac{1}{1 + e^{-x}}\). The size of the output layer depends on the type of task, for regression it would have one node, and for classification it would have \(k\) nodes that are usually standardized according to the softmax function, which converts the outputs to be probabilities that sum to one \parencite{smlbook, prince2023understanding}.
+where \(p\) is the number of input features, \(q_0 = p\), and \(q_l\) is the hidden size of layer \(l\). The activation function \(\sigma_l\) is a non-linear function, and common choices include the rectified linear unit (ReLU), \(\sigma(x) = \max(0, x)\), and the sigmoid function, \(\sigma(x) = \frac{1}{1 + e^{-x}}\). The activation function can be different between layers, but usually the same activation function is used for all layers, such as ReLU. The output layer's dimensions are: 
+\[
+\mathbf{W}_{L+1} \in \mathbb{R}^{m \times q_{L}},
+\qquad 
+\mathbf{b}_{L+1} \in \mathbb{R}^{m},
+\qquad
+f_\Theta(\mathbf{x}_i) \in \mathbb{R}^m,
+\]
+where \(m = 1\) for regression tasks and \(m = k\) for classification tasks with \(k\) classes \parencite{smlbook, prince2023understanding}. For our purposes in this thesis, we will focus on regression tasks where \(m=1\) and the output is a scalar prediction of a community-level biodiversity metric.
 
-The parameters of the neural network are the weights and biases \(\Theta = \{\mathbf{W}_l, \mathbf{b}_l\}_{l=1}^{L+1}\). There is also a loss function \(\mathcal{L}(\mathbf{y}, f_{\Theta}(\mathbf{x}))\) that quantifies the difference between the observed responses \(\mathbf{y}\) and the predicted responses \(f_{\Theta}(\mathbf{x})\). The parameters of the neural network are learned during training by minimizing this loss function through the backpropagation algorithm\parencite{smlbook}. In backpropagation first, we will evaluate the loss of the network \(\mathcal{L}_t(\mathbf{y}_b, f_{\Theta_t}(\mathbf{X}_b))\) at time \(t\) with a mini-batch of data \(\mathbf{X}_b \subset \mathbf{X}\), where \(\mathbf{X} \in \mathbb{R}^{n \times p}\) is the full input matrix and \(\mathbf{y}_b\) is the corresponding observed responses to the mini-batch \(\mathbf{X}_b\). Then we will update the network parameters \(\Theta\) by taking a step in the direction of the negative gradient of the loss function with respect to the parameters. This can be expressed as
-\[\Theta_{t+1} = \Theta_t - \alpha \nabla_\Theta \mathcal{L}_t(\mathbf{y}_b, f_{\Theta_t}(\mathbf{X}_b)),\]
-where \(\alpha\) is the learning rate \parencite{smlbook, prince2023understanding}. This will be repeated for several iterations, and each mini-batch will be a different subset of the training data without replacement when all mini-batches have been used, which is called one epoch. The training process will be repeated for several epochs, where new mini-batches are drawn each epoch, until the model converges or a stopping criterion is met, the updating of these parameters is often called stochastic gradient descent \parencite{smlbook}.
+The parameters of the neural network are the weights and biases \(\Theta = \{\mathbf{W}_l, \mathbf{b}_l\}_{l=1}^{L+1}\). To train a neural network we define a loss function \(\ell(y_i, f_{\Theta}(\mathbf{x}_i))\) that quantifies the discrepancy between the observed response \(y_i\) and the predicted response \(f_{\Theta}(\mathbf{x}_i)\). The parameters of the neural network are updated during training by minimizing this loss function through the backpropagation algorithm \parencite{smlbook}. In backpropagation first, we will evaluate the loss of the network given a mini-batch \(\mathcal{B}\), where \(\mathcal{B} \subset \{1,...,n\}\) denotes the indices of a mini-batch. We define \(|\mathcal{B}| = B\) as the mini-batch size, so \(\mathbf{X}_{\mathcal{B}} \in \mathbb{R}^{p \times B}\) contains the mini-batch observations as columns, and \(\mathbf{y}_{\mathcal{B}} \in \mathbb{R}^{m \times B}\) contains the corresponding responses. The mini-batch is passed through the neural network in a forward pass using the matrix form of Equations~\ref{eq:neural-network}. These matrix equations are expressed as:
+\begin{equation}\label{eq:neural-network-matrix}
+\begin{aligned}
+\mathbf{H}_0 &= \mathbf{X}_{\mathcal{B}}, \\
+\mathbf{Z}_l &= \mathbf{W}_l\mathbf{H}_{l-1} + \mathbf{b}_l\mathbf{1}_B^\top, \\
+\mathbf{H}_{l} &= \sigma_l(\mathbf{Z}_l),
+\quad l = 1,2,\ldots,L, \\
+f_\Theta(\mathbf{X}_{\mathcal{B}}) &= \mathbf{Z}_{L+1} = \mathbf{W}_{L+1}\mathbf{H}_L + \mathbf{b}_{L+1}\mathbf{1}_B^\top.
+\end{aligned}
+\end{equation}
+The dimensions of the matrices for each layer \(l = 1,2,\ldots,L\) are:
+\[\mathbf{X}_{\mathcal{B}} \in \mathbb{R}^{p \times B},
+\quad \mathbf{W}_l \in \mathbb{R}^{q_l \times q_{l-1}},
+\quad \mathbf{H}_{l} \in \mathbb{R}^{q_l \times B},
+\quad \mathbf{b}_l \in \mathbb{R}^{q_l \times 1},
+\quad \mathbf{1}_B \in \mathbb{R}^{B \times 1},
+\quad \mathbf{Z}_l \in \mathbb{R}^{q_l \times B}\]
+and the output layer's dimensions are:
+\[\mathbf{W}_{L+1} \in \mathbb{R}^{m \times q_L},
+\quad \mathbf{b}_{L+1} \in \mathbb{R}^{m \times 1},
+\quad \mathbf{Z}_{L+1} \in \mathbb{R}^{m \times B}.\] 
+For the regression setting considered in this thesis, the output layer is linear. The loss for a mini-batch at time \(t\) can be expressed as the average loss across the mini-batch:
 
-The gradients of all the parameters are calculated through the backpropagation algorithm, which uses the chain rule of calculus to compute the gradients efficiently. For example, we can calculate the gradients of layer \(l\) by using the partial derivatives of the layers above it. If we denote \(\mathbf{z}_l = \mathbf{W}_l\mathbf{h}_{l-1} + \mathbf{b}_l\) as the pre-activation value and the activation value \(\mathbf{h}_l = \sigma_l(\mathbf{z}_l)\), then the gradient of the loss function with respect to the parameters of the final layer \(L+1\) can be written as
+\[
+\mathcal{L}_\mathcal{B}(\Theta_t; \mathbf{y}_\mathcal{B}, \mathbf{X}_\mathcal{B}) = \frac{1}{B}\sum_{i \in \mathcal{B}} \ell(y_i, f_{\Theta_t}(\mathbf{x}_i)),
+\]
+
+where \(\mathcal{L}_\mathcal{B}\) is the loss over the mini-batch \(\mathcal{B}\) and \(\Theta_t\) are the parameters at time \(t\). Then we will update the network parameters \(\Theta_t\) by taking a step in the direction of the negative gradient of the loss function with respect to the parameters. This can be expressed as
+
+\begin{equation}\label{eq:gradient-descent}
+\Theta_{t+1} = \Theta_t - \alpha \nabla_\Theta \mathcal{L}_\mathcal{B}(\Theta)\bigg|_{\Theta = \Theta_t},
+\end{equation}
+
+where \(\alpha\) is the learning rate \parencite{smlbook, prince2023understanding}. This will be repeated for several iterations. At each iteration a different mini-batch is used. Mini-batches are drawn from the training data without replacement. When all mini-batches have been used, it is called one epoch. At each epoch, the training data is reused and reshuffled to generate new mini-batches. The training process will be repeated for several epochs until the model converges or a stopping criterion is met. The updating of parameters \(\Theta\) is performed using stochastic gradient-based optimization algorithms, such as stochastic gradient descent or Adam \parencite{smlbook}.
+
+The gradients of all the parameters \(\nabla_\Theta\mathcal{L}_\mathcal{B}(\Theta_t)\) are calculated through the backpropagation algorithm, using the mini-batch loss. Since the mini-batch batch is defined as an average loss over observations, the gradient will be the average of the gradients for each observation in the mini-batch. This is expressed as:
+\[
+\nabla_\Theta \mathcal{L}_\mathcal{B}(\Theta_t) = \frac{1}{B}\sum_{i \in \mathcal{B}} \nabla_\Theta \ell(y_i, f_{\Theta_t}(\mathbf{x}_i)).
+\]
+The backpropagation algorithm uses the chain rule of calculus to compute the gradients efficiently. We describe how the gradients of each layer \(l\) can be computed using mini-batches. Using Equations~\ref{eq:neural-network-matrix}, the output layer error for layer \(L+1\) is defined as:
+
+\[\boldsymbol{\Delta}_{L+1} = \frac{\partial \mathcal{L}_\mathcal{B}(\Theta_t)}{\partial \mathbf{Z}_{L+1}} \in \mathbb{R}^{m \times B},\]
+where each column is the error for the \(i\)-th observation in the mini-batch divided by the batch size \(B\). This \(\frac{1}{B}\) is included in \(\boldsymbol{\Delta}_{L+1}\) because we are taking the average loss \(\mathcal{L}_\mathcal{B}\) over the mini-batch.
+Then, the gradients for the parameters of the output layer can be calculated as:
 \[
 \begin{aligned}
-\frac{\partial \mathcal{L}_t}{\partial \mathbf{W}_{L+1}} &= \frac{\partial \mathcal{L}_t}{\partial \mathbf{z}_{L+1}} \frac{\partial \mathbf{z}_{L+1}}{\partial \mathbf{W}_{L+1}}\\
-\frac{\partial \mathcal{L}_t}{\partial \mathbf{b}_{L+1}} &= \frac{\partial \mathcal{L}_t}{\partial \mathbf{z}_{L+1}} \frac{\partial \mathbf{z}_{L+1}}{\partial \mathbf{b}_{L+1}}.
+\frac{\partial \mathcal{L}_\mathcal{B}(\Theta_t)}{\partial \mathbf{W}_{L+1}} &=  \frac{\partial  \mathcal{L}_\mathcal{B}(\Theta_t)}{\partial \mathbf{Z}_{L+1}} \frac{\partial \mathbf{Z}_{L+1}}{\partial \mathbf{W}_{L+1}} = \boldsymbol{\Delta}_{L+1}\mathbf{H}_L^\top\\ 
+\frac{\partial \mathcal{L}_\mathcal{B}(\Theta_t)}{\partial \mathbf{b}_{L+1}} &=  \frac{\partial  \mathcal{L}_\mathcal{B}(\Theta_t)}{\partial \mathbf{Z}_{L+1}} \frac{\partial \mathbf{Z}_{L+1}}{\partial \mathbf{b}_{L+1}} = \boldsymbol{\Delta}_{L+1}\mathbf{1}_B,
 \end{aligned}
 \]
-Concurrently, the gradient of the loss function with respect to a general output of layer \(l\) and \(\mathbf{W}_l\) and \(\mathbf{b}_l\) can be written as
+where \(H_L^\top \in \mathbb{R}^{B \times q_L}\). To continue backpropagation to the previous layer \(L\), we can calculate the error for layer \(L\) as:
+\[ 
+\boldsymbol{\Delta}_L = \frac{\partial \mathcal{L}_\mathcal{B}(\Theta_t)}{\partial \mathbf{Z}_L} = \frac{\partial \mathcal{L}_\mathcal{B}(\Theta_t)}{\partial \mathbf{Z}_{L+1}} \frac{\partial \mathbf{Z}_{L+1}}{\partial \mathbf{H}_L} \frac{\partial \mathbf{H}_L}{\partial \mathbf{Z}_L} = (\mathbf{W}_{L+1}^\top\boldsymbol{\Delta}_{L+1}) \odot \sigma_L'(\mathbf{Z}_L),
+\]
+where \(\sigma_L'(\mathbf{Z}_L) \in \mathbb{R}^{q_L \times B}\) is the element wise derivative of the activation function for layer \(L\) evaluated at \(\mathbf{Z}_L\) and \(\odot\) denotes pointwise multiplication. The gradients for the parameters of layer \(L\) can then be calculated as
 \[
 \begin{aligned}
-\frac{\partial \mathcal{L}_t}{\partial \mathbf{z}_l}
-&= \frac{\partial \mathcal{L}_t}{\partial \mathbf{z}_{l+1}}
-   \frac{\partial \mathbf{z}_{l+1}}{\partial \mathbf{h}_l}
-   \frac{\partial \mathbf{h}_l}{\partial \mathbf{z}_l} \\
-\frac{\partial \mathcal{L}_t}{\partial \mathbf{W}_l}
-&= \frac{\partial \mathcal{L}_t}{\partial \mathbf{z}_{l+1}}
-   \frac{\partial \mathbf{z}_{l+1}}{\partial \mathbf{h}_l}
-   \frac{\partial \mathbf{h}_l}{\partial \mathbf{z}_l}
-   \frac{\partial \mathbf{z}_l}{\partial \mathbf{W}_l} \\
-\frac{\partial \mathcal{L}_t}{\partial \mathbf{b}_l}
-&= \frac{\partial \mathcal{L}_t}{\partial \mathbf{z}_{l+1}}
-   \frac{\partial \mathbf{z}_{l+1}}{\partial \mathbf{h}_l}
-   \frac{\partial \mathbf{h}_l}{\partial \mathbf{z}_l} 
-   \frac{\partial \mathbf{z}_l}{\partial \mathbf{b}_l},
+\frac{\partial \mathcal{L}_\mathcal{B}(\Theta_t)}{\partial \mathbf{W}_{L}} &= \frac{\partial \mathcal{L}_\mathcal{B}(\Theta_t)}{\partial \mathbf{Z}_{L+1}} \frac{\partial \mathbf{Z}_{L+1}}{\partial \mathbf{H}_L} \frac{\partial \mathbf{H}_L}{\partial \mathbf{Z}_L}\frac{\partial \mathbf{Z}_L}{\partial \mathbf{W}_L} = \boldsymbol{\Delta}_L\mathbf{H}_{L-1}^\top\\ 
+\frac{\partial \mathcal{L}_\mathcal{B}(\Theta_t)}{\partial \mathbf{b}_{L}} &= \frac{\partial \mathcal{L}_\mathcal{B}(\Theta_t)}{\partial \mathbf{Z}_{L+1}} \frac{\partial \mathbf{Z}_{L+1}}{\partial \mathbf{H}_L} \frac{\partial \mathbf{H}_L}{\partial \mathbf{Z}_L} \frac{\partial \mathbf{Z}_L}{\partial \mathbf{b}_L} = \boldsymbol{\Delta}_L\mathbf{1}_B,
 \end{aligned}
 \]
-for \(l=L,L-1,\ldots,1\). We can continue to expand these partial derivatives until we reach the input layer, which allows us to compute the gradients for all parameters in the network \parencite{prince2023understanding}.
+where \(\mathbf{H}_{L-1}^\top \in \mathbb{R}^{B \times q_{L-1}}\). This process can be repeated for each layer \(l = L, L-1, \ldots, 1\) as:
+\[
+\begin{aligned}
+\boldsymbol{\Delta}_l = \frac{\partial \mathcal{L}_\mathcal{B}(\Theta_t)}{\partial \mathbf{Z}_l} &= (\mathbf{W}_{l+1}^\top\boldsymbol{\Delta}_{l+1}) \odot \sigma_l'(\mathbf{Z}_l),\\
+\frac{\partial \mathcal{L}_\mathcal{B}(\Theta_t)}{\partial \mathbf{W}_{l}} &= \boldsymbol{\Delta}_l\mathbf{H}_{l-1}^\top,\\
+\frac{\partial \mathcal{L}_\mathcal{B}(\Theta_t)}{\partial \mathbf{b}_{l}} &= \boldsymbol{\Delta}_l\mathbf{1}_B,
+\end{aligned}
+\]
+where \(\mathbf{H}_{l-1}^\top \in \mathbb{R}^{B \times q_{l-1}}\). This iterative process gives us the gradients for all parameters in the network which can then be updated by equation~\ref{eq:gradient-descent}. The partial derivatives here are to demonstrate the chain rule and how one arrives at the gradients for each layer conceptually, but in practice these gradients are calculated efficiently through automatic differentiation libraries such as PyTorch or TensorFlow and are actually high dimensional tensors\parencite{prince2023understanding}.
 
-Neural Networks are a very powerful and flexible class of models that can capture complex, non-linear relationships between predictors and the response variable. They have been used for top-down community-level biodiversity modeling \parencite{mondal2021, andermann2022, brugere2023, cai2023, hu2025} and have shown good predictive performance. However, Neural Networks are widely considered as ``black boxes'' as it can be very difficult to interpret these models because they are so complex \parencite{pichler2023, hu2025}. Another limitation of neural networks is that they frequently have large data requirements and can take a long time to train, especially when the network architecture is large or when the dataset is large \parencite{pichler2023}. Neural Networks are also cannt extrapolate well outside the range of the training data, which can be a problem for community-level biodiversity modeling when we want to make predictions in new areas or under future climate scenarios \parencite{beery2021, pichler2023}.
+Neural Networks are a powerful and flexible class of models that can capture complex, non-linear relationships between predictors and the response variable. They have been used for top-down community-level biodiversity modeling in several different studies \parencite{mondal2021, andermann2022, brugere2023, cai2023, hu2025} and have shown good predictive performance. However, neural networks are widely considered ``black boxes'' as it can be very difficult to interpret these models because they are so complex \parencite{pichler2023, hu2025}. Another limitation of neural networks is that they frequently have large data requirements and can take a long time to train, especially when the network architecture is large or when the dataset is large \parencite{pichler2023}. Neural networks also cannot extrapolate well outside the range of the training data, which can be a problem for community-level biodiversity modeling when we want to make predictions in new areas or under future climate scenarios \parencite{beery2021, pichler2023}.
 
 \subsection{The current top-down modeling landscape}
-Community-level biodiversity modeling can be computationally and methodologically intensive because study areas can span spatial scales ranging from countries \parencite{baggstrom2025}, to continents \parencite{davis2023}, to the entire globe \parencite{hoskins2020}. Furthermore, the number of species used for community-level biodiversity metrics can be in the hundreds \parencite{andermann2022} to hundreds of thousands \parencite{hoskins2020}, and selection of predictor variables is a non-trivial task \parencite{williams2012}. Community-level biodiversity models have been proposed as an important direction to explore with further research \parencite{ferrier2002, ferrier2006}, and the potential for advancing these models, including top-down approaches, remains underdeveloped along with rigorous testing of these models for ecological inference and prediction \parencite{pollock2020}. While there are studies demonstrating the potential of top-down approaches each study has to employ their own workflow which can become cumbersome and makes comparison difficult, a comparison of different studies with a focus on top-down approaches is displayed in Table~\ref{tab:literature-summary} in Appendix~\ref{appendix:appendix_b}. Therefore, the development of a pipeline that allows for quick exploration of different biodiversity datasets, predictor variables, and community-level biodiversity models is an important contribution to this field.
+Community-level biodiversity modeling can be computationally and methodologically intensive because study areas can span spatial scales ranging from countries \parencite{baggstrom2025}, to continents \parencite{davis2023}, to the entire globe \parencite{hoskins2020}. Furthermore, the number of species used for community-level biodiversity metrics can be in the hundreds \parencite{andermann2022} to hundreds of thousands \parencite{hoskins2020}, and selection of predictor variables is a non-trivial task \parencite{williams2012}. Community-level biodiversity models have been proposed as an important direction to explore with further research \parencite{ferrier2002, ferrier2006}, and the potential for advancing these models, specifically top-down approaches, remains underdeveloped along with rigorous testing of these models for ecological inference and prediction \parencite{pollock2020}. While there are studies demonstrating the potential of top-down approaches each study has to employ their own workflow which can become cumbersome and makes comparison difficult, a comparison of different studies with a focus on top-down approaches is displayed in Table~\ref{tab:literature-summary} in Appendix~\ref{appendix:appendix_b}. Therefore, the development of a pipeline that allows for quick exploration of different biodiversity datasets, predictor variables, and top-down models models is an important contribution to this field, as it would all for quicker model development, testing, and comparison.
+
+
+
 
 % \subsubsection{Bottom-up Strategy}
 % The bottom-up strategy is predominately focused on predicting the distribution of an individual species through presence-only, presence-absence data, or abundance data and most often predicted with a SDM \parencite{elith2009, elith2011,waldock2022, ozkan_tumer_two_2026}. For presence-only and presence-absence data the response variable or output is a prediction for the precense or absence of a species at a given site \parencite{beery2021}. In our problem formulation, \(y_i \in \{0,1\}\) where 0 represents an absence and 1 represents a presence of the species at site \(r_i\). Importantly, a SDM predicts the presence or absence of a single species, but for community-level biodiversity metrics we need more than just one species. Therefore, our problem formulation expands to include multiple species \(S = \{s_1, s_2, \ldots, s_m\}\), where \(m\) is the number of unique species observed across the region \(R\). For each site \(r_i \in R\) and each species \(s_j \in S\) let the response variable or output be \(y_{ij}\) and it is defined as
