@@ -1,6 +1,6 @@
 \section{Background}\label{sec:background}
-This section introduces biodiversity and how it is measured in Section~\ref{subsec:biodiversity}. Section~\ref{subsec:Biomodeling} provides a mathematical framework for understanding top-down modeling approaches, so we can use them for predicting community-level biodiversity metrics. This background section provides the necessary context for understanding the methods and results presented in this thesis. It also highlights the differences between the modeling approaches as well as the different assumptions and limitations of these models. 
-\subsection{Biodiversity and how to measure it}\label{subsec:biodiversity}
+This section introduces biodiversity and how it is measured in Section~\ref{subsec:biodiversity}. Section~\ref{subsec:modeling-definition} provides a mathematical framework for understanding top-down modeling approaches, so we can use them for predicting community-level biodiversity metrics. In Section~\ref{}This background section provides the necessary context for understanding the methods and results presented in this thesis. It also highlights the differences between the modeling approaches as well as the different assumptions and limitations of these models. 
+\subsection{Biodiversity and community-level biodiversity metrics}\label{subsec:biodiversity}
 %here we want to also talk about biodiversity metrics in alpha diversity and how they are calculated and the different types of metrics that exist. 
 %section here about biodiversity and taxa in general and how taxa hierarchy and how we will measure it. Should include a discussion of the different metrics for measuring biodiversity and how they are calculated. Also include a discussion of the different types of taxa and how they are classified. This section will set the stage for the rest of the background and methods sections where we will discuss how to model biodiversity and the different types of models that have been developed for this purpose.
 
@@ -10,7 +10,7 @@ To effectively predict biodiversity, it is crucial to have a clear understanding
 
 Common alpha diversity metrics include species richness, absolute abundance, relative abundance, Shannon index, arithmetic mean abundance, and geometric mean abundance \parencite{santini2017, beery2021}. Species richness is the most commonly used metric and simply counts the number of species in a given area \parencite{ferrier2006}. Species richness is a very popular metric because presence-absence data is the most common type of biodiversity data \parencite{ozkan_tumer_two_2026}. Absolute abundance measures the total number of individuals of each species at a site, and relative abundance measures the proportion of individuals of each species relative to the total number of individuals in a site \parencite{beery2021}. The Shannon index is another commonly used metric and combines species richness and evenness into a single metric and quantifies the uncertainty in predicting the species of an individual randomly selected from a community \parencite{beery2021}. Arithmetic mean abundance is the average abundance of species in a given area, and geometric mean abundance is the exponential of the average of the log abundances of species in a given area \parencite{santini2017}.
 
-For the purposes of this thesis, it is beneficial to express these terms mathematically. Biodiversity metrics are usually calculated at the site level. A site is a spatial sampling unit that is defined according to a sampling protocol. We define a site as \(r\), which is a spatial location, and within a biodiversity dataset there are \(n\) sites which make up the region of interest \(R = \{r_1, r_2, \ldots , r_n\}\). Across the entire region of interest \(R\) there is a set \(S\) of unique species that were observed, and \(s\) is a specific species, where \(s \in S\). Furthermore, let \(a_{s,r_i}\) be the abundance or count of individuals of species \(s\) at site \(r_i\).
+For the purposes of this thesis, it is beneficial to express these terms mathematically. Community-level biodiversity metrics are usually calculated at the site level. A site is a spatial sampling unit that is defined according to a sampling protocol. We define a site as \(r\), which is a spatial location, and within a biodiversity dataset there are \(n\) sites which make up the region of interest \(R = \{r_1, r_2, \ldots , r_n\}\). Across the entire region of interest \(R\) there is a set \(S\) of unique species that were observed, and \(s\) is a specific species, where \(s \in S\). Furthermore, let \(a_{s,r_i}\) be the abundance or count of individuals of species \(s\) at site \(r_i\).
 
 The alpha diversity metrics used in this thesis are therefore defined at the site level as follows.
 
@@ -61,9 +61,9 @@ G_{r_i} = \exp\left(\frac{1}{SR_{r_i}} \sum_{s \in S} \ln\left(a_{s,r_i}\right)\
 \end{equation}
 where \(a_{s,r_i}\) is the abundance or count of individuals of species \(s\) at site \(r_i\) \parencite{santini2017}. If \(a_{s,r_i} = 0\) for any species \(s\) at site \(r_i\), then that species is not included in the calculation of the geometric mean abundance for site \(r_i\).
 
-These metrics each have their own benefits and limitations. Species richness is the most commonly used metric because presence-absence data is the most common type of biodiversity data and it is easy to calculate \parencite{lamb2009, ozkan_tumer_two_2026}. However, species richness does not account for the abundance of species and can be biased towards rare species \parencite{ferrier2006}. Absolute abundance and relative abundance capture more information about the abundance of species in a given area, but they can be dominated by common species \parencite{beery2021}. The Shannon index combines species richness and evenness into a single metric and can provide a more comprehensive measure of biodiversity, but it can be difficult to interpret \parencite{dusek2017}. Arithmetic mean abundance and geometric mean abundance are useful for measuring changes in overall populations but can be inflated by very high population density species \parencite{santini2017}. It is important to look at a wide range of metrics when measuring biodiversity as each metric measures different aspects of biodiversity and responds differently to changes in biodiversity \parencite{lamb2009, santini2017}.
+These community-level biodiversity metrics each have their own benefits and limitations. Species richness is the most commonly used metric because presence-absence data is the most common type of biodiversity data and it is easy to calculate \parencite{lamb2009, ozkan_tumer_two_2026}. However, species richness does not account for the abundance of species and can be biased towards rare species \parencite{ferrier2006}. Absolute abundance and relative abundance capture more information about the abundance of species in a given area, but they can be dominated by common species \parencite{beery2021}. The Shannon index combines species richness and evenness into a single metric and can provide a more comprehensive measure of biodiversity, but it can be difficult to interpret \parencite{dusek2017}. Arithmetic mean abundance and geometric mean abundance are useful for measuring changes in overall populations but can be inflated by very high population density species \parencite{santini2017}. It is important to look at a wide range of metrics when measuring biodiversity as each metric measures different aspects of biodiversity and responds differently to changes in biodiversity \parencite{lamb2009, santini2017}.
 
-\subsection{Top-Down Modeling Problem Formulation}\label{subsec:modeling-definition}
+\subsection{Top-Down modeling problem formulation}\label{subsec:modeling-definition}
 
 Modeling biodiversity has historical roots in the early 20th century with work on modeling individual species distributions \parencite{grinnell_1904}. Since then models have expanded to include ecological models based on expert knowledge \parencite{beery2021}, parametric statistical models \parencite{guisan2002}, and machine learning models \parencite{ozkan_tumer_two_2026}. Community-level biodiversity models can be broadly divided into three strategies: bottom-up or ``predict first, assemble later'', joint or ``assemble and predict together'', and top-down or ``assemble first, predict later' \parencite{ferrier2006, pollock2020}. These strategies differ in how they produce predictions of community-level biodiversity metrics, and one of the key differences between top-down strategies and the other two is that top-down models directly predict community-level metrics. Top-down models directly output species richness or abundance, while the other two strategies first model the distribution of individual or multiple species and then aggregate those predictions to estimate species richness or abundance \parencite{pollock2020}. These top-down modeling approaches have been applied to predicting alpha, beta, and gamma biodiversity metrics across various spatial scales \parencite{zhang2019, hoskins2020, mondal2021, andermann2022}.
 
@@ -98,7 +98,7 @@ and then the model's performance is evaluated on the test set. Here, the loss fu
 
 For this thesis, the pipeline that we develop encompasses this entire problem formulation. The pipeline allows for flexibility in the choice of dataset \(\mathcal{D}_r\), the choice of predictor variables \(x_i\), and the choice of model \(f_\Theta\). The pipeline also includes steps for data preprocessing, model training, and model evaluation. The next section reviews the different types of models that were used for top-down community-level biodiversity modeling in this thesis.
 
-\subsection{Top-Down models}\label{subsec:Models}
+\subsection{Top-down models used in this thesis}\label{subsec:Models-in-this-thesis}
 This subsection reviews the different types of models that were used to test the pipeline for top-down community-level biodiversity modeling. The models discussed here are a subset of the model classes that can be used for top-down community-level biodiversity modeling. We define the assumptions and limitations of these models. The models discussed include generalized linear models \parencite{nelder1972}, generalized additive models \parencite{hastie1986}, random forests \parencite{breiman2001}, gradient boosting \parencite{friedman2001}, and neural networks \parencite{bishop_pattern_2006}. These models are used to demonstrate the effectiveness of the pipeline.
 
 \subsubsection{Generalized linear models}
@@ -274,13 +274,232 @@ where \(\mathbf{H}_{L-1}^\top \in \mathbb{R}^{B \times q_{L-1}}\). This process 
 \frac{\partial \mathcal{L}_\mathcal{B}(\Theta_t)}{\partial \mathbf{b}_{l}} &= \boldsymbol{\Delta}_l\mathbf{1}_B,
 \end{aligned}
 \]
-where \(\mathbf{H}_{l-1}^\top \in \mathbb{R}^{B \times q_{l-1}}\). This iterative process gives us the gradients for all parameters in the network which can then be updated by equation~\ref{eq:gradient-descent}. The partial derivatives here are to demonstrate the chain rule and how one arrives at the gradients for each layer conceptually, but in practice these gradients are calculated efficiently through automatic differentiation libraries such as PyTorch or TensorFlow and are actually high dimensional tensors\parencite{prince2023understanding}.
+where \(\mathbf{H}_{l-1}^\top \in \mathbb{R}^{B \times q_{l-1}}\). This iterative process gives us the gradients for all parameters in the network which can then be updated by equation~\ref{eq:gradient-descent}. The partial derivatives here are to demonstrate the chain rule and how one arrives at the gradients for each layer conceptually, but in practice these gradients are calculated efficiently through automatic differentiation libraries such as PyTorch or TensorFlow and are actually high dimensional tensors \parencite{prince2023understanding, pytorchdocs2026}.
 
 Neural Networks are a powerful and flexible class of models that can capture complex, non-linear relationships between predictors and the response variable. They have been used for top-down community-level biodiversity modeling in several different studies \parencite{mondal2021, andermann2022, brugere2023, cai2023, hu2025} and have shown good predictive performance. However, neural networks are widely considered ``black boxes'' as it can be very difficult to interpret these models because they are so complex \parencite{pichler2023, hu2025}. Another limitation of neural networks is that they frequently have large data requirements and can take a long time to train, especially when the network architecture is large or when the dataset is large \parencite{pichler2023}. Neural networks also cannot extrapolate well outside the range of the training data, which can be a problem for community-level biodiversity modeling when we want to make predictions in new areas or under future climate scenarios \parencite{beery2021, pichler2023}.
 
-\subsection{The current top-down modeling landscape}
-Community-level biodiversity modeling can be computationally and methodologically intensive because study areas can span spatial scales ranging from countries \parencite{baggstrom2025}, to continents \parencite{davis2023}, to the entire globe \parencite{hoskins2020}. Furthermore, the number of species used for community-level biodiversity metrics can be in the hundreds \parencite{andermann2022} to hundreds of thousands \parencite{hoskins2020}, and selection of predictor variables is a non-trivial task \parencite{williams2012}. Community-level biodiversity models have been proposed as an important direction to explore with further research \parencite{ferrier2002, ferrier2006}, and the potential for advancing these models, specifically top-down approaches, remains underdeveloped along with rigorous testing of these models for ecological inference and prediction \parencite{pollock2020}. While there are studies demonstrating the potential of top-down approaches each study has to employ their own workflow which can become cumbersome and makes comparison difficult, a comparison of different studies with a focus on top-down approaches is displayed in Table~\ref{tab:literature-summary} in Appendix~\ref{appendix:appendix_b}. Therefore, the development of a pipeline that allows for quick exploration of different biodiversity datasets, predictor variables, and top-down models models is an important contribution to this field, as it would all for quicker model development, testing, and comparison.
+\subsection{Current approaches and research gaps in top-down biodiversity modeling}
+Community-level biodiversity modeling can be computationally intensive and methodologically demanding because study areas can span varying spatial scales from national to continental and global extents \parencite{baggstrom2025, davis2023, hoskins2020}. Depending on the size of the study area, data availability and resolution can become issues because higher resolution data for biodiversity and environmental features typically come at the cost of lower spatial coverage \parencite{wuest2020}. Furthermore, predictor selection is non-trivial because both the choice of environmental variables \parencite{williams2012} and the spatial scale at which they are measured \parencite{mertes2018scale} can influence model performance. In addition, the taxonomic scope of the community-level biodiversity metrics can vary substantially across studies because the number of species contributing to these metrics may range from hundreds \parencite{andermann2022} to hundreds of thousands \parencite{hoskins2020}, which increases modeling complexity and complicates cross-study comparisons. 
 
+Despite these challenges, top-down biodiversity studies demonstrate the potential of these approaches and the methodological diversity of the field. A comparison of top-down modeling studies in Table~\ref{tab:literature-summary} shows the diversity of approaches used in the literature. Across the studies summarized, frequently appearing top-down modeling approaches include random forests and neural networks, while other methods like GLMs, GAMs, and gradient boosting are not as prevalent. These models are highlighted because they are widely used in the literature and will be the models used in this thesis. However, there are many other models that can be used for top-down community-level modeling such as generalized dissimilarity modeling (GDM), used for beta diversity prediction \parencite{hoskins2020}, ensemble methods \parencite{ngor2023}, and other tree based methods such as classification and regression trees or boosted regression trees \parencite{distler2015, ngor2023}. 
+
+Model comparison is a strength of the top-down community-level biodiversity modeling literature as studies compare several models within them using a single dataset of interest. Some of these studies are summarized in Table~\ref{tab:literature-summary}. In \cite{baggstrom2025}, the authors compared a random forest, gradient boosting, convolutional neural network, and a regression model for predicting arthropod richness across Sweden. Other studies such as \cite{cai2023} compared GLMs, GAMs, random forests, gradient boosting, and neural networks for modeling plant diversity at a global scale. In \cite{mondal2021}, the authors compared GAMs, neural networks, linear mixed models, and multivariate adaptive regression splines (MARS) for modeling fish communities in India. While each study explores a different subset of models, they all perform some form of model comparison to evaluate the performance of different models for their specific application. These model comparisons also vary in the metrics used for evaluation. Common evaluation metrics include root mean squared error (RMSE), mean absolute error (MAE), and \(R^2\), while less common metrics include mean absolute percentage error (MAPE) and area under the curve (AUC) \parencite{mondal2021, andermann2022, olaya-marin_comparison_2013, vecera_alpha_2019, cai2023, brugere2023, brun2024, baggstrom2025}. In addition to these numeric metrics, visual checks are commonly used to evaluate model performance, such as plotting the community-level biodiversity metric over the spatial domain \parencite{andermann2022, brugere2023, cai2023, brun2024, baggstrom2025}.
+
+Across the studies, there is a trend in which non-parametric models such as random forests, gradient boosting, and neural networks tend to outperform more traditional parametric models such as GLMs and GAMs, although the best model can be influenced by the dataset, predictor set, response variable, and evaluation metric \parencite{mondal2021, cai2023, brugere2023, ngor2023, baggstrom2025}. These conclusions also depend partly on the evaluation methodology. The evaluation of these models was frequently done using random k-fold cross-validation \parencite{cai2023, brugere2023, baggstrom2025}, where the data are randomly split into \(k\) folds and the model is trained on \(k-1\) folds and tested on the remaining fold. While this is a common method to evaluate a model and is a good indicator of model performance, this method assumes the data in the training and test sets are approximately independent and identically distributed (i.i.d.) \parencite{efron_estimating_1983}. In spatial modeling, however, observations are usually spatially autocorrelated meaning nearby data points are not independent of each other \parencite{elith2009}. When data are spatially autocorrelated, the assumption of i.i.d. data does not hold as data in the training and test sets can be dependent on each other. This results in random cross-validation providing an overestimation of model performance as the data in the training and test sets can be dependent \parencite{wang2023}. To account for spatial autocorrelation other cross-validation strategies can separate groups by some criteria, usually spatial location, before generating cross-validation folds \parencite{roberts2017, valavi2019}. However, among the studies summarized in Table~\ref{tab:literature-summary}, random cross-validation appears more frequently than spatial or environmental cross-validation.
+
+A related but less explored idea is how model performance changes under data-limited scenarios. In species distribution modeling, the effect of small dataset sizes, specifically test sets, can have a profound effect on model evaluation \parencite{collart_small_2023}. Although this issue has been discussed in species distribution modeling, it is relevant to top-down modeling approaches as biodiversity data can still be limited in certain regions or for certain taxonomic groups despite the growing availability of biodiversity data \parencite{wuest2020}. Moreover, the dataset size requirements of machine learning methods increase as the model becomes more complex and in ecology, datasets of sufficient size and quality are often the exception rather than the norm \parencite{pichler2023}. Understanding how the performance of these models changes under different dataset size scenarios is important for understanding the limitations of these models and for guiding future data collection efforts.
+
+Together, these studies demonstrate that top-down models are a promising approach for community-level biodiversity modeling, but they are also part of a fragmented landscape. Expanding top-down community-level biodiversity modeling evaluations, comparisons, and development is an important direction for future research \parencite{ferrier2002, ferrier2006, pollock2020} as top-down modeling approaches are comparable to other strategies for predicting community-level biodiversity metrics in some studies \parencite{biber2020, distler2015}. Top-down methods can also be less computationally intensive than bottom-up approaches \parencite{biber2020} as they avoid the intermediate steps of individual species modeling which also makes them conceptually more direct in community-level modeling \parencite{ferrier2006}. A flexible pipeline that allows for efficient exploration of different biodiversity datasets, predictor variables, and top-down models would promote efficient model development, testing, and comparison.
+
+This thesis develops and evaluates a flexible pipeline for top-down community-level biodiversity modeling. This pipeline is applied to model butterfly species richness across the United Kingdom and Ireland. This case study addresses our research questions in Section~\ref{sec:research_objectives} that are motivated by the literature review. First, we position this work alongside others by comparing the performance of different top-down models for modeling species richness, reflecting the frequent use of model comparison in the literature. Second, we explore how models perform under different cross-validation strategies, specifically random and spatial cross-validation. Third, we examine how the performance of these models changes under differing dataset size scenarios as this area remains comparatively underexplored for top-down modeling approaches.
+
+\begin{sidewaystable}[ht]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.8}
+\caption{Summary of studies using community-level biodiversity modeling approaches in the literature with a focus on top-down models. The table includes information on the type of diversity modeled (alpha, beta, gamma), the number of predictors used, and the types of models employed in each study. The model types include generalized linear models (GLM), generalized additive models (GAM), random forests (RF), gradient boosting (GB), neural networks (NN), generalized dissimilarity modeling (GDM), stacked species distribution model (SSDM), and other specialized methods. This summary provides an overview of the current state of community-level biodiversity modeling in the literature and highlights the diversity of approaches used to model biodiversity patterns and trends.}
+\label{tab:literature-summary}
+\begin{tabular}{p{0.18\textwidth} ccc c p{0.06\textwidth} p{0.06\textwidth} p{0.07\textwidth} p{0.07\textwidth} p{0.07\textwidth} p{0.06\textwidth} p{0.06\textwidth} p{0.06\textwidth}}
+\toprule
+\multirow{3}{*}{\textbf{Study}} 
+& \multicolumn{3}{c}{\textbf{Diversity type}} 
+& \multirow{3}{*}{\textbf{No. predictors}} 
+& \multicolumn{8}{c}{\textbf{Model type}} \\
+\cmidrule(lr){2-4} \cmidrule(lr){6-13}
+& \textbf{Alpha} 
+& \textbf{Beta} 
+& \textbf{Gamma} 
+& 
+& \multicolumn{5}{c}{\textbf{Top-down}} 
+& \multicolumn{1}{c}{} 
+& \multicolumn{1}{c}{\textbf{Bottom-up}} 
+& \multicolumn{1}{c}{} \\
+\cmidrule(lr){6-10} \cmidrule(lr){11-11} \cmidrule(lr){12-12} \cmidrule(lr){13-13}
+& & & & & \textbf{GLM} 
+& \textbf{GAM} 
+& \textbf{RF} 
+& \textbf{GB} 
+& \textbf{NN} 
+& \textbf{GDM}
+&\textbf{SSDM} 
+& \textbf{Other} \\
+\midrule
+
+\cite{andermann2022}
+& \checkmark 
+& \checkmark 
+& \checkmark 
+& 27 
+& 
+& 
+& 
+& 
+& \checkmark 
+& 
+& 
+& \\
+
+\cite{baggstrom2025}
+& \checkmark 
+& 
+& 
+& 25 
+& 
+& 
+& \checkmark
+& \checkmark
+& \checkmark 
+& 
+& 
+& Regression\\
+
+\cite{cai2023}
+& \checkmark 
+& 
+& 
+& 25
+& \checkmark
+& \checkmark 
+& \checkmark
+& \checkmark
+& \checkmark 
+& 
+& 
+& \\
+
+\cite{brun2024}
+& \checkmark 
+& 
+& 
+& 18 
+&  
+& 
+& 
+& 
+& \checkmark
+& 
+& \checkmark
+& \\
+
+\cite{brugere2023}
+& \checkmark 
+& 
+& 
+& 20 
+& \checkmark
+& 
+& \checkmark
+& 
+& \checkmark
+& 
+& 
+& GRNN \\
+
+\cite{hoskins2020}
+& 
+& \checkmark 
+& 
+& 15 
+&  
+& 
+& 
+& 
+& 
+& \checkmark 
+& 
+& \\
+
+\cite{mondal2021}
+& \checkmark 
+& 
+& 
+& 8 
+&  
+& \checkmark 
+& 
+& 
+& \checkmark 
+& 
+& 
+& (LMM, MARS)\\
+
+\cite{ngor2023}
+& \checkmark 
+& 
+& 
+& 14 
+& \checkmark
+& 
+& \checkmark
+& 
+& \checkmark
+& 
+& 
+& (kNN, SVM, CART, Ensemble)\\
+
+\cite{olaya-marin_comparison_2013}
+& \checkmark 
+& 
+& 
+& 7,5 
+&  
+& 
+& \checkmark 
+& 
+& \checkmark 
+& 
+& 
+& \\
+
+\cite{vecera_alpha_2019}
+& \checkmark 
+& 
+& 
+& 19 
+&  
+& 
+& \checkmark 
+& 
+& 
+& 
+& 
+& JSDM\\
+
+\cite{distler2015}
+& \checkmark 
+& 
+& 
+& 17 
+&  
+& 
+& 
+& 
+& 
+&  
+& \checkmark 
+& Boosted Regression Tree\\
+
+\cite{biber2020}
+& \checkmark 
+& 
+& 
+& 8 
+& 
+& \checkmark
+& 
+& 
+& 
+& 
+& \checkmark 
+& GCM\\
+
+
+\bottomrule
+\end{tabular}
+\end{sidewaystable}
+
+\FloatBarrier
 
 
 

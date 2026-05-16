@@ -1515,6 +1515,64 @@
       \verb 10.7927/H49C6VHW
       \endverb
     \endentry
+    \entry{collart_small_2023}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e778daf69b74ee393193d1f3bcfbbe9e}{%
+           family={Collart},
+           familyi={C\bibinitperiod},
+           given={Flavien},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd0180b461eae6ddbff6a39790e0bb5e}{%
+           family={Guisan},
+           familyi={G\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{83d2bfa24e88f6941a920bacf4906f20}
+      \strng{fullhash}{83d2bfa24e88f6941a920bacf4906f20}
+      \strng{fullhashraw}{83d2bfa24e88f6941a920bacf4906f20}
+      \strng{bibnamehash}{83d2bfa24e88f6941a920bacf4906f20}
+      \strng{authorbibnamehash}{83d2bfa24e88f6941a920bacf4906f20}
+      \strng{authornamehash}{83d2bfa24e88f6941a920bacf4906f20}
+      \strng{authorfullhash}{83d2bfa24e88f6941a920bacf4906f20}
+      \strng{authorfullhashraw}{83d2bfa24e88f6941a920bacf4906f20}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{15749541}
+      \field{journaltitle}{Ecological Informatics}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{shortjournal}{Ecological Informatics}
+      \field{shorttitle}{Small to train, small to test}
+      \field{title}{Small to train, small to test: Dealing with low sample size in model evaluation}
+      \field{urlday}{16}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{75}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{102106}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.ecoinf.2023.102106
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\FCBQDG2N\\Collart and Guisan - 2023 - Small to train, small to test Dealing with low sample size in model evaluation.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S1574954123001358
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S1574954123001358
+      \endverb
+    \endentry
     \entry{cowie2022}{article}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=90d915c8e545fc1890641a7c9e96816e}{%
@@ -7293,6 +7351,130 @@
       \endverb
       \verb{url}
       \verb http://www.tandfonline.com/doi/abs/10.1080/13658816.2012.698015
+      \endverb
+    \endentry
+    \entry{wuest2020}{article}{}{}
+      \name{author}{13}{}{%
+        {{un=0,uniquepart=base,hash=4d92554288550e3ec6afc89f4754c597}{%
+           family={Wüest},
+           familyi={W\bibinitperiod},
+           given={Rafael\bibnamedelima O.},
+           giveni={R\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=81daf64e46b81abb6f841138d926146f}{%
+           family={Zimmermann},
+           familyi={Z\bibinitperiod},
+           given={Niklaus\bibnamedelima E.},
+           giveni={N\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=22d5edb62524bcc7808f73af5666144a}{%
+           family={Zurell},
+           familyi={Z\bibinitperiod},
+           given={Damaris},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5ffa7ebee402535a8e9a03d04670308a}{%
+           family={Alexander},
+           familyi={A\bibinitperiod},
+           given={Jake\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2562e151c033f885c4e713e4bc3f42d5}{%
+           family={Fritz},
+           familyi={F\bibinitperiod},
+           given={Susanne\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a118632c81a46ee9cee171f801dbca2b}{%
+           family={Hof},
+           familyi={H\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5256b8b29a1f989cc73f896bcb96d83a}{%
+           family={Kreft},
+           familyi={K\bibinitperiod},
+           given={Holger},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e561bf9c159f5dfdc5c357e92249d550}{%
+           family={Normand},
+           familyi={N\bibinitperiod},
+           given={Signe},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4f6f5baa644578c0c7054f9b3abbce01}{%
+           family={Cabral},
+           familyi={C\bibinitperiod},
+           given={Juliano\bibnamedelima Sarmento},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a68af1bcef0e7b4c5d1d454fa0cc2195}{%
+           family={Szekely},
+           familyi={S\bibinitperiod},
+           given={Eniko},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8420a71ed1be07777ddccc3254bee18}{%
+           family={Thuiller},
+           familyi={T\bibinitperiod},
+           given={Wilfried},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=02af1dbea7c010cf0c03b553153d77c3}{%
+           family={Wikelski},
+           familyi={W\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=34c44f1dfcae9dc32a51dd38611ee6bd}{%
+           family={Karger},
+           familyi={K\bibinitperiod},
+           given={Dirk\bibnamedelima Nikolaus},
+           giveni={D\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a1ffe89a363d955ad1f5a3d5ad9a8a59}
+      \strng{fullhash}{ef11d2a8d84386843e6e087592f4f461}
+      \strng{fullhashraw}{ef11d2a8d84386843e6e087592f4f461}
+      \strng{bibnamehash}{a1ffe89a363d955ad1f5a3d5ad9a8a59}
+      \strng{authorbibnamehash}{a1ffe89a363d955ad1f5a3d5ad9a8a59}
+      \strng{authornamehash}{a1ffe89a363d955ad1f5a3d5ad9a8a59}
+      \strng{authorfullhash}{ef11d2a8d84386843e6e087592f4f461}
+      \strng{authorfullhashraw}{ef11d2a8d84386843e6e087592f4f461}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0305-0270, 1365-2699}
+      \field{journaltitle}{Journal of Biogeography}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shortjournal}{Journal of Biogeography}
+      \field{title}{Macroecology in the age of Big Data – Where to go from here?}
+      \field{urlday}{12}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{47}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1111/jbi.13633
+      \endverb
+      \verb{file}
+      \verb Full Text:C\:\\Users\\caleb\\Zotero\\storage\\XR53HWW7\\Wüest et al. - 2020 - Macroecology in the age of Big Data – Where to go from here.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/jbi.13633
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/jbi.13633
       \endverb
     \endentry
     \entry{yee_generalized_1991}{article}{}{}

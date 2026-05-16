@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1778855832.56544 "main.bcf" "main.bbl" "main" 1778858711.67143 0
-  "main.bcf" 1778858711 128031 9458521367551b0042e8d7aef582ef1f "pdflatex"
-  "references.bib" 1778770680 86847 37cef3824eb97b28def9f5f2e13e30ea ""
+["biber main"] 1778966954.03152 "main.bcf" "main.bbl" "main" 1778966969.94714 0
+  "main.bcf" 1778966969 130964 6b900be8c5a39a097ed4e4c0627f5054 "pdflatex"
+  "references.bib" 1778957125 88497 81181973fabe2a0404c0ddc4967c5a1d ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1778858707.11628 "c:/Users/caleb/Master's thesis/Latex/main.tex" "main.pdf" "main" 1778858711.67222 0
+["pdflatex"] 1778966965.59818 "c:/Users/caleb/Master's thesis/Latex/main.tex" "main.pdf" "main" 1778966969.94785 0
   "C:/Users/caleb/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1778766417 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/caleb/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1776350811 11548 45f5e15928fe63a2e0789ba1938fd05c ""
   "C:/Users/caleb/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1776345548 13350272 4aa9265487fc02b9cd30f6bd57e90b17 ""
@@ -195,21 +195,21 @@
   "Images/smape_randomcv_model_comparison.png" 1778771305 32086 702174e7098d10d8d18d2007337eaad9 ""
   "Images/species_richness_distribution.png" 1778761898 26749 9e593298ece8dcba3145b030c8d60143 ""
   "appendix/appendix_a.tex" 1777450687 72 91b1b803d53fcecc88f692eee0623ffa ""
-  "appendix/appendix_b.tex" 1778771945 8738 3307863ddb16342b2f18b883de113912 ""
-  "c:/Users/caleb/Master's thesis/Latex/main.tex" 1778766413 3327 fb7a63b4e9dee88f8cd93db41d09b203 ""
-  "main.aux" 1778858711 59209 71fa51fa2b6c01a6c6cae4c7330e977e "pdflatex"
-  "main.bbl" 1778855835 327076 508ec7e5b8846b7c5b0f0e45281bad0a "biber main"
-  "main.out" 1778858711 5779 e274468f2adedbfe50533e93a770a623 "pdflatex"
-  "main.run.xml" 1778858711 2311 e66a0e3ff336a5af941c7fe634558519 "pdflatex"
-  "main.tex" 1778766413 3327 fb7a63b4e9dee88f8cd93db41d09b203 ""
-  "main.toc" 1778858711 3183 30cf3c940d75f4145b14fee238b1ec56 "pdflatex"
-  "sections/Results.tex" 1778780245 20994 7c8c4b1ad8c2af97665cb92061dff329 ""
-  "sections/background.tex" 1778858709 61498 475f5327caab84571bfd76b07dfc8dc0 ""
+  "appendix/appendix_b.tex" 1778948232 5681 0ffecfc8e432df9c9638c6c2e99f4525 ""
+  "c:/Users/caleb/Master's thesis/Latex/main.tex" 1778859508 3327 fb7a63b4e9dee88f8cd93db41d09b203 ""
+  "main.aux" 1778966969 63481 93f12571414a1e9f85696b3f7e772d39 "pdflatex"
+  "main.bbl" 1778966956 334695 3abd74624efdbb139adf1dbc7e7b5607 "biber main"
+  "main.out" 1778966969 6150 072ad14a07613a7c6c0518aa36abb237 "pdflatex"
+  "main.run.xml" 1778966969 2311 e66a0e3ff336a5af941c7fe634558519 "pdflatex"
+  "main.tex" 1778859508 3327 fb7a63b4e9dee88f8cd93db41d09b203 ""
+  "main.toc" 1778966969 3253 9092d1629237246ae86c550607561268 "pdflatex"
+  "sections/Results.tex" 1778859492 20994 7c8c4b1ad8c2af97665cb92061dff329 ""
+  "sections/background.tex" 1778966950 71888 41b722e307cd663e7c190770d6b201d6 ""
   "sections/conclusion.tex" 1777450629 42 b61b97d59a413fb7ec31ccc841f27752 ""
   "sections/discussion.tex" 1778778902 598 5b8047f2e2d8ed1d87ccb2f3282a7ecf ""
   "sections/future_work.tex" 1777479674 1348 b5541f65d9fd2a7ca82c8e94a4272e2a ""
-  "sections/introduction.tex" 1778769437 12260 554a22a593fb062cd1730aecf455e9d7 ""
-  "sections/methods.tex" 1778776770 29934 6db464bdb1ded39984d303bc5545ba0a ""
+  "sections/introduction.tex" 1778965688 12291 6683d19af5e3bf5245427496fbbc9b82 ""
+  "sections/methods.tex" 1778859491 29934 6db464bdb1ded39984d303bc5545ba0a ""
   (generated)
   "main.aux"
   "main.bcf"
