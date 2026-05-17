@@ -313,6 +313,7 @@ INPUT .\Images\pipeline_graph.png
 INPUT .\Images\pipeline_graph.png
 INPUT .\Images\pipeline_graph.png
 INPUT .\Images\pipeline_graph.png
+INPUT C:\Users\caleb\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
 INPUT C:\Users\caleb\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx8.tfm
 INPUT .\Images\cv_diagram.png
 INPUT .\Images\cv_diagram.png
@@ -321,7 +322,6 @@ INPUT .\Images\cv_diagram.png
 INPUT .\Images\cv_diagram.png
 INPUT .\Images\cv_diagram.png
 INPUT .\Images\cv_diagram.png
-INPUT C:\Users\caleb\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
 INPUT .\Images\all_sites_distribution.png
 INPUT .\Images\all_sites_distribution.png
 INPUT .\Images\all_sites_distribution.png
