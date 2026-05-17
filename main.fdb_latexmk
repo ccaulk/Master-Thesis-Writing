@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1778966954.03152 "main.bcf" "main.bbl" "main" 1778966969.94714 0
-  "main.bcf" 1778966969 130964 6b900be8c5a39a097ed4e4c0627f5054 "pdflatex"
+["biber main"] 1779023651.44604 "main.bcf" "main.bbl" "main" 1779024078.49724 0
+  "main.bcf" 1779024078 131298 6fa9ef67ccd21c5afd55e0caf3a25c7a "pdflatex"
   "references.bib" 1778957125 88497 81181973fabe2a0404c0ddc4967c5a1d ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1778966965.59818 "c:/Users/caleb/Master's thesis/Latex/main.tex" "main.pdf" "main" 1778966969.94785 0
+["pdflatex"] 1779024073.82599 "c:/Users/caleb/Master's thesis/Latex/main.tex" "main.pdf" "main" 1779024078.49798 0
   "C:/Users/caleb/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1778766417 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/caleb/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1776350811 11548 45f5e15928fe63a2e0789ba1938fd05c ""
   "C:/Users/caleb/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1776345548 13350272 4aa9265487fc02b9cd30f6bd57e90b17 ""
@@ -197,19 +197,19 @@
   "appendix/appendix_a.tex" 1777450687 72 91b1b803d53fcecc88f692eee0623ffa ""
   "appendix/appendix_b.tex" 1778948232 5681 0ffecfc8e432df9c9638c6c2e99f4525 ""
   "c:/Users/caleb/Master's thesis/Latex/main.tex" 1778859508 3327 fb7a63b4e9dee88f8cd93db41d09b203 ""
-  "main.aux" 1778966969 63481 93f12571414a1e9f85696b3f7e772d39 "pdflatex"
-  "main.bbl" 1778966956 334695 3abd74624efdbb139adf1dbc7e7b5607 "biber main"
-  "main.out" 1778966969 6150 072ad14a07613a7c6c0518aa36abb237 "pdflatex"
-  "main.run.xml" 1778966969 2311 e66a0e3ff336a5af941c7fe634558519 "pdflatex"
+  "main.aux" 1779024078 64043 745e4208ac1d84225ee38f2a576b5f6d "pdflatex"
+  "main.bbl" 1779023654 334695 3abd74624efdbb139adf1dbc7e7b5607 "biber main"
+  "main.out" 1779024078 6150 b868173f5975b3959bc65849db2a6927 "pdflatex"
+  "main.run.xml" 1779024078 2311 e66a0e3ff336a5af941c7fe634558519 "pdflatex"
   "main.tex" 1778859508 3327 fb7a63b4e9dee88f8cd93db41d09b203 ""
-  "main.toc" 1778966969 3253 9092d1629237246ae86c550607561268 "pdflatex"
+  "main.toc" 1779024078 3253 6a97eeb979cd1c5414a5e52dc53cb2c8 "pdflatex"
   "sections/Results.tex" 1778859492 20994 7c8c4b1ad8c2af97665cb92061dff329 ""
-  "sections/background.tex" 1778966950 71888 41b722e307cd663e7c190770d6b201d6 ""
+  "sections/background.tex" 1779024073 73062 3e4a246122ac17799c938971be5339f4 ""
   "sections/conclusion.tex" 1777450629 42 b61b97d59a413fb7ec31ccc841f27752 ""
   "sections/discussion.tex" 1778778902 598 5b8047f2e2d8ed1d87ccb2f3282a7ecf ""
   "sections/future_work.tex" 1777479674 1348 b5541f65d9fd2a7ca82c8e94a4272e2a ""
-  "sections/introduction.tex" 1778965688 12291 6683d19af5e3bf5245427496fbbc9b82 ""
-  "sections/methods.tex" 1778859491 29934 6db464bdb1ded39984d303bc5545ba0a ""
+  "sections/introduction.tex" 1779020861 12427 1127a90b7005f88c2744e9e6683daf4a ""
+  "sections/methods.tex" 1779019861 29926 8f72818649b6e2072d31d1135ac84ad9 ""
   (generated)
   "main.aux"
   "main.bcf"

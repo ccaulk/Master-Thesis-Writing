@@ -181,7 +181,7 @@ Feed-forward neural network
 
 We chose to use random cross-validation for model selection for our experiments as it is a good indicator of model performance and is commonly used \parencite{efron_estimating_1983}. We acknowledge that random cross-validation can overestimate model performance when spatial autocorrelation is present in the data \parencite{wang2023}. However, random cross-validation is still a useful tool for model evaluation and is suitable for fairly spread observations \parencite{de_bruin_dealing_2022}. The best-performing model from each model class, was then used in three comparative experiments. First, these models were compared against each other to address Research Question 1. Then, the performance of these models was compared across different cross-validation strategies to address Research Question 2. Finally, the performance of these models was compared across different data scenarios to address Research Question 3. These experiments are described in detail in Section~\ref{sec:Experiments}.
 
-\subsection{Model Evaluation}\label{subsec:model_evaluation_metrics}
+\subsection{Model Comparison}\label{subsec:model_comparison}
 
 The SBM pipeline outputs several evaluation metrics for each model trained, including \(r^2\) values, mean absolute error (MAE), mean absolute percentage error (MAPE), symmetric mean absolute percentage error (SMAPE), root mean squared error (RMSE), pearson correlation coefficient, and Spearman correlation coefficient for both the training and testing datasets. The bias ratios for the train and test datasets are also included, along with the bias ratios for the top and bottom quartiles of the train and test datasets. Evaluating models is holistic process that should not rely on one metric alone.
 

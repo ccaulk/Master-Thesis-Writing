@@ -21,7 +21,7 @@
 \contentsline {subsection}{\numberline {3.2}Application of the SBM Pipeline}{22}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}Data}{23}{subsubsection.3.2.1}%
 \contentsline {subsubsection}{\numberline {3.2.2}Model Specification}{25}{subsubsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.3}Model Evaluation}{26}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.3}Model Comparison}{26}{subsection.3.3}%
 \contentsline {section}{\numberline {4}Experiments}{27}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Model class comparison}{27}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Cross-validation strategy}{29}{subsection.4.2}%
