@@ -2,7 +2,7 @@
 
 \small
 \begin{longtable}{p{0.15\textwidth} p{0.12\textwidth} p{0.65\textwidth}}
-\caption{Hyperparameter grid searches conducted for each model family. Each numbered search represents a separate grid search. For the FFN the \texttt{optim.Adam} optimizer was used with default settings and 150 epochs were used for all training sessions \parencite{pytorchdocs2026}.}
+\caption{Hyperparameter grid searches conducted for each model class. Each numbered search represents a separate grid search. The hyperparameter search space for each grid search is detailed in the third column.}
 \label{tab:hyperparameter-grid-searches}\\
 
 \toprule
@@ -154,6 +154,8 @@ Feed-forward neural network
 \textbf{Early stopping}: true, false \\
 \textbf{Activation function}: ReLU \\
 \textbf{Batch normalization}: false
+\textbf{Epochs}: 150 \\
+\textbf{Optimizer}: Adam (with default parameters) 
 } \\
 
 \hdashline
@@ -168,6 +170,8 @@ Feed-forward neural network
 \textbf{Batch normalization}: true, false \\
 \textbf{Batch size}: 32, 64, 128 \\
 \textbf{Activation function}: ReLU, GELU, LeakyReLU
+\textbf{Epochs}: 150 \\
+\textbf{Optimizer}: Adam (with default parameters) 
 } \\
 
 \end{longtable}

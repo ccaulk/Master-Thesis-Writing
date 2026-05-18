@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.16)  17 MAY 2026 17:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.16)  18 MAY 2026 17:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -786,7 +786,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.35 ...}Future Work/ Applications}{35}{section.6}
+l.35 ...}Future Work/ Applications}{37}{section.6}
                                                   % [1])
 \tf@toc=\write5
 \openout5 = `main.toc'.
@@ -869,135 +869,131 @@ Package pdftex.def Info: Images/pipeline_graph.png  used on input line 9.
 <Images/cv_diagram.png, id=766, 1453.43pt x 1090.0725pt>
 File: Images/cv_diagram.png Graphic file (type png)
 <use Images/cv_diagram.png>
-Package pdftex.def Info: Images/cv_diagram.png  used on input line 65.
+Package pdftex.def Info: Images/cv_diagram.png  used on input line 67.
 (pdftex.def)             Requested size: 452.9679pt x 339.71536pt.
- [22 <./Images/cv_diagram.png (PNG copy)>]
-
-LaTeX Warning: Reference `sec:Results' on page 23 undefined on input line 83.
-
-<Images/all_sites_distribution.png, id=790, 507.39563pt x 389.58047pt>
+ [22 <./Images/cv_diagram.png (PNG copy)>] [23]
+<Images/all_sites_distribution.png, id=801, 507.39563pt x 389.58047pt>
 File: Images/all_sites_distribution.png Graphic file (type png)
 <use Images/all_sites_distribution.png>
-Package pdftex.def Info: Images/all_sites_distribution.png  used on input line 91.
+Package pdftex.def Info: Images/all_sites_distribution.png  used on input line 95.
 (pdftex.def)             Requested size: 452.9679pt x 347.80148pt.
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+ [24 <./Images/all_sites_distribution.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 []|\OT1/cmr/bx/n/9 Spatial
  []
 
 
-Underfull \hbox (badness 2591) in paragraph at lines 109--109
+Underfull \hbox (badness 2591) in paragraph at lines 113--113
 []|\OT1/cmr/m/n/9 Maximum tem-per-a-ture of
  []
 
 
-Underfull \hbox (badness 4441) in paragraph at lines 110--110
+Underfull \hbox (badness 4441) in paragraph at lines 114--114
 []|\OT1/cmr/m/n/9 Minimum tem-per-a-ture of
  []
 
-[24 <./Images/all_sites_distribution.png>]
-<Images/2020_sites_distribution.png, id=819, 514.54735pt x 392.59172pt>
+<Images/2020_sites_distribution.png, id=826, 514.54735pt x 392.59172pt>
 File: Images/2020_sites_distribution.png Graphic file (type png)
 <use Images/2020_sites_distribution.png>
-Package pdftex.def Info: Images/2020_sites_distribution.png  used on input line 136.
+Package pdftex.def Info: Images/2020_sites_distribution.png  used on input line 142.
 (pdftex.def)             Requested size: 362.37569pt x 276.48965pt.
- [25]
+[25]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <9> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 195.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 201.
 
-Underfull \hbox (badness 8094) in paragraph at lines 199--200
+Underfull \hbox (badness 8094) in paragraph at lines 205--206
 []|\OT1/cmr/m/n/9 Feed-forward neu-ral net-
  []
 
-) [26 <./Images/2020_sites_distribution.png>] [27] (sections/Results.tex
-<Images/species_richness_distribution.png, id=868, 730.6497pt x 369.2997pt>
+[26 <./Images/2020_sites_distribution.png>] [27]) [28] [29] (sections/Results.tex
+<Images/species_richness_distribution.png, id=905, 730.6497pt x 369.2997pt>
 File: Images/species_richness_distribution.png Graphic file (type png)
 <use Images/species_richness_distribution.png>
 Package pdftex.def Info: Images/species_richness_distribution.png  used on input line 14.
 (pdftex.def)             Requested size: 362.37569pt x 183.16173pt.
 
 
-LaTeX Warning: Reference `subsubsec:training_and_application' on page 28 undefined on input line 19.
+LaTeX Warning: Reference `subsubsec:training_and_application' on page 30 undefined on input line 19.
 
-[28 <./Images/species_richness_distribution.png>]
-<Images/r2_randomcv_model_comparison.png, id=884, 730.6497pt x 369.2997pt>
+[30 <./Images/species_richness_distribution.png>]
+<Images/r2_randomcv_model_comparison.png, id=922, 730.6497pt x 369.2997pt>
 File: Images/r2_randomcv_model_comparison.png Graphic file (type png)
 <use Images/r2_randomcv_model_comparison.png>
 Package pdftex.def Info: Images/r2_randomcv_model_comparison.png  used on input line 107.
 (pdftex.def)             Requested size: 362.37569pt x 183.16173pt.
 
 
-LaTeX Warning: Reference `subsubsec:training_and_application' on page 29 undefined on input line 115.
+LaTeX Warning: Reference `subsubsec:training_and_application' on page 31 undefined on input line 115.
 
-[29 <./Images/r2_randomcv_model_comparison.png>]
-<Images/GLM_spatial/GLM_random_hists.png, id=906, 597.6729pt x 369.2997pt>
+[31 <./Images/r2_randomcv_model_comparison.png>]
+<Images/GLM_spatial/GLM_random_hists.png, id=944, 597.6729pt x 369.2997pt>
 File: Images/GLM_spatial/GLM_random_hists.png Graphic file (type png)
 <use Images/GLM_spatial/GLM_random_hists.png>
 Package pdftex.def Info: Images/GLM_spatial/GLM_random_hists.png  used on input line 125.
 (pdftex.def)             Requested size: 217.42265pt x 134.34528pt.
-<Images/GLM_spatial/GLM_spatial_hists.png, id=907, 594.7821pt x 369.2997pt>
+<Images/GLM_spatial/GLM_spatial_hists.png, id=945, 594.7821pt x 369.2997pt>
 File: Images/GLM_spatial/GLM_spatial_hists.png Graphic file (type png)
 <use Images/GLM_spatial/GLM_spatial_hists.png>
 Package pdftex.def Info: Images/GLM_spatial/GLM_spatial_hists.png  used on input line 132.
 (pdftex.def)             Requested size: 217.42265pt x 134.99893pt.
-<Images/GLM_spatial/GLM_calibration_plot_random.png, id=909, 586.1097pt x 586.1097pt>
+<Images/GLM_spatial/GLM_calibration_plot_random.png, id=947, 586.1097pt x 586.1097pt>
 File: Images/GLM_spatial/GLM_calibration_plot_random.png Graphic file (type png)
 <use Images/GLM_spatial/GLM_calibration_plot_random.png>
 Package pdftex.def Info: Images/GLM_spatial/GLM_calibration_plot_random.png  used on input line 148.
 (pdftex.def)             Requested size: 217.42265pt x 217.42061pt.
-<Images/GLM_spatial/GLM_calibration_plot_spatial.png, id=910, 586.1097pt x 586.1097pt>
+<Images/GLM_spatial/GLM_calibration_plot_spatial.png, id=948, 586.1097pt x 586.1097pt>
 File: Images/GLM_spatial/GLM_calibration_plot_spatial.png Graphic file (type png)
 <use Images/GLM_spatial/GLM_calibration_plot_spatial.png>
 Package pdftex.def Info: Images/GLM_spatial/GLM_calibration_plot_spatial.png  used on input line 155.
 (pdftex.def)             Requested size: 217.42265pt x 217.42061pt.
-<Images/GLM_spatial/GLM_RMSE_random_vs_spatial.png, id=913, 730.6497pt x 369.2997pt>
+<Images/GLM_spatial/GLM_RMSE_random_vs_spatial.png, id=951, 730.6497pt x 369.2997pt>
 File: Images/GLM_spatial/GLM_RMSE_random_vs_spatial.png Graphic file (type png)
 <use Images/GLM_spatial/GLM_RMSE_random_vs_spatial.png>
 Package pdftex.def Info: Images/GLM_spatial/GLM_RMSE_random_vs_spatial.png  used on input line 202.
 (pdftex.def)             Requested size: 362.37569pt x 183.16173pt.
- [30 <./Images/GLM_spatial/GLM_random_hists.png> <./Images/GLM_spatial/GLM_spatial_hists.png>]
-<Images/CatBoost/CatBoost_random_hists.png, id=928, 612.1269pt x 369.2997pt>
+ [32 <./Images/GLM_spatial/GLM_random_hists.png> <./Images/GLM_spatial/GLM_spatial_hists.png>]
+<Images/CatBoost/CatBoost_random_hists.png, id=965, 612.1269pt x 369.2997pt>
 File: Images/CatBoost/CatBoost_random_hists.png Graphic file (type png)
 <use Images/CatBoost/CatBoost_random_hists.png>
 Package pdftex.def Info: Images/CatBoost/CatBoost_random_hists.png  used on input line 218.
 (pdftex.def)             Requested size: 217.42265pt x 131.1671pt.
-<Images/CatBoost/CatBoost_spatial_hists.png, id=929, 612.1269pt x 369.2997pt>
+<Images/CatBoost/CatBoost_spatial_hists.png, id=966, 612.1269pt x 369.2997pt>
 File: Images/CatBoost/CatBoost_spatial_hists.png Graphic file (type png)
 <use Images/CatBoost/CatBoost_spatial_hists.png>
 Package pdftex.def Info: Images/CatBoost/CatBoost_spatial_hists.png  used on input line 225.
 (pdftex.def)             Requested size: 217.42265pt x 131.1671pt.
-<Images/CatBoost/CatBoost_calibration_plot_random.png, id=931, 586.1097pt x 586.1097pt>
+<Images/CatBoost/CatBoost_calibration_plot_random.png, id=968, 586.1097pt x 586.1097pt>
 File: Images/CatBoost/CatBoost_calibration_plot_random.png Graphic file (type png)
 <use Images/CatBoost/CatBoost_calibration_plot_random.png>
 Package pdftex.def Info: Images/CatBoost/CatBoost_calibration_plot_random.png  used on input line 241.
 (pdftex.def)             Requested size: 217.42265pt x 217.42061pt.
-<Images/CatBoost/CatBoost_calibration_plot_spatial.png, id=932, 586.1097pt x 586.1097pt>
+<Images/CatBoost/CatBoost_calibration_plot_spatial.png, id=969, 586.1097pt x 586.1097pt>
 File: Images/CatBoost/CatBoost_calibration_plot_spatial.png Graphic file (type png)
 <use Images/CatBoost/CatBoost_calibration_plot_spatial.png>
 Package pdftex.def Info: Images/CatBoost/CatBoost_calibration_plot_spatial.png  used on input line 248.
 (pdftex.def)             Requested size: 217.42265pt x 217.42061pt.
- [31 <./Images/GLM_spatial/GLM_calibration_plot_random.png> <./Images/GLM_spatial/GLM_calibration_plot_spatial.png>]
-<Images/CatBoost/CatBoost_RMSE_random_vs_spatial.png, id=947, 730.6497pt x 369.2997pt>
+ [33 <./Images/GLM_spatial/GLM_calibration_plot_random.png> <./Images/GLM_spatial/GLM_calibration_plot_spatial.png>]
+<Images/CatBoost/CatBoost_RMSE_random_vs_spatial.png, id=984, 730.6497pt x 369.2997pt>
 File: Images/CatBoost/CatBoost_RMSE_random_vs_spatial.png Graphic file (type png)
 <use Images/CatBoost/CatBoost_RMSE_random_vs_spatial.png>
 Package pdftex.def Info: Images/CatBoost/CatBoost_RMSE_random_vs_spatial.png  used on input line 296.
 (pdftex.def)             Requested size: 362.37569pt x 183.16173pt.
- [32 <./Images/GLM_spatial/GLM_RMSE_random_vs_spatial.png> <./Images/CatBoost/CatBoost_random_hists.png> <./Images/CatBoost/CatBoost_spatial_hists.png>]) [33 <./Images/CatBoost/CatBoost_calibration_plot_random.png> <./Images/CatBoost/CatBoost_calibration_plot_spatial.png>] (sections/discussion.tex) [34 <./Images/CatBoost/CatBoost_RMSE_random_vs_spatial.png>] (sections/future_work.tex) [35] (sections/conclusion.tex) [36] [37]
+ [34 <./Images/GLM_spatial/GLM_RMSE_random_vs_spatial.png> <./Images/CatBoost/CatBoost_random_hists.png> <./Images/CatBoost/CatBoost_spatial_hists.png>]) [35 <./Images/CatBoost/CatBoost_calibration_plot_random.png> <./Images/CatBoost/CatBoost_calibration_plot_spatial.png>] (sections/discussion.tex) [36 <./Images/CatBoost/CatBoost_RMSE_random_vs_spatial.png>] (sections/future_work.tex) [37] (sections/conclusion.tex) [38] [39]
 Overfull \hbox (8.13184pt too wide) in paragraph at lines 110--110
 [][]\OT1/cmr/m/n/10 Efron, Bradley (1983). \  Es-ti-mat-ing the Er-ror Rate of a Pre-dic-tion Rule: Im-prove-ment on Cross-Validation".
  []
 
-[38] [39]
+[40] [41]
 Overfull \hbox (0.27515pt too wide) in paragraph at lines 110--110
 \OT1/cmtt/m/n/10 2024 . 3416838$[][]\OT1/cmr/m/n/10 . \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : [][]$\OT1/cmtt/m/n/10 https : / / ieeexplore . ieee . org / document / 10562290/$[][] \OT1/cmr/m/n/10 (vis-ited on 05/08/2026). 
  []
 
-[40]
+[42] [43]
 Overfull \hbox (7.12192pt too wide) in paragraph at lines 110--110
 \OT1/cmr/m/n/10 <span style="font-variant:small-caps;">CV</span> : An <span style="font-variant:small-caps;">r</span>
  []
 
-[41] [42] (appendix/appendix_a.tex) [43] (appendix/appendix_b.tex
+[44] (appendix/appendix_a.tex) [45] (appendix/appendix_b.tex
 Underfull \hbox (badness 1910) in paragraph at lines 26--27
 []|\OT1/cmr/m/n/9 Generalized lin-
  []
@@ -1023,28 +1019,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--148
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 []|\OT1/cmr/m/n/9 Feed-forward
  []
 
 
-ignored: Infinite glue shrinkage found in box being split [44]
-<Images/mape_randomcv_model_comparison.png, id=1243, 730.6497pt x 369.2997pt>
+ignored: Infinite glue shrinkage found in box being split [46]
+<Images/mape_randomcv_model_comparison.png, id=1283, 730.6497pt x 369.2997pt>
 File: Images/mape_randomcv_model_comparison.png Graphic file (type png)
 <use Images/mape_randomcv_model_comparison.png>
-Package pdftex.def Info: Images/mape_randomcv_model_comparison.png  used on input line 180.
+Package pdftex.def Info: Images/mape_randomcv_model_comparison.png  used on input line 184.
 (pdftex.def)             Requested size: 362.37569pt x 183.16173pt.
-<Images/smape_randomcv_model_comparison.png, id=1244, 730.6497pt x 369.2997pt>
+<Images/smape_randomcv_model_comparison.png, id=1284, 730.6497pt x 369.2997pt>
 File: Images/smape_randomcv_model_comparison.png Graphic file (type png)
 <use Images/smape_randomcv_model_comparison.png>
-Package pdftex.def Info: Images/smape_randomcv_model_comparison.png  used on input line 187.
+Package pdftex.def Info: Images/smape_randomcv_model_comparison.png  used on input line 191.
 (pdftex.def)             Requested size: 362.37569pt x 183.16173pt.
-<Images/rmse_randomcv_model_comparison.png, id=1245, 730.6497pt x 369.2997pt>
+<Images/rmse_randomcv_model_comparison.png, id=1285, 730.6497pt x 369.2997pt>
 File: Images/rmse_randomcv_model_comparison.png Graphic file (type png)
 <use Images/rmse_randomcv_model_comparison.png>
-Package pdftex.def Info: Images/rmse_randomcv_model_comparison.png  used on input line 194.
+Package pdftex.def Info: Images/rmse_randomcv_model_comparison.png  used on input line 198.
 (pdftex.def)             Requested size: 362.37569pt x 183.16173pt.
-) [45 <./Images/mape_randomcv_model_comparison.png>] [46 <./Images/smape_randomcv_model_comparison.png> <./Images/rmse_randomcv_model_comparison.png>] (main.aux)
+) [47 <./Images/mape_randomcv_model_comparison.png>] [48 <./Images/smape_randomcv_model_comparison.png> <./Images/rmse_randomcv_model_comparison.png>] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
@@ -1054,23 +1050,23 @@ L3 programming layer <2026-03-20>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 51B29A2F0BBB42146D6C438B9DDB429D;6220.
+(rerunfilecheck)             Checksum: A285BC2C914021737DC38AF3CF4CD7B8;6263.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23810 strings out of 467691
- 427436 string characters out of 5414987
- 1296954 words of memory out of 5000000
- 52309 multiletter control sequences out of 15000+600000
+ 23848 strings out of 467691
+ 428253 string characters out of 5414987
+ 1297259 words of memory out of 5000000
+ 52342 multiletter control sequences out of 15000+600000
  641749 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,22n,81p,2259b,2270s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,22n,79p,2259b,2270s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\caleb\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx6.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/caleb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (47 pages, 7393528 bytes).
+Output written on main.pdf (49 pages, 7411117 bytes).
 PDF statistics:
- 1430 PDF objects out of 1440 (max. 8388607)
- 243 named destinations out of 1000 (max. 500000)
+ 1472 PDF objects out of 1728 (max. 8388607)
+ 248 named destinations out of 1000 (max. 500000)
  402 words of extra memory for PDF output out of 10000 (max. 10000000)
 

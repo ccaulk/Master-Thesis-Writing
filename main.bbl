@@ -1515,6 +1515,69 @@
       \verb 10.7927/H49C6VHW
       \endverb
     \endentry
+    \entry{chicco2021}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=f3d4d09e12e591928a3b270c54528087}{%
+           family={Chicco},
+           familyi={C\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b529c1bc5b8045f0d38979176663fc67}{%
+           family={Warrens},
+           familyi={W\bibinitperiod},
+           given={Matthijs\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e758b61322d8aaddcad00acf28472ea6}{%
+           family={Jurman},
+           familyi={J\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3e6057a64f593e1ed4d40b70e8935586}
+      \strng{fullhash}{3e6057a64f593e1ed4d40b70e8935586}
+      \strng{fullhashraw}{3e6057a64f593e1ed4d40b70e8935586}
+      \strng{bibnamehash}{3e6057a64f593e1ed4d40b70e8935586}
+      \strng{authorbibnamehash}{3e6057a64f593e1ed4d40b70e8935586}
+      \strng{authornamehash}{3e6057a64f593e1ed4d40b70e8935586}
+      \strng{authorfullhash}{3e6057a64f593e1ed4d40b70e8935586}
+      \strng{authorfullhashraw}{3e6057a64f593e1ed4d40b70e8935586}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{5}
+      \field{issn}{2376-5992}
+      \field{journaltitle}{{PeerJ} Computer Science}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{title}{The coefficient of determination R-squared is more informative than {SMAPE}, {MAE}, {MAPE}, {MSE} and {RMSE} in regression analysis evaluation}
+      \field{urlday}{18}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{7}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{e623}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.7717/peerj-cs.623
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\XG9RWXLT\\Chicco et al. - 2021 - The coefficient of determination R-squared is more informative than SMAPE, MAE, MAPE, MSE and RMSE i.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://peerj.com/articles/cs-623
+      \endverb
+      \verb{url}
+      \verb https://peerj.com/articles/cs-623
+      \endverb
+    \endentry
     \entry{collart_small_2023}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=e778daf69b74ee393193d1f3bcfbbe9e}{%
@@ -1636,6 +1699,68 @@
       \endverb
       \verb{url}
       \verb https://onlinelibrary.wiley.com/doi/10.1111/brv.12816
+      \endverb
+    \endentry
+    \entry{daniel2016}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1333157cdd21715b41554e4e7214c5c9}{%
+           family={Daniel},
+           familyi={D\bibinitperiod},
+           given={Thomas\bibnamedelima O’},
+           giveni={T\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=61c1e9dcd0600647b93d7510c89c2e61}{%
+           family={Hussein},
+           familyi={H\bibinitperiod},
+           given={Mohammed\bibnamedelima Nazar},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=494cb007ce875f94f90b9e0e7a8e1def}{%
+           family={Abdulla},
+           familyi={A\bibinitperiod},
+           given={Raed},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5093856fdd3fc3ce8593817a73f58380}
+      \strng{fullhash}{5093856fdd3fc3ce8593817a73f58380}
+      \strng{fullhashraw}{5093856fdd3fc3ce8593817a73f58380}
+      \strng{bibnamehash}{5093856fdd3fc3ce8593817a73f58380}
+      \strng{authorbibnamehash}{5093856fdd3fc3ce8593817a73f58380}
+      \strng{authornamehash}{5093856fdd3fc3ce8593817a73f58380}
+      \strng{authorfullhash}{5093856fdd3fc3ce8593817a73f58380}
+      \strng{authorfullhashraw}{5093856fdd3fc3ce8593817a73f58380}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{18}
+      \field{issn}{0974-5645, 0974-6846}
+      \field{journaltitle}{Indian Journal of Science and Technology}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{10}
+      \field{title}{Localization using {GPS} Coordinates in {IPv}6 Addresses of Wireless Sensor Network Nodes}
+      \field{urlday}{18}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{9}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.17485/ijst/2016/v9i10/88985
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\NELUN2ER\\Daniel et al. - 2016 - Localization using GPS Coordinates in IPv6 Addresses of Wireless Sensor Network Nodes.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://indjst.org/articles/localization-using-gps-coordinates-in-ipv6-addresses-of-wireless-sensor-network-nodes
+      \endverb
+      \verb{url}
+      \verb https://indjst.org/articles/localization-using-gps-coordinates-in-ipv6-addresses-of-wireless-sensor-network-nodes
       \endverb
     \endentry
     \entry{davis2023}{article}{}{}
@@ -3960,6 +4085,112 @@
       \endverb
       \verb{url}
       \verb https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/widm.8
+      \endverb
+    \endentry
+    \entry{mcnellie2021}{article}{}{}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=1d40245f25c26f9f5c19e39c657b6af2}{%
+           family={{McNellie}},
+           familyi={M\bibinitperiod},
+           given={Megan\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0d082d809ed02306131adca8b13a96ad}{%
+           family={Oliver},
+           familyi={O\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=39011e2380b8ee7046d21d9572c0e59f}{%
+           family={Ferrier},
+           familyi={F\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c0811c8f6c73468e6b3863d33de4ae99}{%
+           family={Newell},
+           familyi={N\bibinitperiod},
+           given={Graeme},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9b4450db3c8d19a01708919396ecdb10}{%
+           family={Manion},
+           familyi={M\bibinitperiod},
+           given={Glenn},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c93ba192a00f68c6552ea9e6e742236a}{%
+           family={Griffioen},
+           familyi={G\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f881e1bcfcca0fb7c54fd7a04db4d91a}{%
+           family={White},
+           familyi={W\bibinitperiod},
+           given={Matt},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7173f30a35ee3e720bd3c7d4f7433bb2}{%
+           family={Koen},
+           familyi={K\bibinitperiod},
+           given={Terry},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee5b388e96af06d8a746e1562e550b64}{%
+           family={Somerville},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=49e35056bf49d89df07273a5f813bd9f}{%
+           family={Gibbons},
+           familyi={G\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{eb906628a05ac020ccba77e4c3240675}
+      \strng{fullhash}{3f8b158cd2c426d86e5895b0d6e66d48}
+      \strng{fullhashraw}{3f8b158cd2c426d86e5895b0d6e66d48}
+      \strng{bibnamehash}{eb906628a05ac020ccba77e4c3240675}
+      \strng{authorbibnamehash}{eb906628a05ac020ccba77e4c3240675}
+      \strng{authornamehash}{eb906628a05ac020ccba77e4c3240675}
+      \strng{authorfullhash}{3f8b158cd2c426d86e5895b0d6e66d48}
+      \strng{authorfullhashraw}{3f8b158cd2c426d86e5895b0d6e66d48}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0921-2973, 1572-9761}
+      \field{journaltitle}{Landscape Ecology}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{5}
+      \field{shortjournal}{Landscape Ecol}
+      \field{title}{Extending vegetation site data and ensemble models to predict patterns of foliage cover and species richness for plant functional groups}
+      \field{urlday}{8}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{36}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1391\bibrangedash 1407}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/s10980-021-01221-x
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\AWPB3YWL\\McNellie et al. - 2021 - Extending vegetation site data and ensemble models to predict patterns of foliage cover and species.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/10.1007/s10980-021-01221-x
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/10.1007/s10980-021-01221-x
       \endverb
     \endentry
     \entry{mertes2018scale}{article}{}{}
