@@ -2712,16 +2712,12 @@
     <bcf:citekey order="220" intorder="1">ngor2023</bcf:citekey>
     <bcf:citekey order="220" intorder="2">cai2023</bcf:citekey>
     <bcf:citekey order="220" intorder="3">baggstrom2025</bcf:citekey>
-    <bcf:citekey order="221" intorder="1">nakagawa2013</bcf:citekey>
-    <bcf:citekey order="222" intorder="1">mondal2021</bcf:citekey>
-    <bcf:citekey order="222" intorder="2">cai2023</bcf:citekey>
-    <bcf:citekey order="222" intorder="3">baggstrom2025</bcf:citekey>
-    <bcf:citekey order="223" intorder="1">elith2009</bcf:citekey>
-    <bcf:citekey order="223" intorder="2">wang2023</bcf:citekey>
-    <bcf:citekey order="224" intorder="1">elith2009</bcf:citekey>
-    <bcf:citekey order="224" intorder="2">wang2023</bcf:citekey>
-    <bcf:citekey order="225" intorder="1">elith2009</bcf:citekey>
-    <bcf:citekey order="225" intorder="2">wang2023</bcf:citekey>
+    <bcf:citekey order="221" intorder="1">mondal2021</bcf:citekey>
+    <bcf:citekey order="221" intorder="2">cai2023</bcf:citekey>
+    <bcf:citekey order="221" intorder="3">baggstrom2025</bcf:citekey>
+    <bcf:citekey order="222" intorder="1">cai2023</bcf:citekey>
+    <bcf:citekey order="223" intorder="1">roberts2017</bcf:citekey>
+    <bcf:citekey order="224" intorder="1">roberts2017</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

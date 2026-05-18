@@ -5,5 +5,9 @@ We designed the pipeline to be flexible and adaptable to different types of biod
 
 Training-set performance was also inspected to assess potential overfitting. Large differences between training and test performance were observed for some more flexible models, particularly CatBoost and Random Forest, indicating stronger fit to the training data than to held-out observations.
 
+
+Notably, the \(R^2\) values from random to spatial cross-validation differ more than between random and spatial cross-validation for the GLM in Table~\ref{tab:glm-cv-strategy-comparison}. The same pattern of CatBoost's performance dropping more than the GLM's performance when switching from random to spatial cross-validation is observed across all metrics. 
+
+
 For spatial vs random cross validation we 
 \subsection{Ethical Discussion}\label{sec:ethics}
