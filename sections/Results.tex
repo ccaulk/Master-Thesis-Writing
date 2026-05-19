@@ -1,36 +1,123 @@
 \section{Experiments}\label{sec:Experiments}
-In this section we present the results of our experiments to demonstrate the flexibility of the SBM pipeline for top-down biodiversity modeling. The experiments are designed to answer the three research questions:
+
+This section presents the results of our experiments, demonstrating the flexibility of the SBM pipeline for top-down biodiversity modeling. Five models are evaluated: GLM, GAM, Random Forest, CatBoost, and FFNNs. The hyper-parameters listed in Table \ref{tab:best-hyperparameters} were used to train all models. The predictor variables are the 15 variables list in Table~\ref{tab:environmental-features}, extracted at two different spatial scales, for a total of 30  variables. The response variable is site-level species richness. The final dataset consists of \(1,363\) sites across the UK with species richness values that range from \(1\) to \(35\) during the year 2020. 
+
+The experiments are designed to answer the three research questions:
 \begin{enumerate}
     \item How do different models perform compared to each other?
     \item How do models perform with different strategies of cross-validation, specifically random cross-validation vs. spatial cross-validation?
     \item How do models perform in data-limited scenarios?
 \end{enumerate} 
 
-For research question 1, we compare the performance of different models to each other. These results are presented in Section~\ref{sec:research-question-1}. For research question 2, we compare the performance of models to themselves across different cross-validation strategies, specifically 10-fold random cross-validation vs. 10-fold spatial cross-validation. These results are presented in Section~\ref{sec:research-question-2}. For research question 3, we compare the performance of models to themselvesin data-limited scenarios. These results are presented in Section~\ref{sec:research-question-3}. The models that were evaluated and compared are GLM, GAM, Random Forest, CatBoost, and FFNNs, we used the hyper-parameters that are list in Table \ref{tab:best-hyperparameters}.
+The first experiment compares the performance of different models to each other under 10-fold random cross-validation. These results are presented in Section~\ref{subsec:research-question-1}. The second experiment compares the models' performance under 10-fold random cross-validation vs. 10-fold spatial cross-validation. Two of the models were chosen, GLM and CatBoost, as they represent one statistical and one machine learning approach. For each individual model, performance was compared across the two cross-validation strategies. These results are presented in Section~\ref{subsec:research-question-2}. The third experiment evaluates the performance of models in data-limited scenarios, with different levels of data availability that ranged from \(100\%\) to \(10\%\) of the \(1,363\) sites. Once again GLM and CatBoost were chosen for this experiment and comparison was done across the different data-limited scenarios. These results are presented in Section~\ref{subsec:research-question-3}.
 
-\subsection{Model class comparison}\label{sec:research-question-1}
-Research question 1 is concerned with how different models perform against each other. This is commonly done in the literature especially when evaluating a new model \parencite{ngor2023, cai2023, baggstrom2025}. We ran experiments comparing the performance of different models on our final 2020 UKBMS dataset described at the end of Section~\ref{subsubsec:data}. The distribution of species richness across the 2020 UKBMS dataset is shown in Figure~\ref{fig:species-richness-distribution}. We used the 15 predictor variables in Table~\ref{tab:environmental-features} at the two different spatial scales, for a total of 30 predictor variables, to predict species richness across the \(1,363\) sites.
+\subsection{Model class comparison}\label{subsec:research-question-1}
+Research Question 1 compares how different models perform relative to one another. This is commonly done in the literature especially when proposing a new model for community-level biodiversity metric prediction \parencite{ngor2023, cai2023, baggstrom2025}. We ran experiments comparing the performance of the five different models on our final 2020 UKBMS dataset described at the end of Section~\ref{subsubsec:data}. The distribution of species richness across the 2020 UKBMS dataset is shown in Figure~\ref{fig:species-richness-distribution}, and the spatial distribution of the \(1,363\) sites is also shown in Figure~\ref{fig:2020_sites_distribution}.
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.8\textwidth]{
         Images/species_richness_distribution.png}
-    \caption{Distribution of species richness across the \(1,363\) sites in the 2020 UKBMS dataset.}
-    \label{fig:species-richness-distribution}
+    \caption{Distribution of species richness across the \(1,363\) sites in the 2020 UKBMS dataset.}\label{fig:species-richness-distribution}
 \end{figure}
 
-Each model that was implemented in the SBM pipeline, GLM, GAM, random forest, CatBoost, and FFNN, was run with 10-fold random cross-validation. The same seed was used for all experiments to ensure reproducibility. The evaluation metrics used for comparison, described in Section~\ref{subsec:model_comparison} were calculated separatelt on the held-out test set for each of the 10 folds.Table~\ref{tab:random-cv-test-metric-tables} reports the mean, standard deviation, median, and interquartile range of these fold-level metric values across the 10 test folds. For SMAPE, the best model for standard deviation and median are rounded to three decimal places and the true values are included in Table~\ref{tab:smape-random-cv-test} caption.
+Within the SBM pipeline, GLM, GAM, Random Forest, CatBoost, and FFNN were evaluated using 10-fold random cross-validation. The same seed was used for all experiments to ensure reproducibility. 
+The distribution of predicted species richness compared to the distribution of observed species richness is shown in Figure~\ref{fig:model-species-richness-distributions}. All models except for CatBoost demonstrate a sharp peak around the mean. CatBoost, however, has a slightly less dominant peak which is also not present in the true distribution. All the models demonstrate limited abilities in capturing the tails of the distribution, indicating weak performance at the extremes.
+
+Figure~\ref{fig:model-calibration-plots} presents the observed species richness vs. predicted species richness scatter plots of all five models. All models show a positive trend between observed and predicted values, but the strength of the trend varies across models. CatBoost and Random Forest demonstrate the clearest positive trend compared to the other models. The GLM and GAM demonstrate the weakest. The FFNN demonstrates a positive trend that is somewhere between these two groups. Across all models, predictions are most concentrated around intermediate richness values. Furthermore, all models have a hard time predicting high species richness values and low species richness values. This is consistent with the distribution of predicted species richness values in Figure~\ref{fig:model-species-richness-distributions} where tail ends of the distribution are not well captured.
+
+The evaluation metrics used for comparison, described in Section~\ref{subsec:model_comparison} were calculated separately on the held-out test set for each of the 10 folds. Table~\ref{tab:random-cv-test-metric-tables} reports the mean, standard deviation, median, and interquartile range of these fold-level metric values across the test sets of the 10 folds. Because the values in Table~\ref{tab:smape-random-cv-test} are rounded to three decimal places, there is an apparent tie for the best median and standard deviation for SMAPE. This tie was resolved by comparing the unrounded values, which are detailed in the table's caption
+
+Table~\ref{tab:random-cv-test-metric-tables} shows not one model is the best across all metrics. CatBoost has the highest \(R^2\) along with the lowest MAPE and RMSE, while Random Forest has the lowest SMAPE. Additionally, CatBoost has the best median across all four metrics. When looking at measures of dispersion, the FFNN has the smallest standard deviation for \(R^2\), MAPE, and RMSE while the GLM has the smallest standard deviation for SMAPE. CatBoost has the smallest interquartile range for SMAPE and MAPE, while the FFNN has the smallest \(R^2\) interquartile range, and the GAM has the smallest interquartile range for RMSE. CatBoost and Random Forest have the strongest mean and median performance, but across variability measures there is no clear best model.
+
+In Figure~\ref{fig:model-all-metric-box-plots} box-plots of the \(R^2\), RMSE, MAPE, and SMAPE values are shown. Figure~\ref{fig:random-cv-r2} displays CatBoost and Random Forest's higher median \(R^2\) values along with the FFNN's smaller interquartile range. In Figure~\ref{fig:random-cv-rmse} the GAM model has the smallest interquartile range, but it is followed closely by the GLM, CatBoost, and FNN models. CatBoost and Random Forest once again have similar low median RMSE values. In Figure~\ref{fig:random-cv-mape} the MAPE of all models is shown. All models perform very similarly in terms of  median and interquartile range. Based on the MAPE box-plots alone, there is no clear best model. In Figure~\ref{fig:random-cv-smape} the Random Forest barely has a higher median value compared to CatBoost, but the interquartile range of CatBoost is slightly smaller than the interquartile range of Random Forest. The FFNN also performs similarly to the GLM and GAM which are all slightly worse than Random Forest and CatBoost.
+
+Taken together, the \(R^2\), MAPE, SMAPE, and RMSE values across the random cross-validation folds in Figure~\ref{fig:model-all-metric-box-plots} show substantial overlap between model performance. The MAPE box-plots across all models are almost identical; whereas, SMAPE and RMSE show smaller median values for Random Forest and CatBoost compared to the other models. Furthermore, every model's box-plots overlap across all metrics. This would suggest that there is no single model that performs the best consistently. However, the numerical metrics and visual checks in Figures~\ref{fig:model-species-richness-distributions} and~\ref{fig:model-calibration-plots} suggest that the machine-learning models, particularly CatBoost and Random Forest, generally outperform the GLM and GAM in terms of \(R^2\), RMSE, and SMAPE, while all models perform similarly in terms of MAPE.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/research_question_1/glm_dist.png}
+        \caption{GLM}\label{fig:glm-dist}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/research_question_1/gam_dist.png}
+        \caption{GAM}\label{fig:gam-dist}
+    \end{subfigure}
+
+    \vspace{1em}
+
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/research_question_1/randomforest_dist.png}
+        \caption{Random Forest}\label{fig:randomforest-dist}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/research_question_1/catboost_dist.png}
+        \caption{CatBoost}\label{fig:catboost-dist}
+    \end{subfigure}
+
+    \vspace{1em}
+
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/research_question_1/ffnn_dist.png}
+        \caption{FFNN}\label{fig:ffnn-dist}
+    \end{subfigure}
+    \caption{Observed and predicted species richness distributions for the five models, arranged in the order GLM, GAM, Random Forest, CatBoost, and FFNN.}\label{fig:model-species-richness-distributions}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.42\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/research_question_1/GLM_calibration.png}
+        \caption{GLM}\label{fig:glm-calibration}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.42\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/research_question_1/GAM_calibration.png}
+        \caption{GAM}\label{fig:gam-calibration}
+    \end{subfigure}
+
+    \vspace{0.5em}
+
+    \begin{subfigure}{0.42\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/research_question_1/rf_calibration.png}
+        \caption{Random Forest}\label{fig:randomforest-calibration}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.42\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/research_question_1/catboost_calibration.png}
+        \caption{CatBoost}\label{fig:catboost-calibration}
+    \end{subfigure}
+
+    \vspace{0.5em}
+
+    \begin{subfigure}{0.42\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/research_question_1/FFNN_calibration.png}
+        \caption{FFNN}\label{fig:ffnn-calibration}
+    \end{subfigure}
+    \caption{Observed and predicted species richness scatter plots for the five models, arranged in the order GLM, GAM, Random Forest, CatBoost, and FFNN.}\label{fig:model-calibration-plots}
+\end{figure}
 
 \begin{table}[ht]
 \centering
-\caption{Random 10-fold cross-validation test folds performance summaries for each model class across \(R^2\), MAPE, SMAPE, and RMSE. Bold values indicate the best value within each metric table. RF = Random Forets, CAT = CatBoost, NN = Feed-Forward Neural Network.}
-\label{tab:random-cv-test-metric-tables}
+\caption{Random 10-fold cross-validation test folds performance summaries for each model class across \(R^2\), MAPE, SMAPE, and RMSE. Bold values indicate the best value within each metric table. RF = Random Forest, CAT = CatBoost, FFNN = Feed-Forward Neural Network.}\label{tab:random-cv-test-metric-tables}
 
 \begin{subtable}{0.48\textwidth}
 \centering
 \small
-\caption{\(R^2\)}
-\label{tab:r2-random-cv-test}
+\caption{\(R^2\)}\label{tab:r2-random-cv-test}
 \begin{tabular}{lrrrr}
 \toprule
 \textbf{Model} & \textbf{Mean} & \textbf{Std.} & \textbf{Median} & \textbf{IQR} \\
@@ -39,15 +126,14 @@ GLM & 0.291 & 0.069 & 0.281 & 0.118 \\
 GAM & 0.312 & 0.064 & 0.324 & 0.104 \\
 RF  & 0.367 & 0.082 & 0.374 & 0.103 \\
 CAT & \textbf{0.374} & 0.083 & \textbf{0.397} & 0.122 \\
-NN  & 0.336 & \textbf{0.061} & 0.345 & \textbf{0.068} \\
+FFNN  & 0.336 & \textbf{0.061} & 0.345 & \textbf{0.068} \\
 \bottomrule
 \end{tabular}
 \end{subtable}
 \hfill\begin{subtable}{0.48\textwidth}
 \centering
 \small
-\caption{RMSE}
-\label{tab:rmse-random-cv-test}
+\caption{RMSE}\label{tab:rmse-random-cv-test}
 \begin{tabular}{lrrrr}
 \toprule
 \textbf{Model} & \textbf{Mean} & \textbf{Std.} & \textbf{Median} & \textbf{IQR} \\
@@ -56,7 +142,7 @@ GLM & 5.110 & 0.434 & 5.184 & 0.431 \\
 GAM & 5.036 & 0.438 & 5.133 & \textbf{0.310} \\
 RF  & 4.830 & 0.517 & 4.866 & 0.542 \\
 CAT & \textbf{4.800} & 0.482 & \textbf{4.813} & 0.343 \\
-NN  & 4.950 & \textbf{0.427} & 4.993 & 0.436 \\
+FFNN  & 4.950 & \textbf{0.427} & 4.993 & 0.436 \\
 \bottomrule
 \end{tabular}
 \end{subtable}
@@ -64,8 +150,7 @@ NN  & 4.950 & \textbf{0.427} & 4.993 & 0.436 \\
 \begin{subtable}{0.48\textwidth}
 \centering
 \small
-\caption{MAPE}
-\label{tab:mape-random-cv-test}
+\caption{MAPE}\label{tab:mape-random-cv-test}
 \begin{tabular}{lrrrr}
 \toprule
 \textbf{Model} & \textbf{Mean} & \textbf{Std.} & \textbf{Median} & \textbf{IQR} \\
@@ -74,7 +159,7 @@ GLM & 0.446 & 0.161 & 0.463 & 0.196 \\
 GAM & 0.441 & 0.161 & 0.460 & 0.197 \\
 RF  & 0.436 & 0.166 & 0.446 & 0.207 \\
 CAT & \textbf{0.425} & 0.160 & \textbf{0.430} & \textbf{0.177} \\
-NN  & 0.427 & \textbf{0.155} & 0.440 & 0.182 \\
+FFNN  & 0.427 & \textbf{0.155} & 0.440 & 0.182 \\
 \bottomrule
 \end{tabular}
 \end{subtable}
@@ -82,8 +167,7 @@ NN  & 0.427 & \textbf{0.155} & 0.440 & 0.182 \\
 \begin{subtable}{0.48\textwidth}
 \centering
 \small
-\caption{SMAPE: GLM true std = \(0.023841\), RF true median = \(0.226459\), CAT true std = \(0.024274\) and true median = \(0.22617\)}
-\label{tab:smape-random-cv-test}
+\caption{SMAPE: GLM true std = \(0.023841\), RF true median = \(0.226459\), CAT true std = \(0.024274\) and true median = \(0.22617\)}\label{tab:smape-random-cv-test}
 \begin{tabular}{lrrrr}
 \toprule
 \textbf{Model} & \textbf{Mean} & \textbf{Std.} & \textbf{Median} & \textbf{IQR} \\
@@ -92,149 +176,46 @@ GLM & 0.239 & \textbf{0.024} & 0.240 & 0.023 \\
 GAM & 0.235 & 0.027 & 0.232 & 0.027 \\
 RF  & \textbf{0.225} & 0.027 & \textbf{0.226} & 0.026 \\
 CAT & 0.227 & 0.024 & 0.226 & \textbf{0.021} \\
-NN  & 0.234 & 0.026 & 0.231 & 0.027 \\
+FFNN  & 0.234 & 0.026 & 0.231 & 0.027 \\
 \bottomrule
 \end{tabular}
 \end{subtable}
 \end{table}
 
-From the results in Table~\ref{tab:random-cv-test-metric-tables} not one model class is the best across all metrics. CatBoost performs the best for mean \(R^2\), MAPE, and RMSE while Random Forest performs the best for mean SMAPE. Additionally, CatBoost has the best median across all metrics. When looking at measures of dispersion, the best model for standard deviation is the FFNN under \(R^2\), MAPE, and RMSE while the best model for SMAPE standard deviation is the GLM. CatBoost performs the best in the  interquartile range for SMAPE and MAPE, while the FFNN performs the best for \(R^2\) interquartile range, and the GAM performs the best for RMSE when looking at interquartile range. 
-
-Looking at a box-plot of the \(R^2\) values in Figure~\ref{fig:random-cv-r2} we can see that CatBoost and random forest have similar median \(R^2\) values, which are larger than the other models. The FFNN has a noticeably smaller interquartile range compared to the other models. The GLM and GAM have lower median \(R^2\) values compared to the other models.
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.8\textwidth]{Images/research_question_1/r2_randomcv_model_comparison.png}
-    \caption{\(R^2\) across random cross-validation folds.}
-    \label{fig:random-cv-r2}
-\end{figure}
-
-In Figure~\ref{fig:random-cv-rmse} we can see the RMSE of the models. CatBoost and random forest once again have similar median RMSE values, which are lower than the other models, but the interquartile range of the random forest is the largest and random forest has the largest range of RMSE values across the models. The GLM and GAM models have the smallest ranges of RMSE values across the models, but they also have higher median RMSE values compared to the other models. The FFNN has a slightly lower median RMSE value to the GLM and GAM, but it has a larger interquartile range and range of RMSE values across the folds compared to the GLM and GAM.
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.8\textwidth]{Images/research_question_1/rmse_randomcv_model_comparison.png}
-    \caption{RMSE across random cross-validation folds.}
-    \label{fig:random-cv-rmse}
-\end{figure}
-
-In Figure~\ref{fig:random-cv-mape} we can see the MAPE of the models. All models perform very similarly in this figure in terms of mean, median and interquartile range. CatBoost barely has the lowest mean and median MAPE values. Based on the MAPE box-plot, there is no clear best model across the folds.
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.8\textwidth]{Images/research_question_1/mape_randomcv_model_comparison.png}
-    \caption{MAPE across random cross-validation folds.}
-    \label{fig:random-cv-mape}
-\end{figure}
-
-We also look at the MAPE, SMAPE, and RMSE values across the random cross-validation folds in Figures~\ref{fig:random-cv-mape}, \ref{fig:random-cv-smape}, and \ref{fig:random-cv-rmse}. The MAPE box-plots across all models look very similar; whereas, SMAPE and RSME show a decrease in values for Random Forest and CatBoost compared to the other models. Furthermore, every models' box-plot overlap across all metrics. This would suggest that there is no single model that performs the best consistently. This is in line with much of the literature that shows that there is no single best model for all problems \parencite{mondal2021, cai2023, baggstrom2025}
-
-In Figure~\ref{fig:random-cv-smape} we see that random forest is barely better than CatBoost in terms of median SMAPE values, but the interquartile range of CatBoost is slightly smaller than the interquartile range of random forest. The median of the FFNN is SMAPE is between the medians of the GLM and GAM and the median of the random forest and CatBoost. The GLM and GAM have similar median SMAPE values, but the interquartile range of the GAM is larger than the interquartile range of the GLM.
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.8\textwidth]{Images/research_question_1/smape_randomcv_model_comparison.png}
-    \caption{SMAPE across random cross-validation folds.}
-    \label{fig:random-cv-smape}
-\end{figure}
-
-In addition to comparing numerical metrics across models, we can also examine the distribution of predicted species richness in the test sets relative to the distribution of observed species richness. This is shown in Figure~\ref{fig:model-species-richness-distributions}. Here we can see that all models except for CatBoost demonstrate a peak around the mean which is common among Gaussian distributions. CatBoost, however, has a slightly less dominant peak which is also not present in the true distribution. All the models demostrate a challenge in capturing the tail of the distribution. We also observe similar structures in the GLM and GAM predicted species richness distributions, which is expected as they are both statistical models. The machine learning methods, however, demonstrate fewer similarities in their predicted species richness distributions comparatively. 
-
-Another visual check is carried out in Figure~\ref{fig:model-calibration-plots}. Here we can see the observed species richness vs. predicted species richness scatter plots for the five models. All models demonstrate a positive trend, but the strength of the trend varies across models. CatBoost and random forest demonstrate a stronger positive trend compared to the other models, which is in line with their higher \(R^2\) values. The GLM and GAM demonstrate a weaker positive trend compared to the other models, which is in line with their lower \(R^2\) values. The FFNN demonstrates a positive trend that is between the GLM and GAM and the random forest and CatBoost, which is in line with its \(R^2\) value that is between the GLM and GAM and the random forest and CatBoost in Table~\ref{tab:random-cv-test-metric-tables}. Furthermore, we can see all models have a hard time predicting high species richness values and low species richness values. The models are best at predicting species richness values around the mean, which is in line with the predicted species richness distributions in Figure~\ref{fig:model-species-richness-distributions} where all models have a hard time capturing the tails of the distribution.
-
 \begin{figure}[H]
     \centering
     \begin{subfigure}{0.48\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Images/research_question_1/glm_dist.png}
-        \caption{GLM}
-        \label{fig:glm-dist}
+        \includegraphics[width=\textwidth]{Images/research_question_1/r2_randomcv_model_comparison.png}
+        \caption{\(R^2\)}\label{fig:random-cv-r2}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.48\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Images/research_question_1/gam_dist.png}
-        \caption{GAM}
-        \label{fig:gam-dist}
+        \includegraphics[width=\textwidth]{Images/research_question_1/rmse_randomcv_model_comparison.png}
+        \caption{RMSE}\label{fig:random-cv-rmse}
     \end{subfigure}
 
     \vspace{1em}
 
     \begin{subfigure}{0.48\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Images/research_question_1/randomforest_dist.png}
-        \caption{Random Forest}
-        \label{fig:randomforest-dist}
+        \includegraphics[width=\textwidth]{Images/research_question_1/mape_randomcv_model_comparison.png}
+        \caption{MAPE}\label{fig:random-cv-mape}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.48\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Images/research_question_1/catboost_dist.png}
-        \caption{CatBoost}
-        \label{fig:catboost-dist}
+        \includegraphics[width=\textwidth]{Images/research_question_1/smape_randomcv_model_comparison.png}
+        \caption{SMAPE}\label{fig:random-cv-smape}
     \end{subfigure}
-
-    \vspace{1em}
-
-    \begin{subfigure}{0.6\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Images/research_question_1/ffnn_dist.png}
-        \caption{FFNN}
-        \label{fig:ffnn-dist}
-    \end{subfigure}
-    \caption{Observed and predicted species richness distributions for the five models, arranged in the order GLM, GAM, Random Forest, CatBoost, and FFNN.}
-    \label{fig:model-species-richness-distributions}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \begin{subfigure}{0.42\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Images/research_question_1/GLM_calibration.png}
-        \caption{GLM}
-        \label{fig:glm-calibration}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}{0.42\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Images/research_question_1/GAM_calibration.png}
-        \caption{GAM}
-        \label{fig:gam-calibration}
-    \end{subfigure}
-
-    \vspace{0.5em}
-
-    \begin{subfigure}{0.42\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Images/research_question_1/rf_calibration.png}
-        \caption{Random Forest}
-        \label{fig:randomforest-calibration}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}{0.42\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Images/research_question_1/catboost_calibration.png}
-        \caption{CatBoost}
-        \label{fig:catboost-calibration}
-    \end{subfigure}
-
-    \vspace{0.5em}
-
-    \begin{subfigure}{0.42\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{Images/research_question_1/FFNN_calibration.png}
-        \caption{FFNN}
-        \label{fig:ffnn-calibration}
-    \end{subfigure}
-    \caption{Observed and predicted species richness scatter plots for the five models, arranged in the order GLM, GAM, Random Forest, CatBoost, and FFNN.}
-    \label{fig:model-calibration-plots}
+    \caption{Comparison of box-plots of the \(R^2\), MAPE, SMAPE, and RMSE values across the 10 test folds for each model.}\label{fig:model-all-metric-box-plots}
 \end{figure}
 
 
+\subsection{Cross-validation strategy}\label{subsec:research-question-2}
 
-
-\subsection{Cross-validation strategy}\label{sec:research-question-2}
-
-In this section we look at research question 2, which is concerned with how models perform across different cross-validation strategies, specifically 10-fold random cross-validation vs. 10-foldspatial cross-validation. The difference between spatial and random cross-validation for the 2020 UKBMS dataset is illustrated in Figure~\ref{fig:comparison-of-ukbms-data-distribution-across-cv-strategies} where every color corresponds to a different fold. The spatial clustering of the data is evident in Figure~\ref{fig:spatial-cv-distribution} and the random distribution of data points in the folds in Figure~\ref{fig:random-cv-distribution} are also evident. In this section we conduct comparisons of cross-validation strategies for two models, GLM and CatBoost, as one is a statistical model and the other is a machine learning model. We compare each model to itself on their performance across the two different 10-fold cross-validation strategies. Evaluations of the other models are presented in Appendix \ref{appendix:appendix_b}. An important point to note  is that 10-fold spatial cross-validation divided the dataset into unequal sizes as the sampling sites are not evenly distributed across the spatial region of interest. This can affect the calculation of the metrics across the folds if fold size is not properly accounted for. To make the comparison more robust, we will include a non-weighted, weighted, and pooled calculations for the mean and standard deviation of the metrics across the folds. The unweighted summaries treat each fold equally, while the weighted summaries weight each fold by the number of observations in its test set. The pooled calculation combines the held-out predictions from all test folds and calculates each metric once across the full set of cross-validated predictions, so that every observation is compared with its corresponding prediction.
+This section addresses Research Question 2, which is concerned with how models perform internally across different cross-validation strategies. We conduct intra-model comparisons using 10-fold random cross-validation and 10-fold spatial cross-validation. Figure~\ref{fig:comparison-of-ukbms-data-distribution-across-cv-strategies} illustrates the fold assignments of the 2020 UKBMS dataset with each color representing a different fold. The spatial clustering fold assignments are evident in Figure~\ref{fig:spatial-cv-distribution} and the random fold assignment is evident in Figure~\ref{fig:random-cv-distribution}. In this section we conduct comparisons of cross-validation strategies for two models, GLM and CatBoost, as GLM is a statistical model and CatBoost is a machine learning model. Each model's performance is compared to itself across the two different 10-fold cross-validation strategies. Because sampling sites are unevenly distributed across the spatial region of interest, 10-fold spatial cross-validation produced folds of unequal size. This can affect summarizes of performance across folds if fold size is not properly accounted for. To make the comparison more robust, we report non-weighted, weighted, and pooled calculations metric summaries. The unweighted summaries treat each fold equally, while the weighted summaries weight each fold by the number of observations in its test set divided by the total number of observations. The pooled calculation combines the held-out predictions from all test folds and calculates each metric once across the full set of cross-validated predictions, so that every observation is compared with its corresponding prediction.
 
 \begin{figure}[H]
 \centering
@@ -242,24 +223,21 @@ In this section we look at research question 2, which is concerned with how mode
 \begin{subfigure}{0.48\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Images/Random_CV_visual.png}
-    \caption{2020 UKBMS dataset - Random cross-validation folds.}
-    \label{fig:random-cv-distribution}
+    \caption{2020 UKBMS dataset - Random cross-validation folds.}\label{fig:random-cv-distribution}
 \end{subfigure}
 \hfill
 \begin{subfigure}{0.48\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Images/Spatial_CV_visual.png}
-    \caption{2020 UKBMS dataset - Spatial cross-validation folds.}
-    \label{fig:spatial-cv-distribution}
+    \caption{2020 UKBMS dataset - Spatial cross-validation folds.}\label{fig:spatial-cv-distribution}
 \end{subfigure}
 
-\caption{Comparison between the random and spatial cross-validation folds on the 2020 UKBMS dataset.}
-\label{fig:comparison-of-ukbms-data-distribution-across-cv-strategies}
+\caption{Comparison between the random and spatial cross-validation folds on the 2020 UKBMS dataset. Each color corresponds to a different fold.}\label{fig:comparison-of-ukbms-data-distribution-across-cv-strategies}
 \end{figure}
 
 
-\subsubsection{GLM}\label{subsubsection:glm-cv-comparison}
-We first evaluate the GLM model by visualizing the distribution of the GLM's predicted species richness distribution compared to the observed species richness distribution across the test folds for both random and spatial 10-fold cross-validation strategies. This is shown in Figure~\ref{fig:glm-predicted-vs-observed-distribution-across-cv-strategies}, and we can see that they are similar especially if we just look at the mean and standard deviation. The mean and standard deviation for the random cross-validation strategy are \(18.54\) and \(3.49\) respectively, while the mean and standard deviation for the spatial cross-validation strategy are \(18.41\) and \(3.58\) respectively, which the true mean and standard deviation are \(18.54\) and \(6.10\) respectively. However, the distribution of the spatial cross-validation strategy appears to overlap with the true distribution more than the distribution of the random cross-validation strategy. If we look at the plots of the observed vs. predicted species richness across the test folds for both random and spatial cross-validation strategies in Figure~\ref{fig:glm-observed-vs-predicted-across-cv-strategies} we can see a different story. The GLM performs better across the random cross-validation strategy compared to the spatial cross-validation strategy as the points demonstrate a more positive trend and are closer to the 1:1 line. Points in Figure\ref{fig:GLM-spatial-cv-observed-vs-predicted-plots} are not as close to the 1:1 line and for each species richness value there is a wider spread of predicted species richness values compared to the random cross-validation strategy in Figure~\ref{fig:GLM-random-cv-observed-vs-predicted-plots}.
+\subsubsection{GLM cross-validation comparison}\label{subsubsection:glm-cv-comparison}
+The GLM comparison first examines the distribution of observed species richness distribution and predicted species richness distribution for the test folds of both random and spatial 10-fold cross-validation. As shown in Figure~\ref{fig:glm-predicted-vs-observed-distribution-across-cv-strategies}, they are similar if we just look at the mean and standard deviation. The mean and standard deviation for the random cross-validation strategy are \(18.54\) and \(3.49\) respectively, while the mean and standard deviation for the spatial cross-validation strategy are \(18.41\) and \(3.58\) respectively, while the true mean and standard deviation are \(18.54\) and \(6.10\) respectively. However, the distribution of the spatial cross-validation strategy appears to overlap with the true distribution more than the distribution of the random cross-validation strategy. The scatter plots of the observed vs. predicted species richness across the test folds for both random and spatial cross-validation strategies in Figure~\ref{fig:glm-observed-vs-predicted-across-cv-strategies} show a different pattern. The GLM performs better across the random cross-validation strategy compared to the spatial cross-validation strategy as the points demonstrate a more positive trend and are closer to the 1:1 line. Points in Figure~\ref{fig:GLM-spatial-cv-observed-vs-predicted-plots} are not as close to the 1:1 line and for each observed species richness value there is a wider spread of predicted species richness values compared to the random cross-validation strategy in Figure~\ref{fig:GLM-random-cv-observed-vs-predicted-plots}.
 
 
 \begin{figure}[H]
@@ -268,19 +246,16 @@ We first evaluate the GLM model by visualizing the distribution of the GLM's pre
 \begin{subfigure}{0.48\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Images/GLM_spatial/GLM_random_hists.png}
-    \caption{Distribution of observed species richness and predicted species richness across the test sets for the random cross-validation strategy.}
-    \label{fig:GLM-random-cv-predicted-vs-observed-distribution}
+    \caption{Distribution of observed species richness and predicted species richness across the test sets for the random cross-validation strategy.}\label{fig:GLM-random-cv-predicted-vs-observed-distribution}
 \end{subfigure}
 \hfill
 \begin{subfigure}{0.48\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Images/GLM_spatial/GLM_spatial_hists.png}
-    \caption{Distribution of observed species richness and predicted species richness across the test sets for the spatial cross-validation strategy.}
-    \label{fig:GLM-spatial-cv-predicted-vs-observed-distribution}
+    \caption{Distribution of observed species richness and predicted species richness across the test sets for the spatial cross-validation strategy.}\label{fig:GLM-spatial-cv-predicted-vs-observed-distribution}
 \end{subfigure}
 
-\caption{Comparison between the distribution of observed species richness and predicted species richness between random and spatial cross-validation strategies for the GLM model.}
-\label{fig:glm-predicted-vs-observed-distribution-across-cv-strategies}
+\caption{Comparison between the distribution of observed species richness and predicted species richness between random and spatial cross-validation strategies for the GLM model.}\label{fig:glm-predicted-vs-observed-distribution-across-cv-strategies}
 \end{figure}
 
 \begin{figure}[H]
@@ -289,30 +264,26 @@ We first evaluate the GLM model by visualizing the distribution of the GLM's pre
 \begin{subfigure}{0.48\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Images/GLM_spatial/GLM_calibration_plot_random.png}
-    \caption{Observed species richness vs. predicted species richness for the random cross-validation strategy \(R^2 = 0.295\).}
-    \label{fig:GLM-random-cv-observed-vs-predicted-plots}
+    \caption{Observed species richness vs. predicted species richness for the random cross-validation strategy. Pooled \(R^2 = 0.295\).}\label{fig:GLM-random-cv-observed-vs-predicted-plots}
 \end{subfigure}
 \hfill
 \begin{subfigure}{0.48\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Images/GLM_spatial/GLM_calibration_plot_spatial.png}
-    \caption{Observed species richness vs. predicted species richness for the spatial cross-validation strategy \(R^2 = 0.155\).}
-    \label{fig:GLM-spatial-cv-observed-vs-predicted-plots}
+    \caption{Observed species richness vs. predicted species richness for the spatial cross-validation strategy. Pooled \(R^2 = 0.155\).}\label{fig:GLM-spatial-cv-observed-vs-predicted-plots}
 \end{subfigure}
 
-\caption{Comparison between observed species richness vs. predicted species richness between random and spatial cross-validation strategies for the GLM model.}
-\label{fig:glm-observed-vs-predicted-across-cv-strategies}
+\caption{Comparison between observed species richness vs. predicted species richness between random and spatial cross-validation strategies for the GLM model.}\label{fig:glm-observed-vs-predicted-across-cv-strategies}
 \end{figure}
 
-Table~\ref{tab:glm-cv-strategy-comparison} presents the performance comparison across the calculated metrics along with a weighted mean, weighted standard deviation, and pooled metrics. We can see that the GLM performs better with the random cross-validation strategy compared to the spatial cross-validation strategy across all metrics. This is in line with previous studies that have measured cross-validation performance for different models \parencite{cai2023} along with what was expected \parencite{roberts2017}. There are small differences present in the random cross-validation strategy for the weighted and unweighted metrics due to the number of sites not being perfectly divisible by 10, or the number of folds. 
+Table~\ref{tab:glm-cv-strategy-comparison} presents the performance comparison across the calculated metrics along with a weighted mean, weighted standard deviation, and pooled metrics. We can see that the GLM performs better with the random cross-validation strategy compared to the spatial cross-validation strategy across all metrics. This is in line with previous studies that have measured cross-validation performance for different models \parencite{cai2023} and along with what was expected \parencite{roberts2017}. There are small differences present in the random cross-validation strategy for the weighted and unweighted metrics due to the number of sites not being perfectly divisible by 10, which impacted the size of test sets within each fold. 
 
-Note worthy results are that the mean \(R^2\) values are negative from the spatial cross-validation strategy except for the pooled mean. This implies that the model performs worse than a horizontal line fitted to the test data sets data. This has to do with the calculation of the \(R^2\) across the different folds as the variance within the test fold can be small and extreme predictions far from the test mean would then result in negative \(R^2\) values. This can happen when the distribution of the test set is different from the training set which is likely the case here due to the spatial cross-validation. If instead we look at the pooled \(R^2\) under spatial cross-validation, which would correspond to the \(R^2\) of the plot in Figure~\ref{fig:GLM-spatial-cv-observed-vs-predicted-plots}, we can see that the \(R^2\) value is weakly positive. 
+A noteworthy results is that the mean \(R^2\) values are negative for the spatial cross-validation strategy except for the pooled mean which is weakly positive. Negative \(R^2\) values on the test folds implies that the model performs worse than a horizontal line fitted to the test data sets. This can occur if the test set variance is low and extreme predictions far from the test mean would result in negative \(R^2\) values. Alternatively, the pooled \(R^2\) under spatial cross-validation, which corresponds to the full set of held-out preditions shown in Figure~\ref{fig:GLM-spatial-cv-observed-vs-predicted-plots}, demonstrates a weak positive \(R^2\) value of \(0.156\). 
 
 \begin{table}[ht]
 \centering
 \small
-\caption{Performance comparison for the GLM under random and spatial cross-validation. WM = weighted mean, P = pooled metric calculation, W Std. = weighted standard deviation. Bold values indicate the best value within each metric table.}
-\label{tab:glm-cv-strategy-comparison}
+\caption{Performance comparison for the GLM under random and spatial cross-validation. WM = weighted mean, P = pooled metric calculation, W Std. = weighted standard deviation. Bold values indicate the best value within each metric table.}\label{tab:glm-cv-strategy-comparison}
 \begin{tabular}{llrrrrrrr}
 \toprule
 \textbf{Metric} & \textbf{CV strategy} & \textbf{Mean} & \textbf{Std.} & \textbf{WM} & \textbf{W Std.} & \textbf{P} & \textbf{Median} & \textbf{IQR} \\
@@ -340,7 +311,7 @@ Note worthy results are that the mean \(R^2\) values are negative from the spati
 \end{tabular}
 \end{table}
 
-As we can see, there are large variations in the performance of the GLM depending on the cross-validation strategy used. If we look at a visual comparison of the \(R^2\), RMSE, MAPE, and SMAPE values across the random and spatial cross-validation strategies in Figures~\ref{fig:glm-cv-strategy-comparison-metrics} these differences are more pronounced. Notability the spread of the performance metrics under spatial cross validation is significantly higher. Model perform drops across board under the spatial cross-validation strategy compared to the random cross-validation strategy.
+There are large variations in the performance of the GLM depending on the cross-validation strategy employed. If we look at a visual comparison of the \(R^2\), RMSE, MAPE, and SMAPE values across the random and spatial cross-validation strategies in Figure~\ref{fig:glm-cv-strategy-comparison-metrics} these differences are more pronounced. Notability the spread of the performance metrics under spatial cross validation is significantly higher. Model performance drops consistently across all metrics under the spatial cross-validation strategy.
 
 \begin{figure}[H]
 \centering
@@ -348,15 +319,13 @@ As we can see, there are large variations in the performance of the GLM dependin
 \begin{subfigure}{0.48\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Images/GLM_spatial/GLM_R2_random_vs_spatial.png}
-    \caption{\(R^2\)}
-    \label{fig:glm-r2-random-vs-spatial}
+    \caption{\(R^2\)}\label{fig:glm-r2-random-vs-spatial}
 \end{subfigure}
 \hfill
 \begin{subfigure}{0.48\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Images/GLM_spatial/GLM_RMSE_random_vs_spatial.png}
-    \caption{RMSE}
-    \label{fig:glm-rmse-random-vs-spatial}
+    \caption{RMSE}\label{fig:glm-rmse-random-vs-spatial}
 \end{subfigure}
 
 \vspace{0.5cm}
@@ -364,23 +333,20 @@ As we can see, there are large variations in the performance of the GLM dependin
 \begin{subfigure}{0.48\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Images/GLM_spatial/GLM_mape_random_vs_spatial.png}
-    \caption{MAPE}
-    \label{fig:glm-mape-random-vs-spatial}
+    \caption{MAPE}\label{fig:glm-mape-random-vs-spatial}
 \end{subfigure}
 \hfill
 \begin{subfigure}{0.48\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Images/GLM_spatial/GLM_smape_random_vs_spatial.png}
-    \caption{SMAPE}
-    \label{fig:glm-smape-random-vs-spatial}
+    \caption{SMAPE}\label{fig:glm-smape-random-vs-spatial}
 \end{subfigure}
 
-\caption{Comparison of GLM performance metrics across random and spatial cross-validation strategies.}
-\label{fig:glm-cv-strategy-comparison-metrics}
+\caption{Comparison of GLM performance metrics across random and spatial cross-validation strategies.}\label{fig:glm-cv-strategy-comparison-metrics}
 \end{figure}
 
-\subsubsection{CatBoost}\label{subsubsection:catboost-cv-comparison}
-Second, we evaluate a comparison of random vs. spatial cross-validation strategies applied to the CatBoost model. We look at a distribution of CatBoost's predicted species richness distribution compared to the observed species richness distribution across the test sets for both random and spatial cross-validation strategies. This is shown in Figure~\ref{fig:catboost-predicted-vs-observed-distribution-across-cv-strategies} and we can see that the random cross-validation trained model is closer in mean to the true distribution and is more spread out compared to the spatial cross-validation trained model. The mean and standard deviation for the random cross-validation strategy are \(18.56\) and \(4.04\) respectively, while the mean and standard deviation for the spatial cross-validation strategy are \(17.99\) and \(3.22\) respectively, which the true mean and standard deviation are \(18.54\) and \(6.10\) respectively.
+\subsubsection{CatBoost cross-validation comparison}\label{subsubsection:catboost-cv-comparison}
+The same cross-validation comparison was conducted for the CatBoost model. The distribution of CatBoost's predicted species richness values compared to the observed species richness distribution across the test sets for both random and spatial cross-validation strategies is shown in Figure~\ref{fig:catboost-predicted-vs-observed-distribution-across-cv-strategies}. The CatBoost model trained and evaluated under random cross-validation has a mean closer to the true distribution and is more spread out compared to the spatial cross-validation trained and evaluated  model. The mean and standard deviation for the random cross-validation strategy are \(18.56\) and \(4.04\) respectively, while the mean and standard deviation for the spatial cross-validation strategy are \(17.99\) and \(3.22\) respectively, while the true mean and standard deviation are \(18.54\) and \(6.10\) respectively.
 
 \begin{figure}[H]
 \centering
@@ -388,22 +354,19 @@ Second, we evaluate a comparison of random vs. spatial cross-validation strategi
 \begin{subfigure}{0.48\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Images/CatBoost/CatBoost_random_hists.png}
-    \caption{Distribution of observed species richness and predicted species richness across the test sets for the random cross-validation strategy.}
-    \label{fig:CatBoost-random-cv-predicted-vs-observed-distribution}
+    \caption{Distribution of observed species richness and predicted species richness across the test sets for the random cross-validation strategy.}\label{fig:CatBoost-random-cv-predicted-vs-observed-distribution}
 \end{subfigure}
 \hfill
 \begin{subfigure}{0.48\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Images/CatBoost/CatBoost_spatial_hists.png}
-    \caption{Distribution of observed species richness and predicted species richness across the test sets for the spatial cross-validation strategy.}
-    \label{fig:CatBoost-spatial-cv-predicted-vs-observed-distribution}
+    \caption{Distribution of observed species richness and predicted species richness across the test sets for the spatial cross-validation strategy.}\label{fig:CatBoost-spatial-cv-predicted-vs-observed-distribution}
 \end{subfigure}
 
-\caption{Comparison between the distribution of observed species richness and predicted species richness between 10-fold random and spatial cross-validation strategies for the CatBoost model.}
-\label{fig:catboost-predicted-vs-observed-distribution-across-cv-strategies}
+\caption{Comparison between the distribution of observed species richness and predicted species richness between 10-fold random and spatial cross-validation strategies for the CatBoost model.}\label{fig:catboost-predicted-vs-observed-distribution-across-cv-strategies}
 \end{figure}
 
-If we also look at the plots of the observed vs. predicted species richness across the test sets for both random and spatial cross-validation strategies in Figure~\ref{fig:catboost-observed-vs-predicted-across-cv-strategies} we can further see a difference in performance across the two strategies. The random cross-validation strategy demonstrates a more defined positive trend; whereas, the spatial cross-validation strategy does not demonstrates as strong of a trend and the data points are more spread out across the range of observed species richness values.
+Looking at the plots of observed vs. predicted species richness values for both random and spatial cross-validation strategies in Figure~\ref{fig:catboost-observed-vs-predicted-across-cv-strategies} the difference in performance is more pronounced. The random cross-validation strategy demonstrates a more defined positive trend; whereas, the spatial cross-validation strategy displays a weaker trend. Furthermore, the data points are more spread out across the range of observed species richness values under the spatial cross-validation strategy and there is a larger deviation from the 1:1 line.
 
 \begin{figure}[H]
 \centering
@@ -411,7 +374,7 @@ If we also look at the plots of the observed vs. predicted species richness acro
 \begin{subfigure}{0.48\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Images/CatBoost/CatBoost_calibration_plot_random.png}
-    \caption{Observed species richness vs. predicted species richness for the random cross-validation strategy \(R^2 = 0.376\).}
+    \caption{Observed species richness vs. predicted species richness for the random cross-validation strategy. Pooled \(R^2 = 0.376\).}
     \label{fig:CatBoost-random-cv-observed-vs-predicted-plots}
 \end{subfigure}
 \hfill
@@ -426,7 +389,7 @@ If we also look at the plots of the observed vs. predicted species richness acro
 \label{fig:catboost-observed-vs-predicted-across-cv-strategies}
 \end{figure}
 
-Table~\ref{tab:catboost-cv-strategy-comparison} displays the performance comparison across the metrics along with weighted mean, weighted standard deviation, and pooled metrics. We can see that the CatBoost model performs better across the random cross-validation strategy compared to the spatial cross-validation strategy for all metrics again in line with what we expect \parencite{roberts2017}. However, we see a very large drop in \(R^2\) values when moving from random to spatial cross-validation strategies. The plots in Figure~\ref{fig:catboost-observed-vs-predicted-across-cv-strategies} confirm this as there is a very noticeable drop in the strength of the positive trend between observed and predicted species richness values when moving from random to spatial cross-validation strategies. We also observe negative \(R^2\) values in the spatial cross-validation strategy which can occur under low test set variance and extreme predictions far from the test mean, which is likely the case here due to the spatial cross-validation strategy.
+Table~\ref{tab:catboost-cv-strategy-comparison} reports the mean, standard deviation, the weighted mean, weighted standard deviation, median, interquartile range, and pooled metrics under both cross-validation strategies. The CatBoost model performs better across the random cross-validation strategy compared to the spatial cross-validation strategy for all metrics. Notably, there is a very large drop in \(R^2\) values when moving from random to spatial cross-validation strategies. The plots in Figure~\ref{fig:catboost-observed-vs-predicted-across-cv-strategies} confirm this as there is a very noticeable reduction in the strength of the positive trend between observed and predicted species richness values when moving from random to spatial cross-validation strategies. We also observe negative \(R^2\) values in the spatial cross-validation strategy which can occur under low test set variance and extreme predictions far from the test mean.
 
 \begin{table}[ht]
 \centering
@@ -459,7 +422,7 @@ Table~\ref{tab:catboost-cv-strategy-comparison} displays the performance compari
 \end{tabular}
 \end{table}
 
-If we look at a comparison of the \(R^2\), RMSE, MAPE, and SMAPE box-plots across the random and spatial cross-validation strategies in Figure~\ref{fig:catboost-cv-strategy-comparison-rmse} we can see a clear difference in the median and interquartile range of the models. Notability the spread of the data under spatial cross validation is significantly higher. Model performance drops across the spatial cross-validation strategy compared to the random cross-validation strategy across all metrics. This is again most prominent in the \(R^2\) values in Figure\ref{fig:catboost-r2-random-vs-spatial}, where the random cross validation box-plot barely fits on the screen with the spatial cross-validation box-plot having a much wider range of \(R^2\) values that extend far into negative values.
+The \(R^2\), RMSE, MAPE, and SMAPE box-plots are presented in Figure~\ref{fig:catboost-cv-strategy-comparison-metrics} and a clear difference in the median and interquartile range of the models under the two different cross-validation strategies is evident. Notability the spread of the data under spatial cross validation is significantly higher. Model performance drops across the spatial cross-validation strategy compared to the random cross-validation strategy across all metrics. This is again most prominent in the \(R^2\) values in Figure\ref{fig:catboost-r2-random-vs-spatial}, where the random cross validation box-plot is compressed relative to the spatial cross-validation box-plot having a much wider range of \(R^2\) values that extend far into negative values. Similar structures in MAPE and SMAPE are present where the random cross-validation strategy has a significantly smaller interquartile range and median compared to the spatial cross-validation strategy. RMSE further demonstartes that random cross-validation has a smaller interquartile range and median compared to the spatial cross-validation strategy. Overall, the performance of the CatBoost model drops across all metrics when moving from random to spatial cross-validation strategies.
 
 \begin{figure}[H]
 \centering
@@ -467,15 +430,13 @@ If we look at a comparison of the \(R^2\), RMSE, MAPE, and SMAPE box-plots acros
 \begin{subfigure}{0.48\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Images/CatBoost/CatBoost_r2_random_vs_spatial.png}
-    \caption{\(R^2\)}
-    \label{fig:catboost-r2-random-vs-spatial}
+    \caption{\(R^2\)}\label{fig:catboost-r2-random-vs-spatial}
 \end{subfigure}
 \hfill
 \begin{subfigure}{0.48\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Images/CatBoost/CatBoost_RMSE_random_vs_spatial.png}
-    \caption{RMSE}
-    \label{fig:catboost-rmse-random-vs-spatial}
+    \caption{RMSE}\label{fig:catboost-rmse-random-vs-spatial}
 \end{subfigure}
 
 \vspace{0.5cm}
@@ -483,21 +444,323 @@ If we look at a comparison of the \(R^2\), RMSE, MAPE, and SMAPE box-plots acros
 \begin{subfigure}{0.48\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Images/CatBoost/CatBoost_mape_random_vs_spatial.png}
-    \caption{MAPE}
-    \label{fig:catboost-mape-random-vs-spatial}
+    \caption{MAPE}\label{fig:catboost-mape-random-vs-spatial}
 \end{subfigure}
 \hfill
 \begin{subfigure}{0.48\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Images/CatBoost/CatBoost_smape_random_vs_spatial.png}
-    \caption{SMAPE}
-    \label{fig:catboost-smape-random-vs-spatial}
+    \caption{SMAPE}\label{fig:catboost-smape-random-vs-spatial}
 \end{subfigure}
 
-\caption{Comparison of CatBoost performance metrics across random and spatial cross-validation strategies.}
-\label{fig:catboost-cv-strategy-comparison-metrics}
-\label{fig:catboost-cv-strategy-comparison-rmse}
+\caption{Comparison of CatBoost performance metrics across random and spatial cross-validation strategies.}\label{fig:catboost-cv-strategy-comparison-metrics}
 \end{figure}
 
-\newpage
-\subsection{Limited data scenarios}\label{sec:research-question-3}
+
+\subsection{Data-limited scenarios}\label{subsec:research-question-3}
+This section addresses Research Question 3, bby evaluating how models perform across data-limited scenarios. This question is relavant because biodiversity datasets often do not satisfy data requirements, and data availability can strongly influence model performance \parencite{pichler2023}. Exploring model performance in data limited scenarios is therefore of interest to researchers as it can help determine which models are more robust to data limitations and can help guide model selection. The performance of GLM and CatBoost are compared again across different limited data scenarios. We train each model on total dataset sizes of \(100\%\) to \(10\%\) decreasing in increments of \(10\%\). To obtain these smaller datasets, we randomly sample a subset of the 2020 UKBMS dataset described in Section~\ref{subsubsec:data}. The intra-model evaluation is carried out across 10-fold random cross-validation for each dataset size.
+
+\subsubsection{GLM data-limited scenarios comparison}\label{subsubsection:glm-data-limited-scenarios}
+
+Figure~\ref{fig:glm-data-limited-scenarios-predicted-vs-observed-distribution} shows that the GLM broadly captures the distribution of observed species richness until we get down to the very low data scenarios around \(20\%\) and \(10\%\). In the lower data scenarios, there are noticeable gaps in the observed distribution that are not accounted for in the predicted distribution. Furthermore, Figure~\ref{fig:glm-data-limited-scenarios-predicted-vs-observed-plots} shows that the GLM captures the relationship between observed and predicted species richness across all dataset sizes until we get down to the very low data scenarios again around \(20\%\) and \(10\%\). Before these low data scenarios, a positive trend in the observed vs. predicted plots can be seen as the points are closer to the 1:1 line and increase as observed species richness increases. However, in the \(20\%\) and \(10\%\) data scenarios, the points are more spread out across the range of observed species richness values and there is a larger deviation from the 1:1 line.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Images/GLM_limited/all_distribution_plots.png}
+    \caption{Distribution of observed species richness and predicted species richness across all dataset sizes for GLM models trained on different dataset sizes.}
+    \label{fig:glm-data-limited-scenarios-predicted-vs-observed-distribution}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Images/GLM_limited/all_calibration_plots.png}
+    \caption{Comparison of observed species richness and predicted species richness across all dataset sizes for GLM models trained on different dataset sizes.}
+    \label{fig:glm-data-limited-scenarios-predicted-vs-observed-plots}
+\end{figure}
+
+Table~\ref{tab:glm-data-size-random-cv-test} presents the performance comparison across the calculated metrics and across each data scenario for the GLM model. Model performance stays relatively stable across the different data-limited scenarios, but once we drop below \(50\%\) or below \(\sim682\) sites we see a drop in performance in \(R^2\), RMSE, and MAPE values. Surprisingly the lowest MAPE value was attained on the \(10\%\) dataset size, althought this should be interpreted with caution as the standard deviation is high and this trend is not evident in the other metrics.
+
+\begin{table}[H]
+\centering
+\caption{GLM Model performance across varying dataset-size scenarios.}
+\label{tab:glm-data-size-random-cv-test}
+
+\begin{subtable}{0.48\textwidth}
+\centering
+\small
+\caption{\(R^2\)}
+\label{tab:r2-glm-data-size-random-cv}
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{Dataset size} & \textbf{Mean} & \textbf{Std.} & \textbf{Median} & \textbf{IQR} \\
+\midrule
+100\% & \textbf{0.291} & \textbf{0.069} & 0.281 & 0.118 \\
+90\%  & 0.277 & 0.076 & 0.278 & \textbf{0.065} \\
+80\%  & 0.279 & 0.099 & 0.267 & 0.140 \\
+70\%  & 0.285 & 0.110 & \textbf{0.284} & 0.072 \\
+60\%  & 0.242 & 0.151 & 0.277 & 0.088 \\
+50\%  & 0.246 & 0.093 & 0.260 & 0.097 \\
+40\%  & 0.195 & 0.151 & 0.146 & 0.250 \\
+30\%  & 0.172 & 0.138 & 0.219 & 0.165 \\
+20\%  & 0.033 & 0.309 & 0.144 & 0.521 \\
+10\%  & -0.138 & 0.387 & -0.025 & 0.545 \\
+\bottomrule
+\end{tabular}
+\end{subtable}
+\hfill
+\begin{subtable}{0.48\textwidth}
+\centering
+\small
+\caption{RMSE}
+\label{tab:rmse-glm-data-size-random-cv}
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{Dataset size} & \textbf{Mean} & \textbf{Std.} & \textbf{Median} & \textbf{IQR} \\
+\midrule
+100\% & 5.110 & 0.434 & 5.184 & 0.431 \\
+90\%  & 5.116 & \textbf{0.301} & 5.062 & 0.435 \\
+80\%  & 5.072 & 0.564 & 5.003 & 0.727 \\
+70\%  & \textbf{5.050} & 0.575 & \textbf{4.919} & 0.580 \\
+60\%  & 5.127 & 0.469 & 5.106 & 0.408 \\
+50\%  & 5.199 & 0.327 & 5.155 & 0.458 \\
+40\%  & 5.339 & 0.784 & 5.320 & \textbf{0.376} \\
+30\%  & 5.498 & 0.574 & 5.539 & 0.813 \\
+20\%  & 5.662 & 0.981 & 5.576 & 1.213 \\
+10\%  & 5.747 & 1.431 & 5.534 & 1.289 \\
+\bottomrule
+\end{tabular}
+\end{subtable}
+
+\vspace{1em}
+
+\begin{subtable}{0.48\textwidth}
+\centering
+\small
+\caption{MAPE}
+\label{tab:mape-glm-data-size-random-cv}
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{Dataset size} & \textbf{Mean} & \textbf{Std.} & \textbf{Median} & \textbf{IQR} \\
+\midrule
+100\% & 0.446 & 0.161 & 0.463 & 0.196 \\
+90\%  & 0.443 & 0.137 & 0.424 & \textbf{0.090} \\
+80\%  & 0.439 & 0.199 & 0.449 & 0.099 \\
+70\%  & 0.434 & \textbf{0.108} & 0.454 & 0.124 \\
+60\%  & 0.430 & 0.137 & 0.413 & 0.166 \\
+50\%  & 0.414 & 0.184 & 0.391 & 0.220 \\
+40\%  & 0.458 & 0.187 & 0.462 & 0.311 \\
+30\%  & 0.522 & 0.226 & 0.531 & 0.286 \\
+20\%  & 0.502 & 0.294 & 0.396 & 0.449 \\
+10\%  & \textbf{0.381} & 0.307 & \textbf{0.279} & 0.213 \\
+\bottomrule
+\end{tabular}
+\end{subtable}
+\hfill
+\begin{subtable}{0.48\textwidth}
+\centering
+\small
+\caption{SMAPE}
+\label{tab:smape-glm-data-size-random-cv}
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{Dataset size} & \textbf{Mean} & \textbf{Std.} & \textbf{Median} & \textbf{IQR} \\
+\midrule
+100\% & 0.239 & 0.024 & 0.240 & 0.023 \\
+90\%  & 0.237 & \textbf{0.019} & 0.235 & \textbf{0.014} \\
+80\%  & 0.234 & 0.029 & 0.238 & 0.026 \\
+70\%  & \textbf{0.231} & 0.031 & \textbf{0.227} & 0.037 \\
+60\%  & 0.234 & 0.026 & 0.239 & 0.026 \\
+50\%  & 0.234 & 0.027 & 0.228 & 0.025 \\
+40\%  & 0.244 & 0.034 & 0.241 & 0.032 \\
+30\%  & 0.251 & 0.038 & 0.261 & 0.063 \\
+20\%  & 0.254 & 0.045 & 0.240 & 0.048 \\
+10\%  & 0.248 & 0.053 & 0.242 & 0.071 \\
+\bottomrule
+\end{tabular}
+\end{subtable}
+
+\end{table}
+
+\begin{figure}[H]
+\centering
+
+\begin{subfigure}{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/GLM_limited/r2-comparison.png}
+    \caption{\(R^2\)}\label{fig:glm-r2-limited}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/GLM_limited/rmse-comparison.png}
+    \caption{RMSE}\label{fig:glm-rmse-limited}
+\end{subfigure}
+
+\vspace{0.5cm}
+
+\begin{subfigure}{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/GLM_limited/mape-comparison.png}
+    \caption{MAPE}\label{fig:glm-mape-limited}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/GLM_limited/smape-comparison.png}
+    \caption{SMAPE}\label{fig:glm-smape-limited}
+\end{subfigure}
+
+\caption{Comparison of GLM performance metrics across data-limited scenarios from \(100\%\) to \(10\%\) in \(10\%\) increments}\label{fig:glm-data-limited-comparison-metrics}
+\end{figure}
+
+Figure~\ref{fig:glm-data-limited-comparison-metrics} shows, visually, that GLM performance across the different data-limited scenarios is relatively stable across most dataset size scenarios. There is a noticeable drop in performance with \(R^2\) in the very low data scenarios around \(20\%\) and \(10\%\). The medians of RMSE, MAPE, and SMAPE stay relatively stable, especially on dataset sizes of \(50\%\) or higher, but the interquartile ranges generally increase as we get to the lower dataset sizes scenarios. The range of values also increases more dramatically as we get to the lower dataset sizes scenarios. Overall, the performance of the GLM model is relatively stable across the different data-limited scenarios until we get down to the very low data scenarios around \(20\%\) and \(10\%\) where there is a noticeable drop in performance with \(R^2\) and an stark increase in variability across all metrics.
+
+\subsubsection{CatBoost data-limited scenarios comparison}\label{subsubsection:catboost-data-limited-scenarios}
+This subsection evaluates CatBoost performance across the same data-limited scenarios by comparing observed and predicted species richness for each dataset size. Figure~\ref{fig:catboost-data-limited-scenarios-predicted-vs-observed-distribution} displays the observed vs. predicted species richness distributions. CatBoost does a good job capturing the distribution of observed species richness. Even at the low data scenarios of \(20\%\) and \(10\%\) the model retains the distribution of observed species richness. Plots of observed vs. predicted species richness are shown in Figure~\ref{fig:catboost-data-limited-scenarios-predicted-vs-observed-plots}, and these further reinforce the notion that CatBoost captures the relationship between observed and predicted species richness across all dataset sizes. The positive trend between observed and predicted species richness values, while weak in the very low data scenarios, is present throughout as the data points are near the 1:1 line.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Images/CatBoost_limited/all_distribution_plots.png}
+    \caption{Distribution of observed species richness and predicted species richness across all dataset sizes for CatBoost models trained on different dataset sizes.}\label{fig:catboost-data-limited-scenarios-predicted-vs-observed-distribution}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Images/CatBoost_limited/all_calibration_plots.png}
+    \caption{Comparison of observed species richness and predicted species richness across all dataset sizes for CatBoost models trained on different dataset sizes.}\label{fig:catboost-data-limited-scenarios-predicted-vs-observed-plots}
+\end{figure}
+
+In Table~\ref{tab:catboost-data-size-random-cv-test} the performance comparisons for the calculated metrics across each data-limited scenario are shown. The performance of the model steadily decreases for \(R^2\) and RMSE as dataset size is reduced. SMAPE values stay relatively stable across the different data-limited scenarios, and MAPE values only increase sharply after lower data scenarios past \(30\%\), but the best mean MAPE value was attained on the \(10\%\) dataset size. Overall, the performance of the CatBoost model decreases across the different data-limited scenarios, with a more pronounced decrease in \(R^2\) and RMSE values compared to MAPE and SMAPE values. Additionally, the standard deviation and interquartile range increase as dataset size decreases.
+\begin{table}[ht]
+\centering
+\caption{CatBoost performance across varying dataset-size.}
+\label{tab:catboost-data-size-random-cv-test}
+\begin{subtable}{0.48\textwidth}
+\centering
+\small
+\caption{\(R^2\)}
+\label{tab:r2-catboost-data-size-random-cv}
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{Dataset size} & \textbf{Mean} & \textbf{Std.} & \textbf{Median} & \textbf{IQR} \\
+\midrule
+100\% & \textbf{0.374} & 0.083 & \textbf{0.397} & 0.122 \\
+90\%  & 0.351 & 0.063 & 0.362 & \textbf{0.036} \\
+80\%  & 0.327 & \textbf{0.051} & 0.308 & 0.076 \\
+70\%  & 0.337 & 0.082 & 0.307 & 0.111 \\
+60\%  & 0.270 & 0.195 & 0.347 & 0.150 \\
+50\%  & 0.294 & 0.090 & 0.289 & 0.078 \\
+40\%  & 0.285 & 0.122 & 0.252 & 0.209 \\
+30\%  & 0.219 & 0.097 & 0.240 & 0.115 \\
+20\%  & 0.120 & 0.265 & 0.221 & 0.402 \\
+10\%  & 0.204 & 0.257 & 0.164 & 0.414 \\
+\bottomrule
+\end{tabular}
+\end{subtable}
+\hfill
+\begin{subtable}{0.48\textwidth}
+\centering
+\small
+\caption{RMSE}
+\label{tab:rmse-catboost-data-size-random-cv}
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{Dataset size} & \textbf{Mean} & \textbf{Std.} & \textbf{Median} & \textbf{IQR} \\
+\midrule
+100\% & \textbf{4.800} & 0.482 & 4.813 & \textbf{0.343} \\
+90\%  & 4.850 & \textbf{0.333} & 4.804 & 0.351 \\
+80\%  & 4.901 & 0.387 & 4.963 & 0.402 \\
+70\%  & 4.869 & 0.489 & 4.817 & 0.423 \\
+60\%  & 5.015 & 0.569 & 4.816 & 0.753 \\
+50\%  & 5.034 & 0.371 & 5.044 & 0.488 \\
+40\%  & 5.030 & 0.648 & 4.927 & 0.481 \\
+30\%  & 5.346 & 0.507 & 5.262 & 0.851 \\
+20\%  & 5.438 & 1.048 & 5.229 & 1.847 \\
+10\%  & 4.801 & 1.054 & \textbf{4.643} & 0.725 \\
+\bottomrule
+\end{tabular}
+\end{subtable}
+
+\vspace{1em}
+
+\begin{subtable}{0.48\textwidth}
+\centering
+\small
+\caption{MAPE}
+\label{tab:mape-catboost-data-size-random-cv}
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{Dataset size} & \textbf{Mean} & \textbf{Std.} & \textbf{Median} & \textbf{IQR} \\
+\midrule
+100\% & 0.425 & 0.160 & 0.430 & 0.177 \\
+90\%  & 0.427 & 0.151 & 0.402 & 0.122 \\
+80\%  & 0.434 & 0.192 & 0.427 & \textbf{0.085} \\
+70\%  & 0.427 & \textbf{0.102} & 0.434 & 0.096 \\
+60\%  & 0.438 & 0.149 & 0.418 & 0.223 \\
+50\%  & 0.412 & 0.184 & 0.389 & 0.252 \\
+40\%  & 0.447 & 0.195 & 0.486 & 0.294 \\
+30\%  & 0.533 & 0.253 & 0.546 & 0.346 \\
+20\%  & 0.506 & 0.333 & 0.384 & 0.522 \\
+10\%  & \textbf{0.308} & 0.135 & \textbf{0.294} & 0.201 \\
+\bottomrule
+\end{tabular}
+\end{subtable}
+\hfill
+\begin{subtable}{0.48\textwidth}
+\centering
+\small
+\caption{SMAPE}
+\label{tab:smape-catboost-data-size-random-cv}
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{Dataset size} & \textbf{Mean} & \textbf{Std.} & \textbf{Median} & \textbf{IQR} \\
+\midrule
+100\% & 0.227 & 0.024 & 0.226 & 0.021 \\
+90\%  & 0.228 & \textbf{0.019} & 0.226 & 0.019 \\
+80\%  & 0.228 & 0.022 & 0.235 & \textbf{0.015} \\
+70\%  & \textbf{0.224} & 0.027 & \textbf{0.222} & 0.039 \\
+60\%  & 0.231 & 0.028 & 0.230 & 0.032 \\
+50\%  & 0.231 & 0.028 & 0.230 & 0.033 \\
+40\%  & 0.232 & 0.032 & 0.235 & 0.041 \\
+30\%  & 0.246 & 0.035 & 0.246 & 0.053 \\
+20\%  & 0.251 & 0.059 & 0.247 & 0.093 \\
+10\%  & 0.226 & 0.052 & 0.232 & 0.057 \\
+\bottomrule
+\end{tabular}
+\end{subtable}
+
+\end{table}
+
+\begin{figure}[H]
+\centering
+
+\begin{subfigure}{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/CatBoost_limited/r2-comparison.png}
+    \caption{\(R^2\)}\label{fig:cat-r2-limited}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/CatBoost_limited/rmse-comparison.png}
+    \caption{RMSE}\label{fig:cat-rmse-limited}
+\end{subfigure}
+
+\vspace{0.5cm}
+
+\begin{subfigure}{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/CatBoost_limited/mape-comparison.png}
+    \caption{MAPE}\label{fig:cat-mape-limited}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Images/CatBoost_limited/smape-comparison.png}
+    \caption{SMAPE}\label{fig:cat-smape-limited}
+\end{subfigure}
+
+\caption{Comparison of CatBoost performance metrics across data-limited scenarios from \(100\%\) to \(10\%\) in \(10\%\) increments}\label{fig:cat-data-limited-comparison-metrics}
+\end{figure}
+
+Figure~\ref{fig:cat-data-limited-comparison-metrics} visualizes the steady deterioration of performance of \(R^2\) values as the dataset size decreases, and this deterioration is also evident in the RMSE. Most noticeably the interquartile ranges of all metrics increase as the dataset size decreases, except for MAPE. MAPE seems to be more stable and not increase as drastically as the other metrics in terms of interquartile range as the dataset size decreases. Overall, the performance of the CatBoost model decreases across the different data-limited scenarios, with a more pronounced decrease in median \(R^2\) and pronounced increase in median RMSE values compared to the increases in median MAPE and SMAPE. There is also an increase in the standard deviation and interquartile range as dataset size decreases.

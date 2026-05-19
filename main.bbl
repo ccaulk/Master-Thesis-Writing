@@ -6582,6 +6582,95 @@
       \verb https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecm.1486
       \endverb
     \endentry
+    \entry{vargas2024}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=478657cc15b926a6557eaa77bd2ba82b}{%
+           family={Vargas},
+           familyi={V\bibinitperiod},
+           given={Carlos\bibnamedelima A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e61a99cb36de1a5265171b44ff17216f}{%
+           family={Bottin},
+           familyi={B\bibinitperiod},
+           given={Marius},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=45e0d5e1497d9c4397d3caa76f7d21dd}{%
+           family={Sarkinen},
+           familyi={S\bibinitperiod},
+           given={Tiina},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4bbdc134c349162a7ea04d2d64785555}{%
+           family={Richardson},
+           familyi={R\bibinitperiod},
+           given={James\bibnamedelima E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=18f12b3d54278a504c249c405ac14c3e}{%
+           family={Celis},
+           familyi={C\bibinitperiod},
+           given={Marcela},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=67b46daafc971c6f189787070071f9d8}{%
+           family={Villanueva},
+           familyi={V\bibinitperiod},
+           given={Boris},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=81068181cf055dde755f641a0cc28062}{%
+           family={Sanchez},
+           familyi={S\bibinitperiod},
+           given={Adriana},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{18fe11a5306d847de8ee4be2dae062f8}
+      \strng{fullhash}{2d179ef87af5df1d66215f0bb25997ca}
+      \strng{fullhashraw}{2d179ef87af5df1d66215f0bb25997ca}
+      \strng{bibnamehash}{18fe11a5306d847de8ee4be2dae062f8}
+      \strng{authorbibnamehash}{18fe11a5306d847de8ee4be2dae062f8}
+      \strng{authornamehash}{18fe11a5306d847de8ee4be2dae062f8}
+      \strng{authorfullhash}{2d179ef87af5df1d66215f0bb25997ca}
+      \strng{authorfullhashraw}{2d179ef87af5df1d66215f0bb25997ca}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{24682659}
+      \field{journaltitle}{Plant Diversity}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shortjournal}{Plant Diversity}
+      \field{shorttitle}{How to fill the biodiversity data gap}
+      \field{title}{How to fill the biodiversity data gap: Is it better to invest in fieldwork or curation?}
+      \field{urlday}{19}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{46}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{39\bibrangedash 48}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.pld.2023.06.003
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\caleb\\Zotero\\storage\\ABG3NAIA\\Vargas et al. - 2024 - How to fill the biodiversity data gap Is it better to invest in fieldwork or curation.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S2468265923000823
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S2468265923000823
+      \endverb
+    \endentry
     \entry{vecera_alpha_2019}{article}{}{}
       \name{author}{31}{}{%
         {{un=0,uniquepart=base,hash=114433e295b5c910748aa9ed3359afc2}{%

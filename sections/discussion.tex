@@ -5,9 +5,11 @@ We designed the pipeline to be flexible and adaptable to different types of biod
 
 Training-set performance was also inspected to assess potential overfitting. Large differences between training and test performance were observed for some more flexible models, particularly CatBoost and Random Forest, indicating stronger fit to the training data than to held-out observations.
 
+ This is in line with much of the literature that shows that there is no single best model for all problems \parencite{mondal2021, cai2023, baggstrom2025}. The visual checks in Figures~\ref{fig:model-species-richness-distributions} and \ref{fig:model-calibration-plots} also support the conclusion that there is no single best model across all metrics, but machine learning models, particularly CatBoost and Random Forest, perform better than the statistical models in terms of \(R^2\), RMSE, and SMAPE, while all models perform similarly in terms of MAPE.
 
 Notably, the \(R^2\) values from random to spatial cross-validation differ more than between random and spatial cross-validation for the GLM in Table~\ref{tab:glm-cv-strategy-comparison}. The same pattern of CatBoost's performance dropping more than the GLM's performance when switching from random to spatial cross-validation is observed across all metrics. 
 
+While there has been growth in the amount of data available for biodiversity modeling \parencite{wuest2020}, around 40\%-80\% of records are discarded due to poor data quality deficiencies\parencite{vargas2024}. While data curation can help with this issue, this takes time and models will still be developed in the meantime \parencite{vargas2024}.
 
 For spatial vs random cross validation we 
 \subsection{Ethical Discussion}\label{sec:ethics}

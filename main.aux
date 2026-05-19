@@ -1077,256 +1077,319 @@
 \@writefile{toc}{\contentsline {section}{\numberline {4}Experiments}{30}{section.4}\protected@file@percent }
 \newlabel{sec:Experiments}{{4}{30}{Experiments}{section.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Model class comparison}{30}{subsection.4.1}\protected@file@percent }
-\newlabel{sec:research-question-1}{{4.1}{30}{Model class comparison}{subsection.4.1}{}}
+\newlabel{subsec:research-question-1}{{4.1}{30}{Model class comparison}{subsection.4.1}{}}
 \abx@aux@page{336}{30}
 \abx@aux@page{337}{30}
 \abx@aux@page{338}{30}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Distribution of species richness across the \(1,363\) sites in the 2020 UKBMS dataset.}}{30}{figure.caption.10}\protected@file@percent }
 \newlabel{fig:species-richness-distribution}{{6}{30}{Distribution of species richness across the \(1,363\) sites in the 2020 UKBMS dataset}{figure.caption.10}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Random 10-fold cross-validation test folds performance summaries for each model class across \(R^2\), MAPE, SMAPE, and RMSE. Bold values indicate the best value within each metric table. RF = Random Forets, CAT = CatBoost, NN = Feed-Forward Neural Network.}}{31}{table.caption.11}\protected@file@percent }
-\newlabel{tab:random-cv-test-metric-tables}{{4}{31}{Random 10-fold cross-validation test folds performance summaries for each model class across \(R^2\), MAPE, SMAPE, and RMSE. Bold values indicate the best value within each metric table. RF = Random Forets, CAT = CatBoost, NN = Feed-Forward Neural Network}{table.caption.11}{}}
-\newlabel{tab:r2-random-cv-test}{{4a}{31}{\(R^2\)}{table.caption.11}{}}
-\newlabel{sub@tab:r2-random-cv-test}{{a}{31}{\(R^2\)}{table.caption.11}{}}
-\newlabel{tab:rmse-random-cv-test}{{4b}{31}{RMSE}{table.caption.11}{}}
-\newlabel{sub@tab:rmse-random-cv-test}{{b}{31}{RMSE}{table.caption.11}{}}
-\newlabel{tab:mape-random-cv-test}{{4c}{31}{MAPE}{table.caption.11}{}}
-\newlabel{sub@tab:mape-random-cv-test}{{c}{31}{MAPE}{table.caption.11}{}}
-\newlabel{tab:smape-random-cv-test}{{4d}{31}{SMAPE: GLM true std = \(0.023841\), RF true median = \(0.226459\), CAT true std = \(0.024274\) and true median = \(0.22617\)}{table.caption.11}{}}
-\newlabel{sub@tab:smape-random-cv-test}{{d}{31}{SMAPE: GLM true std = \(0.023841\), RF true median = \(0.226459\), CAT true std = \(0.024274\) and true median = \(0.22617\)}{table.caption.11}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \(R^2\) across random cross-validation folds.}}{31}{figure.caption.12}\protected@file@percent }
-\newlabel{fig:random-cv-r2}{{7}{31}{\(R^2\) across random cross-validation folds}{figure.caption.12}{}}
+\newlabel{fig:glm-dist}{{7a}{32}{GLM}{figure.caption.11}{}}
+\newlabel{sub@fig:glm-dist}{{a}{32}{GLM}{figure.caption.11}{}}
+\newlabel{fig:gam-dist}{{7b}{32}{GAM}{figure.caption.11}{}}
+\newlabel{sub@fig:gam-dist}{{b}{32}{GAM}{figure.caption.11}{}}
+\newlabel{fig:randomforest-dist}{{7c}{32}{Random Forest}{figure.caption.11}{}}
+\newlabel{sub@fig:randomforest-dist}{{c}{32}{Random Forest}{figure.caption.11}{}}
+\newlabel{fig:catboost-dist}{{7d}{32}{CatBoost}{figure.caption.11}{}}
+\newlabel{sub@fig:catboost-dist}{{d}{32}{CatBoost}{figure.caption.11}{}}
+\newlabel{fig:ffnn-dist}{{7e}{32}{FFNN}{figure.caption.11}{}}
+\newlabel{sub@fig:ffnn-dist}{{e}{32}{FFNN}{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Observed and predicted species richness distributions for the five models, arranged in the order GLM, GAM, Random Forest, CatBoost, and FFNN.}}{32}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:model-species-richness-distributions}{{7}{32}{Observed and predicted species richness distributions for the five models, arranged in the order GLM, GAM, Random Forest, CatBoost, and FFNN}{figure.caption.11}{}}
+\newlabel{fig:glm-calibration}{{8a}{33}{GLM}{figure.caption.12}{}}
+\newlabel{sub@fig:glm-calibration}{{a}{33}{GLM}{figure.caption.12}{}}
+\newlabel{fig:gam-calibration}{{8b}{33}{GAM}{figure.caption.12}{}}
+\newlabel{sub@fig:gam-calibration}{{b}{33}{GAM}{figure.caption.12}{}}
+\newlabel{fig:randomforest-calibration}{{8c}{33}{Random Forest}{figure.caption.12}{}}
+\newlabel{sub@fig:randomforest-calibration}{{c}{33}{Random Forest}{figure.caption.12}{}}
+\newlabel{fig:catboost-calibration}{{8d}{33}{CatBoost}{figure.caption.12}{}}
+\newlabel{sub@fig:catboost-calibration}{{d}{33}{CatBoost}{figure.caption.12}{}}
+\newlabel{fig:ffnn-calibration}{{8e}{33}{FFNN}{figure.caption.12}{}}
+\newlabel{sub@fig:ffnn-calibration}{{e}{33}{FFNN}{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Observed and predicted species richness scatter plots for the five models, arranged in the order GLM, GAM, Random Forest, CatBoost, and FFNN.}}{33}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:model-calibration-plots}{{8}{33}{Observed and predicted species richness scatter plots for the five models, arranged in the order GLM, GAM, Random Forest, CatBoost, and FFNN}{figure.caption.12}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Random 10-fold cross-validation test folds performance summaries for each model class across \(R^2\), MAPE, SMAPE, and RMSE. Bold values indicate the best value within each metric table. RF = Random Forets, CAT = CatBoost, FFNN = Feed-Forward Neural Network.}}{34}{table.caption.13}\protected@file@percent }
+\newlabel{tab:random-cv-test-metric-tables}{{4}{34}{Random 10-fold cross-validation test folds performance summaries for each model class across \(R^2\), MAPE, SMAPE, and RMSE. Bold values indicate the best value within each metric table. RF = Random Forets, CAT = CatBoost, FFNN = Feed-Forward Neural Network}{table.caption.13}{}}
+\newlabel{tab:r2-random-cv-test}{{4a}{34}{\(R^2\)}{table.caption.13}{}}
+\newlabel{sub@tab:r2-random-cv-test}{{a}{34}{\(R^2\)}{table.caption.13}{}}
+\newlabel{tab:rmse-random-cv-test}{{4b}{34}{RMSE}{table.caption.13}{}}
+\newlabel{sub@tab:rmse-random-cv-test}{{b}{34}{RMSE}{table.caption.13}{}}
+\newlabel{tab:mape-random-cv-test}{{4c}{34}{MAPE}{table.caption.13}{}}
+\newlabel{sub@tab:mape-random-cv-test}{{c}{34}{MAPE}{table.caption.13}{}}
+\newlabel{tab:smape-random-cv-test}{{4d}{34}{SMAPE: GLM true std = \(0.023841\), RF true median = \(0.226459\), CAT true std = \(0.024274\) and true median = \(0.22617\)}{table.caption.13}{}}
+\newlabel{sub@tab:smape-random-cv-test}{{d}{34}{SMAPE: GLM true std = \(0.023841\), RF true median = \(0.226459\), CAT true std = \(0.024274\) and true median = \(0.22617\)}{table.caption.13}{}}
+\newlabel{fig:random-cv-r2}{{9a}{34}{\(R^2\)}{figure.caption.14}{}}
+\newlabel{sub@fig:random-cv-r2}{{a}{34}{\(R^2\)}{figure.caption.14}{}}
+\newlabel{fig:random-cv-rmse}{{9b}{34}{RMSE}{figure.caption.14}{}}
+\newlabel{sub@fig:random-cv-rmse}{{b}{34}{RMSE}{figure.caption.14}{}}
+\newlabel{fig:random-cv-mape}{{9c}{34}{MAPE}{figure.caption.14}{}}
+\newlabel{sub@fig:random-cv-mape}{{c}{34}{MAPE}{figure.caption.14}{}}
+\newlabel{fig:random-cv-smape}{{9d}{34}{SMAPE}{figure.caption.14}{}}
+\newlabel{sub@fig:random-cv-smape}{{d}{34}{SMAPE}{figure.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Comparison of box-plots of the \(R^2\), MAPE, SMAPE, and RMSE values across the 10 test folds for each model.}}{34}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:model-all-metric-box-plots}{{9}{34}{Comparison of box-plots of the \(R^2\), MAPE, SMAPE, and RMSE values across the 10 test folds for each model}{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Cross-validation strategy}{34}{subsection.4.2}\protected@file@percent }
+\newlabel{subsec:research-question-2}{{4.2}{34}{Cross-validation strategy}{subsection.4.2}{}}
+\newlabel{fig:random-cv-distribution}{{10a}{35}{2020 UKBMS dataset - Random cross-validation folds}{figure.caption.15}{}}
+\newlabel{sub@fig:random-cv-distribution}{{a}{35}{2020 UKBMS dataset - Random cross-validation folds}{figure.caption.15}{}}
+\newlabel{fig:spatial-cv-distribution}{{10b}{35}{2020 UKBMS dataset - Spatial cross-validation folds}{figure.caption.15}{}}
+\newlabel{sub@fig:spatial-cv-distribution}{{b}{35}{2020 UKBMS dataset - Spatial cross-validation folds}{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Comparison between the random and spatial cross-validation folds on the 2020 UKBMS dataset. Each color corresponds to a different fold.}}{35}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:comparison-of-ukbms-data-distribution-across-cv-strategies}{{10}{35}{Comparison between the random and spatial cross-validation folds on the 2020 UKBMS dataset. Each color corresponds to a different fold}{figure.caption.15}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}GLM cross-validation comparison}{35}{subsubsection.4.2.1}\protected@file@percent }
+\newlabel{subsubsection:glm-cv-comparison}{{4.2.1}{35}{GLM cross-validation comparison}{subsubsection.4.2.1}{}}
+\abx@aux@cite{0}{cai2023}
+\abx@aux@segm{0}{0}{cai2023}
+\abx@aux@cite{0}{roberts2017}
+\abx@aux@segm{0}{0}{roberts2017}
+\newlabel{fig:GLM-random-cv-predicted-vs-observed-distribution}{{11a}{36}{Distribution of observed species richness and predicted species richness across the test sets for the random cross-validation strategy}{figure.caption.16}{}}
+\newlabel{sub@fig:GLM-random-cv-predicted-vs-observed-distribution}{{a}{36}{Distribution of observed species richness and predicted species richness across the test sets for the random cross-validation strategy}{figure.caption.16}{}}
+\newlabel{fig:GLM-spatial-cv-predicted-vs-observed-distribution}{{11b}{36}{Distribution of observed species richness and predicted species richness across the test sets for the spatial cross-validation strategy}{figure.caption.16}{}}
+\newlabel{sub@fig:GLM-spatial-cv-predicted-vs-observed-distribution}{{b}{36}{Distribution of observed species richness and predicted species richness across the test sets for the spatial cross-validation strategy}{figure.caption.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Comparison between the distribution of observed species richness and predicted species richness between random and spatial cross-validation strategies for the GLM model.}}{36}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:glm-predicted-vs-observed-distribution-across-cv-strategies}{{11}{36}{Comparison between the distribution of observed species richness and predicted species richness between random and spatial cross-validation strategies for the GLM model}{figure.caption.16}{}}
+\newlabel{fig:GLM-random-cv-observed-vs-predicted-plots}{{12a}{36}{Observed species richness vs. predicted species richness for the random cross-validation strategy. Pooled \(R^2 = 0.295\)}{figure.caption.17}{}}
+\newlabel{sub@fig:GLM-random-cv-observed-vs-predicted-plots}{{a}{36}{Observed species richness vs. predicted species richness for the random cross-validation strategy. Pooled \(R^2 = 0.295\)}{figure.caption.17}{}}
+\newlabel{fig:GLM-spatial-cv-observed-vs-predicted-plots}{{12b}{36}{Observed species richness vs. predicted species richness for the spatial cross-validation strategy. Pooled \(R^2 = 0.155\)}{figure.caption.17}{}}
+\newlabel{sub@fig:GLM-spatial-cv-observed-vs-predicted-plots}{{b}{36}{Observed species richness vs. predicted species richness for the spatial cross-validation strategy. Pooled \(R^2 = 0.155\)}{figure.caption.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Comparison between observed species richness vs. predicted species richness between random and spatial cross-validation strategies for the GLM model.}}{36}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:glm-observed-vs-predicted-across-cv-strategies}{{12}{36}{Comparison between observed species richness vs. predicted species richness between random and spatial cross-validation strategies for the GLM model}{figure.caption.17}{}}
+\abx@aux@page{339}{36}
+\abx@aux@page{340}{36}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Performance comparison for the GLM under random and spatial cross-validation. WM = weighted mean, P = pooled metric calculation, W Std. = weighted standard deviation. Bold values indicate the best value within each metric table.}}{37}{table.caption.18}\protected@file@percent }
+\newlabel{tab:glm-cv-strategy-comparison}{{5}{37}{Performance comparison for the GLM under random and spatial cross-validation. WM = weighted mean, P = pooled metric calculation, W Std. = weighted standard deviation. Bold values indicate the best value within each metric table}{table.caption.18}{}}
+\newlabel{fig:glm-r2-random-vs-spatial}{{13a}{37}{\(R^2\)}{figure.caption.19}{}}
+\newlabel{sub@fig:glm-r2-random-vs-spatial}{{a}{37}{\(R^2\)}{figure.caption.19}{}}
+\newlabel{fig:glm-rmse-random-vs-spatial}{{13b}{37}{RMSE}{figure.caption.19}{}}
+\newlabel{sub@fig:glm-rmse-random-vs-spatial}{{b}{37}{RMSE}{figure.caption.19}{}}
+\newlabel{fig:glm-mape-random-vs-spatial}{{13c}{37}{MAPE}{figure.caption.19}{}}
+\newlabel{sub@fig:glm-mape-random-vs-spatial}{{c}{37}{MAPE}{figure.caption.19}{}}
+\newlabel{fig:glm-smape-random-vs-spatial}{{13d}{37}{SMAPE}{figure.caption.19}{}}
+\newlabel{sub@fig:glm-smape-random-vs-spatial}{{d}{37}{SMAPE}{figure.caption.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Comparison of GLM performance metrics across random and spatial cross-validation strategies.}}{37}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:glm-cv-strategy-comparison-metrics}{{13}{37}{Comparison of GLM performance metrics across random and spatial cross-validation strategies}{figure.caption.19}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}CatBoost cross-validation comparison}{37}{subsubsection.4.2.2}\protected@file@percent }
+\newlabel{subsubsection:catboost-cv-comparison}{{4.2.2}{37}{CatBoost cross-validation comparison}{subsubsection.4.2.2}{}}
+\newlabel{fig:CatBoost-random-cv-predicted-vs-observed-distribution}{{14a}{38}{Distribution of observed species richness and predicted species richness across the test sets for the random cross-validation strategy}{figure.caption.20}{}}
+\newlabel{sub@fig:CatBoost-random-cv-predicted-vs-observed-distribution}{{a}{38}{Distribution of observed species richness and predicted species richness across the test sets for the random cross-validation strategy}{figure.caption.20}{}}
+\newlabel{fig:CatBoost-spatial-cv-predicted-vs-observed-distribution}{{14b}{38}{Distribution of observed species richness and predicted species richness across the test sets for the spatial cross-validation strategy}{figure.caption.20}{}}
+\newlabel{sub@fig:CatBoost-spatial-cv-predicted-vs-observed-distribution}{{b}{38}{Distribution of observed species richness and predicted species richness across the test sets for the spatial cross-validation strategy}{figure.caption.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Comparison between the distribution of observed species richness and predicted species richness between 10-fold random and spatial cross-validation strategies for the CatBoost model.}}{38}{figure.caption.20}\protected@file@percent }
+\newlabel{fig:catboost-predicted-vs-observed-distribution-across-cv-strategies}{{14}{38}{Comparison between the distribution of observed species richness and predicted species richness between 10-fold random and spatial cross-validation strategies for the CatBoost model}{figure.caption.20}{}}
+\newlabel{fig:CatBoost-random-cv-observed-vs-predicted-plots}{{15a}{38}{Observed species richness vs. predicted species richness for the random cross-validation strategy. Pooled \(R^2 = 0.376\)}{figure.caption.21}{}}
+\newlabel{sub@fig:CatBoost-random-cv-observed-vs-predicted-plots}{{a}{38}{Observed species richness vs. predicted species richness for the random cross-validation strategy. Pooled \(R^2 = 0.376\)}{figure.caption.21}{}}
+\newlabel{fig:CatBoost-spatial-cv-observed-vs-predicted-plots}{{15b}{38}{Observed species richness vs. predicted species richness for the spatial cross-validation strategy \(R^2 = 0.109\)}{figure.caption.21}{}}
+\newlabel{sub@fig:CatBoost-spatial-cv-observed-vs-predicted-plots}{{b}{38}{Observed species richness vs. predicted species richness for the spatial cross-validation strategy \(R^2 = 0.109\)}{figure.caption.21}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Comparison between observed species richness vs. predicted species richness between random and spatial cross-validation strategies for the CatBoost model.}}{38}{figure.caption.21}\protected@file@percent }
+\newlabel{fig:catboost-observed-vs-predicted-across-cv-strategies}{{15}{38}{Comparison between observed species richness vs. predicted species richness between random and spatial cross-validation strategies for the CatBoost model}{figure.caption.21}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Performance comparison for the CatBoost under random and spatial cross-validation. WM = weighted mean, P = pooled metric calculation, W Std. = weighted standard deviation. Bold values indicate the best value within each metric table.}}{39}{table.caption.22}\protected@file@percent }
+\newlabel{tab:catboost-cv-strategy-comparison}{{6}{39}{Performance comparison for the CatBoost under random and spatial cross-validation. WM = weighted mean, P = pooled metric calculation, W Std. = weighted standard deviation. Bold values indicate the best value within each metric table}{table.caption.22}{}}
+\abx@aux@cite{0}{pichler2023}
+\abx@aux@segm{0}{0}{pichler2023}
+\newlabel{fig:catboost-r2-random-vs-spatial}{{16a}{40}{\(R^2\)}{figure.caption.23}{}}
+\newlabel{sub@fig:catboost-r2-random-vs-spatial}{{a}{40}{\(R^2\)}{figure.caption.23}{}}
+\newlabel{fig:catboost-rmse-random-vs-spatial}{{16b}{40}{RMSE}{figure.caption.23}{}}
+\newlabel{sub@fig:catboost-rmse-random-vs-spatial}{{b}{40}{RMSE}{figure.caption.23}{}}
+\newlabel{fig:catboost-mape-random-vs-spatial}{{16c}{40}{MAPE}{figure.caption.23}{}}
+\newlabel{sub@fig:catboost-mape-random-vs-spatial}{{c}{40}{MAPE}{figure.caption.23}{}}
+\newlabel{fig:catboost-smape-random-vs-spatial}{{16d}{40}{SMAPE}{figure.caption.23}{}}
+\newlabel{sub@fig:catboost-smape-random-vs-spatial}{{d}{40}{SMAPE}{figure.caption.23}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Comparison of CatBoost performance metrics across random and spatial cross-validation strategies.}}{40}{figure.caption.23}\protected@file@percent }
+\newlabel{fig:catboost-cv-strategy-comparison-metrics}{{16}{40}{Comparison of CatBoost performance metrics across random and spatial cross-validation strategies}{figure.caption.23}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Data-limited scenarios}{40}{subsection.4.3}\protected@file@percent }
+\newlabel{subsec:research-question-3}{{4.3}{40}{Data-limited scenarios}{subsection.4.3}{}}
+\abx@aux@page{341}{40}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1}GLM data-limited scenarios comparison}{40}{subsubsection.4.3.1}\protected@file@percent }
+\newlabel{subsubsection:glm-data-limited-scenarios}{{4.3.1}{40}{GLM data-limited scenarios comparison}{subsubsection.4.3.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Distribution of observed species richness and predicted species richness across all dataset sizes for GLM models trained on different dataset sizes.}}{41}{figure.caption.24}\protected@file@percent }
+\newlabel{fig:glm-data-limited-scenarios-predicted-vs-observed-distribution}{{17}{41}{Distribution of observed species richness and predicted species richness across all dataset sizes for GLM models trained on different dataset sizes}{figure.caption.24}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces GLM Model performance across varying dataset-size scenarios.}}{41}{table.caption.26}\protected@file@percent }
+\newlabel{tab:glm-data-size-random-cv-test}{{7}{41}{GLM Model performance across varying dataset-size scenarios}{table.caption.26}{}}
+\newlabel{tab:r2-glm-data-size-random-cv}{{7a}{41}{\(R^2\)}{table.caption.26}{}}
+\newlabel{sub@tab:r2-glm-data-size-random-cv}{{a}{41}{\(R^2\)}{table.caption.26}{}}
+\newlabel{tab:rmse-glm-data-size-random-cv}{{7b}{41}{RMSE}{table.caption.26}{}}
+\newlabel{sub@tab:rmse-glm-data-size-random-cv}{{b}{41}{RMSE}{table.caption.26}{}}
+\newlabel{tab:mape-glm-data-size-random-cv}{{7c}{41}{MAPE}{table.caption.26}{}}
+\newlabel{sub@tab:mape-glm-data-size-random-cv}{{c}{41}{MAPE}{table.caption.26}{}}
+\newlabel{tab:smape-glm-data-size-random-cv}{{7d}{41}{SMAPE}{table.caption.26}{}}
+\newlabel{sub@tab:smape-glm-data-size-random-cv}{{d}{41}{SMAPE}{table.caption.26}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Comparison of observed species richness and predicted species richness across all dataset sizes for GLM models trained on different dataset sizes.}}{42}{figure.caption.25}\protected@file@percent }
+\newlabel{fig:glm-data-limited-scenarios-predicted-vs-observed-plots}{{18}{42}{Comparison of observed species richness and predicted species richness across all dataset sizes for GLM models trained on different dataset sizes}{figure.caption.25}{}}
+\newlabel{fig:glm-r2-limited}{{19a}{42}{\(R^2\)}{figure.caption.27}{}}
+\newlabel{sub@fig:glm-r2-limited}{{a}{42}{\(R^2\)}{figure.caption.27}{}}
+\newlabel{fig:glm-rmse-limited}{{19b}{42}{RMSE}{figure.caption.27}{}}
+\newlabel{sub@fig:glm-rmse-limited}{{b}{42}{RMSE}{figure.caption.27}{}}
+\newlabel{fig:glm-mape-limited}{{19c}{42}{MAPE}{figure.caption.27}{}}
+\newlabel{sub@fig:glm-mape-limited}{{c}{42}{MAPE}{figure.caption.27}{}}
+\newlabel{fig:glm-smape-limited}{{19d}{42}{SMAPE}{figure.caption.27}{}}
+\newlabel{sub@fig:glm-smape-limited}{{d}{42}{SMAPE}{figure.caption.27}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Comparison of GLM performance metrics across data-limited scenarios from \(100\%\) to \(10\%\) in \(10\%\) increments}}{42}{figure.caption.27}\protected@file@percent }
+\newlabel{fig:glm-data-limited-comparison-metrics}{{19}{42}{Comparison of GLM performance metrics across data-limited scenarios from \(100\%\) to \(10\%\) in \(10\%\) increments}{figure.caption.27}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.2}CatBoost data-limited scenarios comparison}{43}{subsubsection.4.3.2}\protected@file@percent }
+\newlabel{subsubsection:catboost-data-limited-scenarios}{{4.3.2}{43}{CatBoost data-limited scenarios comparison}{subsubsection.4.3.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Distribution of observed species richness and predicted species richness across all dataset sizes for CatBoost models trained on different dataset sizes.}}{43}{figure.caption.28}\protected@file@percent }
+\newlabel{fig:catboost-data-limited-scenarios-predicted-vs-observed-distribution}{{20}{43}{Distribution of observed species richness and predicted species richness across all dataset sizes for CatBoost models trained on different dataset sizes}{figure.caption.28}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Comparison of observed species richness and predicted species richness across all dataset sizes for CatBoost models trained on different dataset sizes.}}{44}{figure.caption.29}\protected@file@percent }
+\newlabel{fig:catboost-data-limited-scenarios-predicted-vs-observed-plots}{{21}{44}{Comparison of observed species richness and predicted species richness across all dataset sizes for CatBoost models trained on different dataset sizes}{figure.caption.29}{}}
+\newlabel{fig:cat-r2-limited}{{22a}{44}{\(R^2\)}{figure.caption.31}{}}
+\newlabel{sub@fig:cat-r2-limited}{{a}{44}{\(R^2\)}{figure.caption.31}{}}
+\newlabel{fig:cat-rmse-limited}{{22b}{44}{RMSE}{figure.caption.31}{}}
+\newlabel{sub@fig:cat-rmse-limited}{{b}{44}{RMSE}{figure.caption.31}{}}
+\newlabel{fig:cat-mape-limited}{{22c}{44}{MAPE}{figure.caption.31}{}}
+\newlabel{sub@fig:cat-mape-limited}{{c}{44}{MAPE}{figure.caption.31}{}}
+\newlabel{fig:cat-smape-limited}{{22d}{44}{SMAPE}{figure.caption.31}{}}
+\newlabel{sub@fig:cat-smape-limited}{{d}{44}{SMAPE}{figure.caption.31}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Comparison of CatBoost performance metrics across data-limited scenarios from \(100\%\) to \(10\%\) in \(10\%\) increments}}{44}{figure.caption.31}\protected@file@percent }
+\newlabel{fig:cat-data-limited-comparison-metrics}{{22}{44}{Comparison of CatBoost performance metrics across data-limited scenarios from \(100\%\) to \(10\%\) in \(10\%\) increments}{figure.caption.31}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces CatBoost performance across varying dataset-size.}}{45}{table.caption.30}\protected@file@percent }
+\newlabel{tab:catboost-data-size-random-cv-test}{{8}{45}{CatBoost performance across varying dataset-size}{table.caption.30}{}}
+\newlabel{tab:r2-catboost-data-size-random-cv}{{8a}{45}{\(R^2\)}{table.caption.30}{}}
+\newlabel{sub@tab:r2-catboost-data-size-random-cv}{{a}{45}{\(R^2\)}{table.caption.30}{}}
+\newlabel{tab:rmse-catboost-data-size-random-cv}{{8b}{45}{RMSE}{table.caption.30}{}}
+\newlabel{sub@tab:rmse-catboost-data-size-random-cv}{{b}{45}{RMSE}{table.caption.30}{}}
+\newlabel{tab:mape-catboost-data-size-random-cv}{{8c}{45}{MAPE}{table.caption.30}{}}
+\newlabel{sub@tab:mape-catboost-data-size-random-cv}{{c}{45}{MAPE}{table.caption.30}{}}
+\newlabel{tab:smape-catboost-data-size-random-cv}{{8d}{45}{SMAPE}{table.caption.30}{}}
+\newlabel{sub@tab:smape-catboost-data-size-random-cv}{{d}{45}{SMAPE}{table.caption.30}{}}
 \abx@aux@cite{0}{mondal2021}
 \abx@aux@segm{0}{0}{mondal2021}
 \abx@aux@cite{0}{cai2023}
 \abx@aux@segm{0}{0}{cai2023}
 \abx@aux@cite{0}{baggstrom2025}
 \abx@aux@segm{0}{0}{baggstrom2025}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces RMSE across random cross-validation folds.}}{32}{figure.caption.13}\protected@file@percent }
-\newlabel{fig:random-cv-rmse}{{8}{32}{RMSE across random cross-validation folds}{figure.caption.13}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces MAPE across random cross-validation folds.}}{32}{figure.caption.14}\protected@file@percent }
-\newlabel{fig:random-cv-mape}{{9}{32}{MAPE across random cross-validation folds}{figure.caption.14}{}}
-\abx@aux@page{339}{32}
-\abx@aux@page{340}{32}
-\abx@aux@page{341}{32}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces SMAPE across random cross-validation folds.}}{33}{figure.caption.15}\protected@file@percent }
-\newlabel{fig:random-cv-smape}{{10}{33}{SMAPE across random cross-validation folds}{figure.caption.15}{}}
-\newlabel{fig:glm-dist}{{11a}{34}{GLM}{figure.caption.16}{}}
-\newlabel{sub@fig:glm-dist}{{a}{34}{GLM}{figure.caption.16}{}}
-\newlabel{fig:gam-dist}{{11b}{34}{GAM}{figure.caption.16}{}}
-\newlabel{sub@fig:gam-dist}{{b}{34}{GAM}{figure.caption.16}{}}
-\newlabel{fig:randomforest-dist}{{11c}{34}{Random Forest}{figure.caption.16}{}}
-\newlabel{sub@fig:randomforest-dist}{{c}{34}{Random Forest}{figure.caption.16}{}}
-\newlabel{fig:catboost-dist}{{11d}{34}{CatBoost}{figure.caption.16}{}}
-\newlabel{sub@fig:catboost-dist}{{d}{34}{CatBoost}{figure.caption.16}{}}
-\newlabel{fig:ffnn-dist}{{11e}{34}{FFNN}{figure.caption.16}{}}
-\newlabel{sub@fig:ffnn-dist}{{e}{34}{FFNN}{figure.caption.16}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Observed and predicted species richness distributions for the five models, arranged in the order GLM, GAM, Random Forest, CatBoost, and FFNN.}}{34}{figure.caption.16}\protected@file@percent }
-\newlabel{fig:model-species-richness-distributions}{{11}{34}{Observed and predicted species richness distributions for the five models, arranged in the order GLM, GAM, Random Forest, CatBoost, and FFNN}{figure.caption.16}{}}
-\newlabel{fig:glm-calibration}{{12a}{35}{GLM}{figure.caption.17}{}}
-\newlabel{sub@fig:glm-calibration}{{a}{35}{GLM}{figure.caption.17}{}}
-\newlabel{fig:gam-calibration}{{12b}{35}{GAM}{figure.caption.17}{}}
-\newlabel{sub@fig:gam-calibration}{{b}{35}{GAM}{figure.caption.17}{}}
-\newlabel{fig:randomforest-calibration}{{12c}{35}{Random Forest}{figure.caption.17}{}}
-\newlabel{sub@fig:randomforest-calibration}{{c}{35}{Random Forest}{figure.caption.17}{}}
-\newlabel{fig:catboost-calibration}{{12d}{35}{CatBoost}{figure.caption.17}{}}
-\newlabel{sub@fig:catboost-calibration}{{d}{35}{CatBoost}{figure.caption.17}{}}
-\newlabel{fig:ffnn-calibration}{{12e}{35}{FFNN}{figure.caption.17}{}}
-\newlabel{sub@fig:ffnn-calibration}{{e}{35}{FFNN}{figure.caption.17}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Observed and predicted species richness scatter plots for the five models, arranged in the order GLM, GAM, Random Forest, CatBoost, and FFNN.}}{35}{figure.caption.17}\protected@file@percent }
-\newlabel{fig:model-calibration-plots}{{12}{35}{Observed and predicted species richness scatter plots for the five models, arranged in the order GLM, GAM, Random Forest, CatBoost, and FFNN}{figure.caption.17}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Cross-validation strategy}{36}{subsection.4.2}\protected@file@percent }
-\newlabel{sec:research-question-2}{{4.2}{36}{Cross-validation strategy}{subsection.4.2}{}}
-\newlabel{fig:random-cv-distribution}{{13a}{36}{2020 UKBMS dataset - Random cross-validation folds}{figure.caption.18}{}}
-\newlabel{sub@fig:random-cv-distribution}{{a}{36}{2020 UKBMS dataset - Random cross-validation folds}{figure.caption.18}{}}
-\newlabel{fig:spatial-cv-distribution}{{13b}{36}{2020 UKBMS dataset - Spatial cross-validation folds}{figure.caption.18}{}}
-\newlabel{sub@fig:spatial-cv-distribution}{{b}{36}{2020 UKBMS dataset - Spatial cross-validation folds}{figure.caption.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Comparison between the random and spatial cross-validation folds on the 2020 UKBMS dataset.}}{36}{figure.caption.18}\protected@file@percent }
-\newlabel{fig:comparison-of-ukbms-data-distribution-across-cv-strategies}{{13}{36}{Comparison between the random and spatial cross-validation folds on the 2020 UKBMS dataset}{figure.caption.18}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}GLM}{36}{subsubsection.4.2.1}\protected@file@percent }
-\newlabel{subsubsection:glm-cv-comparison}{{4.2.1}{36}{GLM}{subsubsection.4.2.1}{}}
-\abx@aux@cite{0}{cai2023}
-\abx@aux@segm{0}{0}{cai2023}
-\abx@aux@cite{0}{roberts2017}
-\abx@aux@segm{0}{0}{roberts2017}
-\newlabel{fig:GLM-random-cv-predicted-vs-observed-distribution}{{14a}{37}{Distribution of observed species richness and predicted species richness across the test sets for the random cross-validation strategy}{figure.caption.19}{}}
-\newlabel{sub@fig:GLM-random-cv-predicted-vs-observed-distribution}{{a}{37}{Distribution of observed species richness and predicted species richness across the test sets for the random cross-validation strategy}{figure.caption.19}{}}
-\newlabel{fig:GLM-spatial-cv-predicted-vs-observed-distribution}{{14b}{37}{Distribution of observed species richness and predicted species richness across the test sets for the spatial cross-validation strategy}{figure.caption.19}{}}
-\newlabel{sub@fig:GLM-spatial-cv-predicted-vs-observed-distribution}{{b}{37}{Distribution of observed species richness and predicted species richness across the test sets for the spatial cross-validation strategy}{figure.caption.19}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Comparison between the distribution of observed species richness and predicted species richness between random and spatial cross-validation strategies for the GLM model.}}{37}{figure.caption.19}\protected@file@percent }
-\newlabel{fig:glm-predicted-vs-observed-distribution-across-cv-strategies}{{14}{37}{Comparison between the distribution of observed species richness and predicted species richness between random and spatial cross-validation strategies for the GLM model}{figure.caption.19}{}}
-\newlabel{fig:GLM-random-cv-observed-vs-predicted-plots}{{15a}{37}{Observed species richness vs. predicted species richness for the random cross-validation strategy \(R^2 = 0.295\)}{figure.caption.20}{}}
-\newlabel{sub@fig:GLM-random-cv-observed-vs-predicted-plots}{{a}{37}{Observed species richness vs. predicted species richness for the random cross-validation strategy \(R^2 = 0.295\)}{figure.caption.20}{}}
-\newlabel{fig:GLM-spatial-cv-observed-vs-predicted-plots}{{15b}{37}{Observed species richness vs. predicted species richness for the spatial cross-validation strategy \(R^2 = 0.155\)}{figure.caption.20}{}}
-\newlabel{sub@fig:GLM-spatial-cv-observed-vs-predicted-plots}{{b}{37}{Observed species richness vs. predicted species richness for the spatial cross-validation strategy \(R^2 = 0.155\)}{figure.caption.20}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Comparison between observed species richness vs. predicted species richness between random and spatial cross-validation strategies for the GLM model.}}{37}{figure.caption.20}\protected@file@percent }
-\newlabel{fig:glm-observed-vs-predicted-across-cv-strategies}{{15}{37}{Comparison between observed species richness vs. predicted species richness between random and spatial cross-validation strategies for the GLM model}{figure.caption.20}{}}
-\abx@aux@page{342}{37}
-\abx@aux@page{343}{37}
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Performance comparison for the GLM under random and spatial cross-validation. WM = weighted mean, P = pooled metric calculation, W Std. = weighted standard deviation. Bold values indicate the best value within each metric table.}}{38}{table.caption.21}\protected@file@percent }
-\newlabel{tab:glm-cv-strategy-comparison}{{5}{38}{Performance comparison for the GLM under random and spatial cross-validation. WM = weighted mean, P = pooled metric calculation, W Std. = weighted standard deviation. Bold values indicate the best value within each metric table}{table.caption.21}{}}
-\newlabel{fig:glm-r2-random-vs-spatial}{{16a}{38}{\(R^2\)}{figure.caption.22}{}}
-\newlabel{sub@fig:glm-r2-random-vs-spatial}{{a}{38}{\(R^2\)}{figure.caption.22}{}}
-\newlabel{fig:glm-rmse-random-vs-spatial}{{16b}{38}{RMSE}{figure.caption.22}{}}
-\newlabel{sub@fig:glm-rmse-random-vs-spatial}{{b}{38}{RMSE}{figure.caption.22}{}}
-\newlabel{fig:glm-mape-random-vs-spatial}{{16c}{38}{MAPE}{figure.caption.22}{}}
-\newlabel{sub@fig:glm-mape-random-vs-spatial}{{c}{38}{MAPE}{figure.caption.22}{}}
-\newlabel{fig:glm-smape-random-vs-spatial}{{16d}{38}{SMAPE}{figure.caption.22}{}}
-\newlabel{sub@fig:glm-smape-random-vs-spatial}{{d}{38}{SMAPE}{figure.caption.22}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Comparison of GLM performance metrics across random and spatial cross-validation strategies.}}{38}{figure.caption.22}\protected@file@percent }
-\newlabel{fig:glm-cv-strategy-comparison-metrics}{{16}{38}{Comparison of GLM performance metrics across random and spatial cross-validation strategies}{figure.caption.22}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}CatBoost}{38}{subsubsection.4.2.2}\protected@file@percent }
-\newlabel{subsubsection:catboost-cv-comparison}{{4.2.2}{38}{CatBoost}{subsubsection.4.2.2}{}}
-\abx@aux@cite{0}{roberts2017}
-\abx@aux@segm{0}{0}{roberts2017}
-\newlabel{fig:CatBoost-random-cv-predicted-vs-observed-distribution}{{17a}{39}{Distribution of observed species richness and predicted species richness across the test sets for the random cross-validation strategy}{figure.caption.23}{}}
-\newlabel{sub@fig:CatBoost-random-cv-predicted-vs-observed-distribution}{{a}{39}{Distribution of observed species richness and predicted species richness across the test sets for the random cross-validation strategy}{figure.caption.23}{}}
-\newlabel{fig:CatBoost-spatial-cv-predicted-vs-observed-distribution}{{17b}{39}{Distribution of observed species richness and predicted species richness across the test sets for the spatial cross-validation strategy}{figure.caption.23}{}}
-\newlabel{sub@fig:CatBoost-spatial-cv-predicted-vs-observed-distribution}{{b}{39}{Distribution of observed species richness and predicted species richness across the test sets for the spatial cross-validation strategy}{figure.caption.23}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Comparison between the distribution of observed species richness and predicted species richness between 10-fold random and spatial cross-validation strategies for the CatBoost model.}}{39}{figure.caption.23}\protected@file@percent }
-\newlabel{fig:catboost-predicted-vs-observed-distribution-across-cv-strategies}{{17}{39}{Comparison between the distribution of observed species richness and predicted species richness between 10-fold random and spatial cross-validation strategies for the CatBoost model}{figure.caption.23}{}}
-\newlabel{fig:CatBoost-random-cv-observed-vs-predicted-plots}{{18a}{39}{Observed species richness vs. predicted species richness for the random cross-validation strategy \(R^2 = 0.376\)}{figure.caption.24}{}}
-\newlabel{sub@fig:CatBoost-random-cv-observed-vs-predicted-plots}{{a}{39}{Observed species richness vs. predicted species richness for the random cross-validation strategy \(R^2 = 0.376\)}{figure.caption.24}{}}
-\newlabel{fig:CatBoost-spatial-cv-observed-vs-predicted-plots}{{18b}{39}{Observed species richness vs. predicted species richness for the spatial cross-validation strategy \(R^2 = 0.109\)}{figure.caption.24}{}}
-\newlabel{sub@fig:CatBoost-spatial-cv-observed-vs-predicted-plots}{{b}{39}{Observed species richness vs. predicted species richness for the spatial cross-validation strategy \(R^2 = 0.109\)}{figure.caption.24}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Comparison between observed species richness vs. predicted species richness between random and spatial cross-validation strategies for the CatBoost model.}}{39}{figure.caption.24}\protected@file@percent }
-\newlabel{fig:catboost-observed-vs-predicted-across-cv-strategies}{{18}{39}{Comparison between observed species richness vs. predicted species richness between random and spatial cross-validation strategies for the CatBoost model}{figure.caption.24}{}}
-\abx@aux@page{344}{40}
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Performance comparison for the CatBoost under random and spatial cross-validation. WM = weighted mean, P = pooled metric calculation, W Std. = weighted standard deviation. Bold values indicate the best value within each metric table.}}{40}{table.caption.25}\protected@file@percent }
-\newlabel{tab:catboost-cv-strategy-comparison}{{6}{40}{Performance comparison for the CatBoost under random and spatial cross-validation. WM = weighted mean, P = pooled metric calculation, W Std. = weighted standard deviation. Bold values indicate the best value within each metric table}{table.caption.25}{}}
-\newlabel{fig:catboost-r2-random-vs-spatial}{{19a}{40}{\(R^2\)}{figure.caption.26}{}}
-\newlabel{sub@fig:catboost-r2-random-vs-spatial}{{a}{40}{\(R^2\)}{figure.caption.26}{}}
-\newlabel{fig:catboost-rmse-random-vs-spatial}{{19b}{40}{RMSE}{figure.caption.26}{}}
-\newlabel{sub@fig:catboost-rmse-random-vs-spatial}{{b}{40}{RMSE}{figure.caption.26}{}}
-\newlabel{fig:catboost-mape-random-vs-spatial}{{19c}{40}{MAPE}{figure.caption.26}{}}
-\newlabel{sub@fig:catboost-mape-random-vs-spatial}{{c}{40}{MAPE}{figure.caption.26}{}}
-\newlabel{fig:catboost-smape-random-vs-spatial}{{19d}{40}{SMAPE}{figure.caption.26}{}}
-\newlabel{sub@fig:catboost-smape-random-vs-spatial}{{d}{40}{SMAPE}{figure.caption.26}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Comparison of CatBoost performance metrics across random and spatial cross-validation strategies.}}{40}{figure.caption.26}\protected@file@percent }
-\newlabel{fig:catboost-cv-strategy-comparison-metrics}{{19}{40}{Comparison of CatBoost performance metrics across random and spatial cross-validation strategies}{figure.caption.26}{}}
-\newlabel{fig:catboost-cv-strategy-comparison-rmse}{{19}{40}{Comparison of CatBoost performance metrics across random and spatial cross-validation strategies}{figure.caption.26}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Limited data scenarios}{41}{subsection.4.3}\protected@file@percent }
-\newlabel{sec:research-question-3}{{4.3}{41}{Limited data scenarios}{subsection.4.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion}{42}{section.5}\protected@file@percent }
-\newlabel{sec:discussion}{{5}{42}{Discussion}{section.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Findings}{42}{subsection.5.1}\protected@file@percent }
-\newlabel{sec:dis}{{5.1}{42}{Findings}{subsection.5.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Ethical Discussion}{42}{subsection.5.2}\protected@file@percent }
-\newlabel{sec:ethics}{{5.2}{42}{Ethical Discussion}{subsection.5.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Future Work/ Applications}{43}{section.6}\protected@file@percent }
-\newlabel{sec:future_work}{{6}{43}{Future Work/ Applications}{section.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{44}{section.7}\protected@file@percent }
-\newlabel{sec:conclusion}{{7}{44}{Conclusion}{section.7}{}}
-\abx@aux@page{345}{45}
-\abx@aux@page{346}{45}
-\abx@aux@page{347}{45}
-\abx@aux@page{348}{45}
-\abx@aux@page{349}{45}
-\abx@aux@page{350}{45}
-\abx@aux@page{351}{45}
-\abx@aux@page{352}{45}
-\abx@aux@page{353}{45}
-\abx@aux@page{354}{45}
-\abx@aux@page{355}{45}
-\abx@aux@page{356}{45}
-\abx@aux@page{357}{45}
-\abx@aux@page{358}{45}
-\abx@aux@page{359}{45}
-\abx@aux@page{360}{45}
-\abx@aux@page{361}{45}
-\abx@aux@page{362}{46}
-\abx@aux@page{363}{46}
-\abx@aux@page{364}{46}
-\abx@aux@page{365}{46}
-\abx@aux@page{366}{46}
-\abx@aux@page{367}{46}
-\abx@aux@page{368}{46}
-\abx@aux@page{369}{46}
-\abx@aux@page{370}{46}
-\abx@aux@page{371}{46}
-\abx@aux@page{372}{46}
-\abx@aux@page{373}{46}
-\abx@aux@page{374}{46}
-\abx@aux@page{375}{46}
-\abx@aux@page{376}{46}
-\abx@aux@page{377}{47}
-\abx@aux@page{378}{47}
-\abx@aux@page{379}{47}
-\abx@aux@page{380}{47}
-\abx@aux@page{381}{47}
-\abx@aux@page{382}{47}
-\abx@aux@page{383}{47}
-\abx@aux@page{384}{47}
-\abx@aux@page{385}{47}
-\abx@aux@page{386}{47}
-\abx@aux@page{387}{47}
-\abx@aux@page{388}{47}
-\abx@aux@page{389}{47}
-\abx@aux@page{390}{47}
-\abx@aux@page{391}{47}
-\abx@aux@page{392}{47}
-\abx@aux@page{393}{48}
-\abx@aux@page{394}{48}
-\abx@aux@page{395}{48}
-\abx@aux@page{396}{48}
-\abx@aux@page{397}{48}
-\abx@aux@page{398}{48}
-\abx@aux@page{399}{48}
-\abx@aux@page{400}{48}
-\abx@aux@page{401}{48}
-\abx@aux@page{402}{48}
-\abx@aux@page{403}{48}
-\abx@aux@page{404}{48}
-\abx@aux@page{405}{48}
-\abx@aux@page{406}{48}
-\abx@aux@page{407}{48}
-\abx@aux@page{408}{48}
-\abx@aux@page{409}{48}
-\abx@aux@page{410}{48}
-\abx@aux@page{411}{49}
-\abx@aux@page{412}{49}
-\abx@aux@page{413}{49}
-\abx@aux@page{414}{49}
-\abx@aux@page{415}{49}
-\abx@aux@page{416}{49}
-\abx@aux@page{417}{49}
-\abx@aux@page{418}{49}
-\abx@aux@page{419}{49}
-\abx@aux@page{420}{49}
-\abx@aux@page{421}{49}
-\abx@aux@page{422}{49}
-\abx@aux@page{423}{49}
-\abx@aux@page{424}{49}
-\abx@aux@page{425}{49}
-\abx@aux@page{426}{49}
-\abx@aux@page{427}{49}
-\abx@aux@page{428}{50}
-\abx@aux@page{429}{50}
-\abx@aux@page{430}{50}
-\abx@aux@page{431}{50}
-\abx@aux@page{432}{50}
-\abx@aux@page{433}{50}
-\abx@aux@page{434}{50}
-\abx@aux@page{435}{50}
-\abx@aux@page{436}{50}
-\abx@aux@page{437}{50}
-\abx@aux@page{438}{50}
-\abx@aux@page{439}{50}
-\abx@aux@page{440}{50}
-\abx@aux@page{441}{50}
-\abx@aux@page{442}{50}
-\abx@aux@page{443}{51}
-\abx@aux@page{444}{51}
-\abx@aux@page{445}{51}
-\@writefile{toc}{\contentsline {section}{\numberline {A}Appendix A: Github Repository}{51}{appendix.A}\protected@file@percent }
+\abx@aux@cite{0}{wuest2020}
+\abx@aux@segm{0}{0}{wuest2020}
+\abx@aux@cite{0}{vargas2024}
+\abx@aux@segm{0}{0}{vargas2024}
+\abx@aux@cite{0}{vargas2024}
+\abx@aux@segm{0}{0}{vargas2024}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion}{46}{section.5}\protected@file@percent }
+\newlabel{sec:discussion}{{5}{46}{Discussion}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Findings}{46}{subsection.5.1}\protected@file@percent }
+\newlabel{sec:dis}{{5.1}{46}{Findings}{subsection.5.1}{}}
+\abx@aux@page{342}{46}
+\abx@aux@page{343}{46}
+\abx@aux@page{344}{46}
+\abx@aux@page{345}{46}
+\abx@aux@page{346}{46}
+\abx@aux@page{347}{46}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Ethical Discussion}{46}{subsection.5.2}\protected@file@percent }
+\newlabel{sec:ethics}{{5.2}{46}{Ethical Discussion}{subsection.5.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Future Work/ Applications}{47}{section.6}\protected@file@percent }
+\newlabel{sec:future_work}{{6}{47}{Future Work/ Applications}{section.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{48}{section.7}\protected@file@percent }
+\newlabel{sec:conclusion}{{7}{48}{Conclusion}{section.7}{}}
+\abx@aux@page{348}{49}
+\abx@aux@page{349}{49}
+\abx@aux@page{350}{49}
+\abx@aux@page{351}{49}
+\abx@aux@page{352}{49}
+\abx@aux@page{353}{49}
+\abx@aux@page{354}{49}
+\abx@aux@page{355}{49}
+\abx@aux@page{356}{49}
+\abx@aux@page{357}{49}
+\abx@aux@page{358}{49}
+\abx@aux@page{359}{49}
+\abx@aux@page{360}{49}
+\abx@aux@page{361}{49}
+\abx@aux@page{362}{49}
+\abx@aux@page{363}{49}
+\abx@aux@page{364}{49}
+\abx@aux@page{365}{50}
+\abx@aux@page{366}{50}
+\abx@aux@page{367}{50}
+\abx@aux@page{368}{50}
+\abx@aux@page{369}{50}
+\abx@aux@page{370}{50}
+\abx@aux@page{371}{50}
+\abx@aux@page{372}{50}
+\abx@aux@page{373}{50}
+\abx@aux@page{374}{50}
+\abx@aux@page{375}{50}
+\abx@aux@page{376}{50}
+\abx@aux@page{377}{50}
+\abx@aux@page{378}{50}
+\abx@aux@page{379}{50}
+\abx@aux@page{380}{51}
+\abx@aux@page{381}{51}
+\abx@aux@page{382}{51}
+\abx@aux@page{383}{51}
+\abx@aux@page{384}{51}
+\abx@aux@page{385}{51}
+\abx@aux@page{386}{51}
+\abx@aux@page{387}{51}
+\abx@aux@page{388}{51}
+\abx@aux@page{389}{51}
+\abx@aux@page{390}{51}
+\abx@aux@page{391}{51}
+\abx@aux@page{392}{51}
+\abx@aux@page{393}{51}
+\abx@aux@page{394}{51}
+\abx@aux@page{395}{51}
+\abx@aux@page{396}{52}
+\abx@aux@page{397}{52}
+\abx@aux@page{398}{52}
+\abx@aux@page{399}{52}
+\abx@aux@page{400}{52}
+\abx@aux@page{401}{52}
+\abx@aux@page{402}{52}
+\abx@aux@page{403}{52}
+\abx@aux@page{404}{52}
+\abx@aux@page{405}{52}
+\abx@aux@page{406}{52}
+\abx@aux@page{407}{52}
+\abx@aux@page{408}{52}
+\abx@aux@page{409}{52}
+\abx@aux@page{410}{52}
+\abx@aux@page{411}{52}
+\abx@aux@page{412}{52}
+\abx@aux@page{413}{52}
+\abx@aux@page{414}{53}
+\abx@aux@page{415}{53}
+\abx@aux@page{416}{53}
+\abx@aux@page{417}{53}
+\abx@aux@page{418}{53}
+\abx@aux@page{419}{53}
+\abx@aux@page{420}{53}
+\abx@aux@page{421}{53}
+\abx@aux@page{422}{53}
+\abx@aux@page{423}{53}
+\abx@aux@page{424}{53}
+\abx@aux@page{425}{53}
+\abx@aux@page{426}{53}
+\abx@aux@page{427}{53}
+\abx@aux@page{428}{53}
+\abx@aux@page{429}{53}
+\abx@aux@page{430}{53}
+\abx@aux@page{431}{54}
+\abx@aux@page{432}{54}
+\abx@aux@page{433}{54}
+\abx@aux@page{434}{54}
+\abx@aux@page{435}{54}
+\abx@aux@page{436}{54}
+\abx@aux@page{437}{54}
+\abx@aux@page{438}{54}
+\abx@aux@page{439}{54}
+\abx@aux@page{440}{54}
+\abx@aux@page{441}{54}
+\abx@aux@page{442}{54}
+\abx@aux@page{443}{54}
+\abx@aux@page{444}{54}
+\abx@aux@page{445}{55}
+\abx@aux@page{446}{55}
+\abx@aux@page{447}{55}
+\abx@aux@page{448}{55}
+\abx@aux@page{449}{55}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Appendix A: Github Repository}{55}{appendix.A}\protected@file@percent }
 \gdef \LT@i {\LT@entry 
     {1}{79.94241pt}\LT@entry 
     {1}{66.35393pt}\LT@entry 
     {1}{306.42636pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {B}Appendix B: Additional Results}{52}{appendix.B}\protected@file@percent }
-\newlabel{appendix:appendix_b}{{B}{52}{Appendix B: Additional Results}{appendix.B}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Hyperparameter grid searches conducted for each model class. Each numbered search represents a separate grid search. The hyperparameter search space for each grid search is detailed in the third column.}}{52}{table.7}\protected@file@percent }
-\newlabel{tab:hyperparameter-grid-searches}{{7}{52}{Hyperparameter grid searches conducted for each model class. Each numbered search represents a separate grid search. The hyperparameter search space for each grid search is detailed in the third column}{table.7}{}}
-\abx@aux@read@bbl@mdfivesum{1658B6CEC8F7EB1DBE8AD686E4DAC1A8}
+\@writefile{toc}{\contentsline {section}{\numberline {B}Appendix B: Additional Results}{56}{appendix.B}\protected@file@percent }
+\newlabel{appendix:appendix_b}{{B}{56}{Appendix B: Additional Results}{appendix.B}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Hyperparameter grid searches conducted for each model class. Each numbered search represents a separate grid search. The hyperparameter search space for each grid search is detailed in the third column.}}{56}{table.9}\protected@file@percent }
+\newlabel{tab:hyperparameter-grid-searches}{{9}{56}{Hyperparameter grid searches conducted for each model class. Each numbered search represents a separate grid search. The hyperparameter search space for each grid search is detailed in the third column}{table.9}{}}
+\abx@aux@read@bbl@mdfivesum{F316BB745CD6DCCB905FB42F0D9C1724}
 \abx@aux@defaultrefcontext{0}{amatulli2018topographic}{nyt/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{andermann2022}{nyt/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{araujo2019}{nyt/global//global/global/global}
@@ -1414,6 +1477,7 @@
 \abx@aux@defaultrefcontext{0}{UKBMS2026}{nyt/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{valavi2019}{nyt/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{valavi2022}{nyt/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{vargas2024}{nyt/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{vecera_alpha_2019}{nyt/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{waldock2022}{nyt/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{waltari2014}{nyt/global//global/global/global}
@@ -1428,4 +1492,4 @@
 \abx@aux@defaultrefcontext{0}{zeng2022}{nyt/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{zhang2019}{nyt/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{zipkin2023}{nyt/global//global/global/global}
-\gdef \@abspage@last{54}
+\gdef \@abspage@last{58}
